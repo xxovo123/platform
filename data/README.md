@@ -1,5 +1,7 @@
 # Data structure / 数据结构
 
+[Platform overview / 平台原理](../README.md) · [中文平台介绍](../README_zh.md) · [Original hardware CIR / 硬件原始 CIR](hardware/README.md)
+
 This directory groups simulation data and the 205-segment hardware evaluation dataset. Numerical inputs, ground truth, saved predictions and summaries are distinct files. Hardware data are original chip CIR; simulation CIR are outputs of the numerical receiver chain.
 
 ## Controlled simulation CIR
