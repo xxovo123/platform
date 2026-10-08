@@ -1,0 +1,118 @@
+{
+ "clean_id": "cln_004e4be5f11e",
+ "layer": "B",
+ "source": "fdtd",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E2",
+ "targets_xy_m": [
+  [
+   0.5196614716607479,
+   -1.7233548545994193
+  ],
+  [
+   0.2262171914406062,
+   -1.7857283618447473
+  ]
+ ],
+ "targets_polar": [
+  [
+   1.8,
+   16.78019184719916
+  ],
+  [
+   1.8,
+   7.219808152800841
+  ]
+ ],
+ "clean_seed": 1214467763612053802,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "490db59023b436c3fe706e19c9f2716d6709b52152b6935be53b0c95a5eea29f",
+ "signature_scope": "jsf_physics_scope_v1",
+ "protocol_hash": "fe04f63487b42a350c51d55457792c4d4c4f523dcdcce2d09465a3e1bf63a301",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "geometry": {
+  "tx_positions_m": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "rx_positions_m": [
+   [
+    -0.038,
+    0.0,
+    0.0
+   ],
+   [
+    -0.019,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.019,
+    0.0,
+    0.0
+   ]
+  ],
+  "pairs": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ]
+  ]
+ },
+ "meep": {
+  "resolution_px_per_m": 350.0,
+  "run_time_meep": 20.0,
+  "pml_thickness_lambda": 2.0
+ },
+ "background_mode": "empty_field",
+ "scatterer_radius_m": 0.056301167743389426,
+ "micro_motion": {
+  "seed": 1214467763612053802,
+  "sigma_m": 0.002,
+  "radius_m": [
+   0.01,
+   0.01
+  ]
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0)；与层 A 同一延迟参考",
+ "cache_key": "fdf93a4d0c2618f1ec2fd8fab7453a9c3bbc070813c8dc7886afe2fbe3a38f72",
+ "solves": {
+  "solves_planned": 129,
+  "solves_actual": 0,
+  "cache_hits": {
+   "background": 1,
+   "state": 128
+  }
+ },
+ "npz_sha256": "ca44391e85510b27797ccded2c06082e55568f2bf66d8b6509168866d0e28497",
+ "truth_sha256": "1db91d2d26db9064e6c203204bf88a661a45db03355a467c2b960bd5544194ee",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "truth_K": 2,
+ "built_at": "2026-09-30T16:58:41+08:00"
+}

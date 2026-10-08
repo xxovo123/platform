@@ -1,0 +1,32 @@
+{
+ "kind": "jsf-run-checks",
+ "methods_only_this_method": true,
+ "no_offgrid_shift": true,
+ "expected_method_runs": 450,
+ "completed_rows": 450,
+ "by_status": {
+  "ok": 450
+ },
+ "blocked_cleans": [],
+ "analytic_band_oob_max": null,
+ "analytic_band_oob_gate": 1e-12,
+ "analytic_band_gate_passed": null,
+ "n_samples": 9,
+ "sample_names": [
+  "E2_B_oblique_d1000_snr+10__cln_1cae67d2e896__L128__trial0000.npz",
+  "E2_B_oblique_d300_snr+10__cln_f70e71a0c3e5__L128__trial0000.npz",
+  "E2_B_oblique_d500_snr+10__cln_b691dbd2e7e3__L128__trial0000.npz",
+  "E2_B_radial_d1000_snr+10__cln_8448358c4505__L128__trial0000.npz",
+  "E2_B_radial_d300_snr+10__cln_d7f9c32605f0__L128__trial0000.npz",
+  "E2_B_radial_d500_snr+10__cln_c3878b602a6c__L128__trial0000.npz",
+  "E2_B_transverse_d1000_snr+10__cln_b0ec8b6b413b__L128__trial0000.npz",
+  "E2_B_transverse_d300_snr+10__cln_004e4be5f11e__L128__trial0000.npz",
+  "E2_B_transverse_d500_snr+10__cln_54481294f030__L128__trial0000.npz"
+ ],
+ "checks_passed": true,
+ "notes": [
+  "CSV/JSON 未定义用空值，禁止伪零。",
+  "所有 trial 保留在分母；失败/空输出不删行。",
+  "rmse_trial_m 为 null 表示该 trial 无配对（不是 0）。"
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "clean_id": "cln_de385a3b2982",
+ "layer": "B",
+ "source": "fdtd",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E1",
+ "targets_xy_m": [
+  [
+   0.37424104347196685,
+   -1.7606656813208503
+  ],
+  [
+   -0.37424104347196685,
+   -1.7606656813208503
+  ]
+ ],
+ "targets_polar": [
+  [
+   1.8,
+   12.0
+  ],
+  [
+   1.8,
+   -12.0
+  ]
+ ],
+ "clean_seed": 1512722088059052618,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "817308a410240074a283b55474fd592b9979d9129a3db7e6852e345c89e58777",
+ "signature_scope": "jsf_physics_scope_v1",
+ "protocol_hash": "fe04f63487b42a350c51d55457792c4d4c4f523dcdcce2d09465a3e1bf63a301",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "geometry": {
+  "tx_positions_m": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "rx_positions_m": [
+   [
+    -0.038,
+    0.0,
+    0.0
+   ],
+   [
+    -0.019,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.019,
+    0.0,
+    0.0
+   ]
+  ],
+  "pairs": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ]
+  ]
+ },
+ "meep": {
+  "resolution_px_per_m": 350.0,
+  "run_time_meep": 20.0,
+  "pml_thickness_lambda": 2.0
+ },
+ "background_mode": "empty_field",
+ "scatterer_radius_m": 0.056301167743389426,
+ "micro_motion": {
+  "seed": 1512722088059052618,
+  "sigma_m": 0.002,
+  "radius_m": [
+   0.01,
+   0.01
+  ]
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0)；与层 A 同一延迟参考",
+ "cache_key": "8df0b623e0c1eed66e255d07c2809c1d6782e32ae00b0cdac9a149c8259a884b",
+ "solves": {
+  "solves_planned": 129,
+  "solves_actual": 0,
+  "cache_hits": {
+   "background": 1,
+   "state": 128
+  }
+ },
+ "npz_sha256": "c9684e7113177c5a82f3e016ec4608dfdb26896d826292c4990434ea11824ff0",
+ "truth_sha256": "82b5816b862b2caa9e944239d60e7398ab3f3af659a46ad53c07c46f358be7f9",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "truth_K": 2,
+ "built_at": "2026-09-30T15:48:56+08:00"
+}

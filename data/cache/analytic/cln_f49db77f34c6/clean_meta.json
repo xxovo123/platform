@@ -1,0 +1,53 @@
+{
+ "clean_id": "cln_f49db77f34c6",
+ "layer": "A",
+ "source": "analytic",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E1",
+ "targets_xy_m": [
+  [
+   0.311867536226639,
+   -1.4672214011007085
+  ],
+  [
+   0.43661455071729466,
+   -2.054109961540992
+  ]
+ ],
+ "targets_polar": [
+  [
+   1.5,
+   12.0
+  ],
+  [
+   2.1,
+   12.0
+  ]
+ ],
+ "clean_seed": 12868173255258416703,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "2487b447cda9a6c104cf4a1d5daec4caf19ae01827f87d37905e6cca7518bbd5",
+ "protocol_hash": "fe04f63487b42a350c51d55457792c4d4c4f523dcdcce2d09465a3e1bf63a301",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "band_mode": "bandlimited_500mhz",
+ "band_check": {
+  "oob_fraction_before_crop": 1.3969028659489897e-32,
+  "oob_fraction_after_crop": 0.0013222872533298251,
+  "note": "before_crop 是规范 §6 的硬门槛（<1e-12）；after_crop 是 [0:30] 截窗引入的谱泄漏，单独记录，不用它误判生成失败。"
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0); crop_start=0",
+ "crop_start": 0,
+ "raw_taps": 32,
+ "fft_length": 32,
+ "npz_sha256": "a8ee390ba87b6871406f06a3f79a2e3b58a611e67146e058fa74054868d0738d",
+ "truth_sha256": "89af8f1da86dd98b0f745831ce0cee4c9775f3bfbb2b38f3e8420b5a292a1eb5",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "noise_prefix_policy": "每 clean/trial 先抽 [128,4,30] 标准噪声再取前缀",
+ "built_at": "2026-09-29T14:31:44+08:00"
+}

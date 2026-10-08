@@ -1,0 +1,13 @@
+{
+  "kind": "spectrum of the actual prescribed source function and saved processing reference",
+  "source_formula": "bh_derivative_v1",
+  "source_file_sha256": "473558b1e95aca59943e0b49ef50b981aeead9275cdf2763590f6974c64ae1c0",
+  "solver_file_sha256": "1236f29ae66bb3ae4d028c513f67b8894526254a5a00180c7edcb6c8e7a3b156",
+  "fc_hz": 7987200000.0,
+  "nominal_bandwidth_hz": 500000000.0,
+  "duration_s": 4e-09,
+  "rf_grid_source": "completed S1 chain_info.json",
+  "scope": "Prescribed Meep source function sampled on the retained RF time grid; not a new FDTD solve or hardware measurement. Processed reference is after the existing RF chain. No claim of rectangular FDTD spectrum.",
+  "npz_sha256": "30c565c6f980e9f68773a7f180b067c52398e68fc4f97a6434bbe51c1c2e57dc",
+  "new_Meep_solves": 0
+}

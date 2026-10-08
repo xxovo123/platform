@@ -1,0 +1,90 @@
+{
+  "definition": "tau_3d_minus_2d = (|tx-p|+|rx-p|)/c0 在 3D 与 xy 投影下的差；只报告，不补偿",
+  "delay_deviation_s": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0
+  },
+  "rows": [
+    {
+      "delay_2d_s": 9.982113189237701e-09,
+      "delay_3d_s": 9.982113189237701e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.9925622490357897,
+      "path_3d_m": 2.9925622490357897,
+      "rx_index": 0,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.4037138764260235e-08,
+      "delay_3d_s": 1.4037138764260235e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.208228333424659,
+      "path_3d_m": 4.208228333424659,
+      "rx_index": 0,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 9.994131036739876e-09,
+      "delay_3d_s": 9.994131036739876e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.9961651090783357,
+      "path_3d_m": 2.9961651090783357,
+      "rx_index": 1,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.402314264694633e-08,
+      "delay_3d_s": 1.402314264694633e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.204032403012667,
+      "path_3d_m": 4.204032403012667,
+      "rx_index": 1,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.0006922855944561e-08,
+      "delay_3d_s": 1.0006922855944561e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.0,
+      "path_3d_m": 3.0,
+      "rx_index": 2,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.4009691998322387e-08,
+      "delay_3d_s": 1.4009691998322387e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.2,
+      "path_3d_m": 4.2,
+      "rx_index": 2,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.0020482726705329e-08,
+      "delay_3d_s": 1.0020482726705329e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.004065146985533,
+      "path_3d_m": 3.004065146985533,
+      "rx_index": 3,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.3996789966401046e-08,
+      "delay_3d_s": 1.3996789966401046e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.196132068137107,
+      "path_3d_m": 4.196132068137107,
+      "rx_index": 3,
+      "target_index": 1,
+      "tx_index": 0
+    }
+  ]
+}

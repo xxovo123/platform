@@ -1,0 +1,648 @@
+{
+  "protocol": {
+    "kind": "jsf-sim-protocol",
+    "protocol_id": "jsf-20260929",
+    "protocol_version": "jsf-20260929-noshift-bandfix-1",
+    "source_spec": "大修执行_20260923/仿真执行与论文叙事交接规范_20260929.md",
+    "method_scope": {
+      "methods": [
+        "this_method"
+      ],
+      "note": "只运行 JSF-MUSIC；外部仿真基线不接入、不运行。"
+    },
+    "fc_hz": 7987200000.0,
+    "bandwidth_hz": 500000000.0,
+    "band_half_hz": 250000000.0,
+    "sample_interval_s": 1e-09,
+    "raw_taps": 32,
+    "crop_start": 0,
+    "crop_length": 30,
+    "fft_length": 32,
+    "snapshots": 128,
+    "n_channels": 4,
+    "speed_of_light_m_s": 299792458.0,
+    "system_delay_si": 0.0,
+    "epsilon_r_background": 1.0,
+    "diag_load_factor": 1e-05,
+    "is_forward_backward": true,
+    "frequency_plan": {
+      "axis_rule": "np.fft.fftfreq(fft_length=32, d=Ts) + fc_hz",
+      "in_band_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "n_freq_bins": 17,
+      "frequencies_hz": [
+        7987200000.0,
+        8018450000.0,
+        8049700000.0,
+        8080950000.0,
+        8112200000.0,
+        8143450000.0,
+        8174700000.0,
+        8205950000.0,
+        8237200000.0,
+        7737200000.0,
+        7768450000.0,
+        7799700000.0,
+        7830950000.0,
+        7862200000.0,
+        7893450000.0,
+        7924700000.0,
+        7955950000.0
+      ],
+      "order": "fft_index_ascending_non_monotonic（原始频序；禁止自行排序）",
+      "feature_order": "frequency-major then channel (index = f*C + ch)"
+    },
+    "band_limiting": {
+      "marker": "BANDLIMIT-FIX-20260929",
+      "primary_band_mode": "bandlimited_500mhz",
+      "diagnostic_band_mode": "full_band_ideal",
+      "mask": "S(f)=1 iff |f-fc| <= 250 MHz, else 0（IFFT 前显式作用于 H）",
+      "call_site_required": "analytic/forward.py::raw_cir_from_coeffs 内 `H = H * s_mask`",
+      "oob_energy_gate": 1e-12,
+      "oob_gate_note": "截窗前带外能量比例 < 1e-12（双精度）；截窗后谱泄漏单独记录。"
+    },
+    "geometry_controlled": {
+      "kind": "1Tx4Rx_controlled",
+      "tx_positions_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "rx_positions_m": [
+        [
+          -0.038,
+          0.0,
+          0.0
+        ],
+        [
+          -0.019,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.019,
+          0.0,
+          0.0
+        ]
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "spacing_m": 0.019,
+      "coordinate": {
+        "polar_to_xy": "p = (r*sin(theta), -r*cos(theta))",
+        "half_plane": "y < 0",
+        "theta_sign": "theta>0 = +X 侧"
+      },
+      "not_hardware_geometry": true,
+      "hardware_geometry_used_in": "q4（见 q4 段）"
+    },
+    "offgrid_shift_m": [
+      0.0,
+      0.0
+    ],
+    "offgrid_shift_policy": "新版取消旧 (0.017,-0.013) 统一平移；站位由精确极坐标 float64 展开。该改变已进入 clean key（协议版本入键）。",
+    "layouts_S1_S5": {
+      "S1": [
+        [
+          1.8,
+          12.0
+        ]
+      ],
+      "S2": [
+        [
+          1.8,
+          12.0
+        ],
+        [
+          1.8,
+          -12.0
+        ]
+      ],
+      "S3": [
+        [
+          1.5,
+          12.0
+        ],
+        [
+          2.1,
+          12.0
+        ]
+      ],
+      "S4": [
+        [
+          1.5,
+          -12.0
+        ],
+        [
+          2.1,
+          12.0
+        ]
+      ],
+      "S5": [
+        [
+          1.5,
+          -20.0
+        ],
+        [
+          1.8,
+          0.0
+        ],
+        [
+          2.1,
+          20.0
+        ]
+      ]
+    },
+    "snr_scan_db": [
+      -10.0,
+      -5.0,
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0
+    ],
+    "trials": {
+      "E1_A": 200,
+      "E1_B": 50,
+      "E2_A": 100,
+      "E2_B": 50,
+      "E4_A": 100,
+      "E4_B": 50
+    },
+    "e2": {
+      "base_r0_m": 1.8,
+      "base_theta0_deg": 12.0,
+      "directions": [
+        "transverse",
+        "radial",
+        "oblique"
+      ],
+      "A": {
+        "spacings_m": [
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "snr_db": [
+          0.0,
+          10.0,
+          20.0
+        ],
+        "trials": 100
+      },
+      "B": {
+        "spacings_m": [
+          0.3,
+          0.5,
+          1.0
+        ],
+        "snr_db": [
+          10.0
+        ],
+        "trials": 50
+      },
+      "euclidean_tolerance_m": 1e-09
+    },
+    "e4": {
+      "layout": "S2",
+      "L_list": [
+        10,
+        16,
+        32,
+        64,
+        128
+      ],
+      "A": {
+        "snr_db": [
+          -10.0,
+          -5.0,
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ],
+        "trials": 100
+      },
+      "B": {
+        "snr_db": [
+          0.0,
+          10.0,
+          20.0
+        ],
+        "trials": 50
+      },
+      "prefix_rule": "同一 128 clean 序列取前 L 个；不得复制快照凑数"
+    },
+    "search_grid": {
+      "kind": "cartesian_2d",
+      "grid_x": [
+        -2.2,
+        2.2,
+        0.05
+      ],
+      "grid_y": [
+        -3.2,
+        -0.55,
+        0.05
+      ],
+      "n_points": [
+        89,
+        54
+      ],
+      "fov_degrees": 180.0,
+      "unified_static_domain": true
+    },
+    "peak_rule": {
+      "window": 3,
+      "strict": false,
+      "include_center": true,
+      "boundary": "edge",
+      "plateau_connectivity": 8,
+      "plateau_representative": "plateau_max",
+      "plateau_tie_break": "min_row_then_col",
+      "threshold_mode": "linear_relative_to_global_finite_max",
+      "threshold_rel": 0.3,
+      "nms_min_dist_m": 0.1,
+      "nms_accept_rule": "dist >= min_dist_m",
+      "count_cap": "K",
+      "allow_fewer_than_K": true,
+      "frozen_implementation": "vendor/knownk_eval/peaks.py::nms_peaks",
+      "note": "沿用冻结规则；不得为不同条件调阈值。"
+    },
+    "metrics": {
+      "rmse_matching": "无门限最大基数最小平方一对一（位置/距离/方位共用配对）",
+      "rmse_pooling": "跨 trial 汇 SSE 与配对数后开方（不平均各次 RMSE）",
+      "dr_gate_m": 0.3,
+      "dr_rule": "先最大 TP 再最小总距离；FN=真值数-TP，FP=预测数-TP",
+      "pairs_naming": "pairs/n_truth 只能称配对覆盖率，不叫 DR",
+      "success_rule": "预测数=K 且所有目标在 0.30 m 内一对一命中",
+      "e2_resolution_gate_m": "min(0.10, d/3)",
+      "e2_success_rule": "输出恰好 2 点且存在一对一匹配使两点误差均 <= min(0.10,d/3)",
+      "ci": {
+        "success": "Wilson 95%",
+        "rmse": "固定 seed trial 整组 bootstrap 2000 次"
+      },
+      "sd": "每条件 trial 级 RMSE 样本 SD（ddof=1）与有效 trial 数"
+    },
+    "noise": {
+      "model": "complex_gaussian_same_variance_half_variance_each_part",
+      "reference": "背景处理后、FFT 前的 30-tap 复数 CIR",
+      "formula": "Ps = mean(|s|^2) over L x 4 x 30; Pn = Ps*10^(-SNR/10); n = sqrt(Pn/2)*(u+jv)",
+      "per_L_scaling": "不同 L 以各自实际 clean 前缀功率定标",
+      "not_rf_snr": true,
+      "zero_signal_policy": "Ps = 0 或非有限 -> 标 failed，不静默加噪声底",
+      "noise_draw": "每 clean_id/trial 先抽 [128,4,30] 标准噪声，改变 L 取前缀，改变 SNR 只缩放",
+      "independence_note": "同 trial 跨参数是配对噪声试验，不能声称跨条件独立"
+    },
+    "seed": {
+      "scheme": "SHA256(canonical_json(payload)) 前 8 字节无符号大端整数",
+      "salt": "jsf_sim_20260929_v1",
+      "canonical_json": "sort_keys=True, separators=(',',':'), UTF-8",
+      "clean_payload": "{salt, kind:'clean', physical_id}（不含 SNR/L/trial）",
+      "noise_payload": "{salt, kind:'noise', physical_id, trial}（不含 SNR/L/method）",
+      "no_builtin_hash": true,
+      "order_independent": true
+    },
+    "fdtd_layer_b": {
+      "geometry": "2D xy；金属圆柱；全部目标同时置于同一次求解几何",
+      "scatterer_radius_m": 0.056301167743389426,
+      "scatterer_radius_rule": "1.5*c/fc",
+      "micro_motion": {
+        "sigma_m": 0.002,
+        "radius_m": 0.01,
+        "model": "有界随机游走，首状态为标称中心，逐状态逐坐标 SD=0.002 m，半径限制 0.01 m"
+      },
+      "background_mode": "empty_field",
+      "meep": {
+        "resolution_px_per_m": 350.0,
+        "run_time_meep": 20.0,
+        "pml_thickness_lambda": 2.0,
+        "courant": 0.5
+      },
+      "no_independent_sum": "不得把独立目标回波叠加代替多目标 FDTD"
+    },
+    "q4": {
+      "targets_xy_m": {
+        "G-370": [
+          [
+            -0.643,
+            -0.766
+          ]
+        ],
+        "G-380": [
+          [
+            -1.286,
+            -1.532
+          ]
+        ],
+        "G-410": [
+          [
+            0.0,
+            -1.0
+          ]
+        ],
+        "G-420": [
+          [
+            0.0,
+            -2.0
+          ]
+        ],
+        "G-430": [
+          [
+            0.0,
+            -3.0
+          ]
+        ],
+        "G-450": [
+          [
+            0.643,
+            -0.766
+          ]
+        ],
+        "G-460": [
+          [
+            1.286,
+            -1.532
+          ]
+        ],
+        "C2-1": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ],
+        "C2-3": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ]
+        ],
+        "C2-4": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ],
+        "C2-5": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ],
+        "C2-6": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ],
+        "C3-1": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ],
+        "C3-3": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            0.643,
+            -0.766
+          ]
+        ],
+        "C3-4": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      },
+      "precheck_configs": [
+        "G-420",
+        "C2-1",
+        "C3-1"
+      ],
+      "n_configs": 15,
+      "tx_positions_m": [
+        [
+          -0.019,
+          0.0,
+          0.0
+        ],
+        [
+          0.019,
+          0.0,
+          0.0
+        ]
+      ],
+      "rx_positions_m": [
+        [
+          -0.019,
+          0.0,
+          -0.02
+        ],
+        [
+          0.0,
+          0.0,
+          -0.02
+        ]
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "z_projection": "二维求解仅投影 xy；保留原 3D 坐标与投影差异记录；不得把 z=-0.02 当 y",
+      "states": {
+        "total": 160,
+        "burnin": 32,
+        "kept": 128
+      },
+      "background": {
+        "mode": "ema_continuous",
+        "alpha": 0.25,
+        "rule": "首状态参考=该状态；后续先 output=cur-ref，再 ref=.75*ref+.25*cur；32 状态预热后取 128 输出；不每窗重置"
+      },
+      "no_extra_white_noise": true,
+      "hw_windows": {
+        "total": 205,
+        "indoor": 103,
+        "outdoor": 102,
+        "source": "04_Q6/hardware/analysis_nofb_q2q3_20260927/per_window.csv 中 method=fb_on 且 in_205=True 的 window_id 冻结",
+        "not_214": true,
+        "not_120": true
+      },
+      "time_reference": {
+        "requirement": "显式保存 raw tap0 物理参考、crop 索引、CIR/CFR 剩余时移、导向时延参考、已应用系统延迟及其来源",
+        "alignment_test": "以无噪已知时延合成测试确认同一物理目标的处理链对齐",
+        "forbidden": "不允许根据测试目标误差反向拟合 2 ns/相位补偿",
+        "blocked_marker": "blocked_time_reference"
+      }
+    },
+    "cache_policy": {
+      "analytic": "带限修复 + 无平移站位 -> 旧 analytic clean 签名失配，必须重新生成",
+      "fdtd": "clean key 含精确真值/运动源/带宽版本/时间原点/背景/网格/时长/代码指纹；参数不同不得冒用旧结果",
+      "noise_clean_separate": true
+    },
+    "budget_upper_bound": {
+      "by_task": {
+        "E1_A": 9000,
+        "E1_B": 2250,
+        "E2_A": 7200,
+        "E2_B": 450,
+        "E4_A": 4500,
+        "E4_B": 750
+      },
+      "total": 24150,
+      "spec_table_total": 21900,
+      "e4_a_definition_conflict": {
+        "spec_table_value": 2250,
+        "spec_total_table_value": 21900,
+        "derived_from_section5": 4500,
+        "derived_total": 23400,
+        "resolution": "按 §5 显式定义（9 档 SNR）实现；差异上报，未擅自改条件。若主代理裁定应取 §10 表的 2250，需先修改 §5 的 SNR 列表并重生成协议。"
+      },
+      "note": "去重前、仅本文方法的算法评估次数上界；E4_A 按 §5 显式 9 档 SNR。"
+    },
+    "failure_policy": {
+      "keep_all_trials": true,
+      "algorithm_failure_kept": true,
+      "solver_failure_marked_blocked": true,
+      "no_threshold_tuning": true,
+      "no_scene_deletion": true,
+      "pause_conditions": [
+        "物理时间参考不清",
+        "数值不收敛",
+        "输入 hash 不符",
+        "指标复算不一致",
+        "缺必要硬件预测/谱",
+        "运行资源不足"
+      ]
+    }
+  },
+  "protocol_hash": "fe04f63487b42a350c51d55457792c4d4c4f523dcdcce2d09465a3e1bf63a301",
+  "self_check": {
+    "passed": true,
+    "checks": {
+      "no_offgrid_shift": true,
+      "methods_only_this_method": true,
+      "n_freq_bins_17": true,
+      "band_marker": true,
+      "q4_15_configs": true,
+      "q4_precheck_3": true,
+      "q4_205": true,
+      "budget_matches_section5_definition": true,
+      "e4_a_conflict_recorded": true,
+      "s1_s5_no_shift_matches_spec": true,
+      "grid_89x54": true
+    },
+    "failed": []
+  },
+  "effective_total_records": 24150,
+  "note": "Effective budget follows saved task lists and DECISIONS_20260929; old conflict annotation is retained verbatim."
+}

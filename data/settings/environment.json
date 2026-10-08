@@ -1,0 +1,26 @@
+{
+  "python": "3.12.11",
+  "interpreter": "/home/suma/miniconda3/envs/mp/bin/python",
+  "meep": "1.30.0",
+  "numpy": "2.3.0",
+  "scipy": "1.16.0",
+  "matplotlib": "3.10.3",
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "root": "/data1/zsy/paper_revision_sim_recovery_20260929",
+  "directories": {
+    "code": true,
+    "protocol": true,
+    "cache/analytic": true,
+    "cache/fdtd": true,
+    "runs": true,
+    "q4": true,
+    "figures": true,
+    "logs": true,
+    "handoff": true
+  },
+  "new_Meep_solves": 0
+}

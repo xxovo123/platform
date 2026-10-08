@@ -1,0 +1,28 @@
+{
+ "kind": "jsf-run-checks",
+ "methods_only_this_method": true,
+ "no_offgrid_shift": true,
+ "expected_method_runs": 4500,
+ "completed_rows": 4500,
+ "by_status": {
+  "ok": 4500
+ },
+ "blocked_cleans": [],
+ "analytic_band_oob_max": 1.4949886613929735e-32,
+ "analytic_band_oob_gate": 1e-12,
+ "analytic_band_gate_passed": true,
+ "n_samples": 5,
+ "sample_names": [
+  "E4_A_S2_snr+10_L010__cln_d93d933952ad__L010__trial0000.npz",
+  "E4_A_S2_snr+10_L016__cln_d93d933952ad__L016__trial0000.npz",
+  "E4_A_S2_snr+10_L032__cln_d93d933952ad__L032__trial0000.npz",
+  "E4_A_S2_snr+10_L064__cln_d93d933952ad__L064__trial0000.npz",
+  "E4_A_S2_snr+10_L128__cln_d93d933952ad__L128__trial0000.npz"
+ ],
+ "checks_passed": true,
+ "notes": [
+  "CSV/JSON 未定义用空值，禁止伪零。",
+  "所有 trial 保留在分母；失败/空输出不删行。",
+  "rmse_trial_m 为 null 表示该 trial 无配对（不是 0）。"
+ ]
+}

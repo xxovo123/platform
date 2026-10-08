@@ -1,0 +1,41 @@
+{
+ "task_id": "E2_A_radial_d750_snr+10",
+ "clean_id": "cln_700d11f95a06",
+ "scene": "E2",
+ "k": 2,
+ "snr_db": 10.0,
+ "trial": 0,
+ "L": 128,
+ "seed": 12328141856498117072,
+ "status": "ok",
+ "targets_xy_m": [
+  [
+   0.29627415941530705,
+   -1.3938603310456732
+  ],
+  [
+   0.45220792752862654,
+   -2.127471031596027
+  ]
+ ],
+ "prediction": [
+  [
+   0.3,
+   -1.4,
+   2.35651173263757
+  ]
+ ],
+ "n_predictions": 1,
+ "spectrum_available": true,
+ "grid_note": "grid_x/grid_y = 协议统一静态域 89x54；spectrum 在时保存",
+ "tags": [
+  "direction=radial",
+  "d_nominal_m=0.750",
+  "d_actual_m=0.750000"
+ ],
+ "layout": null,
+ "direction": "radial",
+ "d_nominal_m": 0.75,
+ "d_actual_m": 0.7499999999999996,
+ "note": "样例固定 trial=0、SNR=10 dB；不另挑 seed。"
+}

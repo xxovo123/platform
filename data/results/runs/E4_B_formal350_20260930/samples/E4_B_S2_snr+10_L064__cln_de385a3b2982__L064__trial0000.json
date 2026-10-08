@@ -1,0 +1,45 @@
+{
+ "task_id": "E4_B_S2_snr+10_L064",
+ "clean_id": "cln_de385a3b2982",
+ "scene": "E4",
+ "k": 2,
+ "snr_db": 10.0,
+ "trial": 0,
+ "L": 64,
+ "seed": 6496794769752191624,
+ "status": "ok",
+ "targets_xy_m": [
+  [
+   0.37424104347196685,
+   -1.7606656813208503
+  ],
+  [
+   -0.37424104347196685,
+   -1.7606656813208503
+  ]
+ ],
+ "prediction": [
+  [
+   -0.3,
+   -1.75,
+   0.1899755748465009
+  ],
+  [
+   0.35,
+   -1.75,
+   0.13933928851545327
+  ]
+ ],
+ "n_predictions": 2,
+ "spectrum_available": true,
+ "grid_note": "grid_x/grid_y = 协议统一静态域 89x54；spectrum 在时保存",
+ "tags": [
+  "layout=S2",
+  "L=64"
+ ],
+ "layout": "S2",
+ "direction": null,
+ "d_nominal_m": null,
+ "d_actual_m": null,
+ "note": "样例固定 trial=0、SNR=10 dB；不另挑 seed。"
+}

@@ -1,0 +1,27 @@
+{
+  "scene_id": "smoke_tiny_2target",
+  "description": "tiny smoke：只证明 API/链路/续跑/多目标同场；低分辨率小域，physical_validation=false",
+  "dimensions": 2,
+  "length_unit_m": 1.0,
+  "snapshots": 2,
+  "geometry": {
+    "mode": "1tx4rx_equivalent",
+    "tx_positions_m": [[0.0, 0.0, 0.0]],
+    "rx_positions_m": [[-0.038, 0.0, 0.0], [-0.019, 0.0, 0.0], [0.0, 0.0, 0.0], [0.019, 0.0, 0.0]],
+    "pairs": [[0, 0], [0, 1], [0, 2], [0, 3]],
+    "projection": {"mode": "xy_plane_drop_z", "dropped_axis": "z",
+      "note": "smoke 专用：Tx[0,0,0] + 4 接收点 x=[-0.038,-0.019,0,0.019], y=0；只作链路验证，不是历史复原"}
+  },
+  "targets": {
+    "material": "metal",
+    "radius_m": 0.056208,
+    "radius_note": "1.5*lambda_c",
+    "overlap_margin_m": 0.005,
+    "nominal_centers_m": [[-0.12, 0.30, 0.0], [0.12, 0.30, 0.0]],
+    "nominal_spec": "tiny 域内双目标，间距 0.24 m；仅用于验证同一 geometry 内多目标同时存在",
+    "micro_motion": {"model": "bounded_random_walk_v1", "seed": 20260926, "sigma_m": 0.005, "radius_m": 0.01, "L": 2}
+  },
+  "meep": {"resolution_px_per_m": 300, "run_time_meep": 12.0, "courant": 0.5, "pml_thickness_lambda": 2.0},
+  "domain": {"margin_m": 0.15},
+  "_limitations": ["低分辨率小域：不构成物理验证", "run_time 只保证 32 tap 可用，不代表收敛"]
+}

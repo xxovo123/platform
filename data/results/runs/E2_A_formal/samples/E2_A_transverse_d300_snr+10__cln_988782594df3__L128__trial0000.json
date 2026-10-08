@@ -1,0 +1,46 @@
+{
+ "task_id": "E2_A_transverse_d300_snr+10",
+ "clean_id": "cln_988782594df3",
+ "scene": "E2",
+ "k": 2,
+ "snr_db": 10.0,
+ "trial": 0,
+ "L": 128,
+ "seed": 8818742098375606591,
+ "status": "ok",
+ "targets_xy_m": [
+  [
+   0.5196614716607479,
+   -1.7233548545994193
+  ],
+  [
+   0.2262171914406062,
+   -1.7857283618447473
+  ]
+ ],
+ "prediction": [
+  [
+   0.4,
+   -1.75,
+   0.2924114938025913
+  ],
+  [
+   0.55,
+   -1.7,
+   0.2907500876460537
+  ]
+ ],
+ "n_predictions": 2,
+ "spectrum_available": true,
+ "grid_note": "grid_x/grid_y = 协议统一静态域 89x54；spectrum 在时保存",
+ "tags": [
+  "direction=transverse",
+  "d_nominal_m=0.300",
+  "d_actual_m=0.300000"
+ ],
+ "layout": null,
+ "direction": "transverse",
+ "d_nominal_m": 0.3,
+ "d_actual_m": 0.3000000000000001,
+ "note": "样例固定 trial=0、SNR=10 dB；不另挑 seed。"
+}

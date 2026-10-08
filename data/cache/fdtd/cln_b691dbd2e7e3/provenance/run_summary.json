@@ -1,0 +1,106 @@
+{
+  "background_mode": "empty_field",
+  "background_note": "empty_field：无目标空场差分（线性、精确散射场）；与硬件 EMA 背景处理不等同。",
+  "cache_bytes": 72647655,
+  "cache_dir": "/data1/zsy/paper_revision_sim_recovery_20260929/cache/fdtd/_solver_cache/dcb8b80883c24fab944792cc9cf08866ef56943ba42858b4592d8556109b1536",
+  "cache_hits": {
+    "background": 1,
+    "state": 128
+  },
+  "cache_key": "dcb8b80883c24fab944792cc9cf08866ef56943ba42858b4592d8556109b1536",
+  "chain_info_summary": {
+    "aa_cutoff_hz": 400000000.0,
+    "aa_pad_min_factor": 2.0,
+    "background_mode": "empty_field",
+    "cir_lag_time0": "tap k 相对源起始的时延 = k*Ts（zero lag 在 tap 0）：数据与参考共用同一 RF 起点，公共偏移在相关中抵消",
+    "ema_alpha": null,
+    "fs_in_hz": 209854720600.0,
+    "keep_taps": 64,
+    "mf_lag_samples": 66,
+    "mf_ref_len_samples": 67,
+    "n_full_rate": 14000,
+    "n_out": 67,
+    "output_grid_start_absolute_s": 4.765201359973601e-12,
+    "reference_closed_form_max_abs_err": 1842953.6326014253,
+    "rf_absolute_start_s": 4.765201359973601e-12
+  },
+  "cost_plan": {
+    "basis": "n_solves = (n_background + n_states) * n_tx；dt_est = Courant/resolution（显式 Courant，Meep 默认 0.5）",
+    "cell_updates_est": 1871212858515.0,
+    "courant": 0.5,
+    "dt_meep_est": 0.0014285714285714286,
+    "kind": "estimate_only",
+    "n_background_solves_per_tx": 1,
+    "n_cells": 1036035,
+    "n_solves": 129,
+    "n_steps_est": 14001,
+    "n_target_states": 128,
+    "n_tx": 1,
+    "note": "真实 dt/步数以 sim.fields.dt 为准；本表仅为预算估计，不是实测性能"
+  },
+  "files": {
+    "clean_cir.npz": {
+      "bytes": 269238,
+      "sha256": "0c92b04125b9b8cdc91b3a17b65b0819f9848a2bba2093d1a7be3b7b1a877631"
+    },
+    "protocol.json": {
+      "bytes": 2030,
+      "sha256": "4831cf732b8d63326e5997907f26d761c151c74aeb9ab8076bfcf54fc92faced"
+    },
+    "provenance/chain_info.json": {
+      "bytes": 579,
+      "sha256": "2625c396ca4982c476736d5b0d0859c30f40e0cbf4afc78ca82403758285191f"
+    },
+    "provenance/delay_deviation.json": {
+      "bytes": 2410,
+      "sha256": "0fbb64d1a805f6aa2605181ae8ca78437014d808f6e94ea0fa021cecf147d258"
+    },
+    "provenance/diagnostics.npz": {
+      "bytes": 18512,
+      "sha256": "3d83763fefe4a686df966068cd91aa4436280114effd9829790d0846c40fd5b1"
+    },
+    "provenance/geometry_rules.json": {
+      "bytes": 477,
+      "sha256": "5be61c9cd7f40ebd5d4f09be5836d15680e2f8e5344a6ca11ff3f4f94c31fdd1"
+    },
+    "provenance/mf_reference.npz": {
+      "bytes": 1344,
+      "sha256": "5242599674e787dbbdf7d53d106b3bd825cfd6ef88d5339c54a958df25efe023"
+    },
+    "provenance/trajectory.npz": {
+      "bytes": 41770,
+      "sha256": "7876008c7b22ceed54400a86f3abf352f1b4a0af435a94124b52158a1ff04afa"
+    },
+    "provenance/trajectory_spec.json": {
+      "bytes": 696,
+      "sha256": "6d0489393619c601773acbf5ab50cb157e0e0d8fc24a5ddcfa443cd5d66757ef"
+    },
+    "truth.json": {
+      "bytes": 20738,
+      "sha256": "7ee8e0876bab2ff48a149b7c2246434da5e421bee5e1432f65d9530e88688688"
+    }
+  },
+  "generated_at": "2026-09-30T18:54:52+08:00",
+  "geometry_rules": {
+    "min_inner_slack_m": 0.7499999999999999,
+    "min_nominal_separation_m": 0.5000000000000001,
+    "min_state_separation_m": 0.48903900387644766,
+    "rule": {
+      "overlap_margin_m": 0.005,
+      "required_min_separation_m": 0.13760233548677886,
+      "rule": "min_nominal_separation >= 2*r_target + 2*r_traj + overlap_margin（逐状态成立）",
+      "target_radius_m": 0.056301167743389426,
+      "trajectory_radius_max_m": 0.01
+    },
+    "worst_case_separation_m": 0.4800000000000001
+  },
+  "same_geometry_multi_target": true,
+  "solves_actual_this_run": 0,
+  "solves_planned": 129,
+  "state_count": {
+    "burnin_states": 0,
+    "snapshots": 128,
+    "states_total": 128
+  },
+  "workers": 1
+}

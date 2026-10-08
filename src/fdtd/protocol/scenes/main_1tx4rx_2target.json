@@ -1,0 +1,27 @@
+{
+  "scene_id": "main_1tx4rx_2target",
+  "description": "主档 1Tx4Rx 受控双目标（等效受控主仿真）；新几何，不声称历史复原",
+  "dimensions": 2,
+  "length_unit_m": 1.0,
+  "snapshots": 128,
+  "geometry": {
+    "mode": "1tx4rx_equivalent",
+    "tx_positions_m": [[0.0, 0.0, 0.0]],
+    "rx_positions_m": [[-0.038, 0.0, 0.0], [-0.019, 0.0, 0.0], [0.0, 0.0, 0.0], [0.019, 0.0, 0.0]],
+    "pairs": [[0, 0], [0, 1], [0, 2], [0, 3]],
+    "projection": {"mode": "xy_plane_drop_z", "dropped_axis": "z",
+      "note": "四通道主档：Tx[0,0,0]，4 个接收点 x=[-0.038,-0.019,0,0.019]、y=0。新几何，不声称历史复原（历史 2Tx4Rx 见 q4 档）"}
+  },
+  "targets": {
+    "material": "metal",
+    "radius_m": 0.056208,
+    "radius_note": "1.5*lambda_c，lambda_c = c/fc = 0.0375 m",
+    "overlap_margin_m": 0.005,
+    "nominal_centers_m": [[-0.37424, 1.76067, 0.0], [0.37424, 1.76067, 0.0]],
+    "nominal_spec": "极坐标 (r=1.8 m, theta=+/-12 deg) -> xy: p=(r sin theta, r cos theta)，z=0",
+    "micro_motion": {"model": "bounded_random_walk_v1", "seed": 20260926, "sigma_m": 0.005, "radius_m": 0.03, "L": 128}
+  },
+  "meep": {"resolution_px_per_m": 250, "run_time_meep": 20.0, "courant": 0.5, "pml_thickness_lambda": 2.0},
+  "domain": {"margin_m": 0.5},
+  "_scenario_ref": "大修执行_20260923/仿真实验完整方案_20260926.md E1 S2 布局（等距双人横向）"
+}

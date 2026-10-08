@@ -1,0 +1,672 @@
+{
+ "kind": "jsf-contract-tests",
+ "n_checks": 64,
+ "n_passed": 64,
+ "n_failed": 0,
+ "passed": true,
+ "results": [
+  {
+   "name": "protocol.self_check_passed",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "protocol.frequency_indices_frozen",
+   "passed": true,
+   "detail": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "protocol.geometry_1tx4rx",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "protocol.q4_geometry",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "protocol.peak_rule_frozen",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "protocol.snr_scan_9",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "protocol.e4_a_conflict_recorded",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "coords.polar_roundtrip",
+   "passed": true,
+   "detail": [
+    1.8000000000000003,
+    12.000000000000002
+   ]
+  },
+  {
+   "name": "coords.polar_to_xy_formula",
+   "passed": true,
+   "detail": [
+    0.37424104347196685,
+    -1.7606656813208503
+   ]
+  },
+  {
+   "name": "coords.S1_no_shift_applied",
+   "passed": true,
+   "detail": [
+    [
+     0.37424104347196685,
+     -1.7606656813208503
+    ]
+   ]
+  },
+  {
+   "name": "coords.no_shift_matches_spec",
+   "passed": true,
+   "detail": [
+    [
+     0.37424104347196685,
+     -1.7606656813208503
+    ]
+   ]
+  },
+  {
+   "name": "coords.grid_89x54",
+   "passed": true,
+   "detail": [
+    89,
+    54
+   ]
+  },
+  {
+   "name": "freq.in_band_count_17",
+   "passed": true,
+   "detail": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "freq.indices_ascending_raw",
+   "passed": true,
+   "detail": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "name": "freq.values_match_axis",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "freq.monotonic_break_present",
+   "passed": true,
+   "detail": [
+    7.9872,
+    8.01845,
+    8.0497,
+    8.08095,
+    8.1122,
+    8.14345,
+    8.1747,
+    8.20595,
+    8.2372,
+    7.7372,
+    7.76845,
+    7.7997,
+    7.83095,
+    7.8622,
+    7.89345,
+    7.9247,
+    7.95595
+   ]
+  },
+  {
+   "name": "seed.clean_deterministic",
+   "passed": true,
+   "detail": [
+    1857971520754187007,
+    14029067151596238493
+   ]
+  },
+  {
+   "name": "seed.noise_trial_dependent",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "seed.noise_independent_of_snr_L",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "seed.no_builtin_hash",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "seed.order_independent",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "seed.uses_sha256_not_builtin",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "band.out_of_band_before_crop < 1e-12",
+   "passed": true,
+   "detail": 1.5866584882660012e-32
+  },
+  {
+   "name": "band.diagnostic_full_band_kept",
+   "passed": true,
+   "detail": 0.46875
+  },
+  {
+   "name": "band.after_crop_leak_reported",
+   "passed": true,
+   "detail": 0.0012630386597297992
+  },
+  {
+   "name": "shape.raw_L_C_32",
+   "passed": true,
+   "detail": [
+    16,
+    4,
+    32
+   ]
+  },
+  {
+   "name": "shape.cropped_30",
+   "passed": true,
+   "detail": [
+    16,
+    4,
+    30
+   ]
+  },
+  {
+   "name": "shape.X_L_68",
+   "passed": true,
+   "detail": [
+    16,
+    68
+   ]
+  },
+  {
+   "name": "delay.roundtrip_peak_tap",
+   "passed": true,
+   "detail": [
+    13,
+    13.34256380792608
+   ]
+  },
+  {
+   "name": "delay.expected_tap_value",
+   "passed": true,
+   "detail": 13.34256380792608
+  },
+  {
+   "name": "metrics.empty_output_kept_in_denominator",
+   "passed": true,
+   "detail": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "metrics.empty_rmse_none_in_pool",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "metrics.failed_treated_empty",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "metrics.large_error_kept_in_rmse",
+   "passed": true,
+   "detail": 5.440000000000001
+  },
+  {
+   "name": "metrics.large_error_not_in_dr",
+   "passed": true,
+   "detail": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "metrics.angle_wrap_lt_180",
+   "passed": true,
+   "detail": 1.1458773953669663
+  },
+  {
+   "name": "metrics.wrap_deg_bounds",
+   "passed": true,
+   "detail": [
+    180.0,
+    -170.0
+   ]
+  },
+  {
+   "name": "metrics.missed_target_kept",
+   "passed": true,
+   "detail": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "name": "metrics.spurious_counted",
+   "passed": true,
+   "detail": 1
+  },
+  {
+   "name": "metrics.all_empty_pooled_none",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "pooling.uses_sse_over_pairs",
+   "passed": true,
+   "detail": 1.4159802258506295
+  },
+  {
+   "name": "pooling.differs_from_mean_of_rmse",
+   "passed": true,
+   "detail": [
+    1.4159802258506295,
+    1.05
+   ]
+  },
+  {
+   "name": "pooling.trial_sd_reported",
+   "passed": true,
+   "detail": 1.3435028842544403
+  },
+  {
+   "name": "pooling.bootstrap_2000",
+   "passed": true,
+   "detail": [
+    2000,
+    0.1
+   ]
+  },
+  {
+   "name": "pooling.weighted_by_pair_count",
+   "passed": true,
+   "detail": 0.040824829046386304
+  },
+  {
+   "name": "pooling.counts_reported",
+   "passed": true,
+   "detail": [
+    12
+   ]
+  },
+  {
+   "name": "dr.matches_frozen_knownk_rule",
+   "passed": true,
+   "detail": [
+    {
+     "truth": [
+      [
+       0.0,
+       -2.0
+      ]
+     ],
+     "pred": [
+      [
+       0.0,
+       -2.05
+      ],
+      [
+       1.0,
+       -1.0
+      ]
+     ],
+     "mine": [
+      [
+       0,
+       0
+      ]
+     ],
+     "frozen": [
+      [
+       0,
+       0
+      ]
+     ],
+     "same": true
+    },
+    {
+     "truth": [
+      [
+       0.0,
+       -2.0
+      ],
+      [
+       1.0,
+       -2.0
+      ]
+     ],
+     "pred": [
+      [
+       0.02,
+       -2.0
+      ],
+      [
+       0.99,
+       -2.03
+      ],
+      [
+       1.5,
+       -1.5
+      ]
+     ],
+     "mine": [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     "frozen": [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     "same": true
+    },
+    {
+     "truth": [
+      [
+       0.0,
+       -2.0
+      ],
+      [
+       1.0,
+       -2.0
+      ]
+     ],
+     "pred": [
+      [
+       0.29,
+       -2.0
+      ]
+     ],
+     "mine": [
+      [
+       0,
+       0
+      ]
+     ],
+     "frozen": [
+      [
+       0,
+       0
+      ]
+     ],
+     "same": true
+    },
+    {
+     "truth": [
+      [
+       0.0,
+       -2.0
+      ]
+     ],
+     "pred": [],
+     "mine": [],
+     "frozen": [],
+     "same": true
+    },
+    {
+     "truth": [
+      [
+       0.0,
+       -2.0
+      ],
+      [
+       0.5,
+       -2.0
+      ]
+     ],
+     "pred": [
+      [
+       0.74,
+       -2.0
+      ],
+      [
+       0.26,
+       -2.0
+      ]
+     ],
+     "mine": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "frozen": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     "same": true
+    }
+   ]
+  },
+  {
+   "name": "e2.euclidean_exact_all",
+   "passed": true,
+   "detail": [
+    [
+     "transverse",
+     0.15,
+     0.15000000000000008
+    ],
+    [
+     "radial",
+     0.15,
+     0.14999999999999983
+    ],
+    [
+     "oblique",
+     0.15,
+     0.15000000000000005
+    ]
+   ]
+  },
+  {
+   "name": "e2.transverse_same_r",
+   "passed": true,
+   "detail": [
+    1.8,
+    1.8000000000000003
+   ]
+  },
+  {
+   "name": "e2.radial_same_theta",
+   "passed": true,
+   "detail": [
+    [
+     1.7,
+     12.0
+    ],
+    [
+     1.9000000000000001,
+     12.0
+    ]
+   ]
+  },
+  {
+   "name": "e2.transverse_symmetric_about_theta0",
+   "passed": true,
+   "detail": [
+    14.388015463268777,
+    9.611984536731223
+   ]
+  },
+  {
+   "name": "e4.single_clean_prefix",
+   "passed": true,
+   "detail": 1
+  },
+  {
+   "name": "e4.L_list",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "e4.same_clean_as_S2",
+   "passed": true,
+   "detail": "cln_d93d933952ad"
+  },
+  {
+   "name": "e4.noise_prefix_deterministic",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "e4.noise_drawn_at_128",
+   "passed": true,
+   "detail": [
+    128,
+    4,
+    30
+   ]
+  },
+  {
+   "name": "e4.noise_trial_changes",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "e4.clean_drawn_once_shape",
+   "passed": true,
+   "detail": [
+    128,
+    4,
+    32
+   ]
+  },
+  {
+   "name": "e4.L_prefix_rows_identical",
+   "passed": true,
+   "detail": [
+    10,
+    128
+   ]
+  },
+  {
+   "name": "e4.sigma_scales_with_L_each",
+   "passed": true,
+   "detail": [
+    0.042727539650870006,
+    0.04220482282547195
+   ]
+  },
+  {
+   "name": "runner.input_hash_trial_dependent",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "runner.smoke_is_nonformal",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "runner.smoke_formal_false",
+   "passed": true,
+   "detail": [
+    false,
+    "smoke"
+   ]
+  },
+  {
+   "name": "runner.smoke_two_trials",
+   "passed": true,
+   "detail": 2
+  }
+ ]
+}

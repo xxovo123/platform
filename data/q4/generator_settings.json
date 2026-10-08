@@ -1,0 +1,2852 @@
+{
+  "C2-1": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C2-3": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C2-4": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C2-5": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C2-6": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C3-1": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C3-3": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "C3-4": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-370": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-380": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-410": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-420": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-430": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-450": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  },
+  "G-460": {
+    "pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "tx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ]
+    ],
+    "rx_positions": [
+      [
+        -0.019,
+        0.0,
+        0.0
+      ],
+      [
+        0.019,
+        0.0,
+        0.0
+      ],
+      [
+        -0.019,
+        0.0,
+        -0.02
+      ],
+      [
+        0.0,
+        0.0,
+        -0.02
+      ]
+    ],
+    "frequencies_hz": [
+      7987200000.0,
+      8018450000.0,
+      8049700000.0,
+      8080950000.0,
+      8112200000.0,
+      8143450000.0,
+      8174700000.0,
+      8205950000.0,
+      8237200000.0,
+      7737200000.0,
+      7768450000.0,
+      7799700000.0,
+      7830950000.0,
+      7862200000.0,
+      7893450000.0,
+      7924700000.0,
+      7955950000.0
+    ],
+    "config": {
+      "fft_length": 32,
+      "tap_interval_si": 1e-09,
+      "center_freq_si": 7987200000.0,
+      "bandwidth_si": 500000000.0,
+      "epsilon_r_background": 1.0,
+      "system_delay_si": 0.0,
+      "diag_load_factor": 1e-05,
+      "is_forward_backward": true,
+      "fov_degrees": 180.0,
+      "cir_window": [
+        2,
+        32
+      ],
+      "freq_range_si": [
+        7737200000.0,
+        8237200000.0
+      ],
+      "deg_corr": null,
+      "ant_calib_phase": [
+        -0.0,
+        -0.49072375380773364,
+        1.1062868947533422,
+        1.5748289100316295,
+        -0.5876511374160144,
+        -1.9895222818981357,
+        0.12190304520431955,
+        0.5787126081848506
+      ],
+      "ant_calib_applied_in_X": "data side exp(-1j*phi)\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u540c\u4e00\u9009\u62e9\uff0cFB \u4e0b\u4e25\u683c\u6b63\u786e\uff09",
+      "propagation_speed_m_s": 299792458.0,
+      "distance_ring_m": [
+        0.29979245800000004,
+        4.796679328000001
+      ],
+      "tap_handling": "X \u7531 cropped tap\uff08arr[:,:,cir_offset:ft_len]\uff09\u7ecf fft(n=fft_length) \u6784\u9020\uff1bcir_window \u4ec5\u7528\u4e8e\u8ddd\u79bb\u73af\u63a9\u819c\uff08\u5df2\u5b9e\u6d4b\u4e0e\u5386\u53f2\u7f13\u5b58\u9010\u683c\u4e00\u81f4\uff09",
+      "flip_lr": false
+    },
+    "search": {
+      "kind": "cartesian_2d",
+      "grid_spec_source": [
+        -2.2,
+        2.2,
+        89,
+        -4.2,
+        -0.55,
+        74
+      ],
+      "resolution_m": 0.04999999999999982,
+      "n_grid_points": 6586,
+      "half_plane": "y < 0\uff08\u4e0e\u786c\u4ef6\u5b9e\u73b0\u4e00\u81f4\uff09",
+      "one_dimensional_budget": {
+        "two_rx_baseline": {
+          "tx_idx": 0,
+          "rx_idx_list": [
+            2,
+            3
+          ],
+          "baseline_m": 0.019,
+          "max_tdoa_s": 6.337717808764889e-11
+        },
+        "range_grid_5cm_two_way_tau_s": 3.3356409519815207e-10,
+        "angle_granularity_budget_deg_at_r1m": 2.862405226111748,
+        "differential_tau_budget_s": 3.1688589043824445e-12,
+        "suggested_one_d_tau_step_s": 3.1688589043824445e-12,
+        "distance_ring_m": [
+          0.29979245800000004,
+          4.796679328000001
+        ],
+        "round_trip_tau_span_s": [
+          2e-09,
+          3.2e-08
+        ],
+        "note": "\u672c\u9884\u7b97\u53ea\u7528\u4e8e**\u62ab\u9732**\u539f\u751f\u4e00\u7ef4\u7f51\u683c\u7684\u7c92\u5ea6\u4e0e\u4ee3\u4ef7\uff1b\u4e0d\u8981\u6c42\u6240\u6709\u65b9\u6cd5\u4f7f\u7528\u540c\u4e00\u7f51\u683c\uff0c\u4e5f\u4e0d\u636e\u6b64\u5ba3\u5e03\u7cbe\u5ea6\u5dee\u5f02\uff1b\u65b9\u6cd5\u987b\u6309\u539f\u751f\u7ed3\u6784\u641c\u7d22\u5e76\u5728 diagnostics \u7533\u62a5\u5b9e\u9645\u70b9\u6570\u3002"
+      },
+      "fairness_note": "\u5019\u9009\u57df\u4e0e\u5206\u8fa8\u7387\u9884\u7b97\u7edf\u4e00\u62ab\u9732\uff1b\u539f\u751f\u5206\u6b65/\u8fde\u7eed\u65b9\u6cd5\u6309\u5404\u81ea\u7ed3\u6784\u641c\u7d22\uff0c\u4e0d\u5f97\u58f0\u79f0\u6240\u6709\u65b9\u6cd5\u5728\u540c\u4e00 Cartesian \u70b9\u96c6\u4e0a\u9010\u70b9\u6bd4\u8f83\u3002"
+    },
+    "model": {
+      "geometry": "exact two-way spherical range per channel: tau = (||p - tx|| + ||p - rx||) / v_prop + system_delay",
+      "response_assumption": {
+        "mode": "S_equals_1_pure_phase",
+        "vector": null,
+        "is_calibrated_response": false,
+        "note": "\u6240\u6709\u65b9\u6cd5\u5171\u7528\u7684\u7eaf\u76f8\u4f4d\uff08S=1\uff09\u5047\u8bbe\uff1b**\u4e0d\u662f**\u5df2\u6821\u51c6\u63a5\u6536\u54cd\u5e94\uff0c**\u4e0d\u662f**\u5b8c\u5168\u539f\u8bba\u6587\u590d\u73b0\uff1b\u8bef\u5dee\u540c\u65f6\u53d7\u8be5\u6a21\u578b\u9002\u914d\u5f71\u54cd\u3002\u82e5\u65b9\u6cd5\u81ea\u5e26\u5df2\u77e5\u975e\u5e73\u5766 S/\u767d\u5316\uff0c\u987b\u5728 diagnostics \u91cc\u58f0\u660e\u5e76\u4fdd\u6301\u6570\u636e\u4e0e\u5bfc\u5411\u4e00\u81f4\u3002"
+      },
+      "channel_calibration": {
+        "ant_calib_en": true,
+        "applied": "X \u5185\u5df2\u6309\u6570\u636e\u4fa7 exp(-1j*phi) \u6821\u51c6",
+        "deg_corr": null
+      },
+      "fb_note": "FB\uff08\u524d\u540e\u5411\u5e73\u5747\uff09\u662f**\u65b9\u6cd5\u81ea\u8eab\u7684\u5904\u7406\u9009\u62e9**\uff1bcase \u53ea\u7ed9\u672a\u505a FB \u7684 X\u3002\u5404\u65b9\u6cd5\u6309\u539f\u6587\u539f\u751f\u7ed3\u6784\u51b3\u5b9a\u662f\u5426 FB\uff1b\u82e5\u4f7f\u7528 FB\uff0c\u987b\u8bf4\u660e J \u4e0e\u8be5\u65b9\u6cd5\u81ea\u8eab\u7684\u7279\u5f81\u5e8f\u4e00\u81f4\uff08X \u7279\u5f81\u5e8f = \u9891\u7387\u4f18\u5148\u3001\u901a\u9053\u5176\u6b21\uff0cJ = \u6cbf\u7279\u5f81\u5e8f\u7ffb\u8f6c\uff09\uff0c\u4e14 L \u4ecd\u8868\u793a\u539f\u59cb\u6162\u65f6\u95f4\u5feb\u7167\u6570\u3002",
+      "frequency_grid": {
+        "n": 17,
+        "frequencies_hz": [
+          7987200000.0,
+          8018450000.0,
+          8049700000.0,
+          8080950000.0,
+          8112200000.0,
+          8143450000.0,
+          8174700000.0,
+          8205950000.0,
+          8237200000.0,
+          7737200000.0,
+          7768450000.0,
+          7799700000.0,
+          7830950000.0,
+          7862200000.0,
+          7893450000.0,
+          7924700000.0,
+          7955950000.0
+        ],
+        "uniform": false,
+        "spacing_hz": 31250000.0,
+        "axis": "np.fft.fftfreq(fft_length, tap_interval_si) + center_freq_si \u7684\u5e26\u5185\u5b50\u96c6"
+      }
+    }
+  }
+}

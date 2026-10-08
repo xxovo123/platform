@@ -1,0 +1,72 @@
+{
+  "kind": "q4-status",
+  "schema_version": 1,
+  "complete": true,
+  "scope": "脚本 + fixture 验证；未运行正式 15 FDTD、未跑正式实验；本轮不含任何凭据",
+  "complete_means": "本子包接口/脚本/自测就绪，可直接部署调用；不代表已产出正式 Q4 结果",
+  "disclaimer": "仅验证脚本可行与接口自洽；未正式运行。所有数值均来自 synthetic/fixture 或冻结硬件既有产物，不得作为论文结果。真实 runner NPZ smoke 亦为出图可行性验证，非正式结论。",
+  "tests": {
+    "metrics": 31,
+    "q4": 27,
+    "figures": 19,
+    "all_green": true
+  },
+  "exit_codes": {
+    "batch-plan": "0（只规划）",
+    "batch-run": "0 仅当 completion_status=complete；有 missing -> 1",
+    "eval-clean": "0 当链路执行（五法 failed 也是合法算法结果）；clean 数据缺失 -> 2"
+  },
+  "verification": {
+    "runner": "大修执行_20260923/06_仿真实验_20260926/q4/verification/run_verification.py",
+    "evidence_json": "大修执行_20260923/06_仿真实验_20260926/q4/verification/verification.json",
+    "e2e_report": "大修执行_20260923/06_仿真实验_20260926/q4/verification/E2E_REPORT.json",
+    "e2e_maker": "大修执行_20260923/06_仿真实验_20260926/q4/verification/make_e2e_report.py",
+    "logs_dir": "大修执行_20260923/06_仿真实验_20260926/q4/verification/logs",
+    "figures_smoke": "大修执行_20260923/06_仿真实验_20260926/figures/verification/smoke.json",
+    "figures_real_runner": "大修执行_20260923/06_仿真实验_20260926/figures/verification/real_runner.json",
+    "note": "真跑三套测试并捕获 stdout；E2E_REPORT 含 commands/exit_codes/counts/sha256 指纹；小输出保留，不再删证据目录"
+  },
+  "cli": {
+    "inventory": "q4_cli.py inventory --out q4/manifest",
+    "export_cache": "q4_cli.py export --source cache --out q4/out/hw_cir",
+    "export_bin": "q4_cli.py export --source bin --out q4/out/hw_cir_raw --recordings <rid>",
+    "batch_plan": "q4_cli.py batch-plan --sim-dir <sim_dir> --out q4/out/batch_plan.json",
+    "batch_run": "q4_cli.py batch-run --sim-dir <sim_dir> --out q4/out/batch",
+    "scenes_export": "q4_cli.py scenes-export --out q4/out/scenes",
+    "generate_plan_only": "q4_cli.py generate --scene-dir q4/out/scenes --out q4/out/generate",
+    "generate_run": "q4_cli.py generate --scene-dir q4/out/scenes --out <out> --run --evidence-dir <conv> (需 convergence passed)",
+    "eval_plan": "q4_cli.py eval-plan --out q4/out/eval_plan.json",
+    "eval_clean": "q4_cli.py eval-clean --clean-dir <clean_dir> --geometry-id <gid> --out <sim_dir>/<gid>",
+    "compare_one": "q4_cli.py compare --sim-cir ... --hw-cir ... --sim-pred ... --hw-pred ... --sim-truth ... --hw-truth ...",
+    "demo": "q4_cli.py demo"
+  },
+  "paths": {
+    "metrics": "大修执行_20260923/06_仿真实验_20260926/metrics",
+    "q4": "大修执行_20260923/06_仿真实验_20260926/q4",
+    "figures": "大修执行_20260923/06_仿真实验_20260926/figures",
+    "inventory": "大修执行_20260923/06_仿真实验_20260926/q4/manifest/q4_inventory.json",
+    "fdtd_geometries": "大修执行_20260923/06_仿真实验_20260926/q4/manifest/q4_fdtd_geometries.json",
+    "hw_cir_package": "大修执行_20260923/06_仿真实验_20260926/q4/out/hw_cir",
+    "hw_cir_bin_replay": "大修执行_20260923/06_仿真实验_20260926/q4/out/hw_cir_raw",
+    "scenes": "大修执行_20260923/06_仿真实验_20260926/q4/out/scenes",
+    "generate_plan": "大修执行_20260923/06_仿真实验_20260926/q4/out/generate",
+    "batch_plan": "大修执行_20260923/06_仿真实验_20260926/q4/out/batch_plan.json",
+    "verification": "大修执行_20260923/06_仿真实验_20260926/q4/verification/verification.json",
+    "verification_e2e_report": "大修执行_20260923/06_仿真实验_20260926/q4/verification/E2E_REPORT.json",
+    "verification_logs": "大修执行_20260923/06_仿真实验_20260926/q4/verification/logs",
+    "figures_verification": "大修执行_20260923/06_仿真实验_20260926/figures/verification"
+  },
+  "invariants": {
+    "geometry_source": "manifest fdtd_geometry（Q4 硬件物理 tx/rx/pairs），不套 main 1Tx",
+    "background_mode": "ema_windowed(bg_m_factor=4,alpha=0.25,burnin_states=8,first_raw=true) 写入 scene",
+    "grid": "统一 sc.build_grid()，不裁域",
+    "sim_truth": "nominal 静态点，与硬件 identity 对应；微动轨迹 provenance 声明与硬件实际不同",
+    "rho": "clean + 固定规则；不加任意噪声；未校准(uncalibrated)",
+    "method_status": "逐窗保留 sim/hw method_status；failed/unknown 不计 peak delta，CIR rho 仍算",
+    "l_handling": "sim/hw 形状严格相等；不一致记 L_mismatch，不静默缩 L"
+  },
+  "not_done": [
+    "未运行正式 15 FDTD（generate 默认 plan_only，run 需显式并过 convergence.check_evidence）",
+    "未跑正式 Q4 结果；verification.json 内 e2e 为 fake-clean fixture 验证（非正式）"
+  ]
+}

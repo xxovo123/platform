@@ -1,0 +1,90 @@
+{
+  "definition": "tau_3d_minus_2d = (|tx-p|+|rx-p|)/c0 在 3D 与 xy 投影下的差；只报告，不补偿",
+  "delay_deviation_s": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0
+  },
+  "rows": [
+    {
+      "delay_2d_s": 8.700781607428098e-09,
+      "delay_3d_s": 8.700781607428098e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.6084287046120607,
+      "path_3d_m": 2.6084287046120607,
+      "rx_index": 0,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.5371300435172202e-08,
+      "delay_3d_s": 1.5371300435172202e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.608199940116744,
+      "path_3d_m": 4.608199940116744,
+      "rx_index": 0,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 8.686285087137435e-09,
+      "delay_3d_s": 8.686285087137435e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.6040827571616756,
+      "path_3d_m": 2.6040827571616756,
+      "rx_index": 1,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.5357375261337782e-08,
+      "delay_3d_s": 1.5357375261337782e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.604025278024846,
+      "path_3d_m": 4.604025278024846,
+      "rx_index": 1,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 8.672666475151953e-09,
+      "delay_3d_s": 8.672666475151953e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.6,
+      "path_3d_m": 2.6,
+      "rx_index": 2,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.534394837911499e-08,
+      "delay_3d_s": 1.534394837911499e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.6,
+      "path_3d_m": 4.6,
+      "rx_index": 2,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 8.659934067268036e-09,
+      "delay_3d_s": 8.659934067268036e-09,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 2.596182920144222,
+      "path_3d_m": 2.596182920144222,
+      "rx_index": 3,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.5331022409131254e-08,
+      "delay_3d_s": 1.5331022409131254e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 4.59612489168654,
+      "path_3d_m": 4.59612489168654,
+      "rx_index": 3,
+      "target_index": 1,
+      "tx_index": 0
+    }
+  ]
+}

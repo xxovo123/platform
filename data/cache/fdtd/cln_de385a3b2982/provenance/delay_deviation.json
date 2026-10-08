@@ -1,0 +1,90 @@
+{
+  "definition": "tau_3d_minus_2d = (|tx-p|+|rx-p|)/c0 在 3D 与 xy 投影下的差；只报告，不补偿",
+  "delay_deviation_s": {
+    "max": 0.0,
+    "mean": 0.0,
+    "min": 0.0
+  },
+  "rows": [
+    {
+      "delay_2d_s": 1.2035935536927403e-08,
+      "delay_3d_s": 1.2035935536927403e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.6082826989450156,
+      "path_3d_m": 3.6082826989450156,
+      "rx_index": 0,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.1983239346108656e-08,
+      "delay_3d_s": 1.1983239346108656e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.592484778372227,
+      "path_3d_m": 3.592484778372227,
+      "rx_index": 0,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.2021803605649055e-08,
+      "delay_3d_s": 1.2021803605649055e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.604046052530793,
+      "path_3d_m": 3.604046052530793,
+      "rx_index": 1,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.1995451297730029e-08,
+      "delay_3d_s": 1.1995451297730029e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.596145829365775,
+      "path_3d_m": 3.596145829365775,
+      "rx_index": 1,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.2008307427133476e-08,
+      "delay_3d_s": 1.2008307427133476e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.6000000000000005,
+      "path_3d_m": 3.6000000000000005,
+      "rx_index": 2,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.2008307427133476e-08,
+      "delay_3d_s": 1.2008307427133476e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.6000000000000005,
+      "path_3d_m": 3.6000000000000005,
+      "rx_index": 2,
+      "target_index": 1,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.1995451297730029e-08,
+      "delay_3d_s": 1.1995451297730029e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.596145829365775,
+      "path_3d_m": 3.596145829365775,
+      "rx_index": 3,
+      "target_index": 0,
+      "tx_index": 0
+    },
+    {
+      "delay_2d_s": 1.2021803605649055e-08,
+      "delay_3d_s": 1.2021803605649055e-08,
+      "delay_deviation_s": 0.0,
+      "path_2d_m": 3.604046052530793,
+      "path_3d_m": 3.604046052530793,
+      "rx_index": 3,
+      "target_index": 1,
+      "tx_index": 0
+    }
+  ]
+}

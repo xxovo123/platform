@@ -1,0 +1,36 @@
+{
+  "_file": "层 B（FDTD）冻结设计规则；任何改动必须换 cache key（规则进入 scenes/geometry 哈希）",
+  "frozen_at": "2026-09-26",
+  "protocol_version": "fdtd-protocol-20260926.1",
+  "pulse": {"formula_id": "bh_derivative_v1", "duration_s": "2/bandwidth_hz", "note": "源与 MF 参考共用同一函数"},
+  "chain": {
+    "sample_interval_s": 1e-09,
+    "aa_cutoff_hz": 4e+08,
+    "aa_note": "复数基带低通截止 400 MHz；输出 Nyquist = 500 MHz，留 100 MHz 保护带；旧链等效砖墙 500 MHz 无保护带",
+    "mf_alignment": "full 卷积后裁 len(ref)-1（物理 filter lag，非真值补偿）",
+    "raw_taps": 32, "crop_start": 2, "fft_length": 32,
+    "crop_note": "crop_start 由 adapter 施加；FDTD 侧不补偿"
+  },
+  "geometry": {
+    "target_material": "metal",
+    "target_radius_m": 0.056208,
+    "target_radius_note": "1.5*lambda_c，lambda_c = c/fc = 0.0375 m",
+    "separation_rule": "min_nominal_separation >= 2*r_target + 2*r_traj + overlap_margin",
+    "overlap_margin_m": 0.005,
+    "reject_policy": "预设计拒非法（assert_geometry_rules 抛错）；禁止事后筛好看的轨迹/状态",
+    "trajectory_radius_policy": "主档 0.03 m；近间距（<=0.20 m）场景必须 <=0.01 m 或改用固定规则",
+    "domain": {"margin_m_default": 0.5, "pml_thickness_lambda": 2.0,
+               "note": "inner_bounds = center ± size/2 - PML；目标（含半径+轨迹半径）越界即拒"},
+    "length_unit_m": 1.0,
+    "length_unit_note": "只支持 1 m；坐标按米直接送 Meep，不假装支持多单位"
+  },
+  "numerics": {"courant": 0.5, "courant_note": "Meep 默认 0.5（不是 1/sqrt(2)）；显式传入并用于预算",
+               "run_time_meep_main": 20.0, "convergence_entry": "fdtd convergence（判据先冻结，允许 not_passed）"},
+  "background": {"modes": ["empty_field", "ema_windowed"],
+    "empty_field": "无目标空场差分（主 E1 受控散射层）；与硬件 EMA 不等同",
+    "ema_windowed": "冻结 b0.cfr_replay：alpha=1/bg_m_factor（默认 0.25）；首帧 out=cur；其后 out=cur-ref、ref=(1-alpha)*ref+alpha*cur；跨窗连续；burnin 状态必须真实求解（计入 n_solves）",
+    "q4_requirement": "Q4 档用 ema_windowed，或显式声明背景处理不同且不称链完全匹配"},
+  "provenance": {"true_trajectory_location": "provenance/（不进算法 case）",
+                 "algorithm_case_shape": "raw_cir[L,4,32] complex128",
+                 "seed_reproducible": true}
+}

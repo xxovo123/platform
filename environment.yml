@@ -1,0 +1,11 @@
+name: jsf-music
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pymeep=1.30
+  - numpy=2.3
+  - scipy=1.16
+  - matplotlib=3.10
+  - h5py=3.14
+

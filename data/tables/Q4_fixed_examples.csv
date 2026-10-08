@@ -1,0 +1,7 @@
+﻿config_id,environment,window_id,selection,spectral_rho,peak_difference_rmse_m
+G-420,indoor,indoor_G-420_N1_S1_001__t10,first window_id in frozen list order sorted by identifier,0.08517217787115113,0.32015621187164256
+G-420,outdoor,outdoor_G-420_N1_S1_001__t10,first window_id in frozen list order sorted by identifier,0.037737083233721595,0.3162277660168378
+C2-1,indoor,indoor_C2-1_N2_S1-S2_001__t10,first window_id in frozen list order sorted by identifier,0.041940066927101186,0.37749172176353757
+C2-1,outdoor,outdoor_C2-1_N2_S1-S2_001__t10,first window_id in frozen list order sorted by identifier,0.05365749765979095,0.34278273002005233
+C3-1,indoor,indoor_C3-1_N3_S1-S2-S3_rot1_002__t10,first window_id in frozen list order sorted by identifier,-0.03354676978141191,0.4453463071962463
+C3-1,outdoor,outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10,first window_id in frozen list order sorted by identifier,0.08366246793128425,0.32145502536643183

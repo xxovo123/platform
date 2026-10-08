@@ -1,0 +1,29 @@
+{
+  "scene_id": "q4_2tx_2target",
+  "description": "Q4 档：硬件真实 2Tx 与 Rx2/Rx3（含 z=-0.02），2D 只用 xy 投影；3D 偏差写 metadata，不补偿",
+  "dimensions": 2,
+  "length_unit_m": 1.0,
+  "snapshots": 128,
+  "geometry": {
+    "mode": "hardware_2tx4rx_q4",
+    "tx_positions_m": [[-0.019, 0.0, 0.0], [0.019, 0.0, 0.0]],
+    "rx_positions_m": [[-0.019, 0.0, 0.0], [0.019, 0.0, 0.0], [-0.019, 0.0, -0.02], [0.0, 0.0, -0.02]],
+    "pairs": [[0, 2], [0, 3], [1, 2], [1, 3]],
+    "projection": {"mode": "xy_plane_drop_z", "dropped_axis": "z",
+      "note": "2D FDTD 无法表达离面 z=-0.02：只取 xy；原始 3D 坐标与 3D-2D 双程时延偏差写入 metadata/provenance，不当作补偿"},
+    "metadata_3d_source": "大修执行_20260923/01_投稿口径/data/manifests/source_geometry.json"
+  },
+  "targets": {
+    "material": "metal",
+    "radius_m": 0.056208,
+    "overlap_margin_m": 0.005,
+    "nominal_centers_m": [[0.0, 1.5, 0.0], [0.4, 2.5, 0.0]],
+    "nominal_spec": "Q4 代表双目标：近端轴上 1.5 m + 远端偏轴 0.4 m/2.5 m（3D 元数据 z=0）",
+    "micro_motion": {"model": "bounded_random_walk_v1", "seed": 20260927, "sigma_m": 0.005, "radius_m": 0.02, "L": 128}
+  },
+  "meep": {"resolution_px_per_m": 250, "run_time_meep": 30.0, "courant": 0.5, "pml_thickness_lambda": 2.0},
+  "domain": {"margin_m": 0.5},
+  "background": {"mode": "ema_windowed", "ema": {"bg_m_factor": 4.0, "burnin_states": 8},
+    "note": "Q4 要求与硬件背景处理对齐：冻结 EMA（alpha=0.25）并丢弃 startup；burnin 真实求解计入预算"},
+  "_scenario_ref": "大修执行_20260923/仿真实验完整方案_20260926.md E5/Q4 清单（1/2/3 m 与偏轴）"
+}

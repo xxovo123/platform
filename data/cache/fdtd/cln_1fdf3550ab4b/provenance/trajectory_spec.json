@@ -1,0 +1,26 @@
+{
+  "describe": {
+    "algorithm_text": "rng=default_rng(seed); traj[0]=centers; for l in 1..L-1: for k in 0..K-1: step=rng.normal(0,sigma_k,2); cand=traj[l-1,k]+step; if |cand-centers[k]|>radius_k: project onto ball(centers[k],radius_k)",
+    "model": "bounded_random_walk_v1",
+    "spec": {
+      "L": 128,
+      "radius_m": [
+        0.01,
+        0.01
+      ],
+      "seed": 9151042020124532331,
+      "sigma_m": 0.002
+    }
+  },
+  "spec": {
+    "L": 128,
+    "radius_m": [
+      0.01,
+      0.01
+    ],
+    "seed": 9151042020124532331,
+    "sigma_m": 0.002
+  },
+  "state_hashes_unique": true,
+  "trajectory_source_hash": "3033b5bd95e634d52bd512d114960b38c918232f4ab2f035beeb08fe85fa461a"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "clean_id": "cln_b694b083fc5a",
+    "cache_key": "77cb64d0e4ea0d22b9a09d22673ef438acc04b9c000a6a9a190d33bf6e6a7363",
+    "files": [
+      "cache/fdtd/_solver_cache/77cb64d0e4ea0d22b9a09d22673ef438acc04b9c000a6a9a190d33bf6e6a7363/background.npz",
+      "cache/fdtd/_solver_cache/77cb64d0e4ea0d22b9a09d22673ef438acc04b9c000a6a9a190d33bf6e6a7363/state_00000.npz"
+    ]
+  },
+  {
+    "clean_id": "cln_de385a3b2982",
+    "cache_key": "8df0b623e0c1eed66e255d07c2809c1d6782e32ae00b0cdac9a149c8259a884b",
+    "files": [
+      "cache/fdtd/_solver_cache/8df0b623e0c1eed66e255d07c2809c1d6782e32ae00b0cdac9a149c8259a884b/background.npz",
+      "cache/fdtd/_solver_cache/8df0b623e0c1eed66e255d07c2809c1d6782e32ae00b0cdac9a149c8259a884b/state_00000.npz"
+    ]
+  },
+  {
+    "clean_id": "cln_938aeb44f915",
+    "cache_key": "6a7cd48e65d33ed82972528a263eaf812bce4f8db432b9e9723d8ca79116110c",
+    "files": [
+      "cache/fdtd/_solver_cache/6a7cd48e65d33ed82972528a263eaf812bce4f8db432b9e9723d8ca79116110c/background.npz",
+      "cache/fdtd/_solver_cache/6a7cd48e65d33ed82972528a263eaf812bce4f8db432b9e9723d8ca79116110c/state_00000.npz"
+    ]
+  }
+]

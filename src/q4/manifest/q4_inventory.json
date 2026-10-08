@@ -1,0 +1,6635 @@
+{
+  "kind": "q4-inventory",
+  "schema_version": 2,
+  "source": "<workspace>/Q2 数据采集/data_in_adult",
+  "validity_basis": {
+    "frozen_valid_index": "D:\\论文\\小论文修改\\大修执行_20260923\\04_Q6\\hardware\\truth\\truth_index.json (sha256=6535cd01ecddba40e9faf56d5008441b964350059f579e1c7ca99fe8a9fb6cbf)",
+    "rule": "valid = in frozen valid index; invalid = metadata proves insufficient frames (< ring); else unverified",
+    "size_threshold_used": false
+  },
+  "n_recordings_total": 33,
+  "n_recordings_valid": 32,
+  "n_recordings_invalid": 1,
+  "n_recordings_unverified": 0,
+  "n_geometries": 15,
+  "valid_recordings_by_k": {
+    "2": 10,
+    "3": 7,
+    "1": 15
+  },
+  "recordings": [
+    {
+      "recording_id": "indoor_C2-1_N2_S1-S2_001",
+      "environment": "indoor",
+      "geometry_id": "C2-1_N2_S1-S2",
+      "config_id": "C2-1",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3886,
+      "channel_frame_counts": {
+        "1-4": 3886,
+        "1-5": 3886,
+        "1-6": 3886,
+        "1-7": 3886,
+        "2-4": 3886,
+        "2-5": 3886,
+        "2-6": 3886,
+        "2-7": 3886
+      },
+      "bin_bytes": 4290144,
+      "truth_signature": "1ac9eba9f5217c8ad542a9419510207a8beb1f6f5f9920e3bb225ca247054ec7",
+      "geometry_signature": "c6a2ae36c336347b57f43887649db9d895d037b3db1d84020753b274b5217945",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C2-3_N2_S1-S2_001",
+      "environment": "indoor",
+      "geometry_id": "C2-3_N2_S1-S2",
+      "config_id": "C2-3",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "fb0a34285c8bf96def46c42d46d9004b5a61470ac7be662133ae9c035d1c04ac",
+      "geometry_signature": "3ef60fd243d08983f41f42de2e87e4fd45186deaa3825b0a93c72c75eee2dc48",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C2-4_N2_S1-S2_001",
+      "environment": "indoor",
+      "geometry_id": "C2-4_N2_S1-S2",
+      "config_id": "C2-4",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "67cfc4f6fea37e70a9ea77235b5623c6c96b85ddc01f22b098ab405aadf9a3a8",
+      "geometry_signature": "91100bb9eb06dc09cddec7cdce68fe251e33cdb68d9ad920e9d299fb9fc0c4e0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C2-5_N2_S1-S2_001",
+      "environment": "indoor",
+      "geometry_id": "C2-5_N2_S1-S2",
+      "config_id": "C2-5",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3891,
+      "channel_frame_counts": {
+        "1-4": 3891,
+        "1-5": 3891,
+        "1-6": 3891,
+        "1-7": 3891,
+        "2-4": 3891,
+        "2-5": 3891,
+        "2-6": 3891,
+        "2-7": 3891
+      },
+      "bin_bytes": 4295664,
+      "truth_signature": "d3a475cf769f50446df0c3f0d0355d3f64d8c87cbbdab4c6a2963e37e379d79e",
+      "geometry_signature": "16ca6acce0a5e1449b35f9a01c680161a0228511fbc3cad368c2d48b1eaa75f0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C2-6_N2_S1-S2_001",
+      "environment": "indoor",
+      "geometry_id": "C2-6_N2_S1-S2",
+      "config_id": "C2-6",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "dade0a3af1c43857197bedcda7aa2266c57ebd789b5c891361403ff09e6f60dd",
+      "geometry_signature": "5c37a356ec80075bc52bc42fa977e630bfa3f2e64db7447aa582f2304c992c9a",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C3-1_N3_S1-S2-S3_rot1_001",
+      "environment": "indoor",
+      "geometry_id": "C3-1_N3_S1-S2-S3_rot1",
+      "config_id": "C3-1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 2173,
+      "channel_frame_counts": {
+        "1-4": 2173,
+        "1-5": 2173,
+        "1-6": 2173,
+        "1-7": 2173,
+        "2-4": 2173,
+        "2-5": 2173,
+        "2-6": 2173,
+        "2-7": 2173
+      },
+      "bin_bytes": 2398992,
+      "truth_signature": "d9e8ff23040992bb754d4e1c0918c88c4b8b95352df25c56f0a655d746e0fa93",
+      "geometry_signature": "5c083d43e0b7e17440a7a91f862abacecc01ba4c570282d65054bfc9cd4fbffd",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002",
+      "environment": "indoor",
+      "geometry_id": "C3-1_N3_S1-S2-S3_rot1",
+      "config_id": "C3-1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 2874,
+      "channel_frame_counts": {
+        "1-4": 2874,
+        "1-5": 2874,
+        "1-6": 2874,
+        "1-7": 2874,
+        "2-4": 2874,
+        "2-5": 2874,
+        "2-6": 2874,
+        "2-7": 2874
+      },
+      "bin_bytes": 3172896,
+      "truth_signature": "d9e8ff23040992bb754d4e1c0918c88c4b8b95352df25c56f0a655d746e0fa93",
+      "geometry_signature": "5c083d43e0b7e17440a7a91f862abacecc01ba4c570282d65054bfc9cd4fbffd",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001",
+      "environment": "indoor",
+      "geometry_id": "C3-3_N3_S1-S2-S3_rot1",
+      "config_id": "C3-3",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3174,
+      "channel_frame_counts": {
+        "1-4": 3174,
+        "1-5": 3174,
+        "1-6": 3174,
+        "1-7": 3174,
+        "2-4": 3174,
+        "2-5": 3174,
+        "2-6": 3174,
+        "2-7": 3174
+      },
+      "bin_bytes": 3504096,
+      "truth_signature": "17d692f60eff3600f9e8e34a44554debd879adc735d2e188f94b36415dd67b23",
+      "geometry_signature": "cde52306ed5657612f453d7ec62c89eca7d3922ee88eec574ac0064fbef21800",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001",
+      "environment": "indoor",
+      "geometry_id": "C3-4_N3_S1-S2-S3_rot1",
+      "config_id": "C3-4",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 2912,
+      "channel_frame_counts": {
+        "1-4": 2912,
+        "1-5": 2912,
+        "1-6": 2912,
+        "1-7": 2912,
+        "2-4": 2912,
+        "2-5": 2912,
+        "2-6": 2912,
+        "2-7": 2912
+      },
+      "bin_bytes": 3214848,
+      "truth_signature": "82cbacada6750e64dd0faa4813fa6d3a9d886c37a2706ae9ac2f38327a586ea7",
+      "geometry_signature": "402039ad7b02976950697826bfc94624aad666ed07afa7943244ce51b400c0db",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-370_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-370_N1_S1",
+      "config_id": "G-370",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3889,
+      "channel_frame_counts": {
+        "1-4": 3889,
+        "1-5": 3889,
+        "1-6": 3889,
+        "1-7": 3889,
+        "2-4": 3889,
+        "2-5": 3889,
+        "2-6": 3889,
+        "2-7": 3889
+      },
+      "bin_bytes": 4293456,
+      "truth_signature": "6c298ce50904d1f31aba1a6fd7bd50e4ae4427f03294c2fbaced91a2a75e30b3",
+      "geometry_signature": "0746efae9a47bf8bbde1e1af05a627a78396d56a8f499eb2596b25933d7ed122",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-380_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-380_N1_S1",
+      "config_id": "G-380",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3892,
+      "channel_frame_counts": {
+        "1-4": 3892,
+        "1-5": 3892,
+        "1-6": 3892,
+        "1-7": 3892,
+        "2-4": 3892,
+        "2-5": 3892,
+        "2-6": 3892,
+        "2-7": 3892
+      },
+      "bin_bytes": 4296768,
+      "truth_signature": "5b842e00dfe9c4efbdce60e7f2914f3aab078ce9d99ad143d62d43d0c767df5c",
+      "geometry_signature": "92a892399965158cde69a51c1c8cd3b7be416a7d099187928f94b0a2d5d9c7a0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-410_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-410_N1_S1",
+      "config_id": "G-410",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "09cade0d8764bdb56c694a0fe9d57a0ece29c7f76507801fbe761c3ad1190836",
+      "geometry_signature": "8667e066b93c7333829eeb59fc98cf3227e983b540e78806e20dcc77b5114426",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-410_N1_S1_002",
+      "environment": "indoor",
+      "geometry_id": "G-410_N1_S1",
+      "config_id": "G-410",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3889,
+      "channel_frame_counts": {
+        "1-4": 3889,
+        "1-5": 3889,
+        "1-6": 3889,
+        "1-7": 3889,
+        "2-4": 3889,
+        "2-5": 3889,
+        "2-6": 3889,
+        "2-7": 3889
+      },
+      "bin_bytes": 4293456,
+      "truth_signature": "09cade0d8764bdb56c694a0fe9d57a0ece29c7f76507801fbe761c3ad1190836",
+      "geometry_signature": "8667e066b93c7333829eeb59fc98cf3227e983b540e78806e20dcc77b5114426",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-420_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-420_N1_S1",
+      "config_id": "G-420",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3889,
+      "channel_frame_counts": {
+        "1-4": 3889,
+        "1-5": 3889,
+        "1-6": 3889,
+        "1-7": 3889,
+        "2-4": 3889,
+        "2-5": 3889,
+        "2-6": 3889,
+        "2-7": 3889
+      },
+      "bin_bytes": 4293456,
+      "truth_signature": "32a0de7adf7267e0f280ebd7e9943cb2ede642703fce7c44ed6cbdee038eba59",
+      "geometry_signature": "ef41e0ed721b9e2136c524cc79c157d9d9139abe98400645e36132b2c8fc51ee",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-430_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-430_N1_S1",
+      "config_id": "G-430",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -3.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3894,
+      "channel_frame_counts": {
+        "1-4": 3894,
+        "1-5": 3894,
+        "1-6": 3894,
+        "1-7": 3894,
+        "2-4": 3894,
+        "2-5": 3894,
+        "2-6": 3894,
+        "2-7": 3894
+      },
+      "bin_bytes": 4298976,
+      "truth_signature": "992c635c5671698cb2302185665e6b50603e5eeb9d97f9c18ca21203ce2d5f80",
+      "geometry_signature": "5b6f19d0ea7f85badfb004a4dab7170cc1928d30f422044abe97698e61fdeee3",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -3.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-450_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-450_N1_S1",
+      "config_id": "G-450",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3887,
+      "channel_frame_counts": {
+        "1-4": 3887,
+        "1-5": 3887,
+        "1-6": 3887,
+        "1-7": 3887,
+        "2-4": 3887,
+        "2-5": 3887,
+        "2-6": 3887,
+        "2-7": 3887
+      },
+      "bin_bytes": 4291248,
+      "truth_signature": "0a72eba51c0667a4233436f659d423fc8f9b6bc7279443bbc37b04a9377785c5",
+      "geometry_signature": "a2f54dd1045386bec0cc415f5bb4aa2386f4897285e69ccb5d29a5decdad732a",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "indoor_G-460_N1_S1_001",
+      "environment": "indoor",
+      "geometry_id": "G-460_N1_S1",
+      "config_id": "G-460",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "abc7b8aa12f41ba21736fa5337278e4ec84b72cd57f628533d4b6cd7b6164133",
+      "geometry_signature": "05cc154ba7eb8413934f2ae6e62e662e2fe11b168f44dfc0a5c28adbfda303d4",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C2-1_N2_S1-S2_001",
+      "environment": "outdoor",
+      "geometry_id": "C2-1_N2_S1-S2",
+      "config_id": "C2-1",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "1ac9eba9f5217c8ad542a9419510207a8beb1f6f5f9920e3bb225ca247054ec7",
+      "geometry_signature": "c6a2ae36c336347b57f43887649db9d895d037b3db1d84020753b274b5217945",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C2-3_N2_S1-S2_001",
+      "environment": "outdoor",
+      "geometry_id": "C2-3_N2_S1-S2",
+      "config_id": "C2-3",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3889,
+      "channel_frame_counts": {
+        "1-4": 3889,
+        "1-5": 3889,
+        "1-6": 3889,
+        "1-7": 3889,
+        "2-4": 3889,
+        "2-5": 3889,
+        "2-6": 3889,
+        "2-7": 3889
+      },
+      "bin_bytes": 4293456,
+      "truth_signature": "fb0a34285c8bf96def46c42d46d9004b5a61470ac7be662133ae9c035d1c04ac",
+      "geometry_signature": "3ef60fd243d08983f41f42de2e87e4fd45186deaa3825b0a93c72c75eee2dc48",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C2-4_N2_S1-S2_001",
+      "environment": "outdoor",
+      "geometry_id": "C2-4_N2_S1-S2",
+      "config_id": "C2-4",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3890,
+      "channel_frame_counts": {
+        "1-4": 3890,
+        "1-5": 3890,
+        "1-6": 3890,
+        "1-7": 3890,
+        "2-4": 3890,
+        "2-5": 3890,
+        "2-6": 3890,
+        "2-7": 3890
+      },
+      "bin_bytes": 4294560,
+      "truth_signature": "67cfc4f6fea37e70a9ea77235b5623c6c96b85ddc01f22b098ab405aadf9a3a8",
+      "geometry_signature": "91100bb9eb06dc09cddec7cdce68fe251e33cdb68d9ad920e9d299fb9fc0c4e0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C2-5_N2_S1-S2_001",
+      "environment": "outdoor",
+      "geometry_id": "C2-5_N2_S1-S2",
+      "config_id": "C2-5",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "d3a475cf769f50446df0c3f0d0355d3f64d8c87cbbdab4c6a2963e37e379d79e",
+      "geometry_signature": "16ca6acce0a5e1449b35f9a01c680161a0228511fbc3cad368c2d48b1eaa75f0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C2-6_N2_S1-S2_001",
+      "environment": "outdoor",
+      "geometry_id": "C2-6_N2_S1-S2",
+      "config_id": "C2-6",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3892,
+      "channel_frame_counts": {
+        "1-4": 3892,
+        "1-5": 3892,
+        "1-6": 3892,
+        "1-7": 3892,
+        "2-4": 3892,
+        "2-5": 3892,
+        "2-6": 3892,
+        "2-7": 3892
+      },
+      "bin_bytes": 4296768,
+      "truth_signature": "dade0a3af1c43857197bedcda7aa2266c57ebd789b5c891361403ff09e6f60dd",
+      "geometry_signature": "5c37a356ec80075bc52bc42fa977e630bfa3f2e64db7447aa582f2304c992c9a",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001",
+      "environment": "outdoor",
+      "geometry_id": "C3-1_N3_S1-S2-S3_rot1",
+      "config_id": "C3-1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3890,
+      "channel_frame_counts": {
+        "1-4": 3890,
+        "1-5": 3890,
+        "1-6": 3890,
+        "1-7": 3890,
+        "2-4": 3890,
+        "2-5": 3890,
+        "2-6": 3890,
+        "2-7": 3890
+      },
+      "bin_bytes": 4294560,
+      "truth_signature": "d9e8ff23040992bb754d4e1c0918c88c4b8b95352df25c56f0a655d746e0fa93",
+      "geometry_signature": "5c083d43e0b7e17440a7a91f862abacecc01ba4c570282d65054bfc9cd4fbffd",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001",
+      "environment": "outdoor",
+      "geometry_id": "C3-3_N3_S1-S2-S3_rot1",
+      "config_id": "C3-3",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3890,
+      "channel_frame_counts": {
+        "1-4": 3890,
+        "1-5": 3890,
+        "1-6": 3890,
+        "1-7": 3890,
+        "2-4": 3890,
+        "2-5": 3890,
+        "2-6": 3890,
+        "2-7": 3890
+      },
+      "bin_bytes": 4294560,
+      "truth_signature": "17d692f60eff3600f9e8e34a44554debd879adc735d2e188f94b36415dd67b23",
+      "geometry_signature": "cde52306ed5657612f453d7ec62c89eca7d3922ee88eec574ac0064fbef21800",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001",
+      "environment": "outdoor",
+      "geometry_id": "C3-4_N3_S1-S2-S3_rot1",
+      "config_id": "C3-4",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3885,
+      "channel_frame_counts": {
+        "1-4": 3885,
+        "1-5": 3885,
+        "1-6": 3885,
+        "1-7": 3885,
+        "2-4": 3885,
+        "2-5": 3885,
+        "2-6": 3885,
+        "2-7": 3885
+      },
+      "bin_bytes": 4289040,
+      "truth_signature": "82cbacada6750e64dd0faa4813fa6d3a9d886c37a2706ae9ac2f38327a586ea7",
+      "geometry_signature": "402039ad7b02976950697826bfc94624aad666ed07afa7943244ce51b400c0db",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-370_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-370_N1_S1",
+      "config_id": "G-370",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3889,
+      "channel_frame_counts": {
+        "1-4": 3889,
+        "1-5": 3889,
+        "1-6": 3889,
+        "1-7": 3889,
+        "2-4": 3889,
+        "2-5": 3889,
+        "2-6": 3889,
+        "2-7": 3889
+      },
+      "bin_bytes": 4293456,
+      "truth_signature": "6c298ce50904d1f31aba1a6fd7bd50e4ae4427f03294c2fbaced91a2a75e30b3",
+      "geometry_signature": "0746efae9a47bf8bbde1e1af05a627a78396d56a8f499eb2596b25933d7ed122",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-380_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-380_N1_S1",
+      "config_id": "G-380",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "5b842e00dfe9c4efbdce60e7f2914f3aab078ce9d99ad143d62d43d0c767df5c",
+      "geometry_signature": "92a892399965158cde69a51c1c8cd3b7be416a7d099187928f94b0a2d5d9c7a0",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-410_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-410_N1_S1",
+      "config_id": "G-410",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3890,
+      "channel_frame_counts": {
+        "1-4": 3890,
+        "1-5": 3890,
+        "1-6": 3890,
+        "1-7": 3890,
+        "2-4": 3890,
+        "2-5": 3890,
+        "2-6": 3890,
+        "2-7": 3890
+      },
+      "bin_bytes": 4294560,
+      "truth_signature": "09cade0d8764bdb56c694a0fe9d57a0ece29c7f76507801fbe761c3ad1190836",
+      "geometry_signature": "8667e066b93c7333829eeb59fc98cf3227e983b540e78806e20dcc77b5114426",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-420_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-420_N1_S1",
+      "config_id": "G-420",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3886,
+      "channel_frame_counts": {
+        "1-4": 3886,
+        "1-5": 3886,
+        "1-6": 3886,
+        "1-7": 3886,
+        "2-4": 3886,
+        "2-5": 3886,
+        "2-6": 3886,
+        "2-7": 3886
+      },
+      "bin_bytes": 4290144,
+      "truth_signature": "32a0de7adf7267e0f280ebd7e9943cb2ede642703fce7c44ed6cbdee038eba59",
+      "geometry_signature": "ef41e0ed721b9e2136c524cc79c157d9d9139abe98400645e36132b2c8fc51ee",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-430_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-430_N1_S1",
+      "config_id": "G-430",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -3.0
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3890,
+      "channel_frame_counts": {
+        "1-4": 3890,
+        "1-5": 3890,
+        "1-6": 3890,
+        "1-7": 3890,
+        "2-4": 3890,
+        "2-5": 3890,
+        "2-6": 3890,
+        "2-7": 3890
+      },
+      "bin_bytes": 4294560,
+      "truth_signature": "992c635c5671698cb2302185665e6b50603e5eeb9d97f9c18ca21203ce2d5f80",
+      "geometry_signature": "5b6f19d0ea7f85badfb004a4dab7170cc1928d30f422044abe97698e61fdeee3",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -3.0
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-450_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-450_N1_S1",
+      "config_id": "G-450",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3892,
+      "channel_frame_counts": {
+        "1-4": 3892,
+        "1-5": 3893,
+        "1-6": 3893,
+        "1-7": 3893,
+        "2-4": 3893,
+        "2-5": 3893,
+        "2-6": 3893,
+        "2-7": 3893
+      },
+      "bin_bytes": 4297734,
+      "truth_signature": "0a72eba51c0667a4233436f659d423fc8f9b6bc7279443bbc37b04a9377785c5",
+      "geometry_signature": "a2f54dd1045386bec0cc415f5bb4aa2386f4897285e69ccb5d29a5decdad732a",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-460_N1_S1_001",
+      "environment": "outdoor",
+      "geometry_id": "G-460_N1_S1",
+      "config_id": "G-460",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": false,
+      "status": "invalid",
+      "invalid_reason": "insufficient_frames_min13_lt_ring128(recording.duration_s=0.258)",
+      "min_channel_frames": 13,
+      "channel_frame_counts": {
+        "1-4": 13,
+        "1-5": 13,
+        "1-6": 13,
+        "1-7": 13,
+        "2-4": 13,
+        "2-5": 13,
+        "2-6": 13,
+        "2-7": 13
+      },
+      "bin_bytes": 14352,
+      "truth_signature": "abc7b8aa12f41ba21736fa5337278e4ec84b72cd57f628533d4b6cd7b6164133",
+      "geometry_signature": "05cc154ba7eb8413934f2ae6e62e662e2fe11b168f44dfc0a5c28adbfda303d4",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    },
+    {
+      "recording_id": "outdoor_G-460_N1_S1_002",
+      "environment": "outdoor",
+      "geometry_id": "G-460_N1_S1",
+      "config_id": "G-460",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "valid": true,
+      "status": "valid",
+      "invalid_reason": null,
+      "min_channel_frames": 3888,
+      "channel_frame_counts": {
+        "1-4": 3888,
+        "1-5": 3888,
+        "1-6": 3888,
+        "1-7": 3888,
+        "2-4": 3888,
+        "2-5": 3888,
+        "2-6": 3888,
+        "2-7": 3888
+      },
+      "bin_bytes": 4292352,
+      "truth_signature": "abc7b8aa12f41ba21736fa5337278e4ec84b72cd57f628533d4b6cd7b6164133",
+      "geometry_signature": "05cc154ba7eb8413934f2ae6e62e662e2fe11b168f44dfc0a5c28adbfda303d4",
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "geometry_id": "C2-1_N2_S1-S2",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "1ac9eba9f5217c8ad542a9419510207a8beb1f6f5f9920e3bb225ca247054ec7"
+      ],
+      "geometry_signatures": [
+        "c6a2ae36c336347b57f43887649db9d895d037b3db1d84020753b274b5217945"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C2-1_N2_S1-S2_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C2-1_N2_S1-S2_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C2-3_N2_S1-S2",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "fb0a34285c8bf96def46c42d46d9004b5a61470ac7be662133ae9c035d1c04ac"
+      ],
+      "geometry_signatures": [
+        "3ef60fd243d08983f41f42de2e87e4fd45186deaa3825b0a93c72c75eee2dc48"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C2-3_N2_S1-S2_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C2-3_N2_S1-S2_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C2-4_N2_S1-S2",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "67cfc4f6fea37e70a9ea77235b5623c6c96b85ddc01f22b098ab405aadf9a3a8"
+      ],
+      "geometry_signatures": [
+        "91100bb9eb06dc09cddec7cdce68fe251e33cdb68d9ad920e9d299fb9fc0c4e0"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C2-4_N2_S1-S2_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C2-4_N2_S1-S2_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C2-5_N2_S1-S2",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "d3a475cf769f50446df0c3f0d0355d3f64d8c87cbbdab4c6a2963e37e379d79e"
+      ],
+      "geometry_signatures": [
+        "16ca6acce0a5e1449b35f9a01c680161a0228511fbc3cad368c2d48b1eaa75f0"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C2-5_N2_S1-S2_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C2-5_N2_S1-S2_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C2-6_N2_S1-S2",
+      "n_targets": 2,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "dade0a3af1c43857197bedcda7aa2266c57ebd789b5c891361403ff09e6f60dd"
+      ],
+      "geometry_signatures": [
+        "5c37a356ec80075bc52bc42fa977e630bfa3f2e64db7447aa582f2304c992c9a"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C2-6_N2_S1-S2_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C2-6_N2_S1-S2_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C3-1_N3_S1-S2-S3_rot1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ],
+        [
+          0.0,
+          -2.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ],
+          [
+            0.0,
+            -2.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "d9e8ff23040992bb754d4e1c0918c88c4b8b95352df25c56f0a655d746e0fa93"
+      ],
+      "geometry_signatures": [
+        "5c083d43e0b7e17440a7a91f862abacecc01ba4c570282d65054bfc9cd4fbffd"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C3-1_N3_S1-S2-S3_rot1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 3,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C3-3_N3_S1-S2-S3_rot1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "17d692f60eff3600f9e8e34a44554debd879adc735d2e188f94b36415dd67b23"
+      ],
+      "geometry_signatures": [
+        "cde52306ed5657612f453d7ec62c89eca7d3922ee88eec574ac0064fbef21800"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "C3-4_N3_S1-S2-S3_rot1",
+      "n_targets": 3,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ],
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ],
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "82cbacada6750e64dd0faa4813fa6d3a9d886c37a2706ae9ac2f38327a586ea7"
+      ],
+      "geometry_signatures": [
+        "402039ad7b02976950697826bfc94624aad666ed07afa7943244ce51b400c0db"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-370_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -0.643,
+          -0.766
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -0.643,
+            -0.766
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "6c298ce50904d1f31aba1a6fd7bd50e4ae4427f03294c2fbaced91a2a75e30b3"
+      ],
+      "geometry_signatures": [
+        "0746efae9a47bf8bbde1e1af05a627a78396d56a8f499eb2596b25933d7ed122"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-370_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-370_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-380_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          -1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            -1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "5b842e00dfe9c4efbdce60e7f2914f3aab078ce9d99ad143d62d43d0c767df5c"
+      ],
+      "geometry_signatures": [
+        "92a892399965158cde69a51c1c8cd3b7be416a7d099187928f94b0a2d5d9c7a0"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-380_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-380_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-410_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "09cade0d8764bdb56c694a0fe9d57a0ece29c7f76507801fbe761c3ad1190836"
+      ],
+      "geometry_signatures": [
+        "8667e066b93c7333829eeb59fc98cf3227e983b540e78806e20dcc77b5114426"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-410_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "indoor_G-410_N1_S1_002",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-410_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 3,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-420_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -2.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "32a0de7adf7267e0f280ebd7e9943cb2ede642703fce7c44ed6cbdee038eba59"
+      ],
+      "geometry_signatures": [
+        "ef41e0ed721b9e2136c524cc79c157d9d9139abe98400645e36132b2c8fc51ee"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-420_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-420_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-430_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.0,
+          -3.0
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.0,
+            -3.0
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "992c635c5671698cb2302185665e6b50603e5eeb9d97f9c18ca21203ce2d5f80"
+      ],
+      "geometry_signatures": [
+        "5b6f19d0ea7f85badfb004a4dab7170cc1928d30f422044abe97698e61fdeee3"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-430_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-430_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-450_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          0.643,
+          -0.766
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            0.643,
+            -0.766
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "0a72eba51c0667a4233436f659d423fc8f9b6bc7279443bbc37b04a9377785c5"
+      ],
+      "geometry_signatures": [
+        "a2f54dd1045386bec0cc415f5bb4aa2386f4897285e69ccb5d29a5decdad732a"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-450_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-450_N1_S1_001",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    },
+    {
+      "geometry_id": "G-460_N1_S1",
+      "n_targets": 1,
+      "truth_xy": [
+        [
+          1.286,
+          -1.532
+        ]
+      ],
+      "fdtd_geometry": {
+        "tx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ]
+        ],
+        "rx_positions": [
+          [
+            -0.019,
+            0.0,
+            0.0
+          ],
+          [
+            0.019,
+            0.0,
+            0.0
+          ],
+          [
+            -0.019,
+            0.0,
+            -0.02
+          ],
+          [
+            0.0,
+            0.0,
+            -0.02
+          ]
+        ],
+        "virt_tx_idx": [
+          0,
+          1
+        ],
+        "virt_rx_idx": [
+          2,
+          3
+        ],
+        "pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "center_freq_si": 7987200000.0,
+        "bandwidth_si": 500000000.0,
+        "epsilon_r": 1.0,
+        "tap_interval_si": 1e-09,
+        "cir_offset": 2,
+        "ft_len": 32,
+        "max_snapshots": 128,
+        "snapshot_rate_hz": 50.0,
+        "music_snapshots": 128,
+        "forward_backward": true,
+        "diag_load": 1e-05,
+        "fov_degrees": 180.0,
+        "ant_calib_en": true,
+        "ant_calib_phase": [
+          -0.0,
+          -0.49072375380773364,
+          1.1062868947533422,
+          1.5748289100316295,
+          -0.5876511374160144,
+          -1.9895222818981357,
+          0.12190304520431955,
+          0.5787126081848506
+        ],
+        "imaging_grid_spec": [
+          -2.2,
+          2.2,
+          89.0,
+          -4.2,
+          -0.55,
+          74.0
+        ],
+        "truth_xy": [
+          [
+            1.286,
+            -1.532
+          ]
+        ]
+      },
+      "truth_signatures": [
+        "abc7b8aa12f41ba21736fa5337278e4ec84b72cd57f628533d4b6cd7b6164133"
+      ],
+      "geometry_signatures": [
+        "05cc154ba7eb8413934f2ae6e62e662e2fe11b168f44dfc0a5c28adbfda303d4"
+      ],
+      "recordings": [
+        {
+          "recording_id": "indoor_G-460_N1_S1_001",
+          "environment": "indoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        },
+        {
+          "recording_id": "outdoor_G-460_N1_S1_001",
+          "environment": "outdoor",
+          "valid": false,
+          "status": "invalid",
+          "invalid_reason": "insufficient_frames_min13_lt_ring128(recording.duration_s=0.258)"
+        },
+        {
+          "recording_id": "outdoor_G-460_N1_S1_002",
+          "environment": "outdoor",
+          "valid": true,
+          "status": "valid",
+          "invalid_reason": null
+        }
+      ],
+      "n_valid_recordings": 2,
+      "environments": [
+        "indoor",
+        "outdoor"
+      ]
+    }
+  ],
+  "excluded_invalid": [
+    {
+      "recording_id": "outdoor_G-460_N1_S1_001",
+      "reason": "insufficient_frames_min13_lt_ring128(recording.duration_s=0.258)"
+    }
+  ],
+  "unverified": [],
+  "notes": [
+    "双环境 / 重复录制保留（indoor/outdoor 成对；G-410 与 C3-1 各有 _002）",
+    "有效性以冻结索引为准，不按文件大小推测；未知录制显式 unverified",
+    "几何块含 FDTD 生成所需 tx/rx/pairs/时间参数，不只 truth",
+    "本清单不含账号/口令/认证信息，可由脚本重新生成"
+  ]
+}

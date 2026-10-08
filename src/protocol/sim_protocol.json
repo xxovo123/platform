@@ -1,0 +1,578 @@
+{
+ "kind": "sim-protocol",
+ "protocol_id": "sim-20260926-unified",
+ "protocol_version": "20260926-2",
+ "created_at": "2026-09-26",
+ "frozen": true,
+ "purpose": "恢复 V 章算法仿真：解析受控层（A）+ FDTD 实际散射层（B），单一协议、单一后端、统一网格/噪声/指标；同时支撑 Q4/Q5/Q6。",
+ "fc_hz": 7987200000.0,
+ "bandwidth_hz": 500000000.0,
+ "sample_interval_s": 1e-09,
+ "raw_taps": 32,
+ "crop_start": 0,
+ "fft_length": 32,
+ "snapshots": 128,
+ "n_channels": 4,
+ "manifold_dim": 68,
+ "epsilon_r_background": 1.0,
+ "system_delay_si": 0.0,
+ "diag_load_factor": 1e-05,
+ "is_forward_backward": true,
+ "geometry": {
+  "kind": "1Tx4Rx_controlled",
+  "tx_positions_m": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "rx_positions_m": [
+   [
+    -0.038,
+    0.0,
+    0.0
+   ],
+   [
+    -0.019,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.019,
+    0.0,
+    0.0
+   ]
+  ],
+  "pairs": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ]
+  ],
+  "virtual_x_m": [
+   -0.038,
+   -0.019,
+   0.0,
+   0.019
+  ],
+  "spacing_m": 0.019,
+  "strictly_identical_to_hardware_physical_geometry": false,
+  "historical_restoration": false,
+  "note": "1Tx4Rx 受控主配置（2026-09-26 明确新配置）：Tx=[0,0,0]，Rx x=[-0.038,-0.019,0,0.019]，y=z=0，pairs=(0,i) i=0..3，保持 19 mm 间距。与硬件虚拟通道/坐标同预算（x 坐标与 19 mm 间距一致），但不是严格相同物理几何（硬件物理 Rx 含 z=-0.02 上下排，本协议 2D 不表达离面 z），也不是历史复原。"
+ },
+ "frequency_plan": {
+  "axis_rule": "np.fft.fftfreq(fft_length=32, d=TS) + fc_hz",
+  "in_band_indices": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31
+  ],
+  "frequencies_hz": [
+   7987200000.0,
+   8018450000.0,
+   8049700000.0,
+   8080950000.0,
+   8112200000.0,
+   8143450000.0,
+   8174700000.0,
+   8205950000.0,
+   8237200000.0,
+   7737200000.0,
+   7768450000.0,
+   7799700000.0,
+   7830950000.0,
+   7862200000.0,
+   7893450000.0,
+   7924700000.0,
+   7955950000.0
+  ],
+  "order": "fft_index_ascending_non_monotonic（原始频序，不排序）",
+  "n_freq_bins": 17,
+  "feature_order": "frequency-major then channel (index = f*C + ch)",
+  "note": "频点作为有序列表原样传递（FB 的 J 沿整条特征序翻转）；不得排序。"
+ },
+ "search": {
+  "kind": "cartesian_2d",
+  "grid_x_spec": [
+   -2.2,
+   2.2,
+   0.05
+  ],
+  "grid_y_spec": [
+   -3.2,
+   -0.55,
+   0.05
+  ],
+  "grid_n_points": [
+   89,
+   54
+  ],
+  "grid_step_m": 0.05,
+  "fov_degrees": 180.0,
+  "unified_static_domain": true,
+  "not_scene_cropped": true,
+  "distance_ring_m": [
+   0.0,
+   4.496886870000001
+  ],
+  "ring_taps": [
+   0,
+   32
+  ],
+  "half_plane": "y < 0",
+  "rmax_m": 3.88329756778952,
+  "b1b2_angle_step_deg": 0.7377206937259854,
+  "b1b2_angle_actual": {
+   "half_deg": 75.96375653207353,
+   "n_points": 207,
+   "requested_step_deg": 0.7377206937259854,
+   "actual_step_deg": 0.7375121993405197,
+   "rmax_m": 3.88329756778952,
+   "half_cell_tangential_m": 0.024992934508031334
+  },
+  "b1b2_tau_actual": {
+   "n_points": 91,
+   "requested_step_s": 3.3356409519815207e-10,
+   "actual_step_s": 3.3333333333333337e-10,
+   "actual_range_step_m": 0.049965409666666676
+  },
+  "c3_target_range_step_m": 0.05,
+  "c3_native_range_bin_m": 0.2821576075294118,
+  "c3_zeropad_factor": 6,
+  "c1_phase_unique_max_deg": 81.01886164980678,
+  "c1_domain_theta_max_deg": 75.96375653207353,
+  "note": "统一静态域（bbox ±2.2 x [-3.2,-0.55] 5 cm + 硬件 fov=180 + 距离环 tap[2,32]）；B1/B2 角步按共同实际 rmax 复算；C1 全域 |theta|max < 相位唯一角 => 无全域 NA。"
+ },
+ "frontend": {
+  "raw_taps": 32,
+  "crop_start": 0,
+  "n_taps_after_crop": 30,
+  "fft_length": 32,
+  "path": "raw32 -> cropped=raw[:,:,crop_start:crop_start+30]（v2 起点 0，不裁前 2 物理 tap）-> np.fft.fft(cropped, n=fft_length) -> in-band 17 bins",
+  "clean_npz_key": "raw_cir",
+  "clean_npz_shape": "[L, 4, 32] complex",
+  "time_origin_rule": "主协议：clean raw 的 raw tap 0 = 物理零延迟（tau = 0）；目标回波写在 raw tap = tau/Ts。FDTD 层 tap0 同为物理零，两层的延迟参考一致。",
+  "crop_offset_disclosure": "2026-09-26 v2 口径：crop_start=0，**不裁前 2 个物理抽头**，数据等效延迟 = tau，与绝对 tau 导向流形之间无固定参考偏移（crop_offset_range_m = 0.00000 m）。v1 口径（crop_start=2）曾引入 -2*Ts ≈ -0.29979 m 双程参考偏移，已弃用；对照验证见 deployment/evidence/nocrop_verify_20260926/。",
+  "diagnostic_profile_compensated": "adapter/analytic forward 的 compensate_crop 生成档（生成端以 tau+crop_start*Ts 造回波）；v2 下 crop_start=0 时为恒等（no-op），保留用于口径对照与 v1 复现。",
+  "raw32_vs_algo30_note": "raw_cir（32 tap）与 X（30 截窗 + FFT32 补零）分别命名、分别记录，不得混用。"
+ },
+ "noise": {
+  "model": "complex_gaussian_same_variance",
+  "normalization": "global_mean_square_over_full_L_x_4ch_x_30tap",
+  "reference_position": "final FFT-before actual input CIR (30-tap window starting at tap 0, background-processed)",
+  "per_signal": "each case has its own Ps computed over its own L x 4 x 30 noiseless input",
+  "noise_prefix_policy": "E4 快照敏感性：先按最大 L=128 生成 [128,4,30] 标准复高斯，再取前 L 个快照（确定前缀）；每 L 的 sigma 按其实际输入重算。",
+  "not_rf_frontend_snr": true,
+  "note": "本口径是接收处理后 SNR（仿真侧统一协议），不是 RF 前端 SNR；旧代码两套口径（逐 snapshot 整个 array / 仅(nrx,ntx,time)）均不沿用。"
+ },
+ "tau_convention": {
+  "model": "exact two-way spherical range per channel: tau = (||p-tx||+||p-rx||)/v_prop + system_delay",
+  "response_assumption": "S_equals_1_pure_phase（共同假设，不是已校准接收响应）"
+ },
+ "coordinate_convention": {
+  "polar_to_xy": "p = (r*sin(theta), -r*cos(theta))",
+  "theta_sign": "theta>0 = +X 侧，视轴 -Y",
+  "xy_to_polar": "r=hypot(x,y), theta=degrees(atan2(x,-y))"
+ },
+ "methods": {
+  "main_comparison": [
+   "this_method",
+   "b1_deng",
+   "b2_kakouche",
+   "c1_jade",
+   "c3_kim"
+  ],
+  "same_model_reference": [
+   "b0_standard_music"
+  ],
+  "archived": [],
+  "params_by_method": {
+   "this_method": {},
+   "b0_standard_music": {},
+   "b1_deng": {
+    "angle_step_deg": 0.7377206937259854,
+    "tau_step_distance_m": 0.05
+   },
+   "b2_kakouche": {
+    "angle_step_deg": 0.7377206937259854,
+    "tau_step_distance_m": 0.05
+   },
+   "c1_jade": {},
+   "c3_kim": {
+    "target_range_step_m": 0.05
+   }
+  },
+  "note": "B0 仅作同模型正确性校验，不是性能对手；所有方法共享同一 X/噪声/域/known-K。"
+ },
+ "metrics": {
+  "gate_m": 0.3,
+  "ospa_c_m": 0.3,
+  "ospa_p": 2,
+  "rms_ospa": "sqrt(mean_t OSPA_t^2)",
+  "tp_conditional_errors": [
+   "e_r",
+   "e_theta",
+   "e_xy"
+  ],
+  "failures_counted_in_denominator": true,
+  "e2_resolution_gate": "min(0.10, d/3)",
+  "na_policy": "NA 不缩小主分母（由 metrics 负责；runner 传状态并保留全部行）"
+ },
+ "scenes": {
+  "E1_A": {
+   "source": "analytic",
+   "layer": "A",
+   "name": "原论文任务重建（受控布局 + SNR 扫描）",
+   "layouts": {
+    "S1": [
+     [
+      1.8,
+      12.0
+     ]
+    ],
+    "S2": [
+     [
+      1.8,
+      12.0
+     ],
+     [
+      1.8,
+      -12.0
+     ]
+    ],
+    "S3": [
+     [
+      1.5,
+      12.0
+     ],
+     [
+      2.1,
+      12.0
+     ]
+    ],
+    "S4": [
+     [
+      1.5,
+      -12.0
+     ],
+     [
+      2.1,
+      12.0
+     ]
+    ],
+    "S5": [
+     [
+      1.5,
+      -20.0
+     ],
+     [
+      1.8,
+      0.0
+     ],
+     [
+      2.1,
+      20.0
+     ]
+    ]
+   },
+   "offgrid_shift_m": [
+    0.017,
+    -0.013
+   ],
+   "snr_db": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0
+   ],
+   "trials": 200,
+   "L": 128,
+   "row_count_method_runs": 45000
+  },
+  "E1_B": {
+   "source": "fdtd",
+   "layer": "B",
+   "name": "FDTD 代表场景 + SNR 扫描（同一后端噪声评估）",
+   "layouts": {
+    "S1": [
+     [
+      1.8,
+      12.0
+     ]
+    ],
+    "S2": [
+     [
+      1.8,
+      12.0
+     ],
+     [
+      1.8,
+      -12.0
+     ]
+    ],
+    "S3": [
+     [
+      1.5,
+      12.0
+     ],
+     [
+      2.1,
+      12.0
+     ]
+    ],
+    "S4": [
+     [
+      1.5,
+      -12.0
+     ],
+     [
+      2.1,
+      12.0
+     ]
+    ],
+    "S5": [
+     [
+      1.5,
+      -20.0
+     ],
+     [
+      1.8,
+      0.0
+     ],
+     [
+      2.1,
+      20.0
+     ]
+    ]
+   },
+   "offgrid_shift_m": [
+    0.017,
+    -0.013
+   ],
+   "snr_db": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0
+   ],
+   "trials": 50,
+   "L": 128,
+   "row_count_method_runs": 11250
+  },
+  "E2_A": {
+   "source": "analytic",
+   "layer": "A",
+   "name": "间距/可分性密扫（横向/径向/斜向）",
+   "directions": [
+    "transverse",
+    "radial",
+    "oblique"
+   ],
+   "base_r0_m": 1.8,
+   "base_theta0_deg": 12.0,
+   "spacings_m": [
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5,
+    0.75,
+    1.0
+   ],
+   "snr_db": [
+    0.0,
+    10.0,
+    20.0
+   ],
+   "trials": 100,
+   "L": 128,
+   "row_count_method_runs": 36000
+  },
+  "E2_B": {
+   "source": "fdtd",
+   "layer": "B",
+   "name": "FDTD 代表点（3 方向 x 3 间距）",
+   "directions": [
+    "transverse",
+    "radial",
+    "oblique"
+   ],
+   "base_r0_m": 1.8,
+   "base_theta0_deg": 12.0,
+   "spacings_m": [
+    0.3,
+    0.5,
+    1.0
+   ],
+   "snr_db": [
+    10.0
+   ],
+   "trials": 50,
+   "L": 128,
+   "row_count_method_runs": 2250
+  },
+  "E3": {
+   "name": "配对与稳定性",
+   "mandatory": "整场景成功率（共用 E1/E2 同一批 trial，不新增行）",
+   "optional": {
+    "power_diff_db": [
+     0.0,
+     6.0,
+     12.0
+    ],
+    "target_corr": [
+     0.0,
+     0.9,
+     1.0
+    ],
+    "trials": 50,
+    "default_enabled": false
+   }
+  },
+  "E4_A": {
+   "source": "analytic",
+   "layer": "A",
+   "name": "快照敏感性（同一 128 clean 序列前 L 切片）",
+   "base_layout": "S2",
+   "L_list": [
+    10,
+    16,
+    32,
+    64,
+    128
+   ],
+   "snr_db": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0
+   ],
+   "trials": 100,
+   "row_count_method_runs": 22500
+  },
+  "E4_B": {
+   "source": "fdtd",
+   "layer": "B",
+   "name": "快照敏感性（FDTD 同后端噪声评估）",
+   "base_layout": "S2",
+   "L_list": [
+    10,
+    16,
+    32,
+    64,
+    128
+   ],
+   "snr_db": [
+    -10.0,
+    -5.0,
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0
+   ],
+   "trials": 50,
+   "row_count_method_runs": 11250
+  },
+  "E6": {
+   "name": "复杂度/资源（cold/warm 计时）",
+   "base_layout": "S2",
+   "snr_db": 10.0,
+   "definitions": {
+    "warm": "从已构建字典/流形 + 共有 X 起算 -> pred",
+    "cold": "从共有 X 起算，并计入本次所需的字典/流形构建 -> pred",
+    "common_frontend": "通用前端 CIR->X（FFT/校准）warm/cold 均另列，不并入上述两段"
+   },
+   "report": "median 与 P95，及峰值内存",
+   "note": "FDTD 求解时间不计入算法时间；warm 必须是真正预构字典（不可只跑两遍）。"
+  }
+ },
+ "e0": {
+  "checks": [
+   "numerical_consistency_b0_vs_this_method",
+   "ideal_locality_diagnostic",
+   "crop_mismatch_disclosure",
+   "zero_offset_cfr_diagnostic"
+  ],
+  "note": "数值一致性与理想定位正确性分开；crop2/当前 FB 的可预期失配如实披露，不为准确率偷偷修补。"
+ },
+ "e6": {
+  "threads": "BLAS/OMP 固定为 1",
+  "timer": "time.perf_counter",
+  "report": [
+   "median",
+   "p95",
+   "peak_memory"
+  ]
+ },
+ "fdtd_defaults": {
+  "scatterer_radius_m": 0.056301167743389426,
+  "lambda_m": 0.037534111828926284,
+  "micro_motion_sigma_m": 0.002,
+  "micro_motion_radius_m": 0.01,
+  "resolution_px_per_m": 250.0,
+  "run_time_meep": 20.0,
+  "pml_thickness_lambda": 2.0,
+  "background_mode": "empty_field",
+  "note": "FDTD（层 B）由 fdtd 代理负责（fdtd/api.py::generate_clean）。层 B 的 tap0 同为物理零延迟；同一后端噪声评估由本 runner 施加（与层 A 完全同一噪声口径）。250/350 网格收敛 + 跑时长前置验证由 fdtd 代理执行；非全量双档。",
+  "separation_rule": "E1/E2 目标间距必须 >= 2*r_target + 2*r_traj + margin = 0.125 m"
+ },
+ "decisions": {
+  "E4_trials": 100,
+  "E4_b_base_layout": "S2",
+  "e1_clean_signal_fixed_per_case": true,
+  "e1_trials_are_noise_only": true,
+  "independent_source_mc_separately_labeled": true,
+  "unified_static_domain": true
+ }
+}

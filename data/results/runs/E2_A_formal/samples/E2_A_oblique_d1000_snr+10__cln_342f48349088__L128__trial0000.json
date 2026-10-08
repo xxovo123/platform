@@ -1,0 +1,46 @@
+{
+ "task_id": "E2_A_oblique_d1000_snr+10",
+ "clean_id": "cln_342f48349088",
+ "scene": "E2",
+ "k": 2,
+ "snr_db": 10.0,
+ "trial": 0,
+ "L": 128,
+ "seed": 15060142418532910245,
+ "status": "ok",
+ "targets_xy_m": [
+  [
+   0.7935763274446789,
+   -2.0329851988283636
+  ],
+  [
+   -0.045094240500745175,
+   -1.4883461638133368
+  ]
+ ],
+ "prediction": [
+  [
+   0.8,
+   -2.05,
+   0.45931890748913473
+  ],
+  [
+   -0.05,
+   -1.5,
+   0.31525798300692937
+  ]
+ ],
+ "n_predictions": 2,
+ "spectrum_available": true,
+ "grid_note": "grid_x/grid_y = 协议统一静态域 89x54；spectrum 在时保存",
+ "tags": [
+  "direction=oblique",
+  "d_nominal_m=1.000",
+  "d_actual_m=1.000000"
+ ],
+ "layout": null,
+ "direction": "oblique",
+ "d_nominal_m": 1.0,
+ "d_actual_m": 0.9999999999999999,
+ "note": "样例固定 trial=0、SNR=10 dB；不另挑 seed。"
+}
