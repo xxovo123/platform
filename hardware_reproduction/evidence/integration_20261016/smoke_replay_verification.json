@@ -1,0 +1,16 @@
+{
+  "n_segments": 1,
+  "n_methods_and_configs": 1,
+  "n_estimator_runs": 1,
+  "all_205": false,
+  "pass": true,
+  "position_comparison_atol_m": 1e-08,
+  "environment": {
+    "python": "3.13.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "names": [
+    "this_method"
+  ]
+}

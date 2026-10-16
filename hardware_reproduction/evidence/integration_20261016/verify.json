@@ -1,0 +1,2327 @@
+{
+  "n_segments": 205,
+  "n_recordings": 31,
+  "checks": [
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t10",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t20",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t30",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t40",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t50",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t60",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t70",
+      "raw_hash_pass": true,
+      "X_hash_pass": true,
+      "state_hash_pass": true
+    }
+  ],
+  "source_checks": [
+    {
+      "file": "source/大修执行_20260923/04_Q6/common/q6_contract.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/common/q6_methods_this_method.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/common/q6_search_profiles.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/hardware/methods/b1_deng.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/hardware/methods/b2_kakouche.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/hardware/methods/c1_jade.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/hardware/methods/c3_kim.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/04_Q6/hardware/methods/b5_wang_full2d.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_backend.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_metrics.py",
+      "pass": true
+    },
+    {
+      "file": "source/Q2 数据采集/uwb-occupancy-detection-main/radar_algorithm.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/cli.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/evaluate.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/manifest.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/matching.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/metrics.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/peaks.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/protocol.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/selfcheck.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/sources.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/__init__.py",
+      "pass": true
+    },
+    {
+      "file": "source/大修执行_20260923/01_投稿口径/p0b/protocol/knownk_protocol.json",
+      "pass": true
+    },
+    {
+      "file": "data/config_matrix.json",
+      "pass": true
+    },
+    {
+      "file": "docs/B1_B2_适配记录.md",
+      "pass": true
+    },
+    {
+      "file": "docs/B5_Wang_Full2D_原文公式与适配.md",
+      "pass": true
+    },
+    {
+      "file": "docs/C1_JADE_适配与公式.md",
+      "pass": true
+    },
+    {
+      "file": "docs/C3_Kim_适配与公式.md",
+      "pass": true
+    },
+    {
+      "file": "data/raw/index.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/schema.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-370_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-380_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-410_N1_S1_002__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-420_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-430_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-450_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/indoor_G-460_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t10.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t20.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t30.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t40.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t50.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t60.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t70.npz",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C2-1_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C2-3_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C2-4_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C2-5_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C2-6_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C3-1_N3_S1-S2-S3_rot1_002.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-370_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-380_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-410_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-410_N1_S1_002.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-420_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-430_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-450_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/indoor_G-460_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C2-1_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C2-3_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C2-4_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C2-5_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C2-6_N2_S1-S2_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C3-1_N3_S1-S2-S3_rot1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-370_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-380_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-410_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-420_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-430_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-450_N1_S1_001.json",
+      "pass": true
+    },
+    {
+      "file": "data/raw/recordings/outdoor_G-460_N1_S1_002.json",
+      "pass": true
+    },
+    {
+      "file": "data/reference_stability.csv",
+      "pass": true
+    },
+    {
+      "file": "data/reference_selected_measurements.csv",
+      "pass": true
+    },
+    {
+      "file": "data/paper_reference/revision_hardware.tex",
+      "pass": true
+    },
+    {
+      "file": "data/paper_reference/baseline.tex",
+      "pass": true
+    },
+    {
+      "file": "data/paper_reference/ablation.tex",
+      "pass": true
+    },
+    {
+      "file": "data/paper_reference/groups.tex",
+      "pass": true
+    },
+    {
+      "file": "data/paper_reference/stability.tex",
+      "pass": true
+    }
+  ],
+  "pass": true
+}

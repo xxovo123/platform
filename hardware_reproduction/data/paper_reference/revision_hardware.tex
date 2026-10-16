@@ -1,0 +1,121 @@
+\section{Experiments on an IR-UWB Chip}
+\label{sec:experiments}
+\subsection{Prototype and Measurement Coverage}
+Measurements use the Calterah UAB-1106AQ1-Directional evaluation board. Its array has two transmit--receive elements, TRX1 and TRX2, and two receive-only elements, RX1 and RX2. Time-division multiplexing (TDM) activates TRX1 then TRX2; the receiver order is TRX1, TRX2, RX1, RX2. The eight ordered transmitter--receiver pairs occupy seven distinct virtual positions under the sum convention $\mathbf v_q=\mathbf t_q+\mathbf r_q$: TRX1$\rightarrow$TRX2 and TRX2$\rightarrow$TRX1 coincide. The estimator uses the four pairs from TRX1/TRX2 to RX1/RX2, shown in Fig.~\ref{fig:antenna_array}.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.91\textwidth]{assets_20260930/antenna_layout.pdf}
+\caption{Physical and virtual array geometry. In (b), T1/T2 denote TRX1/TRX2, R1/R2 denote RX1/RX2, and an arrow identifies a transmit--receive pair. The two reciprocal pairs share the central upper position. The four filled lower squares are the selected channels; their virtual x coordinates are $-38,-19,0,19$~mm. The vertical coordinate is the array's z coordinate, not the forward ranging axis.}
+\label{fig:antenna_array}
+\end{figure*}
+
+Table~\ref{tab:hardware_settings} lists the hardware acquisition and reference JSF-MUSIC settings. Channel phase corrections and individual transmitter--receiver coordinates follow the acquisition metadata. The background reference updates continuously throughout replay; it is not reset for each estimate. This preserves the processing used during acquisition. The peak rule is fixed across target configurations and uses the same settings as the simulations and joint-spectrum baseline comparisons.
+
+\begin{table}[t]
+\centering
+\caption{Hardware acquisition and reference JSF-MUSIC settings.}
+\label{tab:hardware_settings}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{.49\columnwidth}p{.45\columnwidth}}
+\hline
+Parameter & Value \\
+\hline
+Carrier $f_c$; bandwidth $B$ & 7.9872~GHz; 500~MHz \\
+Raw CIR; tap interval $T_s$ & 32 complex taps; 1~ns \\
+FFT size $N_{\rm FFT}$; frequencies $F$ & 32; 17 \\
+Selected channels $C$; snapshots $L$ & 4; 128 \\
+Snapshot matrix; covariance size & $68\times128$; $68\times68$ \\
+Background coefficient $\beta$ & 0.25 \\
+Search region $\Omega$ (m) & $[-2.2,2.2]\times[-4.2,-0.55]$ \\
+Grid step $\Delta$; loading $\epsilon$ & 0.05~m; $10^{-5}$ \\
+Peak fraction $\eta$; separation $d_{\min}$ & 0.30; 0.10~m \\
+Peak neighborhood; plateau connectivity & $3\times3$; eight-neighbor \\
+Target count $K$ & Supplied, 1--3 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.91\textwidth]{assets_20260930/hardware_setup.pdf}
+\caption{Indoor and outdoor measurement environments and the union of tested positions. A cross denotes a nominal target position and the black square the radar origin. The seven positions are combined as specified in Table~\ref{tab:configurations}; they are not seven people measured simultaneously.}
+\label{fig:hardware_setup}
+\end{figure*}
+
+The evaluation contains 205 evaluation segments, with 103 indoor and 102 outdoor segments. Both environments contain the same seven single-person, five two-person and three three-person configurations at fixed nominal positions (Table~\ref{tab:configurations}). Pairwise target separations range from 0.684 to 2.572~m. All methods are evaluated on the complete 205-segment evaluation dataset and receive the target count for each segment. Thus this experiment evaluates localization conditional on a known count, rather than automatic occupancy estimation or counting an unknown number of people. The smaller separations examined in Section~V are simulation conditions and do not extend the measured coverage.
+
+\begin{table}[t]
+\centering
+\caption{Hardware target configurations in both environments.}
+\label{tab:configurations}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcl}
+\hline
+Configuration & Targets ($K$) & Position(s) or G-series identifier(s) \\
+\hline
+G-370 & 1 & $(-0.643,-0.766)$ \\
+G-380 & 1 & $(-1.286,-1.532)$ \\
+G-410 & 1 & $(0,-1.000)$ \\
+G-420 & 1 & $(0,-2.000)$ \\
+G-430 & 1 & $(0,-3.000)$ \\
+G-450 & 1 & $(0.643,-0.766)$ \\
+G-460 & 1 & $(1.286,-1.532)$ \\
+C2-1 & 2 & G-380, G-420 \\
+C2-3 & 2 & G-370, G-450 \\
+C2-4 & 2 & G-370, G-460 \\
+C2-5 & 2 & G-380, G-410 \\
+C2-6 & 2 & G-370, G-410 \\
+C3-1 & 3 & G-380, G-420, G-460 \\
+C3-3 & 3 & G-370, G-420, G-450 \\
+C3-4 & 3 & G-370, G-410, G-460 \\
+\hline
+\end{tabular}
+\par\smallskip\parbox{.98\linewidth}{\scriptsize Coordinates $(x,y)$ are in metres. Multiple identifiers specify people measured simultaneously.}
+\end{table}
+
+\subsection{Localization, Detection and Repeated Measurements}
+The metrics follow Section~V-A. Across the 205 segments, JSF-MUSIC has 334 assigned pairs, with position, range and azimuth RMSE of 0.1790~m, 0.0687~m and $6.1479^\circ$, respectively. Detection matching gives 315 TP, 23 FN and 19 FP, corresponding to 93.20\% DR, a 6.80\% missed-target rate and 0.0927 false targets per segment. Eighteen segments contain at least one FP. These are false outputs in occupied scenes, not an empty-scene false-alarm probability. Four unassigned true targets are excluded from RMSE; this number differs from FN, which also includes targets with inaccurate outputs.
+
+\input{assets_20260930/groups.tex}
+Table~\ref{tab:groups} separates the results by environment and target count. Indoor and outdoor position RMSE are 0.1842 and 0.1740~m, with DR of 93.29 and 93.10\%. Three-person configurations have larger error and lower DR than two-person configurations, indicating the added difficulty of simultaneous recovery. The configurations differ in their positions, so target count is not an isolated causal variable in this table.
+
+Each configuration has at least four repeated temporal measurements in each environment. For a balanced stability analysis, four measurements are selected per group using a fixed order-based rule independent of error. If $R_{q,c,t}$ is the measurement-level RMSE for configuration $c$, the reported standard deviation (SD) is
+\begin{equation}
+s_{q,c}=\sqrt{\frac{1}{3}\sum_{t=1}^{4}
+(R_{q,c,t}-\overline R_{q,c})^2}.
+\label{eq:stability}
+\end{equation}
+\input{assets_20260930/stability.tex}
+Table~\ref{tab:stability} reports variation rather than mean error. Most configurations have position SD below 0.04~m; indoor C2-6 has the largest value, 0.1197~m. Zero SD means that the selected estimates have identical error at the evaluated grid resolution, not that their localization error is zero.
+
+\subsection{Comparison of Adapted Estimator Implementations}
+The five external baselines were introduced in Section~I. Their implementations use the same four channels, 17 frequency samples, 128 snapshots, position region, supplied target count and metrics. Deng retains the reduced-dimension angle search followed by conditional delay estimation. Kakouche retains incoherent MUSIC angle estimation, LCMV beamforming and one-dimensional MUSIC range estimation. JADE uses the alternative 2D ESPRIT formulation in Section~III-E of \cite{vanderveen1998jade}, with paired angle and delay estimates. Kim uses a CIR adaptation of DFT--ESPRIT with one angle estimate per selected range bin. The Wang baseline implements the conventional joint 2D spectrum in Section~3.1 of \cite{wang2014successive}, extended to four channels using the multi-element formulation of Deng; it is not Wang's successive estimator.
+
+Although search procedures differ, their discretized stages have comparable spatial sampling precision. JSF-MUSIC and traditional 2D MUSIC use the same 5~cm Cartesian grid. Deng and Kakouche use nominal 5~cm range and $0.6^\circ$ angle steps; the latter corresponds to at most approximately 5~cm tangential displacement in the evaluation region. Kim's delay grid has approximately 4.70~cm range spacing, while its angle estimate and both JADE parameters are obtained without an angular search grid. Candidate spacing is not a claim about achieved resolution or accuracy.
+
+The baselines preserve their defining estimation steps and method-specific covariance processing. Deng and Wang use a plane-wave virtual-array model; converting reference delay to radar range uses the two-way propagation factor. Their CIR interface takes the common effective-response approximation $S_f=1$. These implementations are adaptations to shared measured snapshots, not reproductions of the original acquisition systems. In particular, the chip's finite CIR and the shared preprocessing replace the acquisition interfaces assumed in the cited studies. The comparison therefore assesses these adaptations on this dataset; it cannot establish a general ranking of the published methods under their original signal and acquisition assumptions.
+\input{assets_20260930/baseline.tex}
+Table~\ref{tab:baseline} shows that Deng's adaptation has lower position RMSE (0.1678 versus 0.1790~m) and azimuth RMSE ($5.5386^\circ$ versus $6.1479^\circ$) than JSF-MUSIC, with the same 93.20\% DR and fewer false outputs. JSF-MUSIC has slightly lower range RMSE (0.0687 versus 0.0698~m). Its RMSE is lower than that of the other four adapted baselines, with equal or higher DR. RMSE pools the assigned pairs produced by each method; their pair counts differ, and missing outputs remain separately reported. These results do not establish superiority over Deng or over joint estimators generally. The practical distinction is that JSF-MUSIC directly maps each candidate position to the selected chip channels' individual transmit--target--receive paths, providing a CIR-to-geometry implementation for this radar configuration. This distinction is not evidence of an accuracy advantage from the geometric model.
+
+\subsection{Hardware Ablation}
+\input{assets_20260930/ablation.tex}
+Table~\ref{tab:ablation} varies frequency count, digital bandwidth, snapshot count, channel subset and FB averaging. Target separation is evaluated separately in Section~V-C. All ablations use the same 205 segments and the same peak rule.
+
+At a fixed 500~MHz span, reducing the frequency count from 17 to 9 or 5 also increases spacing from 31.25 to 62.5 or 125~MHz. The corresponding nominal two-way ambiguity periods $c/(2\Delta f)$ are approximately 4.80, 2.40 and 1.20~m. The large errors therefore characterize the complete sampling configuration, including ambiguity and covariance effects, rather than frequency count alone.
+
+Bandwidth changes select a narrower digital subband without changing the transmitted RF bandwidth. Fixed-count comparisons are provided for five and nine bins. The 125~MHz, five-bin configuration has position RMSE of 0.1639~m but 31 unassigned targets and a DR of 87.87\%; its smaller assigned-pair error does not mean better overall recovery than the reference.
+
+With 16, 32, 64 and 128 hardware snapshots, DR increases from 86.39 to 88.17, 91.12 and 93.20\%, respectively. Position RMSE is not monotonic at intermediate lengths. All six two-channel and four three-channel subsets are included, with their apertures; the four-channel reference provides the best joint RMSE and DR among these subsets. Channel removal changes both sampling and aperture.
+
+Removing FB averaging changes position RMSE from 0.1790 to 0.2429~m and DR from 93.20 to 92.90\%. This quantifies the contribution of the implemented averaging on the evaluated dataset. It does not prove that the manifold satisfies the classical FB symmetry condition or that coherent targets will always be resolved.
+
+\input{revision_correspondence.tex}
+
+\subsection{Scope and Limitations of the Hardware Evaluation}
+\label{subsec:limitations}
+The measurements establish performance only for the tested fixed-position configurations, with one to three people and separations of at least approximately 0.684~m. Performance for closer people, moving people, unknown target counts, different body orientations, more cluttered indoor scenes and larger target numbers has not been systematically established. Temporal repetitions at the same nominal configurations do not establish generalization to these conditions. In particular, the simulation-based separation sensitivity analysis does not measure the radar's close-person resolving capability.
+
+The supplied count determines the assumed signal-subspace dimension and the maximum number of retained peaks. DR consequently measures recovery conditional on that count and the stated matching tolerance; it is neither a person-counting accuracy nor a measured resolution limit. Establishing those capabilities would require additional acquisition conditions and a separately evaluated count-estimation procedure.

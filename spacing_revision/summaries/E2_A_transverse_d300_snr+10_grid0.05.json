@@ -1,0 +1,56 @@
+{
+  "condition": {
+    "task_id": "E2_A_transverse_d300_snr+10",
+    "clean_id": "cln_988782594df3",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5196614716607479,
+        -1.7233548545994193
+      ],
+      [
+        0.2262171914406062,
+        -1.7857283618447473
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        16.78019184719916
+      ],
+      [
+        1.8,
+        7.219808152800841
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.3000000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 16505090827118636635,
+    "direction": "transverse",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.3000000000000001
+  },
+  "grid_m": 0.05,
+  "n": 100,
+  "successful": 0,
+  "rate": 0.0,
+  "wilson95": [
+    3.469446951953614e-18,
+    0.03699349820698568
+  ],
+  "method_failed": 0,
+  "tp": 200,
+  "dr": 1.0
+}

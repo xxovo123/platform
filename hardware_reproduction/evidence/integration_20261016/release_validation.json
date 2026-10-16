@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "segments": 205,
+  "recordings": 31,
+  "truth_instances": 338,
+  "methods": 6,
+  "ablation_configs": 20,
+  "archived_replay_rows_checked": 5330,
+  "imported_hashes_checked": 527,
+  "temporal_selection_rows_checked": 120,
+  "extra_printed_table_checks": 110,
+  "estimator_executed": false,
+  "simulation_code_executed": false,
+  "note": "Run reproduce_hardware.py verify/all-saved separately for raw/features/source and recomputed metrics."
+}

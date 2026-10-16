@@ -1,0 +1,53 @@
+{
+ "clean_id": "cln_4f0f055c211a",
+ "layer": "A",
+ "source": "analytic",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E2",
+ "targets_xy_m": [
+  [
+   0.543643981034153,
+   -1.7159403316797872
+  ],
+  [
+   0.20129232077732104,
+   -1.7887094234660028
+  ]
+ ],
+ "targets_polar": [
+  [
+   1.8,
+   17.57923596764617
+  ],
+  [
+   1.8,
+   6.42076403235383
+  ]
+ ],
+ "clean_seed": 1674669156181053902,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "1ed20852dffcb70b8b4920c409cb0c90dabe50d7f953f4bd95fa615b46acd663",
+ "protocol_hash": "755930b58168ba455eb194f1a1ff6a4c8ac8a9c014e1afe1db60890c0ddda754",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "band_mode": "bandlimited_500mhz",
+ "band_check": {
+  "oob_fraction_before_crop": 1.555777775396166e-32,
+  "oob_fraction_after_crop": 0.0012634179344723786,
+  "note": "before_crop 是规范 §6 的硬门槛（<1e-12）；after_crop 是 [0:30] 截窗引入的谱泄漏，单独记录，不用它误判生成失败。"
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0); crop_start=0",
+ "crop_start": 0,
+ "raw_taps": 32,
+ "fft_length": 32,
+ "npz_sha256": "23862b24747bd27c8be9e4d4f48b6e00655540dfbf7d38dbec5348bb04af9889",
+ "truth_sha256": "9ddd6fb41e5adc6c77661d018dda2e106e9198001fffc5b73fc6e94a772b57ef",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "noise_prefix_policy": "每 clean/trial 先抽 [128,4,30] 标准噪声再取前缀",
+ "built_at": "2026-10-16T14:41:54+08:00"
+}

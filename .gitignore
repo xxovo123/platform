@@ -3,3 +3,18 @@ __pycache__/
 .venv/
 outputs/
 .DS_Store
+
+# Preserve the audited hardware evidence; new runs belong in generated/.
+!/hardware_reproduction/outputs/
+!/hardware_reproduction/outputs/**
+hardware_reproduction/generated/
+hardware_reproduction/smoke/
+hardware_reproduction/full_replay/replay_predictions.json
+hardware_reproduction/**/mplconfig/
+manuscript_assets/generated/
+
+# Reproduction outputs and renderer caches; scientific data/cache remains released.
+**/generated/
+**/mplconfig/
+.pytest_cache/
+*.tmp

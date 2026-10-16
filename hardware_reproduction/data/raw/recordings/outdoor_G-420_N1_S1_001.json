@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "recording_id": "outdoor_G-420_N1_S1_001",
+  "source_bin_sha256": "64a5f0880bb252db0e269d6ecee2905559ea2355c6a689986002b93a5552aa74",
+  "source_bin_bytes": 4290144,
+  "ft_len": 32,
+  "raw_bin_unprocessed": true,
+  "udp_tx_list": [
+    1,
+    2
+  ],
+  "udp_rx_list": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "channel_pairs": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "device_channel_pairs": [
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ]
+  ],
+  "selected_pair_indices": [
+    2,
+    3,
+    6,
+    7
+  ],
+  "tx_positions_m": [
+    [
+      -0.019,
+      0,
+      0.0
+    ],
+    [
+      0.019,
+      0,
+      0.0
+    ]
+  ],
+  "rx_positions_m": [
+    [
+      -0.019,
+      0,
+      0.0
+    ],
+    [
+      0.019,
+      0,
+      0.0
+    ],
+    [
+      -0.019,
+      0.0,
+      -0.02
+    ],
+    [
+      0.0,
+      0.0,
+      -0.02
+    ]
+  ],
+  "tap_interval_s": 1e-09,
+  "center_frequency_hz": 7987200000.0,
+  "bandwidth_hz": 500000000.0,
+  "bg_m_factor": 4.0,
+  "recording_duration_s": 70.001,
+  "snapshot_rate_estimate_hz": 55.51329305925178,
+  "expected_snapshot_rate_hz": 50.0,
+  "recording_channel_frame_counts": {
+    "1-4": 3886,
+    "1-5": 3886,
+    "1-6": 3886,
+    "1-7": 3886,
+    "2-4": 3886,
+    "2-5": 3886,
+    "2-6": 3886,
+    "2-7": 3886
+  },
+  "recording_channel_frame_rates_hz": {
+    "1-4": 55.51329305925178,
+    "1-5": 55.51329305925178,
+    "1-6": 55.51329305925178,
+    "1-7": 55.51329305925178,
+    "2-4": 55.51329305925178,
+    "2-5": 55.51329305925178,
+    "2-6": 55.51329305925178,
+    "2-7": 55.51329305925178
+  },
+  "hardware_timestamps_available": false,
+  "hardware_sequence_numbers_available": false,
+  "host_frame_timestamps_available": false,
+  "crop_tap_start_inclusive": 2,
+  "crop_tap_stop_exclusive": 32,
+  "fft_length": 32,
+  "fft_bin_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "frequencies_hz": [
+    7987200000.0,
+    8018450000.0,
+    8049700000.0,
+    8080950000.0,
+    8112200000.0,
+    8143450000.0,
+    8174700000.0,
+    8205950000.0,
+    8237200000.0,
+    7737200000.0,
+    7768450000.0,
+    7799700000.0,
+    7830950000.0,
+    7862200000.0,
+    7893450000.0,
+    7924700000.0,
+    7955950000.0
+  ],
+  "channel_phase_calibration_rad": [
+    -0.0,
+    -0.49072375380773364,
+    1.1062868947533422,
+    1.5748289100316295,
+    -0.5876511374160144,
+    -1.9895222818981357,
+    0.12190304520431955,
+    0.5787126081848506
+  ],
+  "phase_calibration_enabled": true,
+  "feature_order": "frequency-major then selected channel",
+  "system_delay_s": 0.0,
+  "epsilon_r_background": 1.0,
+  "segment_ids": [
+    "outdoor_G-420_N1_S1_001__t10",
+    "outdoor_G-420_N1_S1_001__t20",
+    "outdoor_G-420_N1_S1_001__t30",
+    "outdoor_G-420_N1_S1_001__t40",
+    "outdoor_G-420_N1_S1_001__t50",
+    "outdoor_G-420_N1_S1_001__t60",
+    "outdoor_G-420_N1_S1_001__t70"
+  ]
+}

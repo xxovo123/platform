@@ -1,0 +1,158 @@
+{
+  "this_method": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/grid5cm_full214_20260924/this_method/per_method/this_method_per_window.json",
+    "source_sha256": "b7d2b3602d8040fe4cf4659b1efefb90c589dc9d8697ec98b7d4d64665b13fb2",
+    "file": "data/frozen/this_method.json",
+    "n_segments": 205
+  },
+  "b1_deng": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/grid5cm_full214_20260924/b1_deng/per_method/b1_deng_per_window.json",
+    "source_sha256": "b2dcd11fcddbc6af666ae4517db987598b72d89a3aae37be52f0c88720914412",
+    "file": "data/frozen/b1_deng.json",
+    "n_segments": 205
+  },
+  "b2_kakouche": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/grid5cm_full214_20260924/b2_kakouche/per_method/b2_kakouche_per_window.json",
+    "source_sha256": "48e590be99bdc30e5f87bb557654bacad9190acec078edf172702c9de30b32d9",
+    "file": "data/frozen/b2_kakouche.json",
+    "n_segments": 205
+  },
+  "c1_jade": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/grid5cm_full214_20260924/c1_jade/per_method/c1_jade_per_window.json",
+    "source_sha256": "dba5599dde6ae548232dbdb123bf6a1a1502eaba4858558719414d9b8311e371",
+    "file": "data/frozen/c1_jade.json",
+    "n_segments": 205
+  },
+  "c3_kim": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/grid5cm_full214_20260924/c3_kim/per_method/c3_kim_per_window.json",
+    "source_sha256": "2f3c8d6f095da057e4352dd0270afeecb568775dca59043bde473274f28e1575",
+    "file": "data/frozen/c3_kim.json",
+    "n_segments": 205
+  },
+  "b5_wang_full2d": {
+    "source": "大修执行_20260923/04_Q6/hardware/results/wang_full2d_20260927/b5_wang_full2d/per_method/b5_wang_full2d_per_window.json",
+    "source_sha256": "bf960c8c7126609184933a6ba086de3b11f8f6655b3245fb3c02122599abb7ba",
+    "file": "data/frozen/b5_wang_full2d.json",
+    "n_segments": 205
+  },
+  "ablation/REF": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/REF/per_window.json",
+    "source_sha256": "e078ffdf98f5876911d4239ac83df60b802e6435f3c7edbeab5493949d79929c",
+    "file": "data/frozen/ablation/REF.json",
+    "n_segments": 205
+  },
+  "ablation/A_F09": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/A_F09/per_window.json",
+    "source_sha256": "ad4006db949c4cb819b0a681ad1a3ef516d174b59e540ea9f87d98ff3ca88227",
+    "file": "data/frozen/ablation/A_F09.json",
+    "n_segments": 205
+  },
+  "ablation/A_F05": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/A_F05/per_window.json",
+    "source_sha256": "0f9571028639dd6e31121b8a9742abbc5468fa516f9a12d2155762c5b0c6250b",
+    "file": "data/frozen/ablation/A_F05.json",
+    "n_segments": 205
+  },
+  "ablation/B_span250": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/B_span250/per_window.json",
+    "source_sha256": "4aae3018d95df043b072a73ec14115b3463361b7f1c6f7a4584f9dc0452a3ab3",
+    "file": "data/frozen/ablation/B_span250.json",
+    "n_segments": 205
+  },
+  "ablation/B_span125": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/B_span125/per_window.json",
+    "source_sha256": "980302d933f290101778c10423f8a00e64d9b3b9db98274150c5d0069345809a",
+    "file": "data/frozen/ablation/B_span125.json",
+    "n_segments": 205
+  },
+  "ablation/S_span250_F9": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/S_span250_F9/per_window.json",
+    "source_sha256": "6a3ceb66aab2295f521b83cef8ca1f46b41f71fd71dbd46b513d15b6c222498e",
+    "file": "data/frozen/ablation/S_span250_F9.json",
+    "n_segments": 205
+  },
+  "ablation/C_L016": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/C_L016/per_window.json",
+    "source_sha256": "e3b86ab3d4c95c07a1a16e34eacf28cef919f7c206022f81af7ab81a2396aee8",
+    "file": "data/frozen/ablation/C_L016.json",
+    "n_segments": 205
+  },
+  "ablation/C_L032": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/C_L032/per_window.json",
+    "source_sha256": "5a79a02b45f0a608dc114850d622afb65da50009924850b442b3bc6eedee432d",
+    "file": "data/frozen/ablation/C_L032.json",
+    "n_segments": 205
+  },
+  "ablation/C_L064": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/C_L064/per_window.json",
+    "source_sha256": "dea4a700abadc523f465db0ea8a537a7298493ee7903dee02399cb8757c65ec9",
+    "file": "data/frozen/ablation/C_L064.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_01": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_01/per_window.json",
+    "source_sha256": "568592a94ad8e95666e083b7d1b7df42dad3efea429a7dfeca247e4bec9118a6",
+    "file": "data/frozen/ablation/D_C2_01.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_02": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_02/per_window.json",
+    "source_sha256": "0b9599a59b4591fab8c6456316dbbc29850e55fe707ba6c2ea13b9b290fd8d83",
+    "file": "data/frozen/ablation/D_C2_02.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_03": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_03/per_window.json",
+    "source_sha256": "bec25ffe41c0abb7f24e27ecee52c9d7ba534e44effec02e141b30992336a3db",
+    "file": "data/frozen/ablation/D_C2_03.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_12": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_12/per_window.json",
+    "source_sha256": "b500cc31a8b37e427ae2d878624e93b28119f964c501c542599ecad3a04a8ad7",
+    "file": "data/frozen/ablation/D_C2_12.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_13": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_13/per_window.json",
+    "source_sha256": "6d80d148fc1dee33f59325c05c51c8044b5d9305b9de612591217a429ddb398d",
+    "file": "data/frozen/ablation/D_C2_13.json",
+    "n_segments": 205
+  },
+  "ablation/D_C2_23": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C2_23/per_window.json",
+    "source_sha256": "eac9e32af98ea6500eb11339b7675cfe0bbea3e6f446a4f16521276873317b8f",
+    "file": "data/frozen/ablation/D_C2_23.json",
+    "n_segments": 205
+  },
+  "ablation/D_C3_012": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C3_012/per_window.json",
+    "source_sha256": "c3ec7ead221ccacfdaecb0c1f85a8d9fdf3834511d82c780bbccc33248750dda",
+    "file": "data/frozen/ablation/D_C3_012.json",
+    "n_segments": 205
+  },
+  "ablation/D_C3_013": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C3_013/per_window.json",
+    "source_sha256": "bc76ac767f7d3c3c033689bd214b21a934eff5a502e641ee006b886f60bbd579",
+    "file": "data/frozen/ablation/D_C3_013.json",
+    "n_segments": 205
+  },
+  "ablation/D_C3_023": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C3_023/per_window.json",
+    "source_sha256": "f43e3a68c28bf3d0b2ba2106c7e3d42abd7ccaae65602290af136a396d0ffeb2",
+    "file": "data/frozen/ablation/D_C3_023.json",
+    "n_segments": 205
+  },
+  "ablation/D_C3_123": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/D_C3_123/per_window.json",
+    "source_sha256": "47cbec7651c1978466912834fb8394a33fd4c95a0a5e41a7618f51889067219c",
+    "file": "data/frozen/ablation/D_C3_123.json",
+    "n_segments": 205
+  },
+  "ablation/E_FB0": {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/results/configs/E_FB0/per_window.json",
+    "source_sha256": "5ae69a947e7dd8eef603bb2f7cc39a5aff6a2ac928269bbb58a9c44eea8de30e",
+    "file": "data/frozen/ablation/E_FB0.json",
+    "n_segments": 205
+  }
+}

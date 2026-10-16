@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "file": "figures/algo_flowchart_restored.svg",
+      "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/algo_flowchart_restored.svg",
+      "sha256": "c995151d4a7ca5ee83a781731e38b5e4bee308dbb53db8dfc698cb476b6fdd06",
+      "bytes": 97532
+    },
+    {
+      "file": "figures/algo_flowchart_restored.pdf",
+      "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/algo_flowchart_restored.pdf",
+      "sha256": "2f16df37656e6db8158764b8cf49ea027f85221d1877ec78a8298884555dfa00",
+      "bytes": 42285
+    },
+    {
+      "file": "figures/antenna_layout.pdf",
+      "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/antenna_layout.pdf",
+      "sha256": "13b9c1842908efa8aadf0e8e1b2ab15afca0339c7cb6982e2a0ada0d41808b96",
+      "bytes": 13465
+    },
+    {
+      "file": "figures/hardware_setup.pdf",
+      "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/hardware_setup.pdf",
+      "sha256": "b0d647236655a39223438c710bbf0c88f859bee2fad08c54dccfc342a000a64f",
+      "bytes": 68705
+    },
+    {
+      "file": "figures/CIR_Time_Domain_Signal_Acquisition_Procedure.pdf",
+      "source": "期刊强制修改_20261015/03_论文工作稿/paper/CIR_Time_Domain_Signal_Acquisition_Procedure.pdf",
+      "sha256": "53dcc74ad06a07c5be6844d82dc4214d2e04b3d699466ea0bf18b9142cb658c5",
+      "bytes": 105917
+    },
+    {
+      "file": "photos/indoor_anonymized_crop.jpg",
+      "source": "大修执行_20260923/05_论文回复/paper/indoor_anonymized_crop.jpg",
+      "sha256": "bfb913b89f2ef277d7e6fd3c2e5c96a3bdcd02eac1632c463a273accc316770b",
+      "bytes": 950946
+    },
+    {
+      "file": "photos/outdoor_anonymized_crop.jpg",
+      "source": "大修执行_20260923/05_论文回复/paper/outdoor_anonymized_crop.jpg",
+      "sha256": "606722236239228ca3159f131206e8752828173c93a07cd483f0339d93470b21",
+      "bytes": 1838682
+    },
+    {
+      "file": "source/draw_algorithm_flowchart.py",
+      "source": "大修执行_20260923/05_论文回复/tools/draw_algorithm_flowchart.py",
+      "sha256": "5bd7fbf399eb40392f667494a85d8955eac8830f0532923469bc9f98b82e5bce",
+      "bytes": 18524
+    }
+  ],
+  "original_plotting_script": "大修执行_20260923/05_论文回复/paper/build_manuscript_assets.py",
+  "original_plotting_script_sha256": "e2138ad0260dec121d091e8cacd7436e18fe523c61938cf8967e6b1d8f579313",
+  "original_restore_script_sha256": "6f99f017f8654e9005d9be29c5b1de31a29f0e6a20f8046163d835dee2cfff90",
+  "ported_sections": [
+    "Physical and virtual arrays",
+    "Scene photos and position map"
+  ],
+  "changes": [
+    "portable input/output paths",
+    "CLI entry",
+    "nominal positions JSON"
+  ],
+  "photo_policy": "Only two approved anonymized submission crops, exact frozen hashes. No original photographs or internal full-frame derivatives.",
+  "cir_status": "Original static vector PDF; no confirmed editable authoring source found."
+}

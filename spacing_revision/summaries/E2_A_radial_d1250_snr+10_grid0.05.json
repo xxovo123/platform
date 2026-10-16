@@ -1,0 +1,56 @@
+{
+  "condition": {
+    "task_id": "E2_A_radial_d1250_snr+10",
+    "clean_id": "cln_ea665ebed2f8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.24429623671086723,
+        -1.1493234308622218
+      ],
+      [
+        0.5041858502330664,
+        -2.3720079317794784
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.175,
+        12.0
+      ],
+      [
+        2.425,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.2499999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.250",
+      "d_actual_m=1.250000"
+    ],
+    "clean_seed": 11587415641926740841,
+    "direction": "radial",
+    "d_nominal_m": 1.25,
+    "d_actual_m": 1.2499999999999996
+  },
+  "grid_m": 0.05,
+  "n": 100,
+  "successful": 0,
+  "rate": 0.0,
+  "wilson95": [
+    3.469446951953614e-18,
+    0.03699349820698568
+  ],
+  "method_failed": 0,
+  "tp": 100,
+  "dr": 0.5
+}

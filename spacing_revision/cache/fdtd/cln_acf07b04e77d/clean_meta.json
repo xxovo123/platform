@@ -1,0 +1,118 @@
+{
+ "clean_id": "cln_acf07b04e77d",
+ "layer": "B",
+ "source": "fdtd",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E2",
+ "targets_xy_m": [
+  [
+   0.4581081002665093,
+   -1.815129584822353
+  ],
+  [
+   0.2903739866774244,
+   -1.7062017778193477
+  ]
+ ],
+ "targets_polar": [
+  [
+   1.872046591628306,
+   14.164682989076564
+  ],
+  [
+   1.730734398679602,
+   9.658478746784011
+  ]
+ ],
+ "clean_seed": 18431429887341385308,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "3440dc4e4a42e1f4731059aab4a91f9da0c47af57271723c53ea5f1b78c32c7c",
+ "signature_scope": "jsf_physics_scope_v1",
+ "protocol_hash": "755930b58168ba455eb194f1a1ff6a4c8ac8a9c014e1afe1db60890c0ddda754",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "geometry": {
+  "tx_positions_m": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "rx_positions_m": [
+   [
+    -0.038,
+    0.0,
+    0.0
+   ],
+   [
+    -0.019,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.019,
+    0.0,
+    0.0
+   ]
+  ],
+  "pairs": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ]
+  ]
+ },
+ "meep": {
+  "resolution_px_per_m": 350.0,
+  "run_time_meep": 20.0,
+  "pml_thickness_lambda": 2.0
+ },
+ "background_mode": "empty_field",
+ "scatterer_radius_m": 0.056301167743389426,
+ "micro_motion": {
+  "seed": 18431429887341385308,
+  "sigma_m": 0.002,
+  "radius_m": [
+   0.01,
+   0.01
+  ]
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0)；与层 A 同一延迟参考",
+ "cache_key": "37c67f0adef8acb0ebeeab8c93ee1e7b21582a0e02f75b5261097c99c207417c",
+ "solves": {
+  "solves_planned": 129,
+  "solves_actual": 0,
+  "cache_hits": {
+   "background": 1,
+   "state": 128
+  }
+ },
+ "npz_sha256": "76081133971e38999a53587673fbb34d2a2c233858a1698fff76b6b51ace8a98",
+ "truth_sha256": "641cd04cd1ea96082e7508a7d9b78acafb07bc888b1adc9c164dcad23c365ace",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "truth_K": 2,
+ "built_at": "2026-10-16T15:27:28+08:00"
+}

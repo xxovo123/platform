@@ -1,12 +1,14 @@
 # Single-anchor IR-UWB radar: FDTD simulation, CIR processing and JSF-MUSIC
 
-Materials for **Joint Range-Azimuth Estimation for Single-Anchor IR-UWB Radar: Simulation, Algorithm, and Experimental Validation**, by Shangyou Zeng and Lin Sun.
+Materials for **CIR-Based Joint Range–Azimuth Localization for Single-Anchor IR-UWB Radar: Implementation and Validation**, by Shangyou Zeng and Lin Sun. Revision release: `revision-20261016`.
 
 This platform connects electromagnetic simulation, channel impulse response (CIR) processing and multi-target localization for single-anchor impulse radio ultra-wideband (IR-UWB) radar. Its finite-difference time-domain (FDTD) front end computes the fields scattered by multiple targets and converts the received waveforms to complex CIR. Joint space–frequency multiple signal classification (JSF-MUSIC) combines CIR frequency samples with physical transmit–target–receive geometry to estimate positions, ranges and azimuths.
 
 A fast Fourier transform (FFT) across CIR taps supplies the frequency samples used by the joint estimator.
 
-The release contains the simulation code used for the major revision, selected original field records, all small formal simulation CIR sequences and saved results, and the complete **205 evaluation segments** of original chip-recorded hardware CIR. Portable reproduction entry points are provided at the repository root. Hardware acquisition and evaluation software is outside this release.
+The release contains the simulation code, selected original field records, all formal simulation CIR sequences and saved results, and the complete **205 evaluation segments** of original chip-recorded hardware CIR. It now also includes continuous-background preprocessing state, the six hardware estimator implementations, twenty ablation settings, repeated-measurement evaluation, and the expanded fixed-5-cm separation analysis. Portable commands regenerate numerical results and figures; see the [manuscript reproduction map](docs/manuscript_reproduction.md).
+
+All localization comparisons supply the target count. The hardware comparison concerns adapted implementations on this dataset; it does not establish general superiority over the published methods. Simulation separation results do not establish measured close-person resolving capability.
 
 ## Documentation
 
@@ -15,6 +17,9 @@ The release contains the simulation code used for the major revision, selected o
 | **[Data structure and reading examples — data/README.md](data/README.md)** | Organization of simulation CIR, original fields, trial records, spectra, settings and tables; dimensions, units and file relationships |
 | **[Original hardware CIR — data/hardware/README.md](data/hardware/README.md)** | The 205 raw segments, eight channels, original complex counts, target truth, recording identifiers and estimated time fields |
 | **[中文平台介绍 — README_zh.md](README_zh.md)** | Chinese explanations of the FDTD model, CIR signal, localization algorithm and reproduction commands |
+| **[Hardware reproduction](hardware_reproduction/README.md)** | Continuous EMA preprocessing, six methods, twenty ablations, statistics, verification and table regeneration |
+| **[Revised separation study](spacing_revision/README.md)** | All 65 fixed-5-cm conditions, 6,500 trials, clean inputs, seeds, failures and plotting commands |
+| **[Paper-to-code map](docs/manuscript_reproduction.md)** | Each manuscript experiment, table and figure and its reproduction entry point |
 
 This page explains how the platform works. The data READMEs explain the actual files and arrays to read when using it.
 
@@ -231,7 +236,7 @@ This command performs actual Meep simulations. `--max-states` can make a shorten
 
 ## Interpretation and review coverage
 
-The simulation package evaluates JSF-MUSIC. The five external estimators were compared on hardware in the manuscript; their complete hardware evaluation pipeline is not included here.
+The simulation package evaluates JSF-MUSIC. The five external estimators are evaluated on the shared hardware CIR dataset through the released `hardware_reproduction/` pipeline.
 
 | Review item | Released evidence |
 |---|---|
@@ -239,7 +244,7 @@ The simulation package evaluates JSF-MUSIC. The five external estimators were co
 | Q2–Q3 | All 205 raw hardware CIR segments, segment identifiers, acquisition settings and target truth |
 | Q4 | Fifteen simulation configurations, all 205 saved measurement spectra, correspondence records and fixed-seed parametric reference |
 | Q5 | Complete controlled simulation records for SNR, directional separation and snapshot sensitivity; archived hardware factor tables |
-| Q6 | The same hardware input data are released; hardware baseline execution software is outside this release |
+| Q6 | Raw hardware inputs, continuous EMA initial states and all six estimator implementations in `hardware_reproduction/` |
 | Q7 | Simulation source, parameters, seeds, data structures and verified reproduction entry points |
 
 **SNR labels:** historical `snr_db` in the saved run records is a generator parameter. Because the recorded complex-noise scaling gives half of its nominal target noise power, the expected CIR SNR is `snr_db + 10*log10(2)`, approximately `snr_db + 3.0103 dB`. The manuscript and `data/tables/manuscript/` use this expected SNR. Reproduction preserves the executed noise scaling and seeds.
@@ -247,3 +252,18 @@ The simulation package evaluates JSF-MUSIC. The five external estimators were co
 RMSE pools squared errors over all assigned pairs, without a distance gate. Unassigned targets do not enter RMSE. Detection uses a separate 0.30 m one-to-one match; its missed-target count differs from the unassigned-target count. Noise trials reuse their layout's clean sequence, and snapshot tests use genuine prefixes of that sequence.
 
 The provided plotting scripts reproduce the numerical content of the simulation figures; PDF byte identity across environments is not asserted. Arrays and the original numerical source are tracked by SHA-256 in `data/source_manifest.json` and the hardware export index. Internal SSH utilities, credentials and conversation records are excluded.
+
+## Mandatory-corrections reproduction commands
+
+```bash
+python spacing_reproduce.py verify
+python spacing_reproduce.py figures --out outputs/spacing
+python spacing_reproduce.py replay --task E2_B_transverse_d875_snr+10 --trial 1000
+python q4_reproduce.py verify-spectra
+python q4_reproduce.py replay-fdtd --config all
+python q4_figures.py --out outputs/q4
+```
+
+The revised separation figure replaces the original sparse separation figure generated by `reproduce.py figures`; SNR and snapshot figures retain the original results. The original 24,150 records remain available for provenance, while the revised fixed-grid separation study has a separate 6,500-record denominator. Do not combine original and revised separation trials.
+
+To regenerate the correspondence FDTD input with Meep, use `python q4_regenerate_fdtd.py --config G-420 --out outputs/new_q4_G420 --workers 1`. This uses the measured horizontal geometry, 32 background startup states and 128 retained states. Saved-data verification and plotting do not run Meep. See `hardware_reproduction/README.md` for hardware commands and `docs/manuscript_reproduction.md` for the complete paper map.

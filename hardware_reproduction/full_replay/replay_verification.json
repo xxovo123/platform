@@ -1,0 +1,41 @@
+{
+  "n_segments": 205,
+  "n_methods_and_configs": 26,
+  "n_estimator_runs": 5330,
+  "all_205": true,
+  "pass": true,
+  "position_comparison_atol_m": 1e-08,
+  "environment": {
+    "python": "3.13.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "names": [
+    "this_method",
+    "b1_deng",
+    "b2_kakouche",
+    "c1_jade",
+    "c3_kim",
+    "b5_wang_full2d",
+    "ablation/REF",
+    "ablation/A_F09",
+    "ablation/A_F05",
+    "ablation/B_span250",
+    "ablation/B_span125",
+    "ablation/S_span250_F9",
+    "ablation/C_L016",
+    "ablation/C_L032",
+    "ablation/C_L064",
+    "ablation/D_C2_01",
+    "ablation/D_C2_02",
+    "ablation/D_C2_03",
+    "ablation/D_C2_12",
+    "ablation/D_C2_13",
+    "ablation/D_C2_23",
+    "ablation/D_C3_012",
+    "ablation/D_C3_013",
+    "ablation/D_C3_023",
+    "ablation/D_C3_123",
+    "ablation/E_FB0"
+  ]
+}

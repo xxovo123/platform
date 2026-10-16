@@ -1,0 +1,43 @@
+{
+  "original_asset_hashes_pass": true,
+  "original_assets_checked": 8,
+  "photo_metadata_checks": [
+    {
+      "file": "indoor_anonymized_crop.jpg",
+      "size": [
+        4096,
+        1843
+      ],
+      "GPS_owner_serial_comment_present": false
+    },
+    {
+      "file": "outdoor_anonymized_crop.jpg",
+      "size": [
+        4096,
+        1843
+      ],
+      "GPS_owner_serial_comment_present": false
+    }
+  ],
+  "render_comparisons": [
+    {
+      "file": "antenna_layout.pdf",
+      "same_shape": true,
+      "pixel_equal": true,
+      "mean_abs_channel_difference": 0.0
+    },
+    {
+      "file": "hardware_setup.pdf",
+      "same_shape": true,
+      "pixel_equal": true,
+      "mean_abs_channel_difference": 0.0
+    },
+    {
+      "file": "algo_flowchart_restored.pdf",
+      "same_shape": true,
+      "pixel_equal": true,
+      "mean_abs_channel_difference": 0.0
+    }
+  ],
+  "note": "Rendering differences are reported, not silently treated as byte-identical reproduction."
+}

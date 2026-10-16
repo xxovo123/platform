@@ -1,0 +1,19 @@
+{
+  "n_segments": 1,
+  "all_205": false,
+  "simulation_executed": false,
+  "estimator": "this_method",
+  "spectrum_normalization": "none",
+  "Q4_pixel_comparison_performed": false,
+  "segments": [
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t10",
+      "file": "indoor_C2-1_N2_S1-S2_001__t10.npz",
+      "sha256": "cf084875d2a2c9763524dd26f2890e19833e95308226407b2a1d13e20b9e2503",
+      "raw_sha256": "14e9630225df75444416dec4e700898fbf0c6e580e4df253fa1c14fc31aee1f4",
+      "ema_sha256": "8305e92992030be83c43d0c48599bf1ede3dd103cae4a82f187e193474fd0a7f",
+      "X_sha256": "30bf31a9197506e2e384a83c81f0093b8f6ac67f5db87363d0fa6cb7607488c5",
+      "max_frozen_position_difference_m": 0.0
+    }
+  ]
+}

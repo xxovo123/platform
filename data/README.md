@@ -78,6 +78,6 @@ See [hardware/README.md](hardware/README.md) for the complete 205 original CIR s
 
 `source_manifest.json` records source and released hashes for the selected simulation files. Original numerical arrays and saved trial predictions are unchanged. Published run configuration JSON removes internal conversation/agent fields; the original numerical values and source hashes are retained. Derived correspondence tables select the published processing branch. The hardware export has its own per-file hashes and extraction verification.
 
-`settings/` records the effective experiment protocol and environment. Source-pulse arrays are reference samples of the simulation excitation, not hardware measurements. Full intermediate FDTD field caches and hardware execution software are outside this release.
+`settings/` records the effective experiment protocol and environment. Source-pulse arrays are reference samples of the simulation excitation, not hardware measurements. Full intermediate FDTD field caches are represented by examples and regeneration code. The revision adds the complete hardware evaluation software and continuous EMA states under `../hardware_reproduction/`, and the revised separation inputs and trials under `../spacing_revision/`.
 
 中文说明：仿真 `raw_cir` 是数值接收链输出的 32 抽头 CIR，原始场在 `field_samples/`；硬件芯片采集的原始 CIR 单独存放于 `hardware/`。所有数组读取示例均使用 `allow_pickle=False`。坐标与距离单位为米，时延与时间单位为秒，频率单位为 Hz，方位角单位为度。论文信噪比标注、原始运行参数和有限样本实现值分别保留，不能混用。

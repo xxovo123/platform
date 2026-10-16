@@ -1,0 +1,53 @@
+{
+ "clean_id": "cln_ace569a87d0d",
+ "layer": "A",
+ "source": "analytic",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E2",
+ "targets_xy_m": [
+  [
+   1.0032439694310349,
+   -2.1691449575821204
+  ],
+  [
+   -0.2547618824871012,
+   -1.35218640505958
+  ]
+ ],
+ "targets_polar": [
+  [
+   2.389913870666405,
+   24.820855249191492
+  ],
+  [
+   1.3759766316316284,
+   -10.669869760308519
+  ]
+ ],
+ "clean_seed": 3621963506863141611,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "e1667edc1d9b672ca08af6b7132761e6beea02a06130a51580c5b8875f7de0f0",
+ "protocol_hash": "755930b58168ba455eb194f1a1ff6a4c8ac8a9c014e1afe1db60890c0ddda754",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "band_mode": "bandlimited_500mhz",
+ "band_check": {
+  "oob_fraction_before_crop": 1.2418511011804587e-32,
+  "oob_fraction_after_crop": 0.0008555338889950678,
+  "note": "before_crop 是规范 §6 的硬门槛（<1e-12）；after_crop 是 [0:30] 截窗引入的谱泄漏，单独记录，不用它误判生成失败。"
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0); crop_start=0",
+ "crop_start": 0,
+ "raw_taps": 32,
+ "fft_length": 32,
+ "npz_sha256": "2b3ee0c6e1b3f71b2850336e0964c5719a4e44dd93767c3ecdcfbf51c2630bd2",
+ "truth_sha256": "36e07f51ca9b34b9f67a4e680616b267ff69713ee859105bfcd4cda41145ec60",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "noise_prefix_policy": "每 clean/trial 先抽 [128,4,30] 标准噪声再取前缀",
+ "built_at": "2026-10-16T14:46:33+08:00"
+}

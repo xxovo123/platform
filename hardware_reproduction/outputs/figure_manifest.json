@@ -1,0 +1,14 @@
+{
+  "scope": "hardware numerical review figures from recomputed saved predictions and released truth; not pixel-identical manuscript layouts",
+  "figures": [
+    "hardware_comparison",
+    "hardware_ablation",
+    "hardware_stability",
+    "hardware_positions"
+  ],
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "simulation_code_executed": false
+}

@@ -1,0 +1,1672 @@
+[
+  {
+    "source": "大修执行_20260923/04_Q6/common/q6_contract.py",
+    "file": "source/大修执行_20260923/04_Q6/common/q6_contract.py",
+    "sha256": "efde1fcb3f67dedd6454f892cafbd6e7e468f21c5ad58c186b7d780feda4bbc7"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/common/q6_methods_this_method.py",
+    "file": "source/大修执行_20260923/04_Q6/common/q6_methods_this_method.py",
+    "sha256": "88a200b7bc496af7c2c55cd32a6ecdec3b6a18a398ad3f0d1b158d3dcefd64e2"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/common/q6_search_profiles.py",
+    "file": "source/大修执行_20260923/04_Q6/common/q6_search_profiles.py",
+    "sha256": "bc790f5b97ecf33fada5b9580f4164189a64f2c4d9aeaadb98b9f77fa730b343"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/b1_deng.py",
+    "file": "source/大修执行_20260923/04_Q6/hardware/methods/b1_deng.py",
+    "sha256": "dc60203dab2b3b3c2a0f852039320cbc4ebea4d75da2ac77a79bdcf4d7af5511"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/b2_kakouche.py",
+    "file": "source/大修执行_20260923/04_Q6/hardware/methods/b2_kakouche.py",
+    "sha256": "f1e67a3aaf1b5aec52de4e8745f65118f2cc74d05ca629c233d736c2ff491739"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/c1_jade.py",
+    "file": "source/大修执行_20260923/04_Q6/hardware/methods/c1_jade.py",
+    "sha256": "1b9fa6463d489201790f9c999cec7893871788e3c74b297b5cd066c9aab38bb8"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/c3_kim.py",
+    "file": "source/大修执行_20260923/04_Q6/hardware/methods/c3_kim.py",
+    "sha256": "7e13e5e370658968526c941a2ff0061cce9dc0ccfd7c23661073d167d1b7c239"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/b5_wang_full2d.py",
+    "file": "source/大修执行_20260923/04_Q6/hardware/methods/b5_wang_full2d.py",
+    "sha256": "647b515c9563d4d074ffc2a58bcbe177afba9e29c2d15922a965d0b170eac880"
+  },
+  {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_backend.py",
+    "file": "source/大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_backend.py",
+    "sha256": "9aed97619073f364ced4aaf90049ac45f9045f2cd49193e02a5f8e7c22cd6639"
+  },
+  {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_metrics.py",
+    "file": "source/大修执行_20260923/03_Q5/hardware_ablation_20260926/scripts/q5_metrics.py",
+    "sha256": "3f047196521cf5d3d0f79e53f47434125b6e208d1f54e4d6ca79d8cf59f6b664"
+  },
+  {
+    "source": "Q2 数据采集/uwb-occupancy-detection-main/radar_algorithm.py",
+    "file": "source/Q2 数据采集/uwb-occupancy-detection-main/radar_algorithm.py",
+    "sha256": "ff8b801a17a4156c6c26f4b201df2f535db545fa7e7ecb643ebfed695891ebb6"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/cli.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/cli.py",
+    "sha256": "71c5fb07af2a245ddb034a41f7295d6d8adcdf7e9559509d0bf1f7473a168247"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/evaluate.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/evaluate.py",
+    "sha256": "725355bb8103f9d2793e2bbbf4d295dc1d898bcb4a4e29502df6f3b99177aa29"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/manifest.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/manifest.py",
+    "sha256": "6e4e24046ee3db6ce22ea79aa384d218b1cb01981ef0bc1a1fe697c8e1c504a1"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/matching.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/matching.py",
+    "sha256": "3197efea33c768b8126b681e3ba6d15d6486a798a2c51a3263e30535dd90d341"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/metrics.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/metrics.py",
+    "sha256": "343213372763a385fa9a76e619ac8f93c644ce19db7ec9b6eb8355ec2ab94e9f"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/peaks.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/peaks.py",
+    "sha256": "3a4a03f2a8ec7d3e0f5b92bda597f4ed55df4f2fd40975960e2d6afc2d24b29e"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/protocol.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/protocol.py",
+    "sha256": "166d6706ec42add629e9fb4278c29482905f619fb1c68748b4cea83a6c635a1f"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/selfcheck.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/selfcheck.py",
+    "sha256": "c471b9f9ed3d61a17cb6a8f3bdced930f994c25f0733e694197576345de99a1e"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/sources.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/sources.py",
+    "sha256": "80ecf006680811f32341983d24c7c64ac28952c4c944a26acf23adc705447688"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/__init__.py",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/driver/knownk_eval/__init__.py",
+    "sha256": "f8715aea0460da2e489e4c801cb8668155e4fbcc621ae23fd4eb47a4fdad011e"
+  },
+  {
+    "source": "大修执行_20260923/01_投稿口径/p0b/protocol/knownk_protocol.json",
+    "file": "source/大修执行_20260923/01_投稿口径/p0b/protocol/knownk_protocol.json",
+    "sha256": "8c9e37c0f2b101c83b11e8683824af20bc117389b970e4391033ae157be8e42e"
+  },
+  {
+    "source": "大修执行_20260923/03_Q5/hardware_ablation_20260926/config_matrix.json",
+    "file": "data/config_matrix.json",
+    "sha256": "1c67cd496b4878f04d78ab1106e17ec3e497a9de9396e0ae68be08e5aacab0b3"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/docs/B1_B2_适配记录.md",
+    "file": "docs/B1_B2_适配记录.md",
+    "sha256": "d96e5aacab7a4fd270ad28a0bab73949d5c4262ac9cd2218b329d397b425c25c"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/docs/B5_Wang_Full2D_原文公式与适配.md",
+    "file": "docs/B5_Wang_Full2D_原文公式与适配.md",
+    "sha256": "bd0ea686f372a92fc1f65e9c124abe85639105207a979e1e9ef8e7e30b51f248"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/docs/C1_JADE_适配与公式.md",
+    "file": "docs/C1_JADE_适配与公式.md",
+    "sha256": "c7f2317880fcf89a273b9d1ef2412162f55169a08af3b77ff8a7cbe16815f788"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/methods/docs/C3_Kim_适配与公式.md",
+    "file": "docs/C3_Kim_适配与公式.md",
+    "sha256": "134f2fc0b8567c09a0d9151e74add9965d711fd2ce211ee768636475e0b4d80f"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/index.json",
+    "file": "data/raw/index.json",
+    "sha256": "6ea93e3c8e00989a80d013496e293f7bd593ace907518a0deffca0f39722f174"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/schema.json",
+    "file": "data/raw/schema.json",
+    "sha256": "ca912ab8b2e24c909713f4b339a604905b2c97146a9fc834c03f6eefd1191ac4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t10.npz",
+    "sha256": "14e9630225df75444416dec4e700898fbf0c6e580e4df253fa1c14fc31aee1f4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t20.npz",
+    "sha256": "db3fa15969b0f8c7d6983a15a6bbe13e63418e0d747f4cbc5df137b922e4c8dd"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t30.npz",
+    "sha256": "29a67d753071cf4f97d3ea0821c643878bf0885219895ca3a37ee8593f22d043"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t40.npz",
+    "sha256": "af1044f74f3c15b5801544141052ac2f68312502c88dfda03196dab0de5f89da"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t50.npz",
+    "sha256": "633211b8a7cf0cca433c87a734dfaf7a000efd57305a9e43b1e93e38d11968b5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t60.npz",
+    "sha256": "29cfa9604bcf93f04b8b02f7faa405f3e886d6b6d8f4e551848319af6a8b3295"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-1_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/indoor_C2-1_N2_S1-S2_001__t70.npz",
+    "sha256": "b94d38a2919c8289cd7aa424d341f5cde8cc03fc5c549a5c05c38d2517c874e6"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t10.npz",
+    "sha256": "439d132b6a95b54fa51217707da54059a1d28f2d5bbdc9a452dbd6cd9aafea46"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t20.npz",
+    "sha256": "c011234e54cde6b6364ca9b862d568bdf0639920131d9e8f2b9d4db7d3db4f81"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t30.npz",
+    "sha256": "24f9327b0ef92fd02755fdb5bba5faa1e0f1520107334b4e55b044b68e7ede3a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t40.npz",
+    "sha256": "84997a5615fd0aca01a6a8e1e67965c795748b97109ebcf6b90deaf5d9a14691"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t50.npz",
+    "sha256": "bb2383ad64a0a6e5fb740318bac867447fe0c0bb35d9dca9543e648bfeb642f5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t60.npz",
+    "sha256": "b1d3099e96937fdb392b5dcf8e24c3bcb428bbd436a9f1a29bed87fcefe7b635"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-3_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/indoor_C2-3_N2_S1-S2_001__t70.npz",
+    "sha256": "62a056979d271d636c2fafbef8db421b55ed1e59e88d0f8085d3a438fb58871d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t10.npz",
+    "sha256": "8b892b99200b6d7130f84b4a94ca9fa70bdb0023735ba1a1ef395bb974fe8831"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t20.npz",
+    "sha256": "124acaf36bed7b2d6f506ece63bb3482eff781af7fa97408ef1be3e1a62a24d9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t30.npz",
+    "sha256": "adabe4bda4e1d8eb5f9363e7886ce02f6ed9e024a96d72321dd493e195536cc7"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t50.npz",
+    "sha256": "d5b8eba596709dbd53e194ae85f5e5493f14a0fd98cc66306339dd1e7f7c6dfa"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t60.npz",
+    "sha256": "a6d267a7b9a51353aade09b11952f9f4dde384b1e70e86cf5891376037fdd10a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-4_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/indoor_C2-4_N2_S1-S2_001__t70.npz",
+    "sha256": "381203b2e6db699181b6c636ab9c811a0ad56ef5ad72d9ad0d8c2fe9c47d26e8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t10.npz",
+    "sha256": "9578df3690ab991c2ed52bd3cd6e3ed22c955471fca0267f5fd4dedc2bfa22ba"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t20.npz",
+    "sha256": "98735423053265c0ff1340f59bf716213273c3c5b0651e69990ba9382d46b8bc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t30.npz",
+    "sha256": "0e0664df5c326ba018abde6fede1b01bd1cb366edbcb8e743e6ef1ca000e7d1d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t40.npz",
+    "sha256": "c421bc167eee487f488c6d33f5c41918ad7e9282bb7b38608b62fdee31b44452"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t50.npz",
+    "sha256": "926065202056f502721a989482e19bc314862fdddc75a55ff249c4c81a87c1f4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-5_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/indoor_C2-5_N2_S1-S2_001__t60.npz",
+    "sha256": "10b17c04a4cb3600a64685a9d3f58ccaf540932f2b8136342aebeb5210641c23"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t10.npz",
+    "sha256": "f5d2c77ab6ad890245eb1c7af67f35665dba14c41ca80cc5ea26919cb99ee25f"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t20.npz",
+    "sha256": "f876719aa4779ed845ea5ff054675be743017793a1382f0ba467aab4f755800c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t30.npz",
+    "sha256": "3d3866d4046e0d395555eed03663aba07d788c60f50bae00da502aac3c0eb95a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t40.npz",
+    "sha256": "026fef46e7cc4a21b101b5764bc7889253dfe7374bc85139037cb216d5a114d2"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t50.npz",
+    "sha256": "6bbf3e6f6e120de74159da53a1c6c1a38b255ea2cf7e58147ce7dabc9fb52f85"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t60.npz",
+    "sha256": "b008dbf28eea735635b939ad6689407360a572a5a8725e8541d4f1a37e246fcc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C2-6_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/indoor_C2-6_N2_S1-S2_001__t70.npz",
+    "sha256": "4c9d72b73967894dd8859e6b5df25a093ef93c777b9ac5106399accbd792fc04"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t10.npz",
+    "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t10.npz",
+    "sha256": "a850bd9562f45fb41d07e8fad6bed1e7b9721eb91aa5b1920192589ffef2b9f8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t20.npz",
+    "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t20.npz",
+    "sha256": "b8e289053c3732c0f28f068840e228e13b9ae9d85d75f91d851b5388381251af"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t30.npz",
+    "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t30.npz",
+    "sha256": "88f6510742ccb4af91a7cf151f941ba6a7366624fc561415067fed468ebd0d8d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t40.npz",
+    "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t40.npz",
+    "sha256": "1929dfc1c7e18dcd682d69289be1739cae5e3c493595d331d8f786adcc45b1fc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t50.npz",
+    "file": "data/raw/segments/indoor_C3-1_N3_S1-S2-S3_rot1_002__t50.npz",
+    "sha256": "99f3a15863db9583190400916c77637055a251f245d4f66b03e4750550d9f979"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+    "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+    "sha256": "6c38fe468e3b04cb15dfcd084c8de957491ee28072efde85e0ef8712e3c8b036"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+    "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+    "sha256": "5c9a38e50d671e6ccaa1c01a05fd33d05dcc212023998ecb06047f24e96f59c1"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+    "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+    "sha256": "5b769cfe5faeafe477cecb10c12b953da7be370f552c604d7c3ffc17c6bf3564"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+    "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+    "sha256": "8a44520adee35897edbcd8fd4cb4254ad2e4a236544696d2a48277ee1596b2a4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+    "file": "data/raw/segments/indoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+    "sha256": "9f70a949d26a1e146c1a3dfc354578666b2b74eb606360a6ddb5dc900ff3bf90"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+    "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+    "sha256": "c1cdb52c5ae6b3c29024ee0950f38b0496f516cadfc9247075bd2acfe3a48f1a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+    "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+    "sha256": "0b251654daf13ac4a29b4067c041eec38360239b28ec33a83634ea2d11b076c5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+    "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+    "sha256": "8dce55f8e257e233bc9b0464f80c60854d6a6fcb28b7d133c1a078e07ac287aa"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+    "file": "data/raw/segments/indoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+    "sha256": "8591711a88ae13de9512e421089480f904a8bf2973c9a4df89a23ed19b918e93"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t10.npz",
+    "sha256": "e7c02c71a010cb24c126bc3cbd8ce7472e07e0f9b0239187ef30aced68e847a9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t20.npz",
+    "sha256": "3766da1fb4f382d904829f1fcf925475a64e4f9325497b27f97347cb481db5b7"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t30.npz",
+    "sha256": "4e5b2123337e29eb714523ea18485c9fde5831659b61e0288a6f77d2f689da1c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t40.npz",
+    "sha256": "c1a20b5e3a08db1b9c3cb15bea24f5e475535dacebd603b6ec274b80a1284d1a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t50.npz",
+    "sha256": "6b7a6ad52ece89bd390e8507783521f372bf2a81f24528dea5e8265992da4eb1"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t60.npz",
+    "sha256": "ab8a14c92bce4b808c9ffeac357836d9f889db1c6708fff124e6ee03dc135d7d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-370_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-370_N1_S1_001__t70.npz",
+    "sha256": "9967ea24cc4c25fbcec69bfa0590573209a3359d731ccb44bb203bd94d88f54d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t10.npz",
+    "sha256": "dea043ca6bc53588f67e31356891d6e8091a0dc0d7a5c8f4df134c6cc824d98e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t20.npz",
+    "sha256": "6d59d025dc8f8a2c2770f3f12bdfd0813f27c1eb938a0f84e36c52098588c862"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t30.npz",
+    "sha256": "bdf45c86553ef5bd32409fdc4d78fe48e70711a53d384ebbd8445e4765f90f4f"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t40.npz",
+    "sha256": "6d5142f856cfcb7b41d81e49ad0f877066935cde529be118ae4b19364865a1f8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t50.npz",
+    "sha256": "8b7180a51b3d3372a59ccbfdd1a608887388567a8622359a382cf1ef6864f1cc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t60.npz",
+    "sha256": "cf1372190ed447f82ebc3077ad2d90b796e717b8d4c3603cb2ed2179bad8a311"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-380_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-380_N1_S1_001__t70.npz",
+    "sha256": "78432acbe30fe6f9a1dee305cf86f552bc343507ae1033ea7d29528e803a3a82"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t10.npz",
+    "sha256": "b489cab9c2bdc5a951838a6697eaa993adeda35c62b4561924a06bb12b842a43"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t20.npz",
+    "sha256": "a63ad1c4b7f37cd078b1a0c3c4380f0b2f330ac745208f36c77bc4561d1ba28e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t30.npz",
+    "sha256": "a78e7c0aca2c557edc9fc1c23260b66b97b912979106a696ecbb79a948cb7115"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t40.npz",
+    "sha256": "b74ce9ed1584d4654bcf77d2116d02c9d41a85df796ab35c4dab04f3d58926b0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t50.npz",
+    "sha256": "68feb0e4b10bd83aa671368245e16b9fbe5264c2cd559745bf74cbdd70359536"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t60.npz",
+    "sha256": "42ccd2155e332832afc6fe78deeae2ef693cd8a58a6f70f176eff33752bc2ce2"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_001__t70.npz",
+    "sha256": "c644d457467264101cb71380e107cdb10fc5f535f27ea39701dc9cd2c774a353"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t10.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t10.npz",
+    "sha256": "b87f2be64e5ebeb4c27b0b5f8c9c73a4927450f9de431cb6eb68ebebd3d06951"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t20.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t20.npz",
+    "sha256": "457810e5180a4147f283968ab72d9c9719c1d1768eb1b3acaed2fe6568cf0dd1"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t30.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t30.npz",
+    "sha256": "eb23db4f44346246fd3d1dba3b8a4f95dc72ca27fa01ef943d3d8729e9531cbc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t40.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t40.npz",
+    "sha256": "73e91a8348df429207534b6fff3d04fd24da676f19658ba8a6d3f828a3c1a9f7"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t50.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t50.npz",
+    "sha256": "4568fd21fe7fb158e8d727c17bc106e34ebca563d18c772648b5c8cea76e911b"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t60.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t60.npz",
+    "sha256": "f1b5eae28a7123c27bc17f22a43294bf163d415d17b13d527dad04f6148571f9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-410_N1_S1_002__t70.npz",
+    "file": "data/raw/segments/indoor_G-410_N1_S1_002__t70.npz",
+    "sha256": "b25219e99f911d1f662406756bff5cfd8cdee76e1a358bdf52b86e387212e83d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t10.npz",
+    "sha256": "800ea7036edc4310e039dbb9bcf4a3e6ec8f59129aada7fff405be7f3bf559a9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t20.npz",
+    "sha256": "072910885e9fcdff62ddb0a3ae7d8ebb9c626df551f48487107ebe794c5fadf2"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t30.npz",
+    "sha256": "d448123eca142a731d4e2ea8449b58dd7e5c50ec472b0404f629192d20eb5aec"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t40.npz",
+    "sha256": "8743d8c8cc2b875e92a290fee75819d1ecaefa25acb38fe2668aaafb0393317d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t50.npz",
+    "sha256": "f5ec0ea29e59815dcc1a526ae19157bccebf676a452fd5d72b82f87ab8320383"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t60.npz",
+    "sha256": "fd42e0261fc7d3b7504ae4bc39d67b73ad01d7c566006a79de4b4f474f43150d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-420_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-420_N1_S1_001__t70.npz",
+    "sha256": "a8387576804730cd6860929688a0bfc420c02777d0c0021e71da12fd3d9e8255"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t10.npz",
+    "sha256": "04e1c4b7743c694090f52ef67d39bc6f8408c1e8185320e5e46f405352c3f183"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t20.npz",
+    "sha256": "e596d14bae576f8e49ea50b7e5659e6404ab7accd27b33df66cb3f2356d0b1fa"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t30.npz",
+    "sha256": "6dd3b52fafb2157f2b5c0fc117c64bbcdff28288b0440575bf641fbd3b300c39"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t40.npz",
+    "sha256": "655970481eadf66dea5181dbb0fc671ea2d8012a797062fb4516f6e76af29558"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t50.npz",
+    "sha256": "2cabc7896fc77de1893716af93836e2678fb79fa5ec743da34f39fd978564262"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t60.npz",
+    "sha256": "e624fa075c86f451407402b65f648ae215bbfb37e64a9c200ab03327df6b34e4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-430_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-430_N1_S1_001__t70.npz",
+    "sha256": "d674f1fa0c088884c23bf7b58ae5477a60e4ed9218b58c446a4cdeabfda4a999"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t10.npz",
+    "sha256": "54ead22d5fd7845d6e96e2cd2e8591fad826f8a6606f088df3da712ba6e56f62"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t20.npz",
+    "sha256": "a51476f91420b0cdb0c365b213e8a3ba544f65230e437bbc97f32b6ff0482ab6"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t30.npz",
+    "sha256": "03efabf64f6248692da4e7998ca55df6c1b392a757e11fb9ac8552ceb3524b9f"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t40.npz",
+    "sha256": "12a43154398735503b46fc94bd59f118e1378e94028707e3dc57db0d7f2ba0b6"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t50.npz",
+    "sha256": "4cac919b09b2455793ee017b94aae8ff8c8482129dbe2491345a78171f952634"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t60.npz",
+    "sha256": "de8d79404067fb20185fcaee2eb623baa86d0fa4fcfdf4a9cc460c41972346cf"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-450_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-450_N1_S1_001__t70.npz",
+    "sha256": "e1518f525202428a197de0ab0797af0bb0fff60f9da24a79734e1a0d741b1193"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t10.npz",
+    "sha256": "18d1323a20bf7e870a869c1bf3ff624c340d61571c1d751d51ddf9e318a3eae3"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t20.npz",
+    "sha256": "3f8efe5c4a8b6447100ab21bc65fa5fe6e26e0e087daffcf9820df9c45ff26ac"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t30.npz",
+    "sha256": "6d4699d3caeac03f54e8ec249fe47c52ed45ac0873d01a806e37a3a875f4c8bc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t40.npz",
+    "sha256": "c8df9339c6fc21143b030b00a5c8913e904bdb06361cd0ce3cac7fa8729270b0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t50.npz",
+    "sha256": "5d4cf5487435202e7a8e919998799a6957efba242bdc991561d7c77ce99c56c3"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t60.npz",
+    "sha256": "52d579788bd5ba29f507e4080a0cae4162d5153c400b480983899350100536c0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/indoor_G-460_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/indoor_G-460_N1_S1_001__t70.npz",
+    "sha256": "87903f723920aa4b6fcadec3c688655c690b4bd16cdebe0f238c1141917783ef"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t10.npz",
+    "sha256": "5b52303a2f3968d52b0ed35edab1cd7fd3c46dc36b6d9179e9e89d0fdfec6681"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t20.npz",
+    "sha256": "b5d248730fa96ef67a9ece29fc71edb5e39f02292db47c3e7a09d245072cc9a9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t30.npz",
+    "sha256": "5aa11b63e8ed9a8737e9879849dc8d88369d395092759b677f3969fd218ffa6b"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t40.npz",
+    "sha256": "251410058c084abb1df32c964c41eecbd5ba1b0a2cff1c726b42cdb60f5191b8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t50.npz",
+    "sha256": "9060560eed164d7ea2dea3ce2f419c7b8ff9169f07776ff1568de7a46edeb303"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t60.npz",
+    "sha256": "0b883fdcf2056741d2927f05956eb0c723c1c162d3b5b7f72217ee492996518a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-1_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C2-1_N2_S1-S2_001__t70.npz",
+    "sha256": "7a45aa0a971d3c0d95609584c23aa348e700870269b467ed79a811eb5c2cd029"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t10.npz",
+    "sha256": "c3958bfe0aa7343dae3d9afef2ca213f8313fb0e0cf84768101a426e30157294"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t20.npz",
+    "sha256": "4ecf756ae1e9e0772705a6b9b006b377b65aa437ff71a765d27030ce8de4ddb3"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t30.npz",
+    "sha256": "177eb20d90a7a64deae79caedfe49f998371f94e2180eb8fc868a32a2469b4a8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t40.npz",
+    "sha256": "3c52687db169b57de50f7d0847a1c055c4dbb70f907eac1a0d30956d403a6e7d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t50.npz",
+    "sha256": "9166875be6c64f3c0339832a2fcbd7b25fbe053a3351ceb555bcc8be6c279e2e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t60.npz",
+    "sha256": "d4d7ec19877143a4292cbe4c72c6adbcbef47e31ecc063d8d760d2ce599f0234"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-3_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C2-3_N2_S1-S2_001__t70.npz",
+    "sha256": "931d4b58ef42cd6aa4c56f3ede4612d8ceb58812102ea8715dbd93d78b382f00"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t20.npz",
+    "sha256": "8b3c00784ef4af264d58ed06cacfdf07f892abe87f63559dfc3eb38fe7ea7461"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t30.npz",
+    "sha256": "f89621a987a7d5fb7b39dad86908881d436163fd63f26609afe3148e143f2e64"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t40.npz",
+    "sha256": "325e309f5d3069a283bad15b8e7f3f3424128cf52c2a27a79347233753aa389d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t50.npz",
+    "sha256": "041e5d2d1c48eea7e7b972db813fda60af8e7d5450faaaf15d5a25cefa92e234"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t60.npz",
+    "sha256": "64e97cee084e7e1a9c05eb089bb7e472723fb3be95df282085ad592aa09b015f"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-4_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C2-4_N2_S1-S2_001__t70.npz",
+    "sha256": "137ef120e35cfcc4d55ab77e923c1eb4e293f2766a5af0f16ce0edddaa5e62c0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t10.npz",
+    "sha256": "d7ac7f536e41a84d3463916ce8af542c7e3d1b29e3aab498b9b6b1f304a89d0b"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t20.npz",
+    "sha256": "109f1ae5a0dde343ed3f0de565421178de9a0a196bb496cf836396726c197046"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t30.npz",
+    "sha256": "065125747e539527f65532d48c228fe237f05051a569a7fa0eb819646f302a4c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t40.npz",
+    "sha256": "33d1a4b6983cb8f43cf77f9a9912fcf9026cde672c550101aaf546b4be77788c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t50.npz",
+    "sha256": "8fa24ddcd65e97bd32366492869df0ddaf1bac88715798a41fb98e3f505c19c8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t60.npz",
+    "sha256": "41dc0c9a9baf348dca13f020deeb1861a7df4984de36ceccaab7fa628944b17c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-5_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C2-5_N2_S1-S2_001__t70.npz",
+    "sha256": "1eaa36fa62c49710a9da12e7a43f38042caef4efebf9e049171f53f91fe7d3d8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t10.npz",
+    "sha256": "f12e955caf011d49af7f6dcd1d0e7b937c571fe8af20ccb25b6541141a313882"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t20.npz",
+    "sha256": "85fd04c891b2a8c70a86e821b8ed5faa8be38b1952c748c232304872b6acbd31"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t30.npz",
+    "sha256": "7d7744d87ad210e5876dfa00d03e03a2575b40d4f3a4c8b655a4fd814d02616e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t40.npz",
+    "sha256": "2896d57cefd978e5075fcb699770a1c2c7c70c468c9354ff0ec251c3c9431842"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t50.npz",
+    "sha256": "bba19e4f0de4a10bb346868915f68bf6cdcd4c89087cd05bfe5d790a1a93ee65"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t60.npz",
+    "sha256": "7b52c5e83dbf5edb243e6b0ef1391d82b188d60cad04a50ca112540e96276ebc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C2-6_N2_S1-S2_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C2-6_N2_S1-S2_001__t70.npz",
+    "sha256": "d54312239a3cd348db58e79b4b34d9a535193f2950f017b71c60a38d696a17cb"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10.npz",
+    "sha256": "4be17668bfea03f24c2423f115fdcd452cff8b2a623b3be3bfb1ff139877f3f9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t20.npz",
+    "sha256": "74f1f0c1c882a45730707947aa7d7dec01d7f089c58ed65365cec95127a5f9be"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t30.npz",
+    "sha256": "ae121ac762c9f46faaf186e206586748f0026a0aa5b9b84deaaa622c20850273"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t40.npz",
+    "sha256": "3264dc29287833c28a3d66a185a46116624b0e2d56850e10044c5bb4e978196d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t50.npz",
+    "sha256": "4cdc8e1799f6521cf93946626110ab87e2410e9671b0972533d24e0e58a5d494"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t60.npz",
+    "sha256": "212ee6951f088abe4e3cdcdeef85fe77d077e6de2b2a287def4c4464c317b2ca"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C3-1_N3_S1-S2-S3_rot1_001__t70.npz",
+    "sha256": "e1af20ba18e863a4d221ef1d26efb1cf0d72405f0ffc78fd2d38df930cf5b73e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t10.npz",
+    "sha256": "5b12bc231e979b82dd0d746d32f51e148c7615fb9435c3f29aa2f0f6ad8b4b25"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t20.npz",
+    "sha256": "c2bb28d28bfddf4c2814985aa23d999ffeb25af635beb0092f6a3ba40ebf3426"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t30.npz",
+    "sha256": "a2b17d28f2be2c482ce491468b65d10d25a9517eb7e99b199268019ebdd0b2bc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t40.npz",
+    "sha256": "bad1ecb0870ca095a20f0fc48ee0ac07158f1cc0d8fc0a70ee4daaed39735229"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t50.npz",
+    "sha256": "45fb6b6666a800f1b5cec6aa665a07c913e436e0fc6e9d0a6d231e34be9cfbf2"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t60.npz",
+    "sha256": "824834fdaf78cc3c2a6e05abeaa94a0aeb2fcbc60e0758de554740a59885967d"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C3-3_N3_S1-S2-S3_rot1_001__t70.npz",
+    "sha256": "ece5349f71e1f25d2c697892db902eeaa06fb3bc10b05eb918bbe189b9b73386"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t10.npz",
+    "sha256": "49c7db9f972db06a9ae7d7228df0c544a5a4be777b669dbffddcf6dcde10bcb5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t30.npz",
+    "sha256": "9b7eed6f08850913d1e20c7160e6a9b8078a0ccc29334bb1e0d1dfd7a19c5b8a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t40.npz",
+    "sha256": "613e352c61504d2847cd1b63b26aa63047af50690c701fc57b36cf7599aec423"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t50.npz",
+    "sha256": "c22a245d5d1c0f819465885536c7f28ecfe87e74a23c73a1a3bdcaaa916f992c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_C3-4_N3_S1-S2-S3_rot1_001__t70.npz",
+    "sha256": "579817edf8a53e61abe20eb391d2d87f9a1625182e312be269fcc5d64f62cc09"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t10.npz",
+    "sha256": "fef455223a73c191cb92bd84a5ea0b7bcf9e14300dc784359595eadcd82169ff"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t20.npz",
+    "sha256": "77553b791881b8861589461221d3d083ae74b002482294d4b2e311b86a6a2049"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t30.npz",
+    "sha256": "329c520f85bdb1d3a541e33dc3af3c0f6e1ae6f2caeb7bc3e6539649bc09afe5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t40.npz",
+    "sha256": "d75be1cc9666c618667b77b508fb008c016d4122cccb18ef2b5e637d4caf8225"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t50.npz",
+    "sha256": "ab96266dba8f3648eeaec4ee81d444793e48893ecb7d73ca123f08d3b6c14a03"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t60.npz",
+    "sha256": "28e50e5313984b385f688ad0c9b6c7282bcb86aa35c58cdc2b0065b50a4e640b"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-370_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-370_N1_S1_001__t70.npz",
+    "sha256": "adfed16da69e86ddba65ef692e0be2ca5e0eee8c4348925cb352cd471a1affe5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t10.npz",
+    "sha256": "2587c29124121f2ab2551afc3a6c75d3eba7e27c011a02bf6c0882466e5eba92"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t20.npz",
+    "sha256": "7c16829a405d7a2906bbb4e64ee69f9c8b76203a579cabe6a04d12a5a784ab58"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t30.npz",
+    "sha256": "89081647430625e375a785e29318c3df362f5b33034c4551e39a5c11a97526ad"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t40.npz",
+    "sha256": "6605c00d0cd39fa82040fc642a18ea547aee9bd123bb81980d5bd52671ac5205"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t50.npz",
+    "sha256": "05bd7fbd79dddd0850aac732141b1397fd9e689aac6ddcf1bbf541dae874c165"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t60.npz",
+    "sha256": "b08ba321df125a69d42d5e0e53d47bdceb81e664a38575a24b689114cf798e90"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-380_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-380_N1_S1_001__t70.npz",
+    "sha256": "ffac79e90faa9341460828c9f9d780ab5b298a58a3a664f5eee541e2e33bba84"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t10.npz",
+    "sha256": "e27cae51ee51f195fbb0b4db5e9f2b541cd7e3de0256dacc77ce24ffb9fd1a48"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t20.npz",
+    "sha256": "ff7870e105ec181e0cce8185a029047719541788c990d7a731f24e2fd676c523"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t30.npz",
+    "sha256": "5e829e298e9b96d794756cd29fe33a413bc5d868f21b4b54b34c53b0898478e0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t40.npz",
+    "sha256": "89494f52aa10876659640745224d6e5bf6b37bce6549af44fca9eca5fe6a64a0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t50.npz",
+    "sha256": "1970efa93ad0d47df6542b02973ab2ae609c06ef20610863c1a13260fbed954e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t60.npz",
+    "sha256": "d885de98d960a2e9d9e238bfc17ef47b9a19ca0fb8588086ceb980eac8c8dbf7"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-410_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-410_N1_S1_001__t70.npz",
+    "sha256": "64c7508bdd00877b7e193d9dea74143ffd45cc6a05e2925f4e0cbcbfa4273868"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t10.npz",
+    "sha256": "54583374b28beaf0a5891f2ed121c6ee7e6a35b85fa2979b348818e3c59d8f11"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t20.npz",
+    "sha256": "558ebf190afa4824b48922eb9bcc8a6e40086c68f4acfaaeeefc24f036726dbd"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t30.npz",
+    "sha256": "0f067cb4232271c3a6be6633924183cbc0b0aabe640ee209fed18773db7af9a4"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t40.npz",
+    "sha256": "4f1870b5bc7344b1d199f427e5c96246eaa2e4427f172787e693b89392adab4e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t50.npz",
+    "sha256": "905da8723eef27f9895bc3c662396b90479754c597336bb1fbfdc6c8b531bd26"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t60.npz",
+    "sha256": "1bace1e0a4c57da03d5d664aefac62770c52ae37860123d0e6bab15f2c767de6"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-420_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-420_N1_S1_001__t70.npz",
+    "sha256": "f2df576ee90e7ad6bc8a2bba9ed33aefc6ee1f921a2519450e5aafa039dedae7"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t10.npz",
+    "sha256": "193ea3906c1211e2773bf1ecde6f6d8820cee41856ff07ba0880aa7c6650145a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t20.npz",
+    "sha256": "454d629a280fc6909cb1ea462422fa88ced9bbf4257bf17a22f23978210199f5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t30.npz",
+    "sha256": "b2fa34e10c5398233e9da64a76e7778c970b71aee1ce28d2783186d5fb513c56"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t40.npz",
+    "sha256": "ab75e0c8fde4db18af83df60fcea8511b065896775ef949569e329d1ba70b40e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t50.npz",
+    "sha256": "f7722681104b05694d4d91f55e0cd4e15e39a08685096d25aa7a2c52548ba8fa"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t60.npz",
+    "sha256": "c48058d36485f14634eefa631e6a0d32e0d82a40fb3623dc91cda5af0e8bdefd"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-430_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-430_N1_S1_001__t70.npz",
+    "sha256": "d62149cb902a0791c823a7772ce8ba069f6b64ad174d3b4c2ead29f32b5f4a67"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t10.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t10.npz",
+    "sha256": "4b62c744eb97c4a0c39a83c55be9ca35f4e242290110457314eb860f7cedae6c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t20.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t20.npz",
+    "sha256": "a685987ddd83e4c2979115975c4b464ec62f3fc4ed446fd903943fca8fecc2b8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t30.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t30.npz",
+    "sha256": "39f5204bc2a1bc7b34edbfc08c2c6d9338c4f65e570cb7897ea59ac1403b2fcc"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t40.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t40.npz",
+    "sha256": "36fcb49fce35e464343cf6a6d515ac7175f5b2faa5367b66057fc2f6799b8033"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t50.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t50.npz",
+    "sha256": "5aae434c870f36adec2f86a824f4dbda1bc84ea75d776a80937ba03e11742f3a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t60.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t60.npz",
+    "sha256": "5830bc1a23fae829323199f21771b4df36c815903100a13b7fd2b5e77f091208"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-450_N1_S1_001__t70.npz",
+    "file": "data/raw/segments/outdoor_G-450_N1_S1_001__t70.npz",
+    "sha256": "e3ee855902a45a57856cf41289b370cbcb969e68d6363f14c7c907433b285187"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t10.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t10.npz",
+    "sha256": "a5755670c8a953e588eff0e4f977a8553067570b3d73e6c3d8d6ad3a4c961b40"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t20.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t20.npz",
+    "sha256": "d2383776c2f319b2b0a749a9806c3f421c5661e8a73a3dec6c09c31da838be46"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t30.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t30.npz",
+    "sha256": "3dd25a26832010642445340d5913d9a2741a1c9fa7d785b60127f455d7a5c16e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t40.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t40.npz",
+    "sha256": "ca0c792739c135941f79f9deea52fdda701877cba67b48d7cb878571d4856b3e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t50.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t50.npz",
+    "sha256": "2cf17eead6c48dc2b01c03a79a5704aecb1c839049ad40441c81ad732ca49c41"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t60.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t60.npz",
+    "sha256": "ade3b582fbf0a26e43dd933665211ac743a82502135587970088af2f96ea087c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/segments/outdoor_G-460_N1_S1_002__t70.npz",
+    "file": "data/raw/segments/outdoor_G-460_N1_S1_002__t70.npz",
+    "sha256": "be916d969135a84804e5cfce9044016f52da533915178b3a409f4bc7fa369da5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C2-1_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/indoor_C2-1_N2_S1-S2_001.json",
+    "sha256": "397e62b424bb250a5a23ec0e1a7eb9fbd0877ca23ced7f7184c92f66419739fd"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C2-1_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "4109e2e110cc4dda0aaf8d1a8fa4e882ec33b715330a156895390d98d7599086"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C2-1_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "c36629c5ba2a6157ae4fae84a46b1507790b21f54f26661db341950907803ff0"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C2-3_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/indoor_C2-3_N2_S1-S2_001.json",
+    "sha256": "74e3fd0a356fb91e625673c68c646e25573579508c64c3018249b14cf621ece2"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C2-3_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "e07c4755f1f08456c10cc26f156756c855010406dd5e5ff8764a54024efebc76"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C2-3_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "ed907efadf1f999af6401c2755dc47761bde870a08857ff48e467cfa14ecc2d9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C2-4_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/indoor_C2-4_N2_S1-S2_001.json",
+    "sha256": "6791495124201b57c841b3453dc1900edad688282b9ec42282f903f37b8eb6ea"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C2-4_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "dcb234f7580f9c4fd292a3524c85d05f77ae16a0943769d2f660f677957b2884"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C2-4_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "163912faadf021e8715f50dfc7dbb74e27b1c36f705c4a8da94f09b2f6e5abbe"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C2-5_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/indoor_C2-5_N2_S1-S2_001.json",
+    "sha256": "6d815f14707577b23087287a645e2a11a1f3edbdc789bbadcafc5940330c6881"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C2-5_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "133b1c23abc6c7bb84a506018547a64c4cab337b6fbb3301ae0a8aa147f28738"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C2-5_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "f46e0cb95bdb0dbc0850fa9b3c7e50a65c10558f42f699c8e689a33b37ebf090"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C2-6_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/indoor_C2-6_N2_S1-S2_001.json",
+    "sha256": "39eb797a8aa33fdda659e0951f678eda2df406101d9f4e5e72f7e29305819d70"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C2-6_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "c003f3de093fb5e1c2af9cad7bca65b124c261ff4b693f35bd7792a4af7a8034"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C2-6_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "f18b7e1497fb91454516a267ace5311c33d0d584e5e8b2efdba06e9551dde17a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C3-1_N3_S1-S2-S3_rot1_002.json",
+    "file": "data/raw/recordings/indoor_C3-1_N3_S1-S2-S3_rot1_002.json",
+    "sha256": "c6c2280cbe764da3059739f8da720eb4c4c5ac9f36a8d2cd33ffff839f400dd7"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C3-1_N3_S1-S2-S3_rot1_002.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "f72a3761d44a0fe7be57be2849dc9196ebd60889383c29756dd25de005fe6494"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C3-1_N3_S1-S2-S3_rot1_002.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "0089e6d029b1233f290e036bdd32f75fad63af49a41d5254a9ecc5c276bab26e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+    "file": "data/raw/recordings/indoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+    "sha256": "2192da0e9255cf82fe57991162f906b47ba6083425d35daa2733eedbcd472390"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C3-3_N3_S1-S2-S3_rot1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "62096a5c0b93c21caaa3d9eb520d83f91bc821ef9fd0297d233fe2a2942bcf4e"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C3-3_N3_S1-S2-S3_rot1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "174e46a038306c3ad5e27208591ef7018b6626d963f3df0ec04807469ef8eab9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+    "file": "data/raw/recordings/indoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+    "sha256": "51b639fa6b50e16a5991a202c44451192abbe973b9594a41a898f161e33beee9"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_C3-4_N3_S1-S2-S3_rot1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "4570826996c6574873fe98d8ae8dc726bda176ddc0f486bec4e529547d48d3f6"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_C3-4_N3_S1-S2-S3_rot1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "a3bbfb855ed7124f8382628ff6c61f97e464144c2b967031efe0b1c40554e4d1"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-370_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-370_N1_S1_001.json",
+    "sha256": "48dd96feb88d8f29bab7a79558c7eca1077b2fc354f8ced08191a9cad07f359b"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-370_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "66dd28e0321351221bc9c42f6f055b724f9e1b5fbb2a3e042e9dce8fb1f82ca7"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-370_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "0d84925564f6d1d3c89a5aa907a4691868d31e5ca4e16b41f64a33c0d04ee722"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-380_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-380_N1_S1_001.json",
+    "sha256": "9aa74cb35f58ffb132c66d85af5950a740a51d42f822488dce6b6f0141c064bf"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-380_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "16cc9a91cb4d573ae4517ed4b8330fd500177f04f410d7712bfed05f5d1e381b"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-380_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "c39ac725b0bcdf628c9eb5982348eb6277b9f4d87832befc6c4d48a34d8f3b23"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-410_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-410_N1_S1_001.json",
+    "sha256": "46d0e1c887238cbd59dc6d97cebb0bbf31fbe561132bb50defcbc9c149e79c90"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-410_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "17393595125a044e4fdce0a948f061deb0ef5731309e6a6417caf6ed321d8d0f"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-410_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "dbe41d46bdb47099730face3e0d50762f79fcbc558d73c060f99cd751d7fddb5"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-410_N1_S1_002.json",
+    "file": "data/raw/recordings/indoor_G-410_N1_S1_002.json",
+    "sha256": "f9649060f173b78fcbcb56326248dac1203d4a8645af159f569a8c943c0025d9"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-410_N1_S1_002.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "47878d73ed57a8991e78ed259d138904541597488ae1eda0f74528f1e6711e56"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-410_N1_S1_002.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "37b6c7332b4ebc5ff4c33c42bd142391132d7787c8bfb8f2572fae13fe1e1de9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-420_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-420_N1_S1_001.json",
+    "sha256": "ecaf83d0ba5ae6066621538df9aff2cc64672de26cfb9c4b22aba3ef754dd0f0"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-420_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "6e625698f07c3cb4391c3820ce3a048bd84385c8c7cdad7970c529c2e4b319d9"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-420_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "2fbaf9a35e23d4faea4b7c7dc76479707bac95249abec75c99eef4ea53636649"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-430_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-430_N1_S1_001.json",
+    "sha256": "609dceaea26e6388bbcd84c67fd877757d6e1e3e3e730fd60cb04d761c477425"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-430_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "36b28cf67a6af538b548507803350c0cc1eeb712d4e9b303ea4d2d8be777f124"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-430_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "d29854557e809a057ea63d6f8949544c2cb4ad37a61fa4b669c6483b35d446e1"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-450_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-450_N1_S1_001.json",
+    "sha256": "f160da63b76e4f1edc422e7d47227f851be7985c1fc0c898d88476f7aedf4e1c"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-450_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "1f7002b28d4553bbb44756499b5864f3e360a1a463143d23af33b82bbd470b03"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-450_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "f3dc456860de74a6cbbcd98b7a59af92e1c42cdc55f0d1584bb7eef53577968a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/indoor_G-460_N1_S1_001.json",
+    "file": "data/raw/recordings/indoor_G-460_N1_S1_001.json",
+    "sha256": "8893c862752736c47cdf3528a40f42808090a924a6befc05670ecd663f3a1e12"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/indoor_G-460_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "d4b12e57a03e9303864219c2d427cc3d841631d549ca69f6969b00a109e10bff"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/indoor_G-460_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "53cbde04ecd307e637a1e6f69068bddf5e454f67e05cf9c3adac1981fbe8d2b3"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C2-1_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/outdoor_C2-1_N2_S1-S2_001.json",
+    "sha256": "bf19e6fba74f41934f1d93475c25a4b695105520eee1cc2a0b5a2a898072ad0c"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C2-1_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "31b26b84c35e752b3b97b8c703e29120b9eea091e3cf6e6b55ac09d5496ca145"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C2-1_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "1af5a73625d9addb9935dedff9c8860c192a11bca85046de50cb5e5bf12bcb81"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C2-3_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/outdoor_C2-3_N2_S1-S2_001.json",
+    "sha256": "1623a209aa95ca33124f6532abdd47c72cfae6754ca1df4f5a53b320eb422f3c"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C2-3_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "7f48c3332d1de68739fb428eae576eecb2e0407f046f3bc71b32b708004adf99"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C2-3_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "93f0ff6fc111c4375b8c9d3531a2f1a6b30d97e7a1ab29ba9894c59c02c67474"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C2-4_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/outdoor_C2-4_N2_S1-S2_001.json",
+    "sha256": "ad9519fbfe733ac4b8eaedf9add45f18e3a570f34dba2b20c758f211b5ebf358"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C2-4_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "b699b37b11144c8beadbee139fbb44f1a3e922cdc82f8dd22e8cc19bdacff142"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C2-4_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "045374f01075a73f8748d38eec57abc21db7d413cd64574ebc44ce66571c17eb"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C2-5_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/outdoor_C2-5_N2_S1-S2_001.json",
+    "sha256": "167a9064d96f20b35d3a14254e2c895274b903449ca8c51965315d59a8c23af4"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C2-5_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "a2612c2917474efc38a49a7f76cb0720a5b6234fce76adb3489d3d68703b9ccc"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C2-5_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "a6618dea29c226c22f61f9feb818c4f56a671236002c60d20b54ca7d320ead61"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C2-6_N2_S1-S2_001.json",
+    "file": "data/raw/recordings/outdoor_C2-6_N2_S1-S2_001.json",
+    "sha256": "d0f2a7af5bd909c164c0d768854a23644fa34efad26ef8168470d817a0d19171"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C2-6_N2_S1-S2_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "d136426f6d369756210e5604dae50acb22339315ed2086798b36e740e73ae322"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C2-6_N2_S1-S2_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "9e8a92b5b9560fbe8f5eb7e4c01e98f7123b1adcf75693a7fb64575c1e43397a"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C3-1_N3_S1-S2-S3_rot1_001.json",
+    "file": "data/raw/recordings/outdoor_C3-1_N3_S1-S2-S3_rot1_001.json",
+    "sha256": "3ee3ef0d9ed8893ea952a711d6a8bf7f7cbaa71ea47d50edb2da0110db0d33e8"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C3-1_N3_S1-S2-S3_rot1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "709522f1014676f47c004d409c1fe502d5e17724980a17a3a3b0d1d1f6a5e4a7"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C3-1_N3_S1-S2-S3_rot1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "4f2f7e1111dc38de43698d3cb53eb6016cbadce0676992d45f73be6f6a8b0d43"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+    "file": "data/raw/recordings/outdoor_C3-3_N3_S1-S2-S3_rot1_001.json",
+    "sha256": "9664a02aa23f102a0332e655e6f8ebd05c31781901c7b9fa4db59526d29147e4"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C3-3_N3_S1-S2-S3_rot1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "6606bd17bc9569d86b181654fedf189afda851981447a56694e7387046e6fe1a"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C3-3_N3_S1-S2-S3_rot1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "aa3efd4f261814091e307ba7625558eceffc86c7dae6574d9d538e8106ff97b9"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+    "file": "data/raw/recordings/outdoor_C3-4_N3_S1-S2-S3_rot1_001.json",
+    "sha256": "25f6dd90f3497bcfdb125b5db245c58ceb9620d8e1065c88a7905700ee8cef65"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_C3-4_N3_S1-S2-S3_rot1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "6f752de884edca8a3705f64df94e40d1842ff347694f6000fcb1b6b530607ee6"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_C3-4_N3_S1-S2-S3_rot1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "212af7fee3435a6010e3b77f27edf66cc8751e42aa8c9f15b9b7737a53ba5066"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-370_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-370_N1_S1_001.json",
+    "sha256": "b2098ea721ebe946afaea3cecef2b670ef2ebc73928634e0f9e2fb4b6d70bd14"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-370_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "d24074a353b103b0fe54692730491bf665556d02ce69efcf02493e3f4ad5cbb1"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-370_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "2c4f8f6449e18cb3bd31e9b60f93d717631bd28a417cf55af0ff372b28a3457b"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-380_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-380_N1_S1_001.json",
+    "sha256": "726eb31fcf6ea6daae3d37bfa94ce198ea6dbc858daf9eaa274a9bec7563df28"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-380_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "3268186ff6fa43159d68aafb9cfbe26a56cb6bcb302f7f79ddb54461cad2dd49"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-380_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "53b2cdf3f28f9b0f43df8d02f52279c9a961fea2a9b9958b5b467b5916783328"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-410_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-410_N1_S1_001.json",
+    "sha256": "4272e79f34ffb46a73051858bce8b0919f5adc2a3751172efc3e8b2f0345d794"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-410_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "c14b61790d4a87fdff48d70f75bd8aec29f17873fe9ed5a27844b0865fc4a4a3"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-410_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "c478140ea69fdfaa4626776a53e86e3e39dd2f00932c16be3901e878f6f2f6c8"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-420_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-420_N1_S1_001.json",
+    "sha256": "0264bffd0e3447895aee4d762d0be573b80e9a4cda167fe56651b8fb63fa7b47"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-420_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "64a5f0880bb252db0e269d6ecee2905559ea2355c6a689986002b93a5552aa74"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-420_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "6bdc5e306fbe60dcb82cb622de2ea5f87fbfeb88d844079cf084a1cc84761f0e"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-430_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-430_N1_S1_001.json",
+    "sha256": "e62ddf48bf7730ac5657d96205ee244ed2c64777b912540238ea2cf7c8e6995b"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-430_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "aa7262ed1f43fc8aed0f8fd894420ae5683496fabb90fe273c93500120d8c55c"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-430_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "4c009fd7743f1db7d858fe07ea013d34a26bc13a0803e966d04f01e7c62cf36c"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-450_N1_S1_001.json",
+    "file": "data/raw/recordings/outdoor_G-450_N1_S1_001.json",
+    "sha256": "43cc2bfc93e20c03561bd405793fc85f8213b5ba9b14e55a90580e0c774b93ca"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-450_N1_S1_001.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "6800b28093de578e0420fb7db5d53635d6a8f6b31383a862da59f1b098bc2ce7"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-450_N1_S1_001.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "d15c0d426b36db0683dff4e85456bef524c288d64add104120c971a7a550f008"
+  },
+  {
+    "source": "GitHub发布_20261008/platform/data/hardware/recordings/outdoor_G-460_N1_S1_002.json",
+    "file": "data/raw/recordings/outdoor_G-460_N1_S1_002.json",
+    "sha256": "1b71fcec156a9bb922a65613d6da566ce7fc28e732f0f5ad5f49e2b983c3315f"
+  },
+  {
+    "source": "Q2 数据采集/data_in_adult/outdoor_G-460_N1_S1_002.bin",
+    "role": "recording scanned; not copied",
+    "sha256": "3e21de7528e59670c11cfc590ed57cf41c824ff7eb7c919d9604b172d192a037"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/cache/cases/outdoor_G-460_N1_S1_002.npz",
+    "role": "X comparison reference; not copied",
+    "sha256": "ba3855426514e1c30be615fee70fd301309a17ce53783e2b7dc5c12cc1583d26"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/analysis_nofb_q2q3_20260927/stability_four_205_20260929/stability_four_205.csv",
+    "file": "data/reference_stability.csv",
+    "sha256": "6cc88fa3aca4a6b07fc0a167b88c313c9d09ca893a0ce0e2de511f360c7d7e59"
+  },
+  {
+    "source": "大修执行_20260923/04_Q6/hardware/analysis_nofb_q2q3_20260927/stability_four_205_20260929/selected_measurements_manifest_205.csv",
+    "file": "data/reference_selected_measurements.csv",
+    "sha256": "f7c58b4de1de69a32465139b5a72f0708b893ed98a1e0f61cf3ce8b713ac9752"
+  },
+  {
+    "source": "期刊强制修改_20261015/03_论文工作稿/paper/revision_hardware.tex",
+    "file": "data/paper_reference/revision_hardware.tex",
+    "sha256": "b31f2acadb39a289cee161ce73c4dac6f2d9311875cc0d65792aa588ebb940da"
+  },
+  {
+    "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/baseline.tex",
+    "file": "data/paper_reference/baseline.tex",
+    "sha256": "6566c1709e31f1d6e1402f80a5eac751c26fe575a09f844f12480a6d594b504a"
+  },
+  {
+    "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/ablation.tex",
+    "file": "data/paper_reference/ablation.tex",
+    "sha256": "1f4b62b245592f861587ba4d8405f3a4dac2e9c5fa30d52072828e48c7d6a029"
+  },
+  {
+    "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/groups.tex",
+    "file": "data/paper_reference/groups.tex",
+    "sha256": "029eefddf6c53261f31bd43ac6954951bf4cae4aad16fb41a173af70afb95d0a"
+  },
+  {
+    "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/stability.tex",
+    "file": "data/paper_reference/stability.tex",
+    "sha256": "51a146a51160d5362bf667e54b2567f60ee68b3d88d5b1df47467baa47cbf6bc"
+  }
+]

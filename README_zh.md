@@ -6,7 +6,7 @@
 
 平台将时域有限差分（finite-difference time-domain，FDTD）电磁仿真、信道冲激响应（channel impulse response，CIR）处理和联合空频多重信号分类（joint space–frequency multiple signal classification，JSF-MUSIC）定位连成一条完整链路：先计算多个目标共同散射的接收场，再生成复数 CIR，最后利用 CIR 的频率信息和发射—目标—接收几何得到目标位置、距离及方位角。快时间快速傅里叶变换（fast Fourier transform，FFT）把 CIR 抽头转换为联合估计所需的频率样本。
 
-发布内容为本次大修实际使用的仿真代码、精选原始场样例、全部小体积正式仿真 CIR、完整正式仿真结果，以及论文使用的全部 **205 段硬件原始 CIR**。硬件 CIR 来自采集文件，保留背景扣除、截窗、FFT 和相位校准之前的复数抽头。硬件采集及实验处理程序不另行发布。
+发布内容为本次大修实际使用的仿真代码、精选原始场样例、全部小体积正式仿真 CIR、完整正式仿真结果，以及论文使用的全部 **205 段硬件原始 CIR**。硬件 CIR 来自采集文件，保留背景扣除、截窗、FFT 和相位校准之前的复数抽头。本轮另提供硬件处理与复现入口、连续EMA恢复状态、六方法与20项消融的代码及冻结核验证据；非仿真图示、已匿名照片与可重生成源见 `manuscript_assets/`。
 
 ## 文档导航
 
@@ -14,6 +14,11 @@
 |---|---|
 | **[data/README.md：数据总说明](data/README.md)** | 仿真 CIR、原始场、实验记录、空间谱、设置与统计表的目录关系、数组维度、单位及读取示例 |
 | **[data/hardware/README.md：硬件原始 CIR](data/hardware/README.md)** | 完整 205 段原始复数采样、八路通道映射、目标真值、录制关联及估计时间字段 |
+| **[hardware_reproduction/README.md：硬件复现](hardware_reproduction/README.md)** | 原始CIR与EMA恢复、六方法和20项消融、冻结结果与复算命令 |
+| [docs/manuscript_reproduction.md：论文复现导航](docs/manuscript_reproduction.md) | 论文图表与复现入口总索引 |
+| [docs/hardware_reproduction_map.md：硬件图表映射](docs/hardware_reproduction_map.md) | 硬件表格数字、原图、核验图、照片和静态示意的区别 |
+| [spacing_revision/README.md：间距实验补充](spacing_revision/README.md) | 本轮间距实验入口与结果说明 |
+| [manuscript_assets/README.md：非仿真图示](manuscript_assets/README.md) | 原流程图、阵列示意、已匿名照片和重生成代码 |
 | [README.md：英文平台介绍](README.md) | FDTD 模型、CIR 处理和 JSF-MUSIC 原理的英文说明 |
 
 本页先解释平台怎样工作，两个数据说明文档进一步回答具体文件怎样读取、不同数组分别代表什么。
@@ -210,4 +215,4 @@ python regenerate_fdtd.py --clean-id cln_de385a3b2982 --out outputs/new_fdtd_S2 
 
 定位 RMSE 对已配对误差池化计算，不用距离门限删去大误差。漏出的真值不进入 RMSE；检出率采用另一次 0.30 m 门限匹配。噪声试验共享各自的无噪序列，快照试验使用同一序列的真实前缀。
 
-本次发布按要求精选了大型中间场数据，未复制远程全部场缓存；小体积正式 CIR 和数值结果完整保留。硬件数据完整覆盖论文的 205 段评估集，室内 103 段、室外 102 段。硬件实验处理代码不在发布范围，因此本仓库不声称包含硬件五基线与消融的完整自动执行流程。
+本次发布按要求精选了大型中间场数据，未复制远程全部场缓存；小体积正式 CIR 和数值结果完整保留。硬件数据完整覆盖论文的205段评估集，室内103段、室外102段；`hardware_reproduction/` 提供从raw与连续EMA状态出发的六方法和20项消融执行入口、冻结结果及已核验证据。保存预测的统计复算与估计器完整重跑属于不同验证层级，命令及当前覆盖范围见硬件README。

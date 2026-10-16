@@ -1,0 +1,147 @@
+{
+ "schema": "p0b-knownk-protocol/1",
+ "protocol_id": "knownk-unified-eval",
+ "protocol_revision": 1,
+ "created_at": "2026-09-23",
+ "purpose": "P0b 统一可复用 known-K 评估协议：从（谱图 + 成像网格 + 已知 K + 真值）出发，统一取峰、0.30 m 一对一匹配、TP/FN/FP 与定位误差，供硬件与后续仿真/不同算法共用。",
+ "upstream_reference": {
+  "historical_frozen_protocol": "Q2 数据采集/q2q3_eval_20260922/data/frozen_protocol.json",
+  "historical_protocol_revision": 2,
+  "historical_protocol_canonical_sha256": "af9b1b725eab340cb38df2a73969a1f4290b8601d89f2323e2f806e9e2d34a82",
+  "historical_protocol_mutated": false,
+  "route_refs": [
+   "README_审稿修改路线.md 0.1 取峰规则",
+   "README_审稿修改路线.md 0.2 源数 K",
+   "README_审稿修改路线.md 5.2 指标定义与匹配口径",
+   "README_审稿修改路线.md 8.2 公平协议"
+  ],
+  "note": "本文件是新的可复用协议；历史 frozen_protocol.json（revision 2）保持只读、未被改写。P0b 只把现行口径落码，不新增/不调参。"
+ },
+ "inputs": {
+  "spectrum": "二维实值谱图，shape = (len(grid_y), len(grid_x))，行索引对应 grid_y、列索引对应 grid_x；由调用方提供（硬件缓存 npz 或仿真输出）",
+  "grid": "一维单调网格坐标数组 grid_x (nx) 与 grid_y (ny)，单位米",
+  "k": "已知源数 K_alg = N_true（逐窗给定，硬件逐场景真值人数、仿真逐场景预设目标数）；K 不是统一常数",
+  "truth": "该窗真值坐标列表 [(x, y), ...]，单位米；不参与取峰",
+  "grid_axis_convention": "谱图与网格必须来自同一次评估；P0b 不改动轴序、不重排、不转置输入"
+ },
+ "peaks": {
+  "rule_id": "unified-nms-knownk",
+  "steps": [
+   "3x3 非严格邻域局部极大（含中心点；边界按 edge 复制）",
+   "等值平台按 8 连通域去重，代表点取域内最大值，并列取最小 (row, col)",
+   "线性相对阈值 threshold_rel = 0.3（相对全谱最大有限值）",
+   "按分值降序 + (row, col) 字典序的确定性贪心物理最小间距抑制，门限 0.10 m",
+   "峰数上限 = 给定 K（cap=K；K <= 0 则为空）",
+   "不用真值坐标选峰；允许输出少于 K 个峰"
+  ],
+  "neighbourhood": {
+   "window": [
+    3,
+    3
+   ],
+   "include_center": true,
+   "strict": false,
+   "boundary": "edge"
+  },
+  "plateau": {
+   "connectivity": 8,
+   "representative": "plateau_max",
+   "tie_break": "min_row_then_col"
+  },
+  "threshold": {
+   "mode": "linear_relative_to_global_finite_max",
+   "threshold_rel": 0.3,
+   "finite_handling": "非有限值按 -inf 参与比较；若全谱无有限值或有限最大值 <= 0，则本窗无候选峰"
+  },
+  "nms": {
+   "metric": "euclidean_xy_m",
+   "min_dist_m": 0.1,
+   "accept_rule": "dist >= min_dist_m（含等于）",
+   "ordering": "value_desc_then_row_then_col"
+  },
+  "count": {
+   "cap": "K",
+   "allow_fewer_than_K": true,
+   "truth_used_for_peak_selection": false
+  }
+ },
+ "matching": {
+  "gate_m": 0.3,
+  "gate_tolerance_m": 1e-12,
+  "gate_rule": "dist <= gate_m + gate_tolerance_m（1e-12 仅为浮点边界数值容差，不是门限调参）",
+  "rule": "先最大化匹配数，再在等匹配数下最小化总距离（精确枚举全部单射部分匹配）",
+  "not": "强度贪心匹配",
+  "tie_break": "配对序列 (truth_index, pred_index) 字典序最小",
+  "self_match_forbidden": true,
+  "enumerate_limits": {
+   "max_n_truth": 8,
+   "max_n_pred": 16
+  }
+ },
+ "metrics": {
+  "conventions": {
+   "coordinates": "雷达相位中心为原点，视轴 = -Y，theta > 0 为 +X 侧",
+   "polar": "r = hypot(x, y); theta_deg = degrees(atan2(x, -y))",
+   "angle_wrap": "角度差 wrap 到 (-180, 180]"
+  },
+  "per_target_errors": [
+   "e_r = abs(r_hat - r)",
+   "e_theta = abs(wrap(theta_hat - theta))",
+   "e_xy = hypot(x_hat - x, y_hat - y)"
+  ],
+  "count_metrics": {
+   "tp": "被峰命中的真值数",
+   "fn": "未被任何峰命中的真值数",
+   "fp": "未命中任何真值的峰数",
+   "dr": "sum(TP) / sum(TP + FN)（known-K 定位命中率）",
+   "miss_rate": "sum(FN) / sum(TP + FN)",
+   "fp_per_estimate": "sum(FP) / 有效估计窗数（仅“有目标”条件，须显式标注）",
+   "p_window_with_fp": "#窗(FP >= 1) / 有效估计窗数（仅“有目标”条件）"
+  },
+  "aggregation": {
+   "denominators": "分子分母分别累加；分组 DR = sum_i TP_i / sum_i (TP_i + FN_i)",
+   "forbidden": "不得用 真值数 x 窗数 之类的乘积当分母；不得用有目标虚警冒充 Pfa",
+   "error_population": "e_r/e_theta/e_xy 只条件于匹配 TP；FN 与 FP 单列，不得剔除后宣称整体精度",
+   "statistics": "描述性统计（MAE / RMSE / median / P95 / std(ddof=1)）+ 样本数；不作独立样本 CI 或显著性推断"
+  },
+  "pfa": "本批无空场景录制：永久不报告本轮 Pfa"
+ },
+ "failure_handling": {
+  "policy": "任何窗口在任何阶段失败都必须保留该窗记录并显式写出失败阶段与原因，禁止静默丢弃；聚合中单列失败窗数",
+  "retained_on_failure": "失败窗仍计入分母（tp=0, fn=n_truth, fp=0），与历史保留口径一致，但状态标为 failed",
+  "detected_cases": [
+   "空峰列表（合法，非失败）：n_predictions = 0, tp = 0, fn = n_truth, fp = 0",
+   "全零谱或全非有限谱：无候选峰，记 spectrum_state",
+   "非有限值谱（NaN/Inf）按 -inf 处理，不影响有限像素的比较",
+   "K 不合规：K < 0 或 K 非整数 -> 失败",
+   "形状不合规：spectrum.shape != (len(grid_y), len(grid_x)) -> 失败",
+   "网格不合规：grid_x/grid_y 非一维、非有限或非严格递增 -> 失败",
+   "真值不合规：坐标非有限或不是二元组 -> 失败",
+   "匹配枚举规模超界（n_truth > 8 或 n_pred > 16）-> 失败",
+   "谱图缺失或无法读取 -> 失败"
+  ],
+  "exit_code": "CLI 在出现任一失败窗、协议 SHA256 漂移或比较不一致时返回非零退出码"
+ },
+ "determinism": {
+  "random_seed": null,
+  "rng_used": false,
+  "blas_threads": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "BLIS_NUM_THREADS": "1"
+  },
+  "note": "取峰与匹配为纯确定性后处理；无随机性。"
+ },
+ "does_not_do": [
+  "不修改历史 frozen_protocol.json",
+  "不修改 Q2/Q3 历史评估产物",
+  "不用真值参与取峰",
+  "不报告 Pfa",
+  "不宣称计数性能",
+  "不做独立样本 CI 或显著性推断"
+ ],
+ "protocol_canonical_sha256": "407b8962de32ea7fb37654187fa0dc9a95964304649f4ecf2498f95a7d4565f8"
+}

@@ -1,0 +1,2797 @@
+[
+  {
+    "task_id": "E2_A_transverse_d150_snr+10",
+    "clean_id": "cln_3eca2fdc95d9",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.44727711038843215,
+        -1.7435432849581263
+      ],
+      [
+        0.30055497027836126,
+        -1.7747300385807903
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        14.388015463268777
+      ],
+      [
+        1.8,
+        9.611984536731223
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.15000000000000008,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.150",
+      "d_actual_m=0.150000"
+    ],
+    "clean_seed": 5173380015359713369,
+    "direction": "transverse",
+    "d_nominal_m": 0.15,
+    "d_actual_m": 0.15000000000000008
+  },
+  {
+    "task_id": "E2_A_transverse_d175_snr+10",
+    "clean_id": "cln_76d3021c53a8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.45938652370798644,
+        -1.7403919161601193
+      ],
+      [
+        0.28821069357957046,
+        -1.7767764620532271
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        14.786309599945511
+      ],
+      [
+        1.8,
+        9.213690400054489
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.17499999999999996,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.175",
+      "d_actual_m=0.175000"
+    ],
+    "clean_seed": 11895303856741474265,
+    "direction": "transverse",
+    "d_nominal_m": 0.175,
+    "d_actual_m": 0.17499999999999996
+  },
+  {
+    "task_id": "E2_A_transverse_d200_snr+10",
+    "clean_id": "cln_d136e052c418",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.471477824754919,
+        -1.7371553358189848
+      ],
+      [
+        0.27584830460815785,
+        -1.778737673982537
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        15.18473853672041
+      ],
+      [
+        1.8,
+        8.81526146327959
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.20000000000000007,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.200",
+      "d_actual_m=0.200000"
+    ],
+    "clean_seed": 876924385713846859,
+    "direction": "transverse",
+    "d_nominal_m": 0.2,
+    "d_actual_m": 0.20000000000000007
+  },
+  {
+    "task_id": "E2_A_transverse_d225_snr+10",
+    "clean_id": "cln_34b1530745c8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.48355099381077654,
+        -1.7338334511666944
+      ],
+      [
+        0.2634677836456703,
+        -1.7806135816006903
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        15.583321698471973
+      ],
+      [
+        1.8,
+        8.416678301528027
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.22499999999999998,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.225",
+      "d_actual_m=0.225000"
+    ],
+    "clean_seed": 9838192649939918892,
+    "direction": "transverse",
+    "d_nominal_m": 0.225,
+    "d_actual_m": 0.22499999999999998
+  },
+  {
+    "task_id": "E2_A_transverse_d250_snr+10",
+    "clean_id": "cln_783b2dabe116",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.49560600848468905,
+        -1.7304261568624866
+      ],
+      [
+        0.2510691083012377,
+        -1.7824040795669263
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        15.982078577581605
+      ],
+      [
+        1.8,
+        8.017921422418395
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.24999999999999992,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.250",
+      "d_actual_m=0.250000"
+    ],
+    "clean_seed": 12552958336270448190,
+    "direction": "transverse",
+    "d_nominal_m": 0.25,
+    "d_actual_m": 0.24999999999999992
+  },
+  {
+    "task_id": "E2_A_transverse_d275_snr+10",
+    "clean_id": "cln_479f1122baa7",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5076428436969789,
+        -1.7269333349157532
+      ],
+      [
+        0.2386522534951822,
+        -1.7841090498906371
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        16.381028742632047
+      ],
+      [
+        1.8,
+        7.618971257367954
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.27500000000000013,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.275",
+      "d_actual_m=0.275000"
+    ],
+    "clean_seed": 15314123147636469715,
+    "direction": "transverse",
+    "d_nominal_m": 0.275,
+    "d_actual_m": 0.27500000000000013
+  },
+  {
+    "task_id": "E2_A_transverse_d300_snr+10",
+    "clean_id": "cln_988782594df3",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5196614716607479,
+        -1.7233548545994193
+      ],
+      [
+        0.2262171914406062,
+        -1.7857283618447473
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        16.78019184719916
+      ],
+      [
+        1.8,
+        7.219808152800841
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.3000000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 16505090827118636635,
+    "direction": "transverse",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.3000000000000001
+  },
+  {
+    "task_id": "E2_A_transverse_d350_snr+10",
+    "clean_id": "cln_4f0f055c211a",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.543643981034153,
+        -1.7159403316797872
+      ],
+      [
+        0.20129232077732104,
+        -1.7887094234660028
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        17.57923596764617
+      ],
+      [
+        1.8,
+        6.42076403235383
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.3499999999999999,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.350",
+      "d_actual_m=0.350000"
+    ],
+    "clean_seed": 1674669156181053902,
+    "direction": "transverse",
+    "d_nominal_m": 0.35,
+    "d_actual_m": 0.3499999999999999
+  },
+  {
+    "task_id": "E2_A_transverse_d400_snr+10",
+    "clean_id": "cln_eca7a3ab0273",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5675532593351041,
+        -1.7081812836517383
+      ],
+      [
+        0.17629421904158185,
+        -1.791345959978842
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        18.379370208442804
+      ],
+      [
+        1.8,
+        5.620629791557196
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.4000000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.400",
+      "d_actual_m=0.400000"
+    ],
+    "clean_seed": 8802350624321563333,
+    "direction": "transverse",
+    "d_nominal_m": 0.4,
+    "d_actual_m": 0.4000000000000001
+  },
+  {
+    "task_id": "E2_A_transverse_d500_snr+10",
+    "clean_id": "cln_d5b84d46c72c",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6151507884422669,
+        -1.6916233349888674
+      ],
+      [
+        0.1260769880753641,
+        -1.795579180397747
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        19.983556145555408
+      ],
+      [
+        1.8,
+        4.016443854444591
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.49999999999999994,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 6246264802829135521,
+    "direction": "transverse",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.49999999999999994
+  },
+  {
+    "task_id": "E2_A_transverse_d625_snr+10",
+    "clean_id": "cln_5f77f77b8692",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6742290520440034,
+        -1.6689563161987928
+      ],
+      [
+        0.06288680158537475,
+        -1.7989011229598924
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        21.99784348756775
+      ],
+      [
+        1.8,
+        2.0021565124322525
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.6250000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.625",
+      "d_actual_m=0.625000"
+    ],
+    "clean_seed": 12976453705942492433,
+    "direction": "transverse",
+    "d_nominal_m": 0.625,
+    "d_actual_m": 0.6250000000000001
+  },
+  {
+    "task_id": "E2_A_transverse_d750_snr+10",
+    "clean_id": "cln_9f8f7cc78ca0",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7328347529322341,
+        -1.6440660646381433
+      ],
+      [
+        -0.0007759476181201252,
+        -1.7999998327514628
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        24.024699180565822
+      ],
+      [
+        1.8,
+        -0.024699180565821877
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.75,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 5670456238506553472,
+    "direction": "transverse",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.75
+  },
+  {
+    "task_id": "E2_A_transverse_d875_snr+10",
+    "clean_id": "cln_060c9c125029",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7909580166500427,
+        -1.6169061246395942
+      ],
+      [
+        -0.06492113399203725,
+        -1.7988288541051336
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        26.066952174891064
+      ],
+      [
+        1.8,
+        -2.066952174891064
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.875,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.875",
+      "d_actual_m=0.875000"
+    ],
+    "clean_seed": 11995804435152727164,
+    "direction": "transverse",
+    "d_nominal_m": 0.875,
+    "d_actual_m": 0.875
+  },
+  {
+    "task_id": "E2_A_transverse_d1000_snr+10",
+    "clean_id": "cln_06da4a075f02",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.8485867220043756,
+        -1.5874194704733429
+      ],
+      [
+        -0.12956087872943003,
+        -1.7953311612911023
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        28.127620213160757
+      ],
+      [
+        1.8,
+        -4.127620213160757
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.0,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 16044505285659957681,
+    "direction": "transverse",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 1.0
+  },
+  {
+    "task_id": "E2_A_transverse_d1250_snr+10",
+    "clean_id": "cln_bbffbd5e5ab8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.9622990936955242,
+        -1.5211773250587104
+      ],
+      [
+        -0.26038540722173276,
+        -1.7810669385809093
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        32.31750763483251
+      ],
+      [
+        1.8,
+        -8.317507634832513
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.25,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=1.250",
+      "d_actual_m=1.250000"
+    ],
+    "clean_seed": 15101207843425328797,
+    "direction": "transverse",
+    "d_nominal_m": 1.25,
+    "d_actual_m": 1.25
+  },
+  {
+    "task_id": "E2_A_transverse_d1500_snr+10",
+    "clean_id": "cln_e20201964af4",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        1.0738180176100671,
+        -1.444615819190689
+      ],
+      [
+        -0.39340338349064125,
+        -1.756483355417328
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        36.624318352164074
+      ],
+      [
+        1.8,
+        -12.624318352164074
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.4999999999999998,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=1.500",
+      "d_actual_m=1.500000"
+    ],
+    "clean_seed": 16830301501556334513,
+    "direction": "transverse",
+    "d_nominal_m": 1.5,
+    "d_actual_m": 1.4999999999999998
+  },
+  {
+    "task_id": "E2_A_radial_d150_snr+10",
+    "clean_id": "cln_575601299d03",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3586476666606349,
+        -1.687304611265815
+      ],
+      [
+        0.3898344202832988,
+        -1.8340267513758857
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.725,
+        12.0
+      ],
+      [
+        1.875,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.14999999999999983,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.150",
+      "d_actual_m=0.150000"
+    ],
+    "clean_seed": 10617044367431689116,
+    "direction": "radial",
+    "d_nominal_m": 0.15,
+    "d_actual_m": 0.14999999999999983
+  },
+  {
+    "task_id": "E2_A_radial_d175_snr+10",
+    "clean_id": "cln_3cba437e3c19",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3560487705254129,
+        -1.6750777662566423
+      ],
+      [
+        0.39243331641852075,
+        -1.8462535963850581
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.7125000000000001,
+        12.0
+      ],
+      [
+        1.8875,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.17499999999999988,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.175",
+      "d_actual_m=0.175000"
+    ],
+    "clean_seed": 2737076995642020356,
+    "direction": "radial",
+    "d_nominal_m": 0.175,
+    "d_actual_m": 0.17499999999999988
+  },
+  {
+    "task_id": "E2_A_radial_d200_snr+10",
+    "clean_id": "cln_e949316cb48e",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3534498743901909,
+        -1.6628509212474696
+      ],
+      [
+        0.39503221255374277,
+        -1.8584804413942309
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.7,
+        12.0
+      ],
+      [
+        1.9000000000000001,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.20000000000000015,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.200",
+      "d_actual_m=0.200000"
+    ],
+    "clean_seed": 16424294872231474581,
+    "direction": "radial",
+    "d_nominal_m": 0.2,
+    "d_actual_m": 0.20000000000000015
+  },
+  {
+    "task_id": "E2_A_radial_d225_snr+10",
+    "clean_id": "cln_14330f04b8b8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3508509782549689,
+        -1.650624076238297
+      ],
+      [
+        0.3976311086889648,
+        -1.8707072864034036
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.6875,
+        12.0
+      ],
+      [
+        1.9125,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.2250000000000002,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.225",
+      "d_actual_m=0.225000"
+    ],
+    "clean_seed": 12820019716304266084,
+    "direction": "radial",
+    "d_nominal_m": 0.225,
+    "d_actual_m": 0.2250000000000002
+  },
+  {
+    "task_id": "E2_A_radial_d250_snr+10",
+    "clean_id": "cln_a8f8ba157e21",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3482520821197469,
+        -1.6383972312291246
+      ],
+      [
+        0.40023000482418675,
+        -1.882934131412576
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.675,
+        12.0
+      ],
+      [
+        1.925,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.25,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.250",
+      "d_actual_m=0.250000"
+    ],
+    "clean_seed": 1347526260909379209,
+    "direction": "radial",
+    "d_nominal_m": 0.25,
+    "d_actual_m": 0.25
+  },
+  {
+    "task_id": "E2_A_radial_d275_snr+10",
+    "clean_id": "cln_c529f082d21f",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.34565318598452494,
+        -1.6261703862199521
+      ],
+      [
+        0.4028289009594087,
+        -1.8951609764217485
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.6625,
+        12.0
+      ],
+      [
+        1.9375,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.27499999999999986,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.275",
+      "d_actual_m=0.275000"
+    ],
+    "clean_seed": 7927317604855430923,
+    "direction": "radial",
+    "d_nominal_m": 0.275,
+    "d_actual_m": 0.27499999999999986
+  },
+  {
+    "task_id": "E2_A_radial_d300_snr+10",
+    "clean_id": "cln_6a6f5e9301a5",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3430542898493029,
+        -1.6139435412107794
+      ],
+      [
+        0.4054277970946307,
+        -1.907387821430921
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.6500000000000001,
+        12.0
+      ],
+      [
+        1.95,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.2999999999999999,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 8139088054830181832,
+    "direction": "radial",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.2999999999999999
+  },
+  {
+    "task_id": "E2_A_radial_d350_snr+10",
+    "clean_id": "cln_7dd5990e79f2",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.33785649757885894,
+        -1.5894898511924342
+      ],
+      [
+        0.4106255893650747,
+        -1.9318415114492664
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.625,
+        12.0
+      ],
+      [
+        1.975,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.3500000000000002,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.350",
+      "d_actual_m=0.350000"
+    ],
+    "clean_seed": 194000634081445042,
+    "direction": "radial",
+    "d_nominal_m": 0.35,
+    "d_actual_m": 0.3500000000000002
+  },
+  {
+    "task_id": "E2_A_radial_d400_snr+10",
+    "clean_id": "cln_8e72167a13df",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.33265870530841496,
+        -1.5650361611740893
+      ],
+      [
+        0.4158233816355187,
+        -1.9562952014676114
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.6,
+        12.0
+      ],
+      [
+        2.0,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.39999999999999986,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.400",
+      "d_actual_m=0.400000"
+    ],
+    "clean_seed": 114964319032765115,
+    "direction": "radial",
+    "d_nominal_m": 0.4,
+    "d_actual_m": 0.39999999999999986
+  },
+  {
+    "task_id": "E2_A_radial_d500_snr+10",
+    "clean_id": "cln_4f879de8dfec",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.322263120767527,
+        -1.516128781137399
+      ],
+      [
+        0.4262189661764066,
+        -2.0052025815043013
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.55,
+        12.0
+      ],
+      [
+        2.05,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.49999999999999956,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 10802310434426174060,
+    "direction": "radial",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.49999999999999956
+  },
+  {
+    "task_id": "E2_A_radial_d625_snr+10",
+    "clean_id": "cln_4494466889c7",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.309268640091417,
+        -1.454994556091536
+      ],
+      [
+        0.43921344685251656,
+        -2.066336806550164
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.4875,
+        12.0
+      ],
+      [
+        2.1125,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.6249999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.625",
+      "d_actual_m=0.625000"
+    ],
+    "clean_seed": 3188496809239388859,
+    "direction": "radial",
+    "d_nominal_m": 0.625,
+    "d_actual_m": 0.6249999999999996
+  },
+  {
+    "task_id": "E2_A_radial_d750_snr+10",
+    "clean_id": "cln_700d11f95a06",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.29627415941530705,
+        -1.3938603310456732
+      ],
+      [
+        0.45220792752862654,
+        -2.127471031596027
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.425,
+        12.0
+      ],
+      [
+        2.175,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.7499999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 17895229575704037339,
+    "direction": "radial",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.7499999999999996
+  },
+  {
+    "task_id": "E2_A_radial_d875_snr+10",
+    "clean_id": "cln_b778af8cd525",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.2832796787391971,
+        -1.3327261059998103
+      ],
+      [
+        0.4652024082047365,
+        -2.18860525664189
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.3625,
+        12.0
+      ],
+      [
+        2.2375,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.8749999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.875",
+      "d_actual_m=0.875000"
+    ],
+    "clean_seed": 9892388203349346147,
+    "direction": "radial",
+    "d_nominal_m": 0.875,
+    "d_actual_m": 0.8749999999999996
+  },
+  {
+    "task_id": "E2_A_radial_d1000_snr+10",
+    "clean_id": "cln_3955703541bf",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.27028519806308715,
+        -1.2715918809539475
+      ],
+      [
+        0.47819688888084644,
+        -2.2497394816877527
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.3,
+        12.0
+      ],
+      [
+        2.3,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.9999999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 5982859268317602254,
+    "direction": "radial",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 0.9999999999999996
+  },
+  {
+    "task_id": "E2_A_radial_d1250_snr+10",
+    "clean_id": "cln_ea665ebed2f8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.24429623671086723,
+        -1.1493234308622218
+      ],
+      [
+        0.5041858502330664,
+        -2.3720079317794784
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.175,
+        12.0
+      ],
+      [
+        2.425,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.2499999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.250",
+      "d_actual_m=1.250000"
+    ],
+    "clean_seed": 11587415641926740841,
+    "direction": "radial",
+    "d_nominal_m": 1.25,
+    "d_actual_m": 1.2499999999999996
+  },
+  {
+    "task_id": "E2_A_radial_d1500_snr+10",
+    "clean_id": "cln_12484386f2a8",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.21830727535864733,
+        -1.027054980770496
+      ],
+      [
+        0.5301748115852862,
+        -2.494276381871204
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.05,
+        12.0
+      ],
+      [
+        2.55,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.4999999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.500",
+      "d_actual_m=1.500000"
+    ],
+    "clean_seed": 10897036889569141968,
+    "direction": "radial",
+    "d_nominal_m": 1.5,
+    "d_actual_m": 1.4999999999999996
+  },
+  {
+    "task_id": "E2_A_oblique_d150_snr+10",
+    "clean_id": "cln_1353f9273470",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.43714133606787364,
+        -1.8015136089469774
+      ],
+      [
+        0.31134075087606006,
+        -1.7198177536947232
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8537917442151826,
+        13.6393331099023
+      ],
+      [
+        1.7477717725949324,
+        10.261195150603841
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.15000000000000005,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.150",
+      "d_actual_m=0.150000"
+    ],
+    "clean_seed": 2249927255407425097,
+    "direction": "oblique",
+    "d_nominal_m": 0.15,
+    "d_actual_m": 0.15000000000000005
+  },
+  {
+    "task_id": "E2_A_oblique_d175_snr+10",
+    "clean_id": "cln_979841b46fbf",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.44762471816719146,
+        -1.808321596884665
+      ],
+      [
+        0.30085736877674224,
+        -1.7130097657570356
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8628995909800836,
+        13.903295041597817
+      ],
+      [
+        1.7392290286003849,
+        9.96131298451539
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.1749999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.175",
+      "d_actual_m=0.175000"
+    ],
+    "clean_seed": 11763980350627602019,
+    "direction": "oblique",
+    "d_nominal_m": 0.175,
+    "d_actual_m": 0.1749999999999999
+  },
+  {
+    "task_id": "E2_A_oblique_d200_snr+10",
+    "clean_id": "cln_886ed11776db",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.4581081002665093,
+        -1.815129584822353
+      ],
+      [
+        0.2903739866774244,
+        -1.7062017778193477
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.872046591628306,
+        14.164682989076564
+      ],
+      [
+        1.730734398679602,
+        9.658478746784011
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.19999999999999998,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.200",
+      "d_actual_m=0.200000"
+    ],
+    "clean_seed": 13524593661799757632,
+    "direction": "oblique",
+    "d_nominal_m": 0.2,
+    "d_actual_m": 0.19999999999999998
+  },
+  {
+    "task_id": "E2_A_oblique_d225_snr+10",
+    "clean_id": "cln_ed484bb8fd4b",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.46859148236582704,
+        -1.8219375727600409
+      ],
+      [
+        0.27989060457810666,
+        -1.6993937898816598
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8812321750333085,
+        14.423523696857204
+      ],
+      [
+        1.7222885947539248,
+        9.35266580277426
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.22499999999999998,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.225",
+      "d_actual_m=0.225000"
+    ],
+    "clean_seed": 15231711914884469833,
+    "direction": "oblique",
+    "d_nominal_m": 0.225,
+    "d_actual_m": 0.22499999999999998
+  },
+  {
+    "task_id": "E2_A_oblique_d250_snr+10",
+    "clean_id": "cln_bc6724ca7b78",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.47907486446514486,
+        -1.8287455606977288
+      ],
+      [
+        0.26940722247878884,
+        -1.692585801943972
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8904557787829757,
+        14.679843806678864
+      ],
+      [
+        1.7138923386450078,
+        9.04384767023547
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.25000000000000006,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.250",
+      "d_actual_m=0.250000"
+    ],
+    "clean_seed": 7900818201985132639,
+    "direction": "oblique",
+    "d_nominal_m": 0.25,
+    "d_actual_m": 0.25000000000000006
+  },
+  {
+    "task_id": "E2_A_oblique_d275_snr+10",
+    "clean_id": "cln_5be316de14a7",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.4895582465644627,
+        -1.8355535486354166
+      ],
+      [
+        0.258923840379471,
+        -1.685777814006284
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8997168490823422,
+        14.93366984753825
+      ],
+      [
+        1.7055463621117601,
+        8.731998042369675
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.27500000000000013,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.275",
+      "d_actual_m=0.275000"
+    ],
+    "clean_seed": 7065706153096226193,
+    "direction": "oblique",
+    "d_nominal_m": 0.275,
+    "d_actual_m": 0.27500000000000013
+  },
+  {
+    "task_id": "E2_A_oblique_d300_snr+10",
+    "clean_id": "cln_f5581ee16d0d",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5000416286637804,
+        -1.8423615365731043
+      ],
+      [
+        0.24844045828015326,
+        -1.6789698260685963
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9090148406549217,
+        15.185028226299607
+      ],
+      [
+        1.6972514068809208,
+        8.417090811865801
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.2999999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 11001196089232371187,
+    "direction": "oblique",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.2999999999999999
+  },
+  {
+    "task_id": "E2_A_oblique_d350_snr+10",
+    "clean_id": "cln_0a3bc1579b6a",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5210083928624161,
+        -1.85597751244848
+      ],
+      [
+        0.22747369408151766,
+        -1.6653538501932206
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9277194485058051,
+        15.680446961828077
+      ],
+      [
+        1.6808175772083287,
+        7.7780002622553415
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.35000000000000003,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.350",
+      "d_actual_m=0.350000"
+    ],
+    "clean_seed": 1397786180799894891,
+    "direction": "oblique",
+    "d_nominal_m": 0.35,
+    "d_actual_m": 0.35000000000000003
+  },
+  {
+    "task_id": "E2_A_oblique_d400_snr+10",
+    "clean_id": "cln_9037fb46010e",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5419751570610517,
+        -1.8695934883238556
+      ],
+      [
+        0.20650692988288202,
+        -1.651737874317845
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9465654066725615,
+        16.166308502833225
+      ],
+      [
+        1.6645969835205419,
+        7.126372128622523
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.39999999999999997,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.400",
+      "d_actual_m=0.400000"
+    ],
+    "clean_seed": 9389253369915523675,
+    "direction": "oblique",
+    "d_nominal_m": 0.4,
+    "d_actual_m": 0.39999999999999997
+  },
+  {
+    "task_id": "E2_A_oblique_d500_snr+10",
+    "clean_id": "cln_925c58cc910f",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5839086854583229,
+        -1.8968254400746072
+      ],
+      [
+        0.16457340148561084,
+        -1.6245059225670935
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9846652370281226,
+        17.11018141734874
+      ],
+      [
+        1.632820840426808,
+        5.7847129818880765
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.5000000000000001,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 2477194125287651834,
+    "direction": "oblique",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.5000000000000001
+  },
+  {
+    "task_id": "E2_A_oblique_d625_snr+10",
+    "clean_id": "cln_892238278783",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6363255959549119,
+        -1.9308653797630462
+      ],
+      [
+        0.11215649098902186,
+        -1.5904659828786545
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.0330153415148806,
+        18.2398742612782
+      ],
+      [
+        1.594415604905175,
+        4.033706754637057
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.6249999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.625",
+      "d_actual_m=0.625000"
+    ],
+    "clean_seed": 5114278970228903667,
+    "direction": "oblique",
+    "d_nominal_m": 0.625,
+    "d_actual_m": 0.6249999999999999
+  },
+  {
+    "task_id": "E2_A_oblique_d750_snr+10",
+    "clean_id": "cln_ab56d2e137ab",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6887425064515009,
+        -1.9649053194514854
+      ],
+      [
+        0.05973958049243283,
+        -1.5564260431902153
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.0821189098132313,
+        19.31668539971837
+      ],
+      [
+        1.5575720995826041,
+        2.1980783948804348
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.75,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 15575397924829338880,
+    "direction": "oblique",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.75
+  },
+  {
+    "task_id": "E2_A_oblique_d875_snr+10",
+    "clean_id": "cln_2615fd22d7ac",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.74115941694809,
+        -1.9989452591399246
+      ],
+      [
+        0.0073226699958438,
+        -1.522386103501776
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.1319238800597016,
+        20.343533451305003
+      ],
+      [
+        1.5224037144040303,
+        0.275590304568058
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.8750000000000001,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.875",
+      "d_actual_m=0.875000"
+    ],
+    "clean_seed": 15492519135667565548,
+    "direction": "oblique",
+    "d_nominal_m": 0.875,
+    "d_actual_m": 0.8750000000000001
+  },
+  {
+    "task_id": "E2_A_oblique_d1000_snr+10",
+    "clean_id": "cln_342f48349088",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7935763274446789,
+        -2.0329851988283636
+      ],
+      [
+        -0.045094240500745175,
+        -1.4883461638133368
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.1823822319052604,
+        21.32320119163109
+      ],
+      [
+        1.489029144732975,
+        -1.7354292698858143
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.9999999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 16144879041922724205,
+    "direction": "oblique",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 0.9999999999999999
+  },
+  {
+    "task_id": "E2_A_oblique_d1250_snr+10",
+    "clean_id": "cln_02c7e69e2402",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.8984101484378568,
+        -2.1010650782052425
+      ],
+      [
+        -0.14992806149392313,
+        -1.4202662844364584
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.2850853939557125,
+        23.151430220979893
+      ],
+      [
+        1.4281578142244185,
+        -6.026016460951683
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.25,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=1.250",
+      "d_actual_m=1.250000"
+    ],
+    "clean_seed": 8307331785898844049,
+    "direction": "oblique",
+    "d_nominal_m": 1.25,
+    "d_actual_m": 1.25
+  },
+  {
+    "task_id": "E2_A_oblique_d1500_snr+10",
+    "clean_id": "cln_ace569a87d0d",
+    "family": "E2_A",
+    "layer": "A",
+    "source": "analytic",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        1.0032439694310349,
+        -2.1691449575821204
+      ],
+      [
+        -0.2547618824871012,
+        -1.35218640505958
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.389913870666405,
+        24.820855249191492
+      ],
+      [
+        1.3759766316316284,
+        -10.669869760308519
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.5,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=1.500",
+      "d_actual_m=1.500000"
+    ],
+    "clean_seed": 3621963506863141611,
+    "direction": "oblique",
+    "d_nominal_m": 1.5,
+    "d_actual_m": 1.5
+  },
+  {
+    "task_id": "E2_B_oblique_d175_snr+10",
+    "clean_id": "cln_b9e532c8d407",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.44762471816719146,
+        -1.808321596884665
+      ],
+      [
+        0.30085736877674224,
+        -1.7130097657570356
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8628995909800836,
+        13.903295041597817
+      ],
+      [
+        1.7392290286003849,
+        9.96131298451539
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.1749999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.175",
+      "d_actual_m=0.175000"
+    ],
+    "clean_seed": 9354583091022521746,
+    "direction": "oblique",
+    "d_nominal_m": 0.175,
+    "d_actual_m": 0.1749999999999999
+  },
+  {
+    "task_id": "E2_B_oblique_d200_snr+10",
+    "clean_id": "cln_acf07b04e77d",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.4581081002665093,
+        -1.815129584822353
+      ],
+      [
+        0.2903739866774244,
+        -1.7062017778193477
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.872046591628306,
+        14.164682989076564
+      ],
+      [
+        1.730734398679602,
+        9.658478746784011
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.19999999999999998,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.200",
+      "d_actual_m=0.200000"
+    ],
+    "clean_seed": 18431429887341385308,
+    "direction": "oblique",
+    "d_nominal_m": 0.2,
+    "d_actual_m": 0.19999999999999998
+  },
+  {
+    "task_id": "E2_B_oblique_d250_snr+10",
+    "clean_id": "cln_e3ffb6249ce2",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.47907486446514486,
+        -1.8287455606977288
+      ],
+      [
+        0.26940722247878884,
+        -1.692585801943972
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8904557787829757,
+        14.679843806678864
+      ],
+      [
+        1.7138923386450078,
+        9.04384767023547
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.25000000000000006,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.250",
+      "d_actual_m=0.250000"
+    ],
+    "clean_seed": 3951393405564597092,
+    "direction": "oblique",
+    "d_nominal_m": 0.25,
+    "d_actual_m": 0.25000000000000006
+  },
+  {
+    "task_id": "E2_B_oblique_d300_snr+10",
+    "clean_id": "cln_f70e71a0c3e5",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5000416286637804,
+        -1.8423615365731043
+      ],
+      [
+        0.24844045828015326,
+        -1.6789698260685963
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9090148406549217,
+        15.185028226299607
+      ],
+      [
+        1.6972514068809208,
+        8.417090811865801
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.2999999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 13618384837981958158,
+    "direction": "oblique",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.2999999999999999
+  },
+  {
+    "task_id": "E2_B_oblique_d500_snr+10",
+    "clean_id": "cln_b691dbd2e7e3",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5839086854583229,
+        -1.8968254400746072
+      ],
+      [
+        0.16457340148561084,
+        -1.6245059225670935
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.9846652370281226,
+        17.11018141734874
+      ],
+      [
+        1.632820840426808,
+        5.7847129818880765
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.5000000000000001,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 10083290878713572180,
+    "direction": "oblique",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.5000000000000001
+  },
+  {
+    "task_id": "E2_B_oblique_d1000_snr+10",
+    "clean_id": "cln_1cae67d2e896",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7935763274446789,
+        -2.0329851988283636
+      ],
+      [
+        -0.045094240500745175,
+        -1.4883461638133368
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.1823822319052604,
+        21.32320119163109
+      ],
+      [
+        1.489029144732975,
+        -1.7354292698858143
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.9999999999999999,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 8592157749653631815,
+    "direction": "oblique",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 0.9999999999999999
+  },
+  {
+    "task_id": "E2_B_transverse_d300_snr+10",
+    "clean_id": "cln_004e4be5f11e",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.5196614716607479,
+        -1.7233548545994193
+      ],
+      [
+        0.2262171914406062,
+        -1.7857283618447473
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        16.78019184719916
+      ],
+      [
+        1.8,
+        7.219808152800841
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.3000000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 1214467763612053802,
+    "direction": "transverse",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.3000000000000001
+  },
+  {
+    "task_id": "E2_B_transverse_d500_snr+10",
+    "clean_id": "cln_54481294f030",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6151507884422669,
+        -1.6916233349888674
+      ],
+      [
+        0.1260769880753641,
+        -1.795579180397747
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        19.983556145555408
+      ],
+      [
+        1.8,
+        4.016443854444591
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.49999999999999994,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 9601548568047433885,
+    "direction": "transverse",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.49999999999999994
+  },
+  {
+    "task_id": "E2_B_transverse_d625_snr+10",
+    "clean_id": "cln_248c92461b98",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6742290520440034,
+        -1.6689563161987928
+      ],
+      [
+        0.06288680158537475,
+        -1.7989011229598924
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        21.99784348756775
+      ],
+      [
+        1.8,
+        2.0021565124322525
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.6250000000000001,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.625",
+      "d_actual_m=0.625000"
+    ],
+    "clean_seed": 7987222727881281511,
+    "direction": "transverse",
+    "d_nominal_m": 0.625,
+    "d_actual_m": 0.6250000000000001
+  },
+  {
+    "task_id": "E2_B_transverse_d750_snr+10",
+    "clean_id": "cln_4f6743cc94a1",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7328347529322341,
+        -1.6440660646381433
+      ],
+      [
+        -0.0007759476181201252,
+        -1.7999998327514628
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        24.024699180565822
+      ],
+      [
+        1.8,
+        -0.024699180565821877
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.75,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 5590709350095609216,
+    "direction": "transverse",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.75
+  },
+  {
+    "task_id": "E2_B_transverse_d875_snr+10",
+    "clean_id": "cln_033fb96d4f7f",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7909580166500427,
+        -1.6169061246395942
+      ],
+      [
+        -0.06492113399203725,
+        -1.7988288541051336
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        26.066952174891064
+      ],
+      [
+        1.8,
+        -2.066952174891064
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.875,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.875",
+      "d_actual_m=0.875000"
+    ],
+    "clean_seed": 4102417403605387876,
+    "direction": "transverse",
+    "d_nominal_m": 0.875,
+    "d_actual_m": 0.875
+  },
+  {
+    "task_id": "E2_B_transverse_d1000_snr+10",
+    "clean_id": "cln_b0ec8b6b413b",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.8485867220043756,
+        -1.5874194704733429
+      ],
+      [
+        -0.12956087872943003,
+        -1.7953311612911023
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        28.127620213160757
+      ],
+      [
+        1.8,
+        -4.127620213160757
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.0,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 15020350765426775231,
+    "direction": "transverse",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 1.0
+  },
+  {
+    "task_id": "E2_B_radial_d300_snr+10",
+    "clean_id": "cln_d7f9c32605f0",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3430542898493029,
+        -1.6139435412107794
+      ],
+      [
+        0.4054277970946307,
+        -1.907387821430921
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.6500000000000001,
+        12.0
+      ],
+      [
+        1.95,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.2999999999999999,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.300",
+      "d_actual_m=0.300000"
+    ],
+    "clean_seed": 5477898135720349672,
+    "direction": "radial",
+    "d_nominal_m": 0.3,
+    "d_actual_m": 0.2999999999999999
+  },
+  {
+    "task_id": "E2_B_radial_d500_snr+10",
+    "clean_id": "cln_c3878b602a6c",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.322263120767527,
+        -1.516128781137399
+      ],
+      [
+        0.4262189661764066,
+        -2.0052025815043013
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.55,
+        12.0
+      ],
+      [
+        2.05,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.49999999999999956,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.500",
+      "d_actual_m=0.500000"
+    ],
+    "clean_seed": 15853168762527784659,
+    "direction": "radial",
+    "d_nominal_m": 0.5,
+    "d_actual_m": 0.49999999999999956
+  },
+  {
+    "task_id": "E2_B_radial_d1000_snr+10",
+    "clean_id": "cln_8448358c4505",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.27028519806308715,
+        -1.2715918809539475
+      ],
+      [
+        0.47819688888084644,
+        -2.2497394816877527
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.3,
+        12.0
+      ],
+      [
+        2.3,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.9999999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.000",
+      "d_actual_m=1.000000"
+    ],
+    "clean_seed": 12798004735073349057,
+    "direction": "radial",
+    "d_nominal_m": 1.0,
+    "d_actual_m": 0.9999999999999996
+  },
+  {
+    "task_id": "E2_B_radial_d1250_snr+10",
+    "clean_id": "cln_e9ea11736cf2",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.24429623671086723,
+        -1.1493234308622218
+      ],
+      [
+        0.5041858502330664,
+        -2.3720079317794784
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.175,
+        12.0
+      ],
+      [
+        2.425,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.2499999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.250",
+      "d_actual_m=1.250000"
+    ],
+    "clean_seed": 18185334380797067203,
+    "direction": "radial",
+    "d_nominal_m": 1.25,
+    "d_actual_m": 1.2499999999999996
+  },
+  {
+    "task_id": "E2_B_radial_d1500_snr+10",
+    "clean_id": "cln_d2c47ef80149",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.21830727535864733,
+        -1.027054980770496
+      ],
+      [
+        0.5301748115852862,
+        -2.494276381871204
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.05,
+        12.0
+      ],
+      [
+        2.55,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 1.4999999999999996,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=1.500",
+      "d_actual_m=1.500000"
+    ],
+    "clean_seed": 4285551182176208016,
+    "direction": "radial",
+    "d_nominal_m": 1.5,
+    "d_actual_m": 1.4999999999999996
+  }
+]

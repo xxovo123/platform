@@ -1,0 +1,4 @@
+numpy
+scipy
+matplotlib
+# Optional: PyMuPDF for rendered comparison with archived manuscript PDFs.

@@ -1,0 +1,2 @@
+﻿method,segment_id,prediction_count,reference_count,max_position_difference_m,pass,elapsed_s
+this_method,indoor_C2-1_N2_S1-S2_001__t10,2,2,0.0,True,0.031673800011049025

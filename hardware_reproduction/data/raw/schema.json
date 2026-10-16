@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "dataset_name": "205-segment evaluation dataset",
+  "primary_data": "raw_cir",
+  "actual_hardware_timestamps_available": false,
+  "actual_hardware_sequence_numbers_available": false,
+  "time_origin": "First valid per-channel frame assigned nominal time zero; timestamps are reconstructed estimates.",
+  "channel_order": "TX-major then RX; physical-position indices and bin device numbers are separate arrays.",
+  "coordinate_convention": "Source physical coordinates [x,y,z] in meters; evaluation target plane z=0, in front of radar y<0.",
+  "ema_rule": "First recording sample outputs raw and ref=complex128(raw); subsequent output=complex64(raw-ref), ref=(1-alpha)*ref+alpha*raw, alpha=1/bg_m_factor. Reference persists across windows.",
+  "selection_rule": "Check minimum channel count after each parsed expected-channel frame; capture each channel's current last 128 entries immediately when min(counts)>=round(t_end_s*estimated_rate).",
+  "limitations": [
+    "No hardware or host per-frame timestamps are stored in these bins.",
+    "Raw means chip-produced complex CIR from the recording, not pre-chip ADC samples.",
+    "Estimated timestamps do not certify cross-channel hardware simultaneity.",
+    "EMA, cropping and FFT are computed in memory for audit only; none of their arrays are published."
+  ],
+  "fields": {
+    "schema_version": {
+      "shape": [],
+      "meaning": "Hardware CIR export schema version 1."
+    },
+    "segment_id": {
+      "shape": [],
+      "meaning": "Frozen evaluation segment ID; Unicode scalar."
+    },
+    "recording_id": {
+      "shape": [],
+      "meaning": "Source recording identifier, no directory."
+    },
+    "environment": {
+      "shape": [],
+      "meaning": "indoor or outdoor."
+    },
+    "config_id": {
+      "shape": [],
+      "meaning": "Frozen configuration identifier."
+    },
+    "t_end_s": {
+      "shape": [],
+      "meaning": "Formal evaluation endtime; planned end count = round(t_end_s * snapshot_rate_estimate_hz)."
+    },
+    "raw_cir": {
+      "shape": [
+        128,
+        8,
+        32
+      ],
+      "dtype": "complex64",
+      "meaning": "Exact signed int16 chip I + 1j*Q in native count units, before any background removal, cropping, FFT or phase calibration; axes = slow-time, TX-major channel, tap."
+    },
+    "source_frame_indices": {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "int64",
+      "meaning": "Zero-based valid parsed frame ordinal in original bin order; reconstructed in software, NOT a chip sequence counter."
+    },
+    "source_channel_frame_indices": {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "int64",
+      "meaning": "Zero-based per-channel valid parsed frame ordinal; software reconstruction, NOT a hardware counter."
+    },
+    "estimated_frame_timestamps_s": {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "float64",
+      "meaning": "source_channel_frame_indices / snapshot_rate_estimate_hz; relative nominal times with first frame set to zero. No measured acquisition timestamp is present."
+    },
+    "channel_frame_counts_at_capture": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64",
+      "meaning": "Per-channel cumulative count at the formal trigger; each channel uses its own last 128 samples exactly as original replay."
+    },
+    "planned_end_frame": {
+      "shape": [],
+      "meaning": "round(t_end_s * snapshot_rate_estimate_hz), exclusive nominal per-channel count."
+    },
+    "snapshot_rate_estimate_hz": {
+      "shape": [],
+      "meaning": "Minimum expected-channel frame count divided by host-clock recording duration, from source metadata; not hardware rate calibration."
+    },
+    "channel_pairs": {
+      "shape": [
+        8,
+        2
+      ],
+      "dtype": "int64",
+      "meaning": "Zero-based physical-position indices (tx_idx,rx_idx), TX-major then RX; NOT device numbers."
+    },
+    "device_channel_pairs": {
+      "shape": [
+        8,
+        2
+      ],
+      "dtype": "int64",
+      "meaning": "TX/RX channel numbers actually encoded in bin: TX [1,2], RX [4,5,6,7]."
+    },
+    "tx_positions_m": {
+      "shape": [
+        2,
+        3
+      ],
+      "meaning": "Physical TX coordinates [x,y,z] in meters, source metadata order."
+    },
+    "rx_positions_m": {
+      "shape": [
+        4,
+        3
+      ],
+      "meaning": "Physical RX coordinates [x,y,z] in meters, source metadata order."
+    },
+    "selected_pair_indices": {
+      "shape": [
+        4
+      ],
+      "dtype": "int64",
+      "meaning": "Indices into all-channel axis in the exact existing X channel order [2,3,6,7]."
+    },
+    "tap_interval_s": {
+      "shape": [],
+      "meaning": "1e-9 s, source tap spacing; raw taps retain original indices 0..31."
+    },
+    "center_frequency_hz": {
+      "shape": [],
+      "meaning": "7.9872e9 Hz, source metadata."
+    },
+    "bandwidth_hz": {
+      "shape": [],
+      "meaning": "5e8 Hz, source metadata."
+    },
+    "K": {
+      "shape": [],
+      "dtype": "int64",
+      "meaning": "Number of true targets for evaluation, from only this frozen segment's truth_index entry."
+    },
+    "truth_xy_m": {
+      "shape": [
+        "K",
+        2
+      ],
+      "meaning": "Evaluation true-target coordinates in meters; never used for estimator execution."
+    }
+  }
+}

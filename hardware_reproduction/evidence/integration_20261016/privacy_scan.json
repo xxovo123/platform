@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "text_files_scanned": 123,
+  "python_files_parsed": 28,
+  "credential_pattern_findings": [],
+  "scope": [
+    "hardware_reproduction excluding generated",
+    "manuscript_assets excluding generated"
+  ],
+  "photo_check": "exact two previously approved anonymous crops; no original photographs; metadata checked separately",
+  "limits": "Pattern scan and known-photo provenance; not a claim that arbitrary personal data can be identified automatically."
+}

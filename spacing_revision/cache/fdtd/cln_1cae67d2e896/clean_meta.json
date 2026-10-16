@@ -1,0 +1,118 @@
+{
+ "clean_id": "cln_1cae67d2e896",
+ "layer": "B",
+ "source": "fdtd",
+ "k": 2,
+ "L_clean": 128,
+ "scene": "E2",
+ "targets_xy_m": [
+  [
+   0.7935763274446789,
+   -2.0329851988283636
+  ],
+  [
+   -0.045094240500745175,
+   -1.4883461638133368
+  ]
+ ],
+ "targets_polar": [
+  [
+   2.1823822319052604,
+   21.32320119163109
+  ],
+  [
+   1.489029144732975,
+   -1.7354292698858143
+  ]
+ ],
+ "clean_seed": 8592157749653631815,
+ "seed_scheme": "jsf_sim_20260929_v1 canonical-json sha256",
+ "signature": "cf94d86334e83668e6cc3b99e790ecb0c1b564b07e87cbd2ad3ce83efbd5ef96",
+ "signature_scope": "jsf_physics_scope_v1",
+ "protocol_hash": "fe04f63487b42a350c51d55457792c4d4c4f523dcdcce2d09465a3e1bf63a301",
+ "source_aggregate": "17e9e37fb6bd6643f34ae8c6adb63c0e1f8c3d0a27e83c07ccfb775c75f41004",
+ "protocol_version": "jsf-20260929-noshift-bandfix-1",
+ "geometry": {
+  "tx_positions_m": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "rx_positions_m": [
+   [
+    -0.038,
+    0.0,
+    0.0
+   ],
+   [
+    -0.019,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.019,
+    0.0,
+    0.0
+   ]
+  ],
+  "pairs": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ]
+  ]
+ },
+ "meep": {
+  "resolution_px_per_m": 350.0,
+  "run_time_meep": 20.0,
+  "pml_thickness_lambda": 2.0
+ },
+ "background_mode": "empty_field",
+ "scatterer_radius_m": 0.056301167743389426,
+ "micro_motion": {
+  "seed": 8592157749653631815,
+  "sigma_m": 0.002,
+  "radius_m": [
+   0.01,
+   0.01
+  ]
+ },
+ "time_origin": "raw tap0 = physical zero delay (tau=0)；与层 A 同一延迟参考",
+ "cache_key": "309fd3863a2d162f2061f9ec9a55fa708b6c612e89c90f8dcfd2731639e7f5fb",
+ "solves": {
+  "solves_planned": 129,
+  "solves_actual": 0,
+  "cache_hits": {
+   "background": 1,
+   "state": 128
+  }
+ },
+ "npz_sha256": "06e806379840a5b27f6dcb7f563b2d6edf1803dc87e7772d6ac86e3d97597d7f",
+ "truth_sha256": "7284d707f3d4118842d4db48cfaddcd481245400d891dc0cb1eff9ca400dc527",
+ "raw_shape": [
+  128,
+  4,
+  32
+ ],
+ "truth_K": 2,
+ "built_at": "2026-09-30T19:14:00+08:00"
+}

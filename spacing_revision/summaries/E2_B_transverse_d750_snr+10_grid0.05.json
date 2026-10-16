@@ -1,0 +1,56 @@
+{
+  "condition": {
+    "task_id": "E2_B_transverse_d750_snr+10",
+    "clean_id": "cln_4f6743cc94a1",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.7328347529322341,
+        -1.6440660646381433
+      ],
+      [
+        -0.0007759476181201252,
+        -1.7999998327514628
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.8,
+        24.024699180565822
+      ],
+      [
+        1.8,
+        -0.024699180565821877
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.75,
+    "tags": [
+      "direction=transverse",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 5590709350095609216,
+    "direction": "transverse",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.75
+  },
+  "grid_m": 0.05,
+  "n": 100,
+  "successful": 4,
+  "rate": 0.04,
+  "wilson95": [
+    0.01566330399154762,
+    0.0983707143588792
+  ],
+  "method_failed": 0,
+  "tp": 104,
+  "dr": 0.52
+}

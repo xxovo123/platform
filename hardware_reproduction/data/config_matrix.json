@@ -1,0 +1,1569 @@
+{
+ "kind": "q5-hardware-ablation-config-matrix",
+ "generated_at": "2026-09-26T13:30:35+08:00",
+ "workspace": "D:\\论文\\小论文修改",
+ "frozen_before_effects": true,
+ "freeze_note": "本文件在**任何消融效果数值产生之前**生成并记 sha256；配置由规则穷举/等距判定，无按效果挑选分支。",
+ "frequency_axis": {
+  "fft_length": 32,
+  "tap_interval_si": 1e-09,
+  "center_freq_si": 7987200000.0,
+  "df_hz": 31249999.999999996,
+  "in_band_offsets_df_in_fft_order": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   -8,
+   -7,
+   -6,
+   -5,
+   -4,
+   -3,
+   -2,
+   -1
+  ],
+  "n_in_band": 17,
+  "band_span_mhz": 500.0,
+  "order_rule": "一律原始 FFT 顺序（0..8,-8..-1）；FB 的 J 依赖该特征序"
+ },
+ "cache": {
+  "cache_dir": "D:\\论文\\小论文修改\\大修执行_20260923\\04_Q6\\hardware\\cache",
+  "n_windows": 214,
+  "n_recordings": 32,
+  "cache_index_sha256": "32b79fd62367bdd4bc505ce43ac0a158dc2c647ffa4dc715b6b4d8e55b22f8a3",
+  "truth_index_sha256": "6535cd01ecddba40e9faf56d5008441b964350059f579e1c7ca99fe8a9fb6cbf",
+  "k_distribution": {
+   "1": 105,
+   "2": 70,
+   "3": 39
+  },
+  "snapshot_rate_hz": {
+   "min": 55.49834280704979,
+   "median": 55.5556566177047,
+   "max": 55.627716175110635
+  },
+  "metrics_module_sha256": "3f047196521cf5d3d0f79e53f47434125b6e208d1f54e4d6ca79d8cf59f6b664"
+ },
+ "factors": [
+  {
+   "factor": "n_freq",
+   "x_key": "n_freq",
+   "x_label": "频点数 F",
+   "title": "因素A 频点数（固定跨度 ±250 MHz）",
+   "ref": "REF",
+   "ids": [
+    "REF",
+    "A_F09",
+    "A_F05"
+   ],
+   "note": "跨度固定 500 MHz；抽点间隔随 F 变化（31.25/62.5/125 MHz）"
+  },
+  {
+   "factor": "bandwidth",
+   "x_key": "span_mhz",
+   "x_label": "频率跨度 (MHz)",
+   "title": "因素B 有效带宽（F=5 固定）",
+   "ref": "A_F05",
+   "ids": [
+    "A_F05",
+    "B_span250",
+    "B_span125"
+   ],
+   "note": "参考 = F=5 满跨度（±250 MHz）；跨度真实缩窄，间隔同时变化"
+  },
+  {
+   "factor": "bandwidth_nested",
+   "x_key": "span_mhz",
+   "x_label": "频率跨度 (MHz)",
+   "title": "因素B补 嵌套连续子带（间隔固定 = df，**声明耦合**）",
+   "ref": "REF",
+   "ids": [
+    "B_span125",
+    "S_span250_F9",
+    "REF"
+   ],
+   "note": "间隔固定 df=31.25 MHz；跨度 125/250/500 MHz 对应 F=5/9/17，F 与跨度不可分"
+  },
+  {
+   "factor": "snapshots",
+   "x_key": "L",
+   "x_label": "快照数 L",
+   "title": "因素C 快照数（每窗末 L 帧）",
+   "ref": "REF",
+   "ids": [
+    "C_L016",
+    "C_L032",
+    "C_L064",
+    "REF"
+   ],
+   "note": "嵌套子集，窗口结束时刻不变"
+  },
+  {
+   "factor": "channels",
+   "x_key": "n_channels",
+   "x_label": "虚拟通道数 C",
+   "title": "因素D 虚拟通道/子阵（穷举 C=2/C=3 + C=4）",
+   "ref": "REF",
+   "ids": [
+    "REF",
+    "D_C2_01",
+    "D_C2_02",
+    "D_C2_03",
+    "D_C2_12",
+    "D_C2_13",
+    "D_C2_23",
+    "D_C3_012",
+    "D_C3_013",
+    "D_C3_023",
+    "D_C3_123"
+   ],
+   "note": "子阵孔径 0.019/0.038/0.057 m；**穷举全部子集，不按效果挑选**"
+  },
+  {
+   "factor": "fb",
+   "x_key": "fb",
+   "x_label": "FB",
+   "title": "因素E 前后向处理（开/关）",
+   "ref": "REF",
+   "ids": [
+    "E_FB0",
+    "REF"
+   ],
+   "note": "同窗配对比较"
+  }
+ ],
+ "failure_policy": {
+  "formal_run": "任何 request 窗出现非 ok（failed / invalid / not_applicable）**立即终止正式运行**并返回非零退出码：先修执行错误再重跑，不产出该配置的正式指标。正常“无峰”仍为 status=ok（只是 n_predictions=0），不是失败。",
+  "not_applicable_distinct": "not_applicable 表示方法按物理/结构原因主动声明该窗不可评估，与技术失败（failed）**语义不同**；本批若出现，单列结构原因，不得当作空输出，也不计入 DR/误差。",
+  "invalid_distinct": "invalid 表示维度/秩等**结构条件**不满足（本批唯一硬条件 M>K）；该类窗单列原因，不得伪造成空输出或 0 预测。",
+  "main_denominator": "主口径 DR/FP/误差只条件于 status=ok 的 metric-eligible 窗，并在报告中明写 n_eligible。",
+  "conservative_all_windows": "另给**显式标注失败惩罚**的保守全窗上界：非 ok 窗按 FN=N_true、FP=0、空输出预测计入；与真实“无峰”不同，只作上界，不作主值。"
+ },
+ "configs": [
+  {
+   "id": "REF",
+   "factor": "reference",
+   "role": "reference",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "参考/默认：F=17、C=4、L=128、FB 开",
+   "note": "等于 04_Q6 grid5cm 全量归档的 this_method 现行配置（历史 214 窗结果可直接比对）",
+   "M_features": 68,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 68,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 65,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "A_F09",
+   "factor": "n_freq",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    -8,
+    -6,
+    -4,
+    -2
+   ],
+   "n_freq": 9,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "F=9，±250 MHz，间隔 2df=62.5 MHz",
+   "note": "同时改变**频率间隔 2df=62.5 MHz**：名义无模糊距离 c/(2Δf)=2.40 m 已小于搜索距离环上端 4.80 m -> **不是纯粹信息条数差异，含采样结构歧义敏感性**",
+   "M_features": 36,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 62.49999999999999,
+   "uniform_spacing": true,
+   "gaps_df": [
+    2
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 2.3983396640000003,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 36,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 33,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "A_F05",
+   "factor": "n_freq",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    4,
+    8,
+    -8,
+    -4
+   ],
+   "n_freq": 5,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "F=5，±250 MHz，间隔 4df=125 MHz",
+   "note": "同时改变**频率间隔 4df=125 MHz**：名义无模糊距离 c/(2Δf)=1.20 m **落在搜索距离环 0.30-4.80 m 之内**（多目标窗多在其外）-> F 效应含明显采样结构歧义敏感性，不能读成纯信息量效应。与 B_span500 为同一组",
+   "M_features": 20,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 124.99999999999999,
+   "uniform_spacing": true,
+   "gaps_df": [
+    4
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 1.1991698320000002,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 20,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 17,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "B_span250",
+   "factor": "bandwidth",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    2,
+    4,
+    -4,
+    -2
+   ],
+   "n_freq": 5,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "F=5，跨度 250 MHz（±125 MHz）",
+   "note": "中心对称抽 F=5；跨度真实缩窄，但**频率间隔同时变为 2df=62.5 MHz**（名义无模糊距离 2.40 m）",
+   "M_features": 20,
+   "span_hz": 249999999.99999997,
+   "span_mhz": 249.99999999999997,
+   "spacing_mhz": 62.49999999999999,
+   "uniform_spacing": true,
+   "gaps_df": [
+    2
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.5995849160000001,
+   "nominal_unambiguous_range_m_c_over_2df": 2.3983396640000003,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 20,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 17,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "B_span125",
+   "factor": "bandwidth",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    -2,
+    -1
+   ],
+   "n_freq": 5,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "F=5，跨度 125 MHz（±62.5 MHz）",
+   "note": "5 个**连续**带内 bin（间隔 df）；可用旧后端直接核算（见 equivalence_check）",
+   "M_features": 20,
+   "span_hz": 124999999.99999999,
+   "span_mhz": 124.99999999999999,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 1.1991698320000002,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 20,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 17,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "S_span250_F9",
+   "factor": "bandwidth_nested",
+   "role": "supplement",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 9,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "连续 9 点，跨度 250 MHz（±125 MHz，间隔 df）",
+   "note": "**声明耦合**：为保持间隔=df，F 必须随跨度变化；不得当作与因素 A 严格独立的带宽量",
+   "M_features": 36,
+   "span_hz": 249999999.99999997,
+   "span_mhz": 249.99999999999997,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.5995849160000001,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 36,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 33,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "C_L016",
+   "factor": "snapshots",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 16,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "L=16（每窗末 16 帧）",
+   "note": "同窗嵌套子集，窗口结束时刻不变；观测时长 = L/帧率（帧率约 55.5 Hz）",
+   "M_features": 68,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 0.2879994760947719,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 68,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 65,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "C_L032",
+   "factor": "snapshots",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 32,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "L=32（每窗末 32 帧）",
+   "note": "同窗嵌套子集，窗口结束时刻不变；观测时长 = L/帧率（帧率约 55.5 Hz）",
+   "M_features": 68,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 0.5759989521895438,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 68,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 65,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "C_L064",
+   "factor": "snapshots",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 64,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": true,
+   "label": "L=64（每窗末 64 帧）",
+   "note": "同窗嵌套子集，窗口结束时刻不变；观测时长 = L/帧率（帧率约 55.5 Hz）",
+   "M_features": 68,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 1.1519979043790876,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 68,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 65,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_01",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 01（[(0, 2), (0, 3)]）",
+   "note": "虚拟阵孔径 = 0.019 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.019,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_02",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    2
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 02（[(0, 2), (1, 2)]）",
+   "note": "虚拟阵孔径 = 0.038 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.038,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_03",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    3
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 03（[(0, 2), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.057 m，**与 C=4 的 0.057 m 同孔径**（但只有 2 个虚拟通道）；孔径维度得以保留",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_12",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    1,
+    2
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 12（[(0, 3), (1, 2)]）",
+   "note": "虚拟阵孔径 = 0.019 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.019,
+   "pairs_used": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_13",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    1,
+    3
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 13（[(0, 3), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.038 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.038,
+   "pairs_used": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C2_23",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    2,
+    3
+   ],
+   "n_channels": 2,
+   "is_forward_backward": true,
+   "label": "C=2 子阵 23（[(1, 2), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.019 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 34,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.019,
+   "pairs_used": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 34,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 31,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C3_012",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2
+   ],
+   "n_channels": 3,
+   "is_forward_backward": true,
+   "label": "C=3 子阵 012（[(0, 2), (0, 3), (1, 2)]）",
+   "note": "虚拟阵孔径 = 0.038 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 51,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.038,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 51,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 48,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C3_013",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    3
+   ],
+   "n_channels": 3,
+   "is_forward_backward": true,
+   "label": "C=3 子阵 013（[(0, 2), (0, 3), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.057 m，**与 C=4 的 0.057 m 同孔径**（但只有 3 个虚拟通道）；孔径维度得以保留",
+   "M_features": 51,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 51,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 48,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C3_023",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    2,
+    3
+   ],
+   "n_channels": 3,
+   "is_forward_backward": true,
+   "label": "C=3 子阵 023（[(0, 2), (1, 2), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.057 m，**与 C=4 的 0.057 m 同孔径**（但只有 3 个虚拟通道）；孔径维度得以保留",
+   "M_features": 51,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 51,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 48,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "D_C3_123",
+   "factor": "channels",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    1,
+    2,
+    3
+   ],
+   "n_channels": 3,
+   "is_forward_backward": true,
+   "label": "C=3 子阵 123（[(0, 3), (1, 2), (1, 3)]）",
+   "note": "虚拟阵孔径 = 0.038 m（小于 C=4 的 0.057 m），孔径维度收窄",
+   "M_features": 51,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.038,
+   "pairs_used": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 51,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 48,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  },
+  {
+   "id": "E_FB0",
+   "factor": "fb",
+   "role": "variant",
+   "freq_offsets_df": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+   ],
+   "n_freq": 17,
+   "snapshot_last": 128,
+   "channel_indices": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_channels": 4,
+   "is_forward_backward": false,
+   "label": "FB 关闭（is_forward_backward=False）",
+   "note": "仅切换现行实现的 FB 开关；不改 J 约定、不引入新校准",
+   "M_features": 68,
+   "span_hz": 499999999.99999994,
+   "span_mhz": 499.99999999999994,
+   "spacing_mhz": 31.249999999999996,
+   "uniform_spacing": true,
+   "gaps_df": [
+    1
+   ],
+   "nominal_range_scale_m_c_over_2span": 0.29979245800000004,
+   "nominal_unambiguous_range_m_c_over_2df": 4.796679328000001,
+   "spectral_quantities_caveat": "c/(2·span) 与 c/(2·Δf) 都是**名义**尺度：前者不是本算法可保证的距离分辨力，后者只是频率采样周期的名义无模糊距离；两者都不构成本方法性能结论。",
+   "virtual_aperture_m": 0.056999999999999995,
+   "pairs_used": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "observation_seconds": 2.303995808758175,
+   "observation_seconds_note": "L/帧率中位数（帧率 55.50-55.63 Hz）；只描述观测时长，不改窗口结束时刻",
+   "validity": {
+    "hard_condition": "M > K（噪声子空间非空）",
+    "M_features": 68,
+    "k_min": 1,
+    "k_max": 3,
+    "min_M_minus_K": 65,
+    "valid_all_windows": true,
+    "rank_note": "低 L 的样本协方差可以低秩；秩只作**结构检查**（rank_before_load>=K 会逐窗上报），不用于判无效，也不证明信号秩。"
+   }
+  }
+ ],
+ "n_configs": 20,
+ "freeze": {
+  "factors_module": "D:\\论文\\小论文修改\\大修执行_20260923\\03_Q5\\hardware_ablation_20260926\\scripts\\q5_factors.py",
+  "factors_module_sha256": "e9e731d4648bf709c86095f895cc63ab61c455c43799a268e2aaae3478d69084",
+  "backend_module": "D:\\论文\\小论文修改\\大修执行_20260923\\03_Q5\\hardware_ablation_20260926\\scripts\\q5_backend.py",
+  "backend_module_sha256": "9aed97619073f364ced4aaf90049ac45f9045f2cd49193e02a5f8e7c22cd6639",
+  "metrics_module": "D:\\论文\\小论文修改\\大修执行_20260923\\03_Q5\\hardware_ablation_20260926\\scripts\\q5_metrics.py",
+  "metrics_module_sha256": "3f047196521cf5d3d0f79e53f47434125b6e208d1f54e4d6ca79d8cf59f6b664",
+  "matrix_sidecar": "D:\\论文\\小论文修改\\大修执行_20260923\\03_Q5\\hardware_ablation_20260926\\config_matrix.sha256",
+  "sidecar_note": "运行器核验矩阵一致性时读旁车 sha（config_matrix.sha256），不读矩阵内部字段；矩阵内容不含自身 hash。"
+ }
+}

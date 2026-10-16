@@ -1,0 +1,1853 @@
+{
+  "n_segments": 205,
+  "n_recordings": 31,
+  "exact_X_count": 205,
+  "checks": [
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "8305e92992030be83c43d0c48599bf1ede3dd103cae4a82f187e193474fd0a7f",
+      "X_sha256": "30bf31a9197506e2e384a83c81f0093b8f6ac67f5db87363d0fa6cb7607488c5"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "31a3234ed0c53ce855bc03d54f2c2748dee1d7fbd0ce8876640956112b68b6aa",
+      "X_sha256": "0df7b50fa6e50df4239d17ea24031a0d8be74c88b22dc8ee5970d5da501594af"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4386bba53758a0fa70d17e45c93cf39e0df5c4151711bec69ecc8da2b66f99ba",
+      "X_sha256": "8ed7be51957be452198f78c988aaf0da4a7c9de5ff30a8e4063065cd59a2df47"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "47a7bb7435b270e3a665b7fdabb8d6b727cee2108225ed06afd7f3c19cfd426e",
+      "X_sha256": "82ad285c8a62359505a8fc0a067fcf075c28a4933ec72a602b523c82e2d569f7"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b6de5bb47ad48671049a2834b63265639be213bb4584f7082b6234d07b2effef",
+      "X_sha256": "8b04bff947005edb271d5fa02ccf212dfcc0fb4e6bb1a8424d203e47cc8fe7c3"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "18ad61e2707fd510953dba288ca6d898de6af26569072e7f66b4695187eac260",
+      "X_sha256": "07921c50956a60f72223b1d8b22ce11f84c25b63cfab9a84328913aff6321715"
+    },
+    {
+      "segment_id": "indoor_C2-1_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "036f0e5f1c70e9cf5fe3090cabc86358b368908728ea90c8f1a5e05ba09847a1",
+      "X_sha256": "0202396aacea55761225cf7641a28eab314cd9fca6493d8a0653809c4e9fb1e6"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a214d36e57082365dff19c69033f140774c85a3f3933c9ceae6c7994372bb495",
+      "X_sha256": "7782e0c9177c6038b450b5c13d36ef90b861b3886ccc89ee520026ea34bc048c"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f916f3f5695c4db927e68db3cd9894eca221d750e48362d2169dd925688b03ae",
+      "X_sha256": "e834cf8e36863f50a64ce41343e9fcc856fffd0ee1784a7499b2dce4fdd5e289"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7d5c1f486770a25ad53dcb9ed9f569910de63832e03fece01f3795d47b0a0fc1",
+      "X_sha256": "1799f78f315abd08832bc4239e84585fa9efdf5d11787a773b339e285730cfd5"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "034ef52d85f469bfbc62304ae51170a2bd80268046531617ff8b21dfa32d1b34",
+      "X_sha256": "3b664ed15a452b9841098f27ffbed4c5fb6b30302539719411e39246c42c5352"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f617225e8f162c7c5b5f123eb1d55de715053a42c14523a3ff6c99225201a4bb",
+      "X_sha256": "110c5c247eb6ef9376808c3a12f328b25c0231f595c1d6b7f84b5c26bcffc73c"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6ee85b850813c38d87dccc166a38b74acf8ae86a59b7947de0b107a55f4c1e5b",
+      "X_sha256": "36e0f86c3c718048e050ef8aaf2e6c14ce3c9c72a95aab27db679f0d06616c15"
+    },
+    {
+      "segment_id": "indoor_C2-3_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6a164dc28331fb9518681dc24f45c2b60bea39587f623bf70e22e62eef4a22b3",
+      "X_sha256": "f2a1d81777ebce7eba2d0842229e04ef84b4590bbfa344bb43212db9881231e6"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "30a6f79badfd298f796142826173609dd1a89b0614ccbfa0b88c09796dddcb75",
+      "X_sha256": "b23f8608aa14a911ec59a9cd06cd9cc3f1f9b642a3384041b34e4011882a4b68"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ac9b5f96b8bd9de3e869c0d61645bf161bb06e452d831360191d341d43459604",
+      "X_sha256": "de722875be9ae12ff37f86f70f1aef71331b5099ebd9790422161209d1cb854a"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "133ce6dd9aa6b6f325896be3ee9cd37db31b1c2b28c594731a3a868e860547f9",
+      "X_sha256": "4f08066adb343b0486fb0f66140851780cf252261c94d201f743484db3796015"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "97d1d9df3b768347fd7ef93987a07e2188461f19d2dc1aad64dee6a455066024",
+      "X_sha256": "979b2d7c53192fdf75beeb3d8634697b426eab541525fb3a2f8285f669fb3f11"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b0007ed6737c1792d41daa0671fad76dfbf101624f0c3ed8b1c004908b7e512e",
+      "X_sha256": "59d20de5ae5669d80462e945f0397e501848ea42893c37aec941b2e574873a0f"
+    },
+    {
+      "segment_id": "indoor_C2-4_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5320034c6ccda388f258c319fe62abad05500d2bfb37eea7695e14a20c3f9f40",
+      "X_sha256": "f768a1ecd3993c270dbeaa13036195b24780926b5ef401a8c146d477ca2a2c95"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2e4e9d479213d4f38c0921f54c8bf2af39c14f8074d98369101bd83ba404cbc2",
+      "X_sha256": "b3d0e9a603bfc2396b323d96dc4b28e46eb3164a5f898b0341d48f6533163b1e"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "68de33d50c9d3b86b183a816945466e80be8ab95bc7a598b07f9fa6de9a0ead2",
+      "X_sha256": "7630350255b40abc0999fec33d4b381d1d05d003f6e7a100fc85393738e20a8b"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6ff8e57ae5411674e98f3245edbac20e00d42918e229e9877ff426d4df6794ad",
+      "X_sha256": "3ce738aca45b24c5a4e9eab2a04b5b939f5a9aad1703c3c1eabc0339601061c2"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "242b43bc9e1010d414aaf28161d20055b27945feabe21e609edfac11850966c6",
+      "X_sha256": "abfe5356c89842b8d9770359281ee3b8833b621090482c8cdc32d57eae5e023d"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "65605429f0273a81c8e95885fbebb9d7386ebddf849478e73ddb71814874a43a",
+      "X_sha256": "a73218aedfeae2e17187d1d1b8a46b3baeda64b36cfba3896b5fe3c51b9d1a86"
+    },
+    {
+      "segment_id": "indoor_C2-5_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "312308b03cdf7dfdb8c67d63bab2dadbbd68bb2f51b466ba236ff5bf5d1d7b1d",
+      "X_sha256": "6dd8bc70b4facc9be573c8f72841251c37293b31fe71eecea39ca5af634bba41"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "8cc72beda7482cbd0137dd3bb584fba70aa71876ab6944722768a7c73f039016",
+      "X_sha256": "a807816a4601a2cf8563683a69559dac188cf37dd2adcf039b85d74ad12e80a0"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "bb01ed1d928a738bac333802bc3d823744a895b064d2e3e022824281e323e3c6",
+      "X_sha256": "a4f6854b4b9a7061f5e0207e2950fe6b490f79ca55db0f7ef7dcd580188e8fce"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6ba232e4624f435e162f01d687e83f35f85a3b915df5955bc9ca61c4e48d6b3a",
+      "X_sha256": "09ca74b9ea3936342b7df18c28ef04f810795910b30aa8aea492288277215958"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f5dc4ffb9f0ae4c0a0d61868206f3cb0ded1dd7690d136c35facc7ac9dcd48a3",
+      "X_sha256": "25e338393c7157904be5ac44dbe6dba18686b73fc53a9784110f861d48fb4ca2"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "3f46c994fc241838e23d87e1d02df0c2d39e28077bf4ec920eb3da7c9ab8a1b5",
+      "X_sha256": "bc0559867138dbc1522ab91416f220186baa01b9de6dcff4ff2c382cfb17d401"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "d429ce7a514964531555765f126cd24c488809e7a47ae894c68b220b6bc73be6",
+      "X_sha256": "7c89b061b6ee2d3ebbe00fa71393873cd41d9026e29d36d73df8cd592e234533"
+    },
+    {
+      "segment_id": "indoor_C2-6_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5d10cd83dac8943fedd7cc670232259bc400339c967abf946820001993b27979",
+      "X_sha256": "cdaec477a53160f19b05e3445d084220e05d590e04dbb3e5916727898ab4fdd2"
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "fd9e78a706e08b3834d583938a2aad04a4e743ee4e9987d328563e1a4c5e028e",
+      "X_sha256": "73a175189c8e6220f24126cf93a5a87a1893accd6a7fe925f223bc6332b071a3"
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "43d1e5f5e4036ac8ad1acb6bad063ae63cea0fc6595e9c736bf91bcff1d425d5",
+      "X_sha256": "2ebc9a2b9ad05765a7b77953eab7d85b47757feb0a1ff368bf2256fd3336e14d"
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "de5cb94a03f5e87481b705328a480ea665f5932282ddc5b5aca2a991eb4f4e20",
+      "X_sha256": "50996b8dc834c91c79d54e6eb1ea61edc3c1eb09d64fa6470aa86b753ff1bc33"
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0c9a89811faed96a5538fc9c026de0416bbfda239338812aa89cfb49f409bc1b",
+      "X_sha256": "e96cda8199635cef61b86a09d69db9f8e1285314ca4f2edd037b734e139d9999"
+    },
+    {
+      "segment_id": "indoor_C3-1_N3_S1-S2-S3_rot1_002__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9d3ed3aec0b4925ff4131b4ddb0647ecda78346fbda99dc8d34fe087755cf736",
+      "X_sha256": "2b9173d54714a4d486267ee7d253707ab781582a6c3f04e6ba5c928b28db3cfc"
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "dcc9cef56379dbbfd66c7c6e7850db1ea5eb9c5574a9607a4131d96a0fa0ba6d",
+      "X_sha256": "59464c08f27fb1e9a1be0ea6528045135411be98c8c23ccffc6cd64238dad26c"
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "06495c9570b6ce0ea44fcd14ac7989d8f2b5ba759a7bbb4085f351178553e7c0",
+      "X_sha256": "a2ac946ff40fd9772387b6087761e1138c485fbf60d9379db29e3b34e888b18e"
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5641fdc0e8342e2ae666dd912c3186dd937c4658b03bd9bd73c87a5b1d6ae949",
+      "X_sha256": "6f03bd2fd4ee551b81fcfaa7c125e4aa7b4d05419db0aa628e084cb43b1fd8fb"
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7416068ed5aac4f93a66b5a7edd2fe3ca943da6e1d3ee871e845f61c2f75b157",
+      "X_sha256": "548fb9ff2c704f7434a93dcfaceaf923d8f9e8d9e76fa6ff124ad1336bc12da4"
+    },
+    {
+      "segment_id": "indoor_C3-3_N3_S1-S2-S3_rot1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "deb978f6ea525fff5295dffbf7f1aa999eaa7ad51d88705ba56b3207bf7e8597",
+      "X_sha256": "639ad57508543a7dc60a685a3d05bf83c14f31e88aa4b5b6a8491d620f07ce41"
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "baa0f1e0d666adfc18fab79fd75b8b8af145da9acf268f705bbdea289b3b1732",
+      "X_sha256": "2041eb3318a811d077f251e197eab130c81fcad3757f8a5935689a8fbc7066c8"
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2b86f5dd941f6191deb206ae83282ef935899c2bb1cbe009ea193149a5ca960e",
+      "X_sha256": "b206a3890b7205c4053f9582ab0e33d1bdb4ea0a912f7ca836c60cc2e04eadf2"
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "550d256720dab663c427c6863c0b94c97a1df1472e60f07be2a9b9fda5e60870",
+      "X_sha256": "b973fc455f91762346895a62325a51a968075e504e203985c2f718a488247668"
+    },
+    {
+      "segment_id": "indoor_C3-4_N3_S1-S2-S3_rot1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "27df682cba1f4f85b604f2e4f5868c30d8881c03114232644474aa757a3529d5",
+      "X_sha256": "9d4c313eec99e90703c5bf0f2d8bb5c0a27c79452acd920685cbe4346870ceef"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a14c0c36f8154baf8cfe1763c99f27ab1c5f58b56667d99b84dd0fa8b5dc0237",
+      "X_sha256": "58674844dc6a6eec01c63679ca5068ab4fd3691816f396985ac37885cec56ee9"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f4fea293660ff22c120516cf688c840b978f87c06be86c18277c5ede53b35835",
+      "X_sha256": "0a043474cad1ed46ec780d53025404d723622b60b6b39e092063bc55ea173f77"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "02729f058a20a118affbcacc9a76f8abfbab6cdeacfee4d9023e4b12ceeb6e14",
+      "X_sha256": "12f93dc992fc24fb23b98f638c6de88e292529fbf55f7b5eb170fc5aa6683b4e"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0ebe00c44245cf5566c871ed7b0ea9bad6ef71290505e4a6b67c45d92133b94f",
+      "X_sha256": "02dd6b001f2841a0575a7b7be9b94c6d40d7c313764a4ea4f5d6e117abcde918"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "49abb2bf54121ad95750006a15bb65a0555f9218ea32a34833200e19801a375a",
+      "X_sha256": "63d53634499ccf6f8f5f0499e1a290054df4566149e00682eaceaaf491250dfd"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "73312786b395eaf89d9b1c52d2934e01abefdcbc2ef518732e865f8d2e409a31",
+      "X_sha256": "465724f4ba1be7eec6c29493fb267a2c110ea8d69b35b682b69e9ca067edf35b"
+    },
+    {
+      "segment_id": "indoor_G-370_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "580a0f5e108e74c06dbce013d2e22d18f6ffe3954160d1198ca1259f5058eded",
+      "X_sha256": "1be86b954f7bf4874163a862051e98b7c1d56418673655d95750d9802e77501a"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "af18bb9b2c5d9b12c72d1d3ea86c513240a5d7ad98e3c8a5f32d6b074f8fcc79",
+      "X_sha256": "57ff38a6f103eebddd9bd84d3017a9a8d007bd744c7a417328e97cfab97ec6f6"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a17f170572cda43775e272869d6393ab75a02138b0dbe9d47183fbd51e7578ed",
+      "X_sha256": "b5ff1c2070ff4358444444adc2f1b189fcdd5b27be85b8c092442d4b31ef4d06"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "df1ab626cbc770909b22929e9a64edfe9783c7fefcfc8444860c6f7fc1990351",
+      "X_sha256": "184639d2f28d98a74f35730932bd91a44233613b3192fc465584f8fc55bd9f67"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9d614d9959074a4fd073ff30630ef743fac8816a1322dc3c77a360f48681f84c",
+      "X_sha256": "5a9534d1251bdf628d87da24c620a9a28e304630f9d6c19f848f851a883cdd4c"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4b713774752e2fb0adee54438f8636149214294a19ffe60f60d07b7a4912f217",
+      "X_sha256": "2f403ded9eeebb7a48bdd517f2e35380280a8467e4102008119fdd6181c3ad96"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b3ce5abe6b9a9a3bc317b7aa9b8e880b43f66dc138517b13da9e1c0043f37615",
+      "X_sha256": "5d7a030636792c82d0040ce6e32ffc18f56ad2e0571f4b59c56af20d4e1dd90d"
+    },
+    {
+      "segment_id": "indoor_G-380_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f32a580831a5d24e1e75bfa47cfd8f66fba791fd274d08b769b31476f9e67315",
+      "X_sha256": "06961d2fb23d51c7bd0b0af2a45ec36c6bd213db4276b9b083ae6468e0637877"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "fafca5d9cdf147504b635896b507cd470f015ad5a47a4c8ca40e02c79a895c66",
+      "X_sha256": "d8a4221df894f19352f390744ee70069ea9e8720cb9d43415957b90ebb35acff"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "69104c64af32a78b76e190baf360b69b9812d598172fbc2d60a19ce396e512c6",
+      "X_sha256": "f2f1432290da4bf1b712f77c72c77fc75ca48365ed27f35b900b03623bfe408c"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "404fee5e2fc39f55ffc06e89025dcccb33de3ac7d2cf2f81520e44a00d45b27e",
+      "X_sha256": "dc8e19598173b8386ded587b577422a6c225e52047b8456bd2b1040cdb44eec8"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b0a23f938bb432b410a5704cd847a021b8099a63ded27daeeaa76ca9b81a3e73",
+      "X_sha256": "e070b4048769ca8b68488ba448bee76491c0957142aa5737fbd86d58067c0c8c"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "01c06a030c59fa1aa6e5ce4804a5b6ed575a04b153e87af4263d3d1b1edd4dab",
+      "X_sha256": "6410b9466d87642f410c2216ea3fa3e8782dc52fb8f887bb337693457f57b1ef"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "738ffdadb75b84454f34098551c1b0ccdc0a0c818b426400ba677cc9b8834975",
+      "X_sha256": "4ee279f87a5e6f5c264392d34022bd3dca83bf8eed0889cf939524629e5304e9"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "57f1a758a4e74a49a42260f6b4ebe90ba077ca836e7c0a65e6581396a6d8308f",
+      "X_sha256": "5903d940518d075f013126aef316199bb07d4f3af6570bef97623b8e94b17eb4"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "602f79e6393987c0848130af14947ffd6d8f0e19d94f7922b0428ec344082299",
+      "X_sha256": "f7839f867b05416a83cc0cd1c464e9e9eec348714da7296d691cf77b9d67aa46"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "777e9f1e424c7b23fa3bb113cbea95928ff740a7e9620f02aca142a91f8c68e7",
+      "X_sha256": "2608844b80a5c800b72016819b0fb40d673bd3a247f0e58ddf6c60366024ae6e"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "d2d0e864d7166d7e0e031e55fadaa2e90bce2d07624a9b601f623138a91b6cf7",
+      "X_sha256": "a34b6ecb6fb0563ef7b295ebf72938fda4aef1c03463a81a42c379f9de437beb"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "68a4600f1aee2fdc2c690783b9b0552d2d2f8587474639811c0c320e749ec0f9",
+      "X_sha256": "6060f0f7f7ceb0eedeec8d0db93f0b8c1ced0a715efa9be837cc2de90035286c"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "27f6e4ddd50433e74d4c4b514ab9f90f2f99885bc552ca97aacc52ed6c11273e",
+      "X_sha256": "ecb383430181e57367269336bdfe9f0171ee612dfed8ab3e7b928489916c9c1a"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9b02a43386d6bc56fc9f1f823afc54dfb032b97724106a722265373945d2e1cf",
+      "X_sha256": "14aae14d8061214eddee4338ab90a0fcfdc9c6033c2035c4ca194c1ff81014ca"
+    },
+    {
+      "segment_id": "indoor_G-410_N1_S1_002__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "70b3b460493898b4b158191e56a817b45196002aff8ebe269238a38a917729f2",
+      "X_sha256": "111c5794e723c4e49330201675ff80b979cb19f36b5b1e51d8c685b368bc218b"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f2f8f32582cf071cdedd0e6c4ccd6c0460c07bfd15e339fb88379d9c46bd8401",
+      "X_sha256": "d3c76b26a78845f80a951dd575b7c11238ff1f4cfe8dfecb654b75ff9fcc0f62"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "1e6f86c97e0b34fd5311fd2363accd308b9192fc17b68868fa5e0c39d1cfd3b7",
+      "X_sha256": "f7308d23900e7730093bed03a06dd479a6c1d648fea5dc9ea0bca90438644dcc"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "1d6dbac57ea1bd7387a51e2bd879af05be75e020085cea89c69e2cb85f1d8f3c",
+      "X_sha256": "c0e14440052b46c052e7ce7a9a59c11f84cd00eab8efaa720d764966e04bbc85"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b979515701cee11fa00f8348410bcf6dd6512df26860b7e4a6999f467be89108",
+      "X_sha256": "0081a937763c7c27f3f82338d9293dee27cf7fb5bcfe82d8171662bb5c662a5a"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7433415270a6f65688eac458b8995f2afd4742ceb689f055c95f19151cd2f9f3",
+      "X_sha256": "b5dd5720468ffe902def4a1f38bcc7c9966a15bbc00c9e16665016eac1b9134b"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "bd39e290886f7944cca5d7c98cce6778b24c010f0e994203b77732e3daa5fefa",
+      "X_sha256": "421194e55454a913c049aaa17c86272db65555c74e05c2b8064f4236e4eabf35"
+    },
+    {
+      "segment_id": "indoor_G-420_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "910fbb4e7597e557cfb7c3d081a8ec954ef7523b16fe69ccf81b78c5bf84a512",
+      "X_sha256": "3a59d0e94d91202aa6c67a7ce5b32d0c139c2807812a027069734209fcd11d07"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ca53b170afcc5a437856b917516bf9c273cddd20433cb303ca6b8f90382fcfbf",
+      "X_sha256": "4337319e290e0fc37b429b5443edf55df2c74b62aa3c8d7a3e0cdb4d4bf51328"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "126ed5300de1c5e96485c8c1ba89f81161303bc7873ab74e2ebd797ae861e549",
+      "X_sha256": "c5eb2a2958731adcd52b84df8b2dd8b892ca0a37a36eaa73a8a71a865884ece9"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6883a297b6e49b50ae8194cd21d2e40554fdec3c79ebed54b8f528a2eb6b8fa9",
+      "X_sha256": "06d474dedc7bf8eb25987a3dc8a8dbc7c93f307e4b575f9bd4c902bd10209a04"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "98da3e05138e00e31a579618efe27900a2b3ffd5068fcc797ee2b9d5947e556f",
+      "X_sha256": "6ce05c15eeaa7c600bc2fe91071c52eba1deea1f1376c4730dea89d3e3a2a96f"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "76d260ff8de61376e65e27d178857c705262b2b329d5582eb0ab8924031f69fd",
+      "X_sha256": "8e2f56d13a499e60d6929229de11e865a56213c6e4505c5f56050684ce551f87"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "bc2a381aedf4150bc2a4fabc3bb762c3d33121124a0344dd629e647d8ff315fb",
+      "X_sha256": "6faf306242baa49496b0528b0df2aba70a67cb07f7d1aca3918f06bc8bc5feab"
+    },
+    {
+      "segment_id": "indoor_G-430_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a3948104669c94bea8b5b88689d9d69c9ab04448df5a20949cef7e4ef26c8063",
+      "X_sha256": "0b37fa7dc190a6f57d0eefbdac371b0a26a6a76a33f6a7db9f3da853c30d4b57"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "d1a26f89e8f56f49b20dd5ef06c3d48a68fb4bf76fe7c4869413563f479e744c",
+      "X_sha256": "281f2a05f95a288df72ac4fc29a4991f15015185229d4200559a25e0b2222039"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4abf22f97429310cbe079935af439d889f4bb78a4fdbb82113a9ecdaa152f07d",
+      "X_sha256": "bc1aad795d3c582cd7eacca0f04b8b435a09536d2900712716626320b5bec5d7"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "e5f7e0e2e7e0dcb20d929aa794f468421b66630a026f76742b803a566598ebf9",
+      "X_sha256": "bd984a2c1424ef1319d6268b45f1a7184da1a350fb955668c01ef421af166944"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "25b711395cc4eb4d10ab1a13f947b569f150f643b7403d071f4d16c2d310be5d",
+      "X_sha256": "87cdc41bf367a630f7822337e7ca638efd0b4d16784308dceb665397b3090b69"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6bd890f86180f157b130ac2c3face5aa98982477317faa82828e70fdce2f34c1",
+      "X_sha256": "a6465ed6992417c939480ba8166e5f0604d20081ecd8a50b79500e037e37ade2"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4410084d11bc9ea19623340be9d25f2821c6cbbf41dda52600813b8acc01ab78",
+      "X_sha256": "f12a9caef143a023b799acdba6e33754ebf77b16f7b136057088f55d8b368ab4"
+    },
+    {
+      "segment_id": "indoor_G-450_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5798f014051328f41b31ea6607dafeef5454b34ce5b85307269b4703dcc9ce93",
+      "X_sha256": "ed7e34eda48d959345fe0d05622dede39d53fb1a4db74ee5f9f08c421b19ed4d"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "985420005165bc5cc442eb83c8790bc52faca7c0f7feade97a75ed4aa710035e",
+      "X_sha256": "ed7e86a2ae04aed3c9f44251422ffa44d4482b0eaedb790efd70ef260d839f6f"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a2b3927bb8b0bbc10cf4d6b86f6f4eb4576389b7322e448b7391c2a68d6648de",
+      "X_sha256": "0e2ea27f9bdd2d20424744a5e48bc4a16e5d3b63828f05a9c16bb79349fb4091"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "8c75112fb98c9a9fb61e032e2dd87924c31baf7acf17c2f0797ed5c55edf5442",
+      "X_sha256": "55309f37bf84ca6e5227e8f050a61ddfe303b64761c72169274c3a1a2ae97e8d"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "cc6315200d5d8be105f1080570294cfdaf5795f37aa148823a65f7425010969a",
+      "X_sha256": "21ad5f8ddb3e3b291320b55af3af1ea2b8ade228cf5346f74d32ca9c44d1c380"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "8c15f9a824e1d084744b5244be1041945d25de53160b129e51de9737aa365991",
+      "X_sha256": "09fad40bd0b518a435b4b125d9369d6238721d537207c749f2eecf543b1e0891"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ad9dd9ca729b9cbabfe0bd2f4f7b5114ffa0575c64f1acf8a47b15f1aa858a30",
+      "X_sha256": "fcbc7aeb893bbb85ed042344bd5fa5770e1454b02c770b559717bbae3cbeb615"
+    },
+    {
+      "segment_id": "indoor_G-460_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "eb4960a1d732be451c22e9ec42e0ab481b0fba73e281f89c2823b35dd358b143",
+      "X_sha256": "d6de3e7017626bd782735a3c0469b993565c983480ed53c0fa9ad32ae7e8b749"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7dacd780a1ef2c1ef19425b68e792adba8dd6ddce98338cdff3e8ea5b1e2a94e",
+      "X_sha256": "d1febcd420ebcf3dde2e6edd68761b9ab8b43663c734be7f3ddc65b74523a104"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "48d6f9ae01869ae81a8a4166d01cba6aa5b9ca84858d1087adc1f1764ae57d0e",
+      "X_sha256": "99672e2326693e482426771ac03654fed61c8754431b96bd087937329aca2633"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "92e3a5dc254f729c69490d239dee30971c32fbfffe6a2ef97d18fe85465ca439",
+      "X_sha256": "de8d7c75f123ab6de608eb6bb1e6b0c738b1d785a32385e07b6c55b6b87b3a02"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6c9ce532563146d06724c6253d59a4fe6b98bae9290142e12eabd777672e8a55",
+      "X_sha256": "1153de5da43c3ab09f1110369734ed132583e0f08933c87b48410d5181e22d6c"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "da2ba8f73821a99c3477addf268dc1bb9f63ef8be580292d3e0b7dbb43122751",
+      "X_sha256": "0630a0834a91de00d66d5fd37f201b83a0e02861e1817e29ca9fdb66ef2e6631"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b383f6b24db3b4d95ebd88fd668773ed28f1df7dfbe5fecca024796221a5213d",
+      "X_sha256": "e1e8579598e99c859cac87371fda9d197f4e0d654bf4a86dbd715b489bf1e19b"
+    },
+    {
+      "segment_id": "outdoor_C2-1_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a9fd764276ec4f804b56942eff9cc537cd0f4ca627e87c9e6c4feb349fba6828",
+      "X_sha256": "37101bd1fe6802e265f7a860f148eb7a5d50cb8b38cd6e18d8fc2fda56d21848"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "d04adcac075d892ca45526c8f31caa3acf16f825b01cc4d3f0d007ac0897ccc0",
+      "X_sha256": "861b9991eb73fab259595e3d8e51f267d420e13d9315ff40e88412d1ff832937"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "3d72513b401addbbf9a941c6722f4216e5913668ce78c96a74fcbf2bd34bc08f",
+      "X_sha256": "b43cee12cc2f022d2115bb087202cc0ef738260475786f601f5ce924fa6e2572"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b4af8f829ba0cdf9d73c8c1a443ae1c1820a64c6de5babc562f380820ce86d89",
+      "X_sha256": "d053745353226d57ef4112b70ec1e9c528ce456f244c03400aa6d866dd54829d"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9fed7e04fd94d44cea911184d5517f551aff88e66a1686127bfd40f89faa02f9",
+      "X_sha256": "df82c40e75c27ef08d8c88366c712a6aa1523ba73130b64b4fb9e1748b4de244"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "cf25993e49a3ec5d8a66956d8a1a5d91ad3de540b99251e34eb603fdb105ae4e",
+      "X_sha256": "f71f0c19d5afb5be470b37a59898b0e1e6f137fff2907e129c6f59cce524d805"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "db709e75edc83e68a12aa5bdb9a3e6e850237895b6f7d2a615662ade7d493488",
+      "X_sha256": "c6ef0028614836891b1952554c1672da9448eeca35aaa66c32733f05eecbffe5"
+    },
+    {
+      "segment_id": "outdoor_C2-3_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "38187537b2e7ae8d2717a1aec30f46c2946e1ea0b28a4ab9af7f58c4eff23421",
+      "X_sha256": "21592682cff5123900b01bf43f8fde9700b5892aa7e1193a5b30470f1f10b2d1"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "26f7d34b4eb5d515b7292dcab22d077916d3980f1396a1248b5b7de7f35431d6",
+      "X_sha256": "5af4dce770c0587dc55dde068bb00652a0f2e970dc42c20de1b174794c194df8"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "97c4e7070e0e0948dd4f8c199b1a9cca569e5f45e5f0beb80f649685d462a116",
+      "X_sha256": "85bf89bd382117c3a795600a532b296afd62230a463b15b9d49185ce696fcec3"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "44e724eb6ce5dda68e14136727e7723d320c4e427c8a851f527934e3f262c846",
+      "X_sha256": "58374d9c05b4de4f37ac7ca7acb980897221dfd3eeea986ace83f30892aa0ad7"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a72fae053bc3e60bd3ca9db2040ff974c90cfdd2add4ade0de9ef7ae613429ce",
+      "X_sha256": "c66fc61517fae408d68ac1bbb5c6712e388820d5480fdc901175e1cbaaa660e7"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "819008fae6319ff2d4f1e394d8e01700d4e1e1b6d5ea7e5285b1720827904f76",
+      "X_sha256": "d993031e42a7e0766abf686785c2c9d6ba175c604de0e6e8dacc8df095014486"
+    },
+    {
+      "segment_id": "outdoor_C2-4_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "16266e617d81fe5b7881995d6c89a7d75cc2a1801ab4d0d103585bbabbcf7d63",
+      "X_sha256": "fba7bd03f4212a209ac49cee583e745b4ad0f1ffabdae64cc187e26431570340"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "355e5b05a3e0f65cc60324e340227bbd11594f2b2d877d6b961e26fe9706f965",
+      "X_sha256": "27676a5eb979badaae070d8e394a2fd213a68d97da511925277f6196d09bb882"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "cdfaa0940a954570935133a21d3d46018b20c4a860ff19118170bd65e9afbe56",
+      "X_sha256": "9f8ac19a3a78cf841d0e38044b8bb69d2bc74bbfa99d0bcc1ed8eec860d12339"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "15aa966efb6dd8f6bddfff8c2258dd47631d50a9446e70224032bca6202bf14e",
+      "X_sha256": "ed84584e2eaa6f9d1eec24bcee384f96c61acbabce361289e4c795be8efe12d5"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "fc0b5cf29faaec97989b6afaa46393026ca59e37e4e0dad1d6b2d40255ac3091",
+      "X_sha256": "6a57fc54f4baedd715b2c7744276db7e98f674b90c4d26fc434c5e8ac696358a"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "3581c637c31a69e6e16738f394d436e3d88558ca0344ee1f48ba97b113c2ad90",
+      "X_sha256": "55ae61dbddfa75ee442412d8323784d0166fad34b84ea4cf5ed97b8bb6ee797b"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "06cdbe535d5582bba7c51428f9633ade7b7e3f22c87000e51246212a2b0230ba",
+      "X_sha256": "3caa1a613de1f583948d74e7413a52b27ca1fc723a9bf7e9b88469f64a6a2e94"
+    },
+    {
+      "segment_id": "outdoor_C2-5_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "39eda95ef11f513b7863fa208801ff8c76f544e391608f2250d70809bf04dee3",
+      "X_sha256": "411736420e0e3cc27b44314b5839730b0a93208b924d52fe6b9f6762352045c2"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a62fdee32082179143e9178679a23cfdb18d9bacfa6f7fdadee1f0414e035775",
+      "X_sha256": "0b3953e4284a963c76934714695d9c663d8773f5d4212b603231108f12d3fc18"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b531a35bebff71cf003a03262d73186d0ee77816d8a6054ec1702ee926d8914b",
+      "X_sha256": "e413a996234d950fb7ade1609029f284dee2ba2d12a0a26b2e4236303e666316"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f4fc9df88cbfd189ca57ac888341b5229631de54a25c5817bd3bd7ac6cd11955",
+      "X_sha256": "5c2065a2e5c13a277befb8aa6a658615995e1aa6571b33ace2f5596a1ba41602"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "72381b3e6b4497df5036cf281dc84b67761dcff834c409fb2642295da53411be",
+      "X_sha256": "80e282a91aa2ff8cb21b084077bf4485a90141f34e00b5c445ef7a840a082585"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9f975fe63b0522d6ee24e41da48aabcd4b9254009335c791f568d6789f0c73c8",
+      "X_sha256": "5b38c20d78f0682b9bc64dd9e82eb952d2164dd7b77cce7d6c07150f0015aa1c"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0cebdb2c0cde6479ea3b43b7b7d45ea8e25092e84b0ee787b3e1cdbfed983027",
+      "X_sha256": "3651e3710f072a49abd2cf1f56a19ee4485a9fbee5a4c56ef39d064c44a772dc"
+    },
+    {
+      "segment_id": "outdoor_C2-6_N2_S1-S2_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9d15eab4b638d5657ffe35c40f0fbd00f04cf5f961755b7328332d3d5b61c504",
+      "X_sha256": "2798bc882bb1488ed3ba53b3caeaa846a5681fb6e8fcae5363a0f471e76262ef"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "1d6ddc8c83d37dca8bdc33fe1714fa787a6615b688116c113dcc3d19599b1b48",
+      "X_sha256": "416ae260f2def117f289891552c2f851f0e813d6a1fa424da88b1f852c748fcb"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "10d2643fcae891dd3de4e7f14176ad6e2d03f7f9f08b7561c8a6efd4e3bf640f",
+      "X_sha256": "ea6d0ef02391774cc305b185cf0b9bc41653bf503c15d59606ff9ab211f2a6f8"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7d664e550a99e66097416de55907330e8bf88218ba6b61198ac7bc2376ca2752",
+      "X_sha256": "52c006db8684558aa55fb4d1f9978c5d8bde0e1703190c21835ea5978b105a83"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0191871da9c7c64a067a12ad21766404d93d4c3438756d437b46b56ab9e05024",
+      "X_sha256": "be6699d7de1dd91c7a3149f98644a91c19d57263c1e814b35ae3e560dafdd925"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a9b54bef3aa0305bed8476842ca6b975b4f25894d125d0c8f659ecc038f97ec3",
+      "X_sha256": "e24474b04986b98cb4f1e70fe5f280fa895a2eaf0b0ef07bda2acccd235d6fcc"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "c2df7e7e8fa42d0141094a90f1a31504fe0c9e52adc4ffe5c2695851125f8d49",
+      "X_sha256": "38dc8b1e489af6bfdcbb870fa2143b136e090e9bef145530ac48be6babf46a81"
+    },
+    {
+      "segment_id": "outdoor_C3-1_N3_S1-S2-S3_rot1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "9d75b17ae15f996a432dd3c857339ef47aed87e2adff5377d393fc20339826d8",
+      "X_sha256": "13321ed5cb3c38c756f6b25572bb9f5d5f87905d7c1055a410d7fff3a066cdcf"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f4cf41895d93600325ff58a2c7f4e25ecb52c51b395550fe78de19a73c1e6708",
+      "X_sha256": "5f18d81cf65184d657d3847b5424bef24c3a96313a8dd156acb8f662399d9b10"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2102a3798bbe8a4df09fe4540d3cd431c3da7dfa022d5bc58b16b76ecb3bea74",
+      "X_sha256": "c569d7e8bf22b72cb5ee60b886f57e30d1aee16960abb97c17d3455f43a9815c"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ff3b688363986afcee46fd7fca8a2a04facb22c57113e16d66255b5c0e2ad63d",
+      "X_sha256": "4c5f6ddcd655856a7b071093dca9279658335356a2da56f1770d7e1b1bc866b4"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "792dfd38a0b80e478c8ac8f9809401d94e0d245f56d84aa5bf9c3eefc75de8f7",
+      "X_sha256": "183d666e2ce450e1db11cdd7afccfcc29b62c2543d7a58bbbc52be1f7df255dc"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "cc3f4e99856e29b6658e70422c94b9b41bd0d33e2df5026279ec849de45e23f0",
+      "X_sha256": "9b980d3b0adc785cb58f1f38ec7a5a8cc8a7123446b923a84e20a5656e0265bc"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5ed8767002cd5fb10c2fb96f51d0bd2c3d57ca94d5f3f3fbb1b3029a65503809",
+      "X_sha256": "cff2d3a0787bd2f1492f6d6560fad4258d3281773cc856508ca8ce693b1f6ee3"
+    },
+    {
+      "segment_id": "outdoor_C3-3_N3_S1-S2-S3_rot1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "01aebb3e238d0bda660dc9212874ecfff7aebe0344380bffb0d4dbef2b00666c",
+      "X_sha256": "b428d5145e1db5c2d027866cc93c290a7ee064f9f65e4a62e8eb70a6a7aab62b"
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "119c2edf9f4ee73bcc35416e4f13f00c08a3cf97307a578b0b1893a36fded155",
+      "X_sha256": "01f77e004988c05841916cd0faf5acb06f3dd8e4971f035a8505c36de2250683"
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f7ad4f65449f8af516811a783af4fe3f08780b3ca8c7be70652d2e10bf5c5d29",
+      "X_sha256": "1e407efdf317dc5195a30f220ed916f112beabfa6738905de2b68c73fdd83362"
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2dce9c55e8138c76ac44d6781f7017737ea9cf7602d0b09777b85269f56ce833",
+      "X_sha256": "bb1f3700aa1f19fe8c6e9ca58f892adfa03cf49fce8afdff7e636bd3609b40e9"
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7ecbe7b318348c4482872acd9c4fb5429743149c06ed4e2d7dbb2cc4d4af74a5",
+      "X_sha256": "4a5d4e0d51119c500b480b1fd9cf02d4b2b5bdb6ca21df3ab377abf3aa41cab5"
+    },
+    {
+      "segment_id": "outdoor_C3-4_N3_S1-S2-S3_rot1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "01acadb7e9fc89ad7a724b8b44dc941031050ec1523a6cc6b81ca171e568b740",
+      "X_sha256": "e255d25fae37c740ad54d803cfff7e788a04b1ffeff9fac596cfc26baafdebc0"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2e8830958a8dc2a672e75f082afe869e2b4d732c60d169b66c2783acf15dd6cc",
+      "X_sha256": "2f7a9da395e3d76d78e31e174a58307fe8ae3b6b278ee4235dd16a6156eb5deb"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "fe80932c0cc780bae2f3ce089ab6248d95466efc14c9055aaa368d04746e088a",
+      "X_sha256": "51268bc17de9fc00cba1e175a1776d45eca6ba79ca224379147931e8e1c5f3c8"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0708e5a94ca368a1d7c7a1ff7f9530aaf96956e85e60fb01465c8ff554d850e1",
+      "X_sha256": "21f5505d05d892313099ce2bed478fb04c542e5249245d10bb6bcb790029e90a"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "e41693f426724d779d7b1d3f8f57c10b1bbe803b4df66e9eaba4a38f50496e81",
+      "X_sha256": "00180b0b75e469351f4df2836a08c90e7676d6d26953a688002134d45c00aeec"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "190343b65d9707d642cd8d76478c79e4e9506f72075e5a066b671ac2fa2a10cd",
+      "X_sha256": "c08a66a06df42ef5277d2050076bc1dfde6e8424137f726f7b5c55457e4d3ba1"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0ca3e0c3ffaaa63b697c07e6e1a2ee66ad563853e58a9402d385c6e102d0e9f4",
+      "X_sha256": "3ac3c9eb9bea09973ae1109d3282c95db33cb0d7cfe4e591a3868f841cd9c8ff"
+    },
+    {
+      "segment_id": "outdoor_G-370_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "521aa74a6f556d46195cec65fa9d9136656809389f3dd6ded5fa6d6efccbabf2",
+      "X_sha256": "51993a783475ca88050845e7342f2cc0024e8c28d4bc1788059451f4294cec63"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a46f39051e6aca05b2c380adc1777bfa0c48fed0422c218f29dcced3786ae2ce",
+      "X_sha256": "0778f1e3a37ca7e12a249ac233dd9159b445b5e953edcd0a9328fbc7d842542e"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "d4aa2a901a1b33e8e7f1d36813d9fb7f009179023d52493234d2d9fa918058c8",
+      "X_sha256": "07327a9a6d3c219886e4d0ce4e49bfa3676bf71f465e53485c811b385d930f58"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0c68f9901dead4c2785869c66ee233f57b8fe4c458a589df108f83f7c34c5bf9",
+      "X_sha256": "b81ee049957186dc2d75aefc7c889cfe2f59748d597f0ddf8f98fdc492e5275a"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "3bd78db4950c3c2b069c2b82d5d640a6cf30c95dcf090d4aa73a52b82e6533b6",
+      "X_sha256": "4f69bfbc26aacfa4e3c6695e8285ceadfd1c35c5059ffc5a6d9dd14781b98e3b"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "709cfeb26fe19254ce23a83c9d239d932b67b2ec8ab08913f9f0aad66506d0e0",
+      "X_sha256": "f2b032ad2700544d3ff6a1876e7776e87e80720c709c255c743fb3636fc81990"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "e9887fc33f869b645bb5beb2ceb067ae376f3fd6c64cf9117ae4a3d3c3749283",
+      "X_sha256": "290a6498b865850a699942c7f728ab4493b4c997a3220bf8113e7d8c792e4969"
+    },
+    {
+      "segment_id": "outdoor_G-380_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ebadbaf822195754e8da6a97334aa43fc352a81db994853ca1fbdae49ee8ce7a",
+      "X_sha256": "8dab8feda8b1a1cc0d895025a30131c47834f51f6423839f2706175cfebc58e3"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0efb7e99311ca155497bd5ed4cfbf15f548a0039cb11986349eef0755b18ce05",
+      "X_sha256": "91ad96ae81b8d6a66b366a5ef2502605f1a2eabb97c4502a1325aa6a5b332d2b"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "834622e4e8e1b3bf4d2c64ee36266a43ce3ca293fe7cfbb43daa7752a7d779bc",
+      "X_sha256": "d6f38bd5b21e6cbf6a4b040535588489ad459b80851c8407654f35e2c5fa5739"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "950bbbaace30b9dbaaf8d8f6396fae9275d8ca7d6f71cf8abe146678217e0b36",
+      "X_sha256": "7cb16cb707921296648b6fa3cc3d30ae065aab5ef56f43fc40874ca559a677a3"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "31e347edfa61f561e9cc4078f263387e8d29b0456cb88fd6491b56c6df65a7fa",
+      "X_sha256": "6d76b6abfa85ec77b12aba751e3682b14728d0c25e390782d9724123574b05c8"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "0fed6d2cb599cb6849adb61a3857b37a371a5601b1d0f28928149b4eed24455a",
+      "X_sha256": "f2ce26acd457b446182f76d711506b5ddbc7ae6b41acb00e8c40b5f700df6805"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f2ce4317f252f45820d1b7fbc342341b513e9cdda565ee7590233ad7ea7b6d9f",
+      "X_sha256": "d33fb9a48f9b1ffcac410a0d6ffb20b5e739004dc69d88f9fc0a3217dab1a4d1"
+    },
+    {
+      "segment_id": "outdoor_G-410_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7de9b65e733a7b13b7ebafc76702461c3e9b5d2a7f6c4b6723a41529be2f3eff",
+      "X_sha256": "ad9b71e2a8198d479a04b51739dea31b61ccae8d79d4750a52affe546e21beb5"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "f503ccaed450340325f427f465f56b266882f491ce7388136540b60bc3c070b1",
+      "X_sha256": "63db65f0699ae4bcc6561b57b8d55f5dd709cbcc05d4d63e12a40c8c22803a76"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a58948b69bf0d085a5d8dcfc79ae96c0cac8b8fd59ef2c07d77fd348a436dc90",
+      "X_sha256": "584ef7a95fae71e8a468ac44f30801b2d2c84475dc44d06cac72d4a477cbd7b0"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "5f8f9623bbef6a887e4c7e0344030c8f89f8df74f9cb5964d8c93a3f0c8c7c9b",
+      "X_sha256": "11c99b978ff25d3162deaee4a1acbfd1e1f61a0384f2c46bd6eddc744e451081"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "45b64977d605bec5a02b7dd54353076c9ad31da36a4e6483b0ad7218d5f60bca",
+      "X_sha256": "7ab8ccfe512b220dbe1b9f2294d0d261962170cd0166b1fb1e596b63c78fb1f5"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "737887df2029e6f5076736019404f541ff0fe37ac58a9aff74dc5d6eaab218d7",
+      "X_sha256": "c3b0680d55aaacbe91882d43996e6aa4c2d6b1bb3bf622f7d16ccb029c03f455"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "2dd986f452cc20b0631e6c0ea09760026c9ce4e426aa9b2f96cd8a3e4926cbfc",
+      "X_sha256": "ad54fe73997fd4961acea793d06558ee2ed1f2de33c7e03b01ea901c3011021a"
+    },
+    {
+      "segment_id": "outdoor_G-420_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "db106d8f83992386cd2f83228b5245da7078da364262311cf6407f95842045d2",
+      "X_sha256": "61aa57091c1a22f1abe316a41d92017e178ce43988bd55506cc942a2f8c830af"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "530329186e48522490a942536af2834bc51b31f751d7fad2c359b7d1ceec83c7",
+      "X_sha256": "8c726304b61b17be3db9ec0d213c6c27c35e016bf871a2613f7a35fe3348c41a"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "38c0f926f8d9338db6a680fa76c6b3d1ac980be1138426f01781927fc7d70fa8",
+      "X_sha256": "4ea8c8777cb275717af09c7cf664a0a6febb4cf44259372c7dee3d00f765a66f"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "17ae65a565e4ca1552b3bd775678fb9ab149dfed7dd437767a4a8b00d8b1bf83",
+      "X_sha256": "64773368f9b8a023042621e77e7f83c6706e3f48d54ddc7a8ff99b09c4d4155a"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "7fe9107d19168d08b0dc2b6a4c5e35c326ebd879dedde738972f0a88fa0267aa",
+      "X_sha256": "db8c7109508df012d8ef35a9a57718b79d66227668492209c5612f2a589b9cad"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "6ff9e7bed280fb9e1317013d99fde0f7109c78e15dddab6ce8506d0c3800b215",
+      "X_sha256": "b1f563cbeb7e2e3dd336a618e8e13c4ab2f8faf8df01c97e01d3e9deaea586cb"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "b6ab8a8488962db84b4e3733416723fcebb01cd9692ef06b5888c27da1768b28",
+      "X_sha256": "c8d0eb2982227db29d68f627d0320f7ca27031bf273b252b8f4880f9d52205ef"
+    },
+    {
+      "segment_id": "outdoor_G-430_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "43e88f8420fa58006a5a97cb4418d646b3eb888c42b936643f93abba02691d24",
+      "X_sha256": "82e40cf5445aaa0054b25e0c2a90814406312556d0fc5eebb58ab7b52426ffe3"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "054551c8e4bfa39b8c84c3d17ea710ec7b1beff0cf49db944c325cbc660c5b20",
+      "X_sha256": "984cf1cf62375024662d24ed935a72e417f56a0b2132a4caf34daa03325dea1e"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "3b6a1f4b8cc4b94dd7f01e487bd412d1502dce975906833c971c825f1cf4244f",
+      "X_sha256": "59da1434524463eb20d2b30ea672862397d768b5fc3d8330a327d350061ef096"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4fb3ce866f43b7efbef9092f9204f1fe2371a7d402977ceddf7dcc75ebdfc698",
+      "X_sha256": "f78edbdd421bae11031d6b0462052540620caff3ddd8b44fcbdd57db644746ee"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "120f0c39eb3d6b05998d46e4d650a94c8dae5465a0dfa75b35153e98836688a5",
+      "X_sha256": "b9749559dee04d76f58a77d0f937722782bc02d1423992168651de10cc3b2943"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "e56e04192ed73f6be887f1595e20903a2583dc2879ce3fd8cfde76e6cd452067",
+      "X_sha256": "0a176f285565e03e4a6ddfd45073a88da68766192039c09b347bbb313a71bf3c"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "69defca6a11c7be29be3f1fef592c84c5481fca487f26c8cf43b421ecf5240ae",
+      "X_sha256": "18a873e19aa62375b96b283cedd0358f3abbdbc81ab9131f3413782396c18c55"
+    },
+    {
+      "segment_id": "outdoor_G-450_N1_S1_001__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "4ddeb1e262428b38ff14a9022a1f6c5e947611e402af9ddac85265907ac065a3",
+      "X_sha256": "3179cf22815aaef88bd5d61d79c8dd53cedfae817fc7bb664dc64d95f7e32c55"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t10",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "09eb998e96f45b085a4618202e091c17190b291ad38c00fec431f2d9e8f321f5",
+      "X_sha256": "3608866d77145bfcc71bb9b9d49b251df2a0c521cc27a0289bd703b4a452201e"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t20",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "ed4edbd6d2313a040a7401ed9b15a7e4e069a367426e1f915a6504d8cb783cae",
+      "X_sha256": "9ee0be694d7e7dd3dfbc18260c06cecfbc78f546579f6ec8e4d48d34c87c6d88"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t30",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "a448c1c438ee8b6aab235be3284560a4deb70ade7ce0cdae65efbbe42c70ac89",
+      "X_sha256": "55447cd3adb3c305850b2cbd27cfb92cd41664e920272853c4662716c1cb3074"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t40",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "1c5eb1ad29d6a77ea5c7a9b25d262bcf38fad6918cb1355665bd89541d7aa218",
+      "X_sha256": "8a8e14d50a1788ec0ef4d4a8e4b9452de76a6040479ad188969b8a70a571142d"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t50",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "c41a00c7ed1d810ace4468fb586f85e8a92007822fcddf1f0a8d91644571ac45",
+      "X_sha256": "026101703ef9bf87b9a29c6e7537451e1831ad1560a11fe4d1b5db3f70eac34d"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t60",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "fba6cd0333773155e19ceb872d5ffcb2b07828ef85775857c95e21f80d2f5274",
+      "X_sha256": "625eda38bda6ca98c010b480b9448df98c412be482dcd2be3de4ae7515a3cdc0"
+    },
+    {
+      "segment_id": "outdoor_G-460_N1_S1_002__t70",
+      "raw_exact": true,
+      "frame_indices_exact": true,
+      "ema_replay_exact": true,
+      "X_cache_exact": true,
+      "state_sha256": "cae61c1724e19f7265e0833ffa7c5f85845332ad5093f5880b952b237d6261ef",
+      "X_sha256": "c65ced401ff743795b82f0f06d28a18e3b862a66c57f5461279341163a08d2c9"
+    }
+  ],
+  "tolerance": "bitwise array_equal; X complex128, EMA output complex64; no estimation performed in this step"
+}
