@@ -1,27 +1,40 @@
-# Revised separation sensitivity analysis
+# FDTD target-spacing sensitivity: current Fig. 4
 
-This package supplies all 65 conditions and 6,500 noise trials used in the revised manuscript, at a fixed **0.05 m position-search grid**. The estimator, supplied target count (K=2), snapshot count (128), peak rule and expected CIR SNR (13.0103 dB) match the original controlled study. The stored generator `snr_db=10` follows the noise scaling explained in the root README.
+Exactly **24 FDTD conditions and 2400 trials**, fixed **0.05 m search grid**. Directions: transverse, radial, oblique. Distances: **0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.75, 1.00 m**. Supplied K=2, L=128, expected CIR SNR=13.0103 dB (`snr_db=10` in the historical generator). Trial IDs 1000–1099 in every condition. No failures are removed.
 
-The three directions are transverse, radial and oblique. There are 48 parametric and 17 FDTD conditions, with trials 1000–1099 per condition. Nine FDTD sequences reuse the original archive and eight were newly solved. Every condition's clean CIR, truth, settings, seed and prediction records are included. Exactly two outputs and both one-to-one position errors <= min(0.10 m,d/3) are required for success. Failures remain in the denominator.
+Fig. 4 reports **truth-referenced two-peak correspondence before final peak selection**. Form a finite, positive 3×3 local-maximum mask, merge eight-connected plateau components, and represent each by its largest value (ties by row, then column). Two distinct maxima must match the two truths one-to-one within `min(0.10 m,d/3)`. This diagnostic precedes the original relative-height threshold, minimum-distance suppression and K-output cap. It is not final localization success. Extra maxima do not invalidate correspondence.
 
-Run from the repository root:
+| Path | Content |
+|---|---|
+| `conditions.json` | All identities, geometry, clean seeds and settings |
+| `cache/fdtd/<clean_id>/` | Original clean CIR, independent truth and metadata |
+| `rows/*_grid0.05.json` | Original predictions, statuses, seeds and metrics, 100 per condition |
+| `summaries/` | Original output-success summaries, **not** the Fig. 4 ordinate |
+| `spectral_reference.json` | All 2400 spectral records and 24 summaries, matching peaks and original-output flags |
+| `manifest.json` | File hashes excluding the manifest itself |
+
+No parametric target-spacing experiment, 0.025 m grid study or distance above 1.00 m is included. Noise repetitions use one clean sequence per condition, not 100 independent environments.
+
+From the root in Linux:
 
 ```bash
 python spacing_reproduce.py verify
-python spacing_reproduce.py figures --out outputs/spacing
-python spacing_reproduce.py replay --task E2_B_transverse_d875_snr+10 --trial 1000
+python spacing_reproduce.py replay --task E2_B_transverse_d300_snr+10 --trial 1000
+python spacing_reproduce.py replay-all --workers 4 --out generated_validation/spacing
+python spacing_reproduce.py figures --out outputs/spacing \
+  --results generated_validation/spacing/replay_verification.json
 ```
 
-`verify` checks input hashes, all 6,500 seed identities and assignment metrics; `figures` regenerates the manuscript's six-panel figure and complete numerical CSV; `replay` reconstructs noise and runs the estimator against a saved trial. All commands use released inputs and require no Meep installation.
+`verify` checks stored data without estimator execution. `replay-all` reconstructs spectra and output positions from CIR and seeds, comparing all 2400 flags, positions and matched peak identities. Plotting consumes the new full report. Both figure commands reproduce the single panel with circle/square/triangle markers and no overlaid error bars.
 
-For actual regeneration in the documented Linux/Meep environment, the executed driver and full execution protocol are preserved as `original_run_spacing.py` and `original_protocol.json`:
+Fresh field generation uses `validation/regenerate_inputs.py`, 128 actual states per controlled scene. Its isolated preflight overlay counts the nominal motion margin once and checks actual state clearance; solver parameters, trajectories and estimator remain unchanged.
 
-```bash
-python spacing_revision/original_run_spacing.py --source src --archive data --out outputs/spacing_new --protocol spacing_revision/original_protocol.json --execute
-```
+Expected successes out of 100 in the eight-distance order:
 
-This original execution protocol additionally runs paired 0.025 m diagnostic checks. They are not used in the manuscript figure, reported rates or formal 6,500-trial analysis. The original completion report accordingly counts 10,200 trials; it is a provenance record, not the size of the published fixed-grid analysis. No diagnostic result replaces a primary-grid result. Full diagnostic outputs remain in the authors' execution archive.
+| Direction | Counts |
+|---|---|
+| Transverse | 0, 0, 0, 87, 100, 100, 100, 100 |
+| Radial | 0, 0, 0, 0, 100, 100, 100, 100 |
+| Oblique | 0, 0, 100, 100, 100, 100, 100, 100 |
 
-The manifest covers all packaged clean sequences, primary trial records and summaries. The original source manifest records numerical-source hashes. Original absolute paths in provenance records describe the execution machine; reproduction commands resolve the released relative paths.
-
-The curves are conditional on one clean sequence per condition. They do not establish a universal separation threshold, hardware close-person resolution, or numerical convergence of the FDTD solver. Nonmonotonic parametric points and unsuccessful radial conditions are included without selection.
+These conditional simulation results establish neither measured close-person resolving capability nor a universal hardware resolution bound.

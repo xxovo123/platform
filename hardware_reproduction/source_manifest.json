@@ -117,7 +117,8 @@
   {
     "source": "大修执行_20260923/04_Q6/hardware/methods/docs/B1_B2_适配记录.md",
     "file": "docs/B1_B2_适配记录.md",
-    "sha256": "d96e5aacab7a4fd270ad28a0bab73949d5c4262ac9cd2218b329d397b425c25c"
+    "sha256": "42c374047c51e523722551a4c134ed2e3cdd4610f752ed554806a597cf5ad548",
+    "previous_sha256": "d96e5aacab7a4fd270ad28a0bab73949d5c4262ac9cd2218b329d397b425c25c"
   },
   {
     "source": "大修执行_20260923/04_Q6/hardware/methods/docs/B5_Wang_Full2D_原文公式与适配.md",
@@ -1668,5 +1669,21 @@
     "source": "期刊强制修改_20261015/03_论文工作稿/paper/assets_20260930/stability.tex",
     "file": "data/paper_reference/stability.tex",
     "sha256": "51a146a51160d5362bf667e54b2567f60ee68b3d88d5b1df47467baa47cbf6bc"
+  },
+  {
+    "source": "data/preprocessing_verification.json",
+    "source_sha256": "1444b94a0ea9234438ddec1089bac85531bd3489bf3659124ecf81edec2223a0",
+    "file": "data/preprocessing_reference.npz",
+    "bytes": 27421811,
+    "sha256": "40783a4a804ba62bde87564cdc6991bbf7989594770be2e0d988915d1ef519aa",
+    "provenance": "Archived FFT arrays and metadata; all 205 arrays match the existing original X_sha256 values. No estimator or field solver was executed."
+  },
+  {
+    "source": "data/preprocessing_verification.json",
+    "source_sha256": "1444b94a0ea9234438ddec1089bac85531bd3489bf3659124ecf81edec2223a0",
+    "file": "data/preprocessing_reference.json",
+    "bytes": 1047,
+    "sha256": "7a42b2b687c98dbc40b1620e8fb0cb7ebf29759f17821826f05d002104cda673",
+    "provenance": "Archived FFT arrays and metadata; all 205 arrays match the existing original X_sha256 values. No estimator or field solver was executed."
   }
 ]

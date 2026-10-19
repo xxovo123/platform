@@ -6,7 +6,7 @@ This directory groups simulation data and the 205-segment hardware evaluation da
 
 ## Controlled simulation CIR
 
-`cache/fdtd/<clean_id>/` contains the 14 controlled FDTD geometries. `cache/analytic/<clean_id>/` contains 29 parametric geometries. `cache_index.json` maps their identifiers, target counts, coordinates, seeds and array shapes.
+`cache/fdtd/<clean_id>/` contains the 5 controlled FDTD geometries. `cache/analytic/<clean_id>/` contains 5 parametric geometries. `cache_index.json` maps their identifiers, target counts, coordinates, seeds and array shapes.
 
 | File / array | Meaning |
 |---|---|
@@ -43,22 +43,20 @@ Only these representative field records are supplied; the complete controlled CI
 
 ## Formal simulation results
 
-`results/runs/` contains six completed groups:
+`results/runs/` contains four non-spacing completed groups:
 
 | Family | Conditions | Trials per condition | Saved records |
 |---|---:|---:|---:|
 | E1_A | Five layouts × nine SNR parameters | 200 | 9,000 |
 | E1_B | Same layouts and SNRs, FDTD | 50 | 2,250 |
-| E2_A | Three directions × eight separations × three SNRs | 100 | 7,200 |
-| E2_B | Three directions × 0.30/0.50/1.00 m, middle SNR | 50 | 450 |
 | E4_A | Five prefix lengths × nine SNRs | 100 | 4,500 |
 | E4_B | Five prefix lengths × three SNRs, FDTD | 50 | 750 |
 
 Each run has `tasks.jsonl` (geometry and requested settings), `truth.json`, `rows.jsonl` (one record per trial), `pairs.csv`, `source_manifest.json`, `config.json`, `checks.json`, `status.json`, `summary.csv` and fixed spectrum `samples/`. `_predictions` records x/y in metres and response score; `_errors` records position/range error in metres and azimuth error in degrees for the same assignment. `seed` is the actual noise seed. `missing` means unassigned truth, whereas `fn` is a detection miss under the separate 0.30 m matching rule.
 
-All trial records, including missing outputs, are retained. Cross-family shared inputs are listed in `tables/shared_input_aliases.csv`; 24,150 task records are not 24,150 independent physical trajectories.
+All trial records, including missing outputs, are retained. Cross-family shared inputs are listed in `tables/shared_input_aliases.csv`; 16,500 task records are not 16,500 independent physical trajectories.
 
-Use `tables/formal/` for the final exported statistics rather than the historical run `summary.csv`; the final export includes the corrected strict two-target-resolution aggregation. `tables/manuscript/` adds `snr_expected_db = snr_db + 10*log10(2)` without changing saved noise or predictions. The raw-run SNR tag remains the original generator parameter. A fixed clean ID and trial share the noise realization across SNR and prefix lengths.
+Use `tables/formal/` for the final exported statistics rather than the historical run `summary.csv`; the non-spacing records retain their original assignments. `tables/manuscript/` adds `snr_expected_db = snr_db + 10*log10(2)` without changing saved noise or predictions. The raw-run SNR tag remains the original generator parameter. A fixed clean ID and trial share the noise realization across SNR and prefix lengths.
 
 ## Simulation–measurement correspondence
 
@@ -81,3 +79,5 @@ See [hardware/README.md](hardware/README.md) for the complete 205 original CIR s
 `settings/` records the effective experiment protocol and environment. Source-pulse arrays are reference samples of the simulation excitation, not hardware measurements. Full intermediate FDTD field caches are represented by examples and regeneration code. The revision adds the complete hardware evaluation software and continuous EMA states under `../hardware_reproduction/`, and the revised separation inputs and trials under `../spacing_revision/`.
 
 中文说明：仿真 `raw_cir` 是数值接收链输出的 32 抽头 CIR，原始场在 `field_samples/`；硬件芯片采集的原始 CIR 单独存放于 `hardware/`。所有数组读取示例均使用 `allow_pickle=False`。坐标与距离单位为米，时延与时间单位为秒，频率单位为 Hz，方位角单位为度。论文信噪比标注、原始运行参数和有限样本实现值分别保留，不能混用。
+
+The current Fig. 4 is separate: `../spacing_revision/` contains exactly 24 FDTD conditions and 2400 trials. The plotted statistic is the truth-referenced pre-selection spectral correspondence rate, not the original output-success rate. Run the complete workflow on Linux; see `../docs/linux_validation.md`.

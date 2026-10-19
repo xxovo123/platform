@@ -1,0 +1,708 @@
+{
+  "package_id": "revision-20261019-candidate",
+  "platform": "Linux",
+  "status": "repaired; independent rerun not performed",
+  "controlled": {
+    "conditions": 150,
+    "trials": 16500,
+    "runs": {
+      "E1_A_formal": 9000,
+      "E1_B_formal350_20260930": 2250,
+      "E4_A_formal": 4500,
+      "E4_B_formal350_20260930": 750
+    },
+    "tasks_by_run": {
+      "E1_A_formal": 45,
+      "E1_B_formal350_20260930": 45,
+      "E4_A_formal": 45,
+      "E4_B_formal350_20260930": 15
+    },
+    "clean_analytic": 5,
+    "clean_fdtd": 5
+  },
+  "spacing": {
+    "conditions": 24,
+    "trials": 2400,
+    "trials_per_condition": 100,
+    "trial_range": [
+      1000,
+      1099
+    ],
+    "spacings_m": [
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "grid_m": 0.05,
+    "spectral_counts": {
+      "transverse": [
+        0,
+        0,
+        0,
+        87,
+        100,
+        100,
+        100,
+        100
+      ],
+      "radial": [
+        0,
+        0,
+        0,
+        0,
+        100,
+        100,
+        100,
+        100
+      ],
+      "oblique": [
+        0,
+        0,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    "original_output_counts": {
+      "transverse": [
+        0,
+        0,
+        0,
+        0,
+        100,
+        0,
+        4,
+        100
+      ],
+      "radial": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "oblique": [
+        0,
+        0,
+        100,
+        100,
+        100,
+        100,
+        99,
+        100
+      ]
+    }
+  },
+  "hardware": {
+    "segments": 205,
+    "recordings": 31,
+    "configurations": 15,
+    "target_instances": 338,
+    "methods": 6,
+    "ablations": 20,
+    "estimator_runs": 5330,
+    "temporal_groups": 30,
+    "temporal_selected": 120,
+    "reference_summary": [
+      {
+        "method": "this_method",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "334",
+        "missing": "4",
+        "tp": "315",
+        "fn": "23",
+        "fp": "19",
+        "rmse_pos_m": "0.1789976248462499",
+        "rmse_range_m": "0.06870345272668464",
+        "rmse_angle_deg": "6.14794670188026",
+        "dr_percent": "93.19526627218934",
+        "segments_with_fp": "18",
+        "fp_per_segment": "0.09268292682926829",
+        "rms_ospa_m": "0.16709540383786697"
+      },
+      {
+        "method": "b1_deng",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "332",
+        "missing": "6",
+        "tp": "315",
+        "fn": "23",
+        "fp": "17",
+        "rmse_pos_m": "0.1678088479990618",
+        "rmse_range_m": "0.06979030127252599",
+        "rmse_angle_deg": "5.538626001807793",
+        "dr_percent": "93.19526627218934",
+        "segments_with_fp": "17",
+        "fp_per_segment": "0.08292682926829269",
+        "rms_ospa_m": "0.15900375475473522"
+      },
+      {
+        "method": "b2_kakouche",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "318",
+        "missing": "20",
+        "tp": "266",
+        "fn": "72",
+        "fp": "52",
+        "rmse_pos_m": "0.44621064100635394",
+        "rmse_range_m": "0.2535145555181143",
+        "rmse_angle_deg": "14.135849036249125",
+        "dr_percent": "78.69822485207101",
+        "segments_with_fp": "43",
+        "fp_per_segment": "0.25365853658536586",
+        "rms_ospa_m": "0.17926755762522478"
+      },
+      {
+        "method": "c1_jade",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "307",
+        "fn": "31",
+        "fp": "31",
+        "rmse_pos_m": "0.2769117250696658",
+        "rmse_range_m": "0.1312556568548381",
+        "rmse_angle_deg": "9.185369747705346",
+        "dr_percent": "90.82840236686391",
+        "segments_with_fp": "22",
+        "fp_per_segment": "0.15121951219512195",
+        "rms_ospa_m": "0.15075135582309077"
+      },
+      {
+        "method": "c3_kim",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "295",
+        "missing": "43",
+        "tp": "231",
+        "fn": "107",
+        "fp": "64",
+        "rmse_pos_m": "0.6315765671793613",
+        "rmse_range_m": "0.4674844585381728",
+        "rmse_angle_deg": "17.612865519164355",
+        "dr_percent": "68.34319526627219",
+        "segments_with_fp": "52",
+        "fp_per_segment": "0.3121951219512195",
+        "rms_ospa_m": "0.20062396559044532"
+      },
+      {
+        "method": "b5_wang_full2d",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "335",
+        "missing": "3",
+        "tp": "315",
+        "fn": "23",
+        "fp": "20",
+        "rmse_pos_m": "0.2411268941957276",
+        "rmse_range_m": "0.0880174804979401",
+        "rmse_angle_deg": "8.860629140831266",
+        "dr_percent": "93.19526627218934",
+        "segments_with_fp": "19",
+        "fp_per_segment": "0.0975609756097561",
+        "rms_ospa_m": "0.1627154106962484"
+      },
+      {
+        "method": "ablation/REF",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "334",
+        "missing": "4",
+        "tp": "315",
+        "fn": "23",
+        "fp": "19",
+        "rmse_pos_m": "0.1789976248462499",
+        "rmse_range_m": "0.06870345272668464",
+        "rmse_angle_deg": "6.14794670188026",
+        "dr_percent": "93.19526627218934",
+        "segments_with_fp": "18",
+        "fp_per_segment": "0.09268292682926829",
+        "rms_ospa_m": "0.16709540383786697"
+      },
+      {
+        "method": "ablation/A_F09",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "202",
+        "fn": "136",
+        "fp": "136",
+        "rmse_pos_m": "1.5208266934009762",
+        "rmse_range_m": "1.3570098702141595",
+        "rmse_angle_deg": "27.362809646069323",
+        "dr_percent": "59.76331360946745",
+        "segments_with_fp": "127",
+        "fp_per_segment": "0.6634146341463415",
+        "rms_ospa_m": "0.2330833358767088"
+      },
+      {
+        "method": "ablation/A_F05",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "86",
+        "fn": "252",
+        "fp": "252",
+        "rmse_pos_m": "1.583558716959738",
+        "rmse_range_m": "1.3044600364194199",
+        "rmse_angle_deg": "34.32117801696679",
+        "dr_percent": "25.443786982248522",
+        "segments_with_fp": "187",
+        "fp_per_segment": "1.2292682926829268",
+        "rms_ospa_m": "0.273229674970624"
+      },
+      {
+        "method": "ablation/B_span250",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "336",
+        "missing": "2",
+        "tp": "202",
+        "fn": "136",
+        "fp": "134",
+        "rmse_pos_m": "1.492782272701038",
+        "rmse_range_m": "1.3509211528373544",
+        "rmse_angle_deg": "25.609970398927867",
+        "dr_percent": "59.76331360946745",
+        "segments_with_fp": "121",
+        "fp_per_segment": "0.6536585365853659",
+        "rms_ospa_m": "0.22762531615100623"
+      },
+      {
+        "method": "ablation/B_span125",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "307",
+        "missing": "31",
+        "tp": "297",
+        "fn": "41",
+        "fp": "10",
+        "rmse_pos_m": "0.16392692222639607",
+        "rmse_range_m": "0.06800379747903723",
+        "rmse_angle_deg": "5.473961044803684",
+        "dr_percent": "87.8698224852071",
+        "segments_with_fp": "10",
+        "fp_per_segment": "0.04878048780487805",
+        "rms_ospa_m": "0.16999646098659668"
+      },
+      {
+        "method": "ablation/S_span250_F9",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "326",
+        "missing": "12",
+        "tp": "312",
+        "fn": "26",
+        "fp": "14",
+        "rmse_pos_m": "0.171745772668348",
+        "rmse_range_m": "0.07035551289908361",
+        "rmse_angle_deg": "5.705931855216589",
+        "dr_percent": "92.3076923076923",
+        "segments_with_fp": "14",
+        "fp_per_segment": "0.06829268292682927",
+        "rms_ospa_m": "0.16533604607006094"
+      },
+      {
+        "method": "ablation/C_L016",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "328",
+        "missing": "10",
+        "tp": "292",
+        "fn": "46",
+        "fp": "36",
+        "rmse_pos_m": "0.28263370999297",
+        "rmse_range_m": "0.10748708259677656",
+        "rmse_angle_deg": "9.870381254750026",
+        "dr_percent": "86.3905325443787",
+        "segments_with_fp": "34",
+        "fp_per_segment": "0.17560975609756097",
+        "rms_ospa_m": "0.17494182540611256"
+      },
+      {
+        "method": "ablation/C_L032",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "332",
+        "missing": "6",
+        "tp": "298",
+        "fn": "40",
+        "fp": "34",
+        "rmse_pos_m": "0.3135282360797463",
+        "rmse_range_m": "0.11805452338622198",
+        "rmse_angle_deg": "10.495854142965111",
+        "dr_percent": "88.16568047337279",
+        "segments_with_fp": "32",
+        "fp_per_segment": "0.16585365853658537",
+        "rms_ospa_m": "0.1776194433801285"
+      },
+      {
+        "method": "ablation/C_L064",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "333",
+        "missing": "5",
+        "tp": "308",
+        "fn": "30",
+        "fp": "25",
+        "rmse_pos_m": "0.2853521348103793",
+        "rmse_range_m": "0.09807339375764029",
+        "rmse_angle_deg": "9.706945069065506",
+        "dr_percent": "91.12426035502959",
+        "segments_with_fp": "24",
+        "fp_per_segment": "0.12195121951219512",
+        "rms_ospa_m": "0.17205872036032505"
+      },
+      {
+        "method": "ablation/D_C2_01",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "180",
+        "fn": "158",
+        "fp": "158",
+        "rmse_pos_m": "0.7711832432532207",
+        "rmse_range_m": "0.25780993127050383",
+        "rmse_angle_deg": "28.25580015958452",
+        "dr_percent": "53.25443786982248",
+        "segments_with_fp": "112",
+        "fp_per_segment": "0.7707317073170732",
+        "rms_ospa_m": "0.23381501965150603"
+      },
+      {
+        "method": "ablation/D_C2_02",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "192",
+        "fn": "146",
+        "fp": "146",
+        "rmse_pos_m": "0.9959803457460524",
+        "rmse_range_m": "0.3936472438228128",
+        "rmse_angle_deg": "32.1135827279696",
+        "dr_percent": "56.80473372781065",
+        "segments_with_fp": "116",
+        "fp_per_segment": "0.7121951219512195",
+        "rms_ospa_m": "0.2260979354677177"
+      },
+      {
+        "method": "ablation/D_C2_03",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "158",
+        "fn": "180",
+        "fp": "180",
+        "rmse_pos_m": "0.9252163908094609",
+        "rmse_range_m": "0.38757292706285096",
+        "rmse_angle_deg": "32.50653135946327",
+        "dr_percent": "46.74556213017752",
+        "segments_with_fp": "159",
+        "fp_per_segment": "0.8780487804878049",
+        "rms_ospa_m": "0.25591927398448905"
+      },
+      {
+        "method": "ablation/D_C2_12",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "205",
+        "fn": "133",
+        "fp": "133",
+        "rmse_pos_m": "0.6541496467590804",
+        "rmse_range_m": "0.19519966540517766",
+        "rmse_angle_deg": "25.51157657722338",
+        "dr_percent": "60.650887573964496",
+        "segments_with_fp": "97",
+        "fp_per_segment": "0.6487804878048781",
+        "rms_ospa_m": "0.2158755193100838"
+      },
+      {
+        "method": "ablation/D_C2_13",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "184",
+        "fn": "154",
+        "fp": "154",
+        "rmse_pos_m": "0.9356687242493795",
+        "rmse_range_m": "0.3706808000776732",
+        "rmse_angle_deg": "31.66407271566118",
+        "dr_percent": "54.437869822485204",
+        "segments_with_fp": "119",
+        "fp_per_segment": "0.751219512195122",
+        "rms_ospa_m": "0.22477031637196052"
+      },
+      {
+        "method": "ablation/D_C2_23",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "185",
+        "fn": "153",
+        "fp": "153",
+        "rmse_pos_m": "0.7831159786996269",
+        "rmse_range_m": "0.2274639260008079",
+        "rmse_angle_deg": "28.180685061950435",
+        "dr_percent": "54.73372781065089",
+        "segments_with_fp": "117",
+        "fp_per_segment": "0.7463414634146341",
+        "rms_ospa_m": "0.2383914080134478"
+      },
+      {
+        "method": "ablation/D_C3_012",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "334",
+        "missing": "4",
+        "tp": "299",
+        "fn": "39",
+        "fp": "35",
+        "rmse_pos_m": "0.40460206294743156",
+        "rmse_range_m": "0.12933683382229566",
+        "rmse_angle_deg": "12.918892489844584",
+        "dr_percent": "88.46153846153847",
+        "segments_with_fp": "23",
+        "fp_per_segment": "0.17073170731707318",
+        "rms_ospa_m": "0.15889002690668316"
+      },
+      {
+        "method": "ablation/D_C3_013",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "255",
+        "fn": "83",
+        "fp": "83",
+        "rmse_pos_m": "0.7165740215793249",
+        "rmse_range_m": "0.3267950296150157",
+        "rmse_angle_deg": "25.07744899256117",
+        "dr_percent": "75.44378698224853",
+        "segments_with_fp": "80",
+        "fp_per_segment": "0.40487804878048783",
+        "rms_ospa_m": "0.20659041013797233"
+      },
+      {
+        "method": "ablation/D_C3_023",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "338",
+        "missing": "0",
+        "tp": "248",
+        "fn": "90",
+        "fp": "90",
+        "rmse_pos_m": "0.7351721108314561",
+        "rmse_range_m": "0.3515769009905868",
+        "rmse_angle_deg": "25.885857898445078",
+        "dr_percent": "73.37278106508876",
+        "segments_with_fp": "90",
+        "fp_per_segment": "0.43902439024390244",
+        "rms_ospa_m": "0.2128659641633368"
+      },
+      {
+        "method": "ablation/D_C3_123",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "337",
+        "missing": "1",
+        "tp": "284",
+        "fn": "54",
+        "fp": "53",
+        "rmse_pos_m": "0.4485957979194402",
+        "rmse_range_m": "0.15306545027994614",
+        "rmse_angle_deg": "14.182001243859425",
+        "dr_percent": "84.02366863905326",
+        "segments_with_fp": "41",
+        "fp_per_segment": "0.25853658536585367",
+        "rms_ospa_m": "0.17247569641447613"
+      },
+      {
+        "method": "ablation/E_FB0",
+        "n_segments": "205",
+        "n_truth": "338",
+        "pairs": "335",
+        "missing": "3",
+        "tp": "314",
+        "fn": "24",
+        "fp": "21",
+        "rmse_pos_m": "0.24291900253180027",
+        "rmse_range_m": "0.08810217002125388",
+        "rmse_angle_deg": "8.964104697178005",
+        "dr_percent": "92.89940828402366",
+        "segments_with_fp": "20",
+        "fp_per_segment": "0.1024390243902439",
+        "rms_ospa_m": "0.16395819167667772"
+      }
+    ]
+  },
+  "correspondence": {
+    "fdtd_configs": 15,
+    "hardware_spectra": 205,
+    "parametric_trials": 300,
+    "parametric_comparisons": 4100,
+    "table_IX": {
+      "indoor": [
+        0.674,
+        0.179,
+        162,
+        2
+      ],
+      "outdoor": [
+        0.722,
+        0.162,
+        172,
+        2
+      ],
+      "combined": [
+        0.696,
+        0.171,
+        334,
+        4
+      ]
+    },
+    "table_IX_columns": [
+      "correlation",
+      "displacement_m",
+      "pairs",
+      "missing"
+    ],
+    "parametric_macro_correlation_printed": 0.474
+  },
+  "fresh_inputs": {
+    "analytic_sequences": 5,
+    "controlled_fdtd_sequences": 29,
+    "q4_fdtd_sequences": 15,
+    "retained_states": 128,
+    "q4_startup_states": 32,
+    "fdtd_resolution_cells_per_m": 350,
+    "duration_meep_units": 20
+  },
+  "tolerances": {
+    "input_file_sha256": "exact",
+    "trial_ids_seeds_counts_flags": "exact",
+    "simulation_xy_atol_m": 1e-10,
+    "hardware_xy_atol_m": 1e-08,
+    "sse_atol": 1e-09,
+    "normalized_spectrum_max_abs": 1e-07,
+    "spectral_correlation_atol": 1e-07,
+    "regenerated_cir_relative_l2": 1e-07,
+    "regenerated_cir_max_error_div_reference_peak": 1e-07,
+    "printed_values": "match the approved table at its printed precision",
+    "pdf": "all numerical series/axes/labels/panels match; no clipping; binary identity not required",
+    "hardware_fft_atol": 1e-12,
+    "hardware_fft_rtol": 0.0
+  },
+  "reference_figures": [
+    {
+      "path": "validation/reference/figures/algo_flowchart_restored.pdf",
+      "bytes": 42285,
+      "sha256": "2f16df37656e6db8158764b8cf49ea027f85221d1877ec78a8298884555dfa00"
+    },
+    {
+      "path": "validation/reference/figures/antenna_layout.pdf",
+      "bytes": 13465,
+      "sha256": "13b9c1842908efa8aadf0e8e1b2ab15afca0339c7cb6982e2a0ada0d41808b96"
+    },
+    {
+      "path": "validation/reference/figures/CIR_Time_Domain_Signal_Acquisition_Procedure.pdf",
+      "bytes": 105917,
+      "sha256": "53dcc74ad06a07c5be6844d82dc4214d2e04b3d699466ea0bf18b9142cb658c5"
+    },
+    {
+      "path": "validation/reference/figures/hardware_setup.pdf",
+      "bytes": 68705,
+      "sha256": "b0d647236655a39223438c710bbf0c88f859bee2fad08c54dccfc342a000a64f"
+    },
+    {
+      "path": "validation/reference/figures/simulation_separation.pdf",
+      "bytes": 15948,
+      "sha256": "2e5b957da68b666035f173ece02ab2dc1034ea23410af014df04ae4c3492a14d"
+    },
+    {
+      "path": "validation/reference/figures/simulation_snapshots.pdf",
+      "bytes": 16399,
+      "sha256": "f1b46d58429722078dd00fea213929466c8411135204db36e008141036b543d7"
+    },
+    {
+      "path": "validation/reference/figures/simulation_snr.pdf",
+      "bytes": 22156,
+      "sha256": "0bacbe4e0656beccee9403d00f8c0edcedf9263afa5e9fd777c2874374bc6e40"
+    },
+    {
+      "path": "validation/reference/figures/spatial_spectra.pdf",
+      "bytes": 40723,
+      "sha256": "cfd720af94adefbad03074b878f0663dd77063f5e31d7758f6524bb2d39e62c5"
+    }
+  ],
+  "reference_tables": [
+    {
+      "label": "tab:q4_comparison",
+      "file": "validation/reference/manuscript_tables/tab_q4_comparison.tex",
+      "source": "revision_correspondence.tex"
+    },
+    {
+      "label": "tab:hardware_settings",
+      "file": "validation/reference/manuscript_tables/tab_hardware_settings.tex",
+      "source": "revision_hardware.tex"
+    },
+    {
+      "label": "tab:configurations",
+      "file": "validation/reference/manuscript_tables/tab_configurations.tex",
+      "source": "revision_hardware.tex"
+    },
+    {
+      "label": "tab:sim_settings",
+      "file": "validation/reference/manuscript_tables/tab_sim_settings.tex",
+      "source": "revision_simulation.tex"
+    },
+    {
+      "label": "tab:sim_layouts",
+      "file": "validation/reference/manuscript_tables/tab_sim_layouts.tex",
+      "source": "revision_simulation.tex"
+    },
+    {
+      "label": "tab:ablation",
+      "file": "validation/reference/manuscript_tables/tab_ablation.tex",
+      "source": "ablation.tex"
+    },
+    {
+      "label": "tab:baseline",
+      "file": "validation/reference/manuscript_tables/tab_baseline.tex",
+      "source": "baseline.tex"
+    },
+    {
+      "label": "tab:groups",
+      "file": "validation/reference/manuscript_tables/tab_groups.tex",
+      "source": "groups.tex"
+    },
+    {
+      "label": "tab:stability",
+      "file": "validation/reference/manuscript_tables/tab_stability.tex",
+      "source": "stability.tex"
+    }
+  ]
+}

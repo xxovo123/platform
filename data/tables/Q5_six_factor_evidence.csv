@@ -1,7 +1,7 @@
-﻿factor,source,complete,interpretation_scope
+factor,source,complete,interpretation_scope
 frequency_points,Q5_frequency_points; Q5_factor_comparisons.csv,True,fixed 500 MHz span; frequency spacing changes
 snapshots,Q5_snapshots; E4_A; E4_B,True,same clean prefix; observation duration and motion span change
 channels,Q5_channels; Q5_factor_comparisons.csv,True,channel subset changes aperture and geometry
 digital_bandwidth,Q5_digital_bandwidth_F5; Q5_digital_bandwidth_F9,True,digital postprocessing subbands; unchanged physical RF bandwidth
-target_spacing,E2_A; E2_B; controlled_conditions.csv,True,"transverse, radial, oblique evaluated separately"
+target_spacing,spacing_revision/conditions.json; spacing_revision/spectral_reference.json,True,24 FDTD conditions; truth-referenced spectral correspondence before final selection
 FB,Q5_FB; Q5_factor_comparisons.csv,True,existing processing switch ablation; primary method remains JSF-MUSIC

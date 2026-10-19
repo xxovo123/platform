@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Hardware acquisition and reference JSF-MUSIC settings.}
+\label{tab:hardware_settings}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{.49\columnwidth}p{.45\columnwidth}}
+\hline
+Parameter & Value \\
+\hline
+Carrier $f_c$; bandwidth $B$ & 7.9872~GHz; 500~MHz \\
+Raw CIR; tap interval $T_s$ & 32 complex taps; 1~ns \\
+FFT size $N_{\rm FFT}$; frequencies $F$ & 32; 17 \\
+Selected channels $C$; snapshots $L$ & 4; 128 \\
+Snapshot matrix; covariance size & $68\times128$; $68\times68$ \\
+Background coefficient $\beta$ & 0.25 \\
+Search region $\Omega$ (m) & $[-2.2,2.2]\times[-4.2,-0.55]$ \\
+Grid step $\Delta$; loading $\epsilon$ & 0.05~m; $10^{-5}$ \\
+Peak fraction $\eta$; separation $d_{\min}$ & 0.30; 0.10~m \\
+Peak neighborhood; plateau connectivity & $3\times3$; eight-neighbor \\
+Target count $K$ & Supplied, 1--3 \\
+\hline
+\end{tabular}
+\end{table}

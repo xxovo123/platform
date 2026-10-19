@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "reference_file": "preprocessing_reference.npz",
+  "reference_file_sha256": "40783a4a804ba62bde87564cdc6991bbf7989594770be2e0d988915d1ef519aa",
+  "n_segments": 205,
+  "array_keys": "exact segment_id values from data/raw/index.json",
+  "array_shape": [
+    128,
+    68
+  ],
+  "array_dtype": "complex128",
+  "feature_order": "frequency-major then channel (index = f*C + ch)",
+  "fingerprint_file": "preprocessing_verification.json",
+  "fingerprint_file_sha256": "1444b94a0ea9234438ddec1089bac85531bd3489bf3659124ecf81edec2223a0",
+  "original_fingerprints_matched": 205,
+  "provenance": "Each array is byte-identical to the existing X_sha256 in preprocessing_verification.json. No original fingerprint or experimental result was updated.",
+  "export_environment": {
+    "system": "Windows",
+    "python": "3.13.3",
+    "numpy": "2.5.3"
+  },
+  "cross_platform_comparison": {
+    "max_abs_difference": 1e-12,
+    "rtol": 0.0,
+    "finite_required": true
+  },
+  "estimator_executed": false,
+  "field_solver_executed": false
+}

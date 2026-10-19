@@ -67,7 +67,7 @@ def verify():
                 if check[key]!=r[key]:raise RuntimeError('Saved metric mismatch: '+r['task']+' '+key)
             if not math.isclose(check['sse_m2'],r['sse_m2'],abs_tol=1e-11,rel_tol=1e-11):
                 raise RuntimeError('Saved SSE mismatch: '+r['task'])
-    if total!=24150:raise RuntimeError('Formal row count is not 24150')
+    if total!=16500:raise RuntimeError('Published non-spacing formal row count is not 16500')
     hardware=ROOT/'data/hardware/index.json'
     hardware_report=None
     if hardware.exists():
@@ -83,17 +83,17 @@ def verify():
                 if z['raw_cir'].shape!=(128,8,32):raise RuntimeError('Invalid hardware raw CIR shape')
         hardware_report={'raw_segments':len(entries),'by_environment':doc['by_environment'],
                          'shape':[128,8,32],'all_segment_hashes_match':True}
-    report={'pass':True,'files_hashed':len(manifest['files']),'controlled_fdtd_caches':14,
-            'analytic_caches':29,'formal_rows':total,'rows_by_run':counts,
+    report={'pass':True,'files_hashed':len(manifest['files']),'controlled_fdtd_caches':sum(r['layer']=='B' for r in index),
+            'analytic_caches':sum(r['layer']=='A' for r in index),'formal_rows':total,'rows_by_run':counts,
             'numerical_source_fingerprint':actual['aggregate'],'hardware':hardware_report,
             'new_fdtd_solves':0,'estimator_runs':0}
     print(json.dumps(report,indent=2))
     return report
 
-def tables(out):
+def tables(out,runs_root=None):
     out.mkdir(parents=True,exist_ok=True)
     total=0
-    for run in sorted((ROOT/'data/results/runs').iterdir()):
+    for run in sorted((runs_root or ROOT/'data/results/runs').iterdir()):
         family=json.loads((run/'config.json').read_text())['task']
         groups=defaultdict(list)
         for row in records(run):groups[row['task']].append(row)
@@ -149,61 +149,71 @@ def replay(args):
             'new_fdtd_solves':0,'estimator_runs':1},indent=2))
     if not ok:raise RuntimeError('Replayed predictions differ from the saved trial')
 
-def figures(out):
+def figures(out,table_dir=None,spacing_results=None):
+    import numpy as np
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    plt.rcParams.update({'font.family':'DejaVu Serif','font.size':8,'pdf.fonttype':42})
+    plt.rcParams.update({'font.family':'DejaVu Serif','font.size':8,'axes.titlesize':8,
+        'axes.labelsize':8,'legend.fontsize':7,'xtick.labelsize':7,'ytick.labelsize':7,
+        'lines.linewidth':1.25,'lines.markersize':3.5,'pdf.fonttype':42,'ps.fonttype':42})
     out.mkdir(parents=True,exist_ok=True)
     colors=['#0072B2','#D55E00','#009E73','#CC79A7','#6B5B00'];marks=['o','s','^','D','v']
     fig,axs=plt.subplots(2,2,figsize=(7.05,4.1),layout='constrained')
     for col,family in enumerate(['E1_A','E1_B']):
-        rows=csv_rows(ROOT/'data/tables/manuscript'/(family+'.csv'))
+        rows=csv_rows((table_dir or ROOT/'data/tables/manuscript')/(family+'.csv'))
+        for row in rows:
+            row.setdefault('rmse_pooled_m',row.get('position_rmse_m'))
+            row.setdefault('dr',row.get('DR'))
         for i,layout in enumerate(['S1','S2','S3','S4','S5']):
             group=sorted([r for r in rows if r['layout']==layout],key=lambda r:float(r['snr_expected_db']))
             x=[float(r['snr_expected_db']) for r in group]
-            axs[0,col].plot(x,[float(r['rmse_pooled_m']) for r in group],marker=marks[i],color=colors[i],label=layout)
-            axs[1,col].plot(x,[100*float(r['dr']) for r in group],marker=marks[i],color=colors[i])
-        axs[0,col].set(title=['Parametric signal model','FDTD'][col],ylabel='Position RMSE (m)');axs[0,col].legend(ncol=3)
-        axs[1,col].set(xlabel='Expected CIR SNR (dB)',ylabel='Detection rate (%)',ylim=(-3,103))
-    for ax in axs.flat:ax.grid(True,ls='--',alpha=.4)
+            axs[0,col].plot(x,[float(r['rmse_pooled_m']) for r in group],marker=marks[i],color=colors[i],label=layout,zorder=3 if i==0 else 2)
+            axs[1,col].plot(x,[100*float(r['dr']) for r in group],marker=marks[i],color=colors[i],zorder=3 if i==0 else 2)
+        axs[0,col].set(title=['(a) Parametric signal-model simulation','(b) FDTD simulation'][col],ylabel='Position RMSE (m)');axs[0,col].legend(ncol=3)
+        axs[1,col].set(title=['(c) Parametric signal-model simulation','(d) FDTD simulation'][col],xlabel='CIR SNR (dB)',ylabel='Detection rate (%)',ylim=(-3,103))
+        for ax in axs[:,col]:ax.set_xticks(np.arange(-10,31,5)+OFFSET)
+    for ax in axs.flat:ax.grid(True,ls='--',lw=.45,alpha=.4)
     save_figure(fig,out,'simulation_snr')
-    fig,axs=plt.subplots(1,2,figsize=(7.05,2.3),layout='constrained')
-    for col,family in enumerate(['E2_A','E2_B']):
-        rows=csv_rows(ROOT/'data/tables/manuscript'/(family+'.csv'))
-        for i,direction in enumerate(['transverse','radial','oblique']):
-            group=sorted([r for r in rows if r['direction']==direction and float(r['snr_db'])==10],key=lambda r:float(r['d_nominal_m']))
-            axs[col].plot([float(r['d_nominal_m']) for r in group],[100*float(r['resolution_success_rate']) for r in group],marker=marks[i],color=colors[i],label=direction)
-        axs[col].set(title=['Parametric signal model','FDTD'][col],xlabel='Separation (m)',ylabel='Resolved trials (%)',ylim=(-3,103));axs[col].legend();axs[col].grid(True,ls='--',alpha=.4)
-    save_figure(fig,out,'simulation_separation')
-    fig,axs=plt.subplots(1,2,figsize=(7.05,2.3),layout='constrained')
-    rows=csv_rows(ROOT/'data/tables/manuscript/E4_B.csv')
+    from spacing_reproduce import figures as spacing_figures
+    with plt.rc_context(plt.rcParamsDefault):spacing_figures(out,spacing_results)
+    fig,axs=plt.subplots(1,2,figsize=(7.05,2.35),layout='constrained')
+    rows=csv_rows((table_dir or ROOT/'data/tables/manuscript')/'E4_B.csv')
+    for row in rows:
+        row.setdefault('rmse_pooled_m',row.get('position_rmse_m'))
+        row.setdefault('dr',row.get('DR'))
+        row.setdefault('snr_db',row.get('snr_parameter_db'))
     for i,snr in enumerate([0,10,20]):
         group=sorted([r for r in rows if float(r['snr_db'])==snr],key=lambda r:int(r['L']))
         x=[int(r['L']) for r in group];label=f'{snr+OFFSET:.2f} dB'
         axs[0].plot(x,[float(r['rmse_pooled_m']) for r in group],marker=marks[i],color=colors[i],label=label)
         axs[1].plot(x,[100*float(r['dr']) for r in group],marker=marks[i],color=colors[i],label=label)
-    axs[0].set(ylabel='Position RMSE (m)');axs[1].set(ylabel='Detection rate (%)',ylim=(-3,103))
-    for ax in axs:ax.set(xlabel='Snapshots');ax.legend();ax.grid(True,ls='--',alpha=.4)
+    axs[0].set(ylabel='Position RMSE (m)',title='(a) Localization error')
+    axs[1].set(ylabel='Detection rate (%)',title='(b) Target recovery',ylim=(-3,103));axs[0].legend()
+    for ax in axs:ax.set(xlabel='Slow-time snapshots',xticks=[10,32,64,128]);ax.grid(True,ls='--',lw=.45,alpha=.4)
     save_figure(fig,out,'simulation_snapshots')
     print(json.dumps({'figures':3,'output':str(out),'estimator_runs':0,'new_fdtd_solves':0}))
 
 def save_figure(fig,out,name):
     import matplotlib.pyplot as plt
-    fig.savefig(out/(name+'.pdf'),bbox_inches='tight');fig.savefig(out/(name+'.png'),dpi=200,bbox_inches='tight');plt.close(fig)
+    fig.savefig(out/(name+'.pdf'),bbox_inches='tight',pad_inches=.04);fig.savefig(out/(name+'.png'),dpi=170,bbox_inches='tight',pad_inches=.04);plt.close(fig)
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__);sub=ap.add_subparsers(dest='action',required=True)
     sub.add_parser('verify')
     for action in ['tables','figures']:
         p=sub.add_parser(action);p.add_argument('--out',type=Path,default=ROOT/'outputs'/action)
+        if action=='tables':p.add_argument('--runs-root',type=Path)
+        else:
+            p.add_argument('--tables',type=Path)
+            p.add_argument('--spacing-results',type=Path)
     p=sub.add_parser('replay');p.add_argument('--run',default='E1_B_formal350_20260930')
     p.add_argument('--layout',default='S2');p.add_argument('--snr-parameter-db',type=float,default=10)
     p.add_argument('--snapshots',type=int,default=128);p.add_argument('--trial',type=int,default=0)
     args=ap.parse_args()
     if args.action=='verify':verify()
-    elif args.action=='tables':tables(args.out.resolve())
-    elif args.action=='figures':figures(args.out.resolve())
+    elif args.action=='tables':tables(args.out.resolve(),args.runs_root)
+    elif args.action=='figures':figures(args.out.resolve(),args.tables,args.spacing_results)
     else:replay(args)
 
 if __name__=='__main__':main()

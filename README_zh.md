@@ -1,218 +1,39 @@
-# 单锚 IR-UWB 雷达：FDTD 仿真、CIR 信号处理与 JSF-MUSIC 定位
+# 单锚IR-UWB雷达论文复现仓库
 
-本仓库对应论文《Joint Range-Azimuth Estimation for Single-Anchor IR-UWB Radar: Simulation, Algorithm, and Experimental Validation》的大修版本。
+**完整复现必须在Linux环境运行。** 根据 `environment.yml` 创建独立Conda环境，原生Windows不是完整流程的支持环境。当前标识为 `revision-20261019-candidate`，压缩包名为 `platform_validation_20261019.zip`。本轮问题已修复，未重新复验；原包条件数值复现通过，证据范围见[验证状态](docs/validation_status_20261019.md)。
 
-研究对象为单锚脉冲无线电超宽带（impulse radio ultra-wideband，IR-UWB）雷达的多目标距离—方位联合估计。
+英文[README](README.md)说明平台与全部命令；[Linux验证指南](docs/linux_validation.md)规定环境、顺序、比对对象、容差和报告；[图表对应表](docs/manuscript_reproduction.md)逐项映射图1–8及表I–IX。
 
-平台将时域有限差分（finite-difference time-domain，FDTD）电磁仿真、信道冲激响应（channel impulse response，CIR）处理和联合空频多重信号分类（joint space–frequency multiple signal classification，JSF-MUSIC）定位连成一条完整链路：先计算多个目标共同散射的接收场，再生成复数 CIR，最后利用 CIR 的频率信息和发射—目标—接收几何得到目标位置、距离及方位角。快时间快速傅里叶变换（fast Fourier transform，FFT）把 CIR 抽头转换为联合估计所需的频率样本。
+- 硬件原始数据：完整205段、31次记录、15种配置、338个目标实例；连续EMA的段前状态、标定和真值齐全。
+- 硬件运行：6种方法和20组消融，共205×26=5330次；稳定性使用固定30组×4段=120段。
+- 噪声/快照：4个非间距实验族、150条件、16500条记录；E4_A为保留的参数化参考，正文图5使用FDTD E4_B。
+- 图4：仅FDTD，3方向×8间距×100次=24条件/2400次；间距0.15、0.20、0.25、0.30、0.40、0.50、0.75、1.00 m，搜索网格0.05 m。
+- 对应实验：15份FDTD CIR、205份实测谱、300次参数化参照及4100条参照—实测比较。
+- 参数化目标间距实验不在本包。正文噪声定位和对应实验的参数化模型仍保留。
 
-发布内容为本次大修实际使用的仿真代码、精选原始场样例、全部小体积正式仿真 CIR、完整正式仿真结果，以及论文使用的全部 **205 段硬件原始 CIR**。硬件 CIR 来自采集文件，保留背景扣除、截窗、FFT 和相位校准之前的复数抽头。本轮另提供硬件处理与复现入口、连续EMA恢复状态、六方法与20项消融的代码及冻结核验证据；非仿真图示、已匿名照片与可重生成源见 `manuscript_assets/`。
-
-## 文档导航
-
-| 文档 | 主要内容 |
-|---|---|
-| **[data/README.md：数据总说明](data/README.md)** | 仿真 CIR、原始场、实验记录、空间谱、设置与统计表的目录关系、数组维度、单位及读取示例 |
-| **[data/hardware/README.md：硬件原始 CIR](data/hardware/README.md)** | 完整 205 段原始复数采样、八路通道映射、目标真值、录制关联及估计时间字段 |
-| **[hardware_reproduction/README.md：硬件复现](hardware_reproduction/README.md)** | 原始CIR与EMA恢复、六方法和20项消融、冻结结果与复算命令 |
-| [docs/manuscript_reproduction.md：论文复现导航](docs/manuscript_reproduction.md) | 论文图表与复现入口总索引 |
-| [docs/hardware_reproduction_map.md：硬件图表映射](docs/hardware_reproduction_map.md) | 硬件表格数字、原图、核验图、照片和静态示意的区别 |
-| [spacing_revision/README.md：间距实验补充](spacing_revision/README.md) | 本轮间距实验入口与结果说明 |
-| [manuscript_assets/README.md：非仿真图示](manuscript_assets/README.md) | 原流程图、阵列示意、已匿名照片和重生成代码 |
-| [README.md：英文平台介绍](README.md) | FDTD 模型、CIR 处理和 JSF-MUSIC 原理的英文说明 |
-
-本页先解释平台怎样工作，两个数据说明文档进一步回答具体文件怎样读取、不同数组分别代表什么。
-
-## 完整处理链
-
-```text
-目标场景、收发坐标和激励脉冲
-  → FDTD 多目标共同散射求解
-  → 接收场记录
-  → 背景处理、复基带转换、抗混叠采样、参考相关
-  → 复数 CIR
-  → 有限抽头窗、加噪、快时间 FFT
-  → 联合通道—频率快照矩阵
-  → 协方差与噪声子空间
-  → 对应收发几何的 MUSIC 位置谱
-  → 谱峰坐标、距离及方位
-  → 目标配对、定位误差与检出统计
-```
-
-受控参数化模型可以直接生成数值 CIR，再进入同一估计和评价链。仿真—实测对应实验使用实测阵列几何，在相同网格上比较仿真与实测位置谱。芯片采集的原始 CIR 单独保存，读取方法和采集参数见硬件数据说明。
-
-## FDTD 仿真怎样进行
-
-### 场景、目标与场求解
-
-求解器使用 Meep，在二维 x–y 域内计算 `Ez` 电场分量。受控场景包含位于原点的一个发射机和四个接收机。目标是具有标称坐标、状态间小幅有界运动的金属圆柱散射体。多个目标同时置于同一计算场景，一次求解得到它们共同作用下的接收场。
-
-每个慢时间状态内，目标在一次射频瞬态求解期间保持固定；切换到下一状态时更新目标坐标并重新求解。128 个状态因此对应实际状态序列。无目标空场另行求解，供受控实验进行背景相减。
-
-计算域边界使用完全匹配层（perfectly matched layer，PML）吸收向外传播的波。域范围根据收发坐标、目标位置、运动范围及边界裕量确定，并随场景保存。圆柱半径约为 0.0563 m；人体实测信号保存在独立硬件数据目录。
-
-源脉冲为 Blackman–Harris 窗调制载波的时间导数，持续时间取 `2/B`，在 500 MHz 标称带宽下为 4 ns。激励与接收相关采用同一脉冲定义。Meep 长度单位为 1 m，时间单位为 `1 m/c0`（`c0` 为真空光速），20 个时间单位约为 66.7 ns。
-
-| 受控 FDTD 设置 | 实际取值 |
-|---|---|
-| 载频；标称带宽 | 7.9872 GHz；500 MHz |
-| 发射坐标 | `(0,0,0)` m |
-| 接收机 x 坐标 | −0.038、−0.019、0、0.019 m；y=z=0 |
-| 空间分辨率；Courant 系数 | 350 cells/m；0.5 |
-| 求解时长；吸收层厚度 | 20 Meep 时间单位；两个载波波长 |
-| 目标步长标准差；位移边界 | 0.002 m；0.01 m |
-| 保留状态数 | 128 |
-
-仿真—实测对应实验使用实测双发射阵列几何的水平投影和所选四个收发通道，背景采用系数为 0.25 的指数移动平均（exponential moving average，EMA），先求解 32 个启动状态，再保留 128 个状态。受控实验使用空场相减，两类背景和几何设置分别随数据记录。
-
-### 接收场怎样转换为 CIR
-
-FDTD 输出按求解器步长采样的实数通带波形。数值接收链依次执行：
-
-1. **背景处理**：受控实验从目标场中减去相同接收位置的无目标空场。
-2. **复基带转换**：Hilbert 变换形成解析信号，再乘 `exp(-j*2*pi*fc*t)` 下变频。
-3. **抗混叠与采样**：显式限制基带频率，按 CIR 所需时刻重采样；参考脉冲走相同转换及采样链。
-4. **参考相关**：与共轭时间反转的参考作相关，并扣除已知滤波延迟，使输出对应传播时延。
-5. **CIR 保存**：每个通道、每个状态保留 32 个复数抽头；对应实验另外施加状态域 EMA 并丢弃启动状态。
-
-抽头间隔为 1 ns、采样率为 1 GHz、抗混叠截止为 400 MHz。该截止属于接收处理设置；后续算法使用的频点范围是载频两侧各 250 MHz。实际参考脉冲频谱保存在 `data/settings/source_pulse_spectrum.*`。
-
-实现见 [solver.py](src/fdtd/solver.py)、[pulse.py](src/fdtd/pulse.py)、[rf_chain.py](src/fdtd/rf_chain.py) 和 [api.py](src/fdtd/api.py)。场景参数、轨迹及数组关联见 **[data/README.md](data/README.md)**。
-
-## CIR 信号代表什么
-
-复数 CIR 的实部和虚部分别表示某收发通道沿传播时延采样的同相与正交响应。三个维度有不同作用：
-
-| 维度 | 含义 |
-|---|---|
-| 快时间／抽头 | 一次 CIR 内沿传播时延的采样，用于频率变换 |
-| 收发通道 | 一个物理发射—接收组合，通道相位差提供空间信息 |
-| 慢时间／快照 | 连续观测或仿真状态，用于构造样本协方差 |
-
-受控仿真 CIR 为 `[L,C,T]=[128,4,32]`；芯片原始硬件 CIR 为 `[128,8,32]`，保留全部八个收发通道和原始整数同相／正交（I/Q）幅值。论文四通道索引为 `[2,3,6,7]`。两种信号的来源与幅值约定分别在数据文档说明。
-
-受控输入形成过程为：
-
-```text
-32 抽头数值 CIR             [L,C,32]
-保留原抽头 [0:30]           [L,C,30]
-在 CIR 上添加复数噪声        [L,C,30]
-32 点快时间 FFT             [L,C,32]
-选择 17 个带内频点           [L,C,F]
-按频率优先、通道其次展开      [L,F*C]
-```
-
-物理频率由 `fc+np.fft.fftfreq(32,d=1e-9)` 给出。载频两侧各 250 MHz 内共有 17 个频点，保留原 FFT 索引顺序，导向向量使用相对应的物理频率。`X` 每行是一个快照，特征索引为 `f*C+q`。参考配置得到 `[128,68]` 的快照矩阵及 `[68,68]` 的协方差。论文以快照为列书写 `[68,L]`，代码以快照为行存储。
-
-加噪位置在背景处理后、FFT 前的有限 CIR 窗中。固定 clean ID 与 trial 的噪声种子可追溯；改变信噪比时缩放同一噪声实现，改变快照数时读取同一序列的真实前缀。
-
-硬件目录保存芯片原始抽头；元数据另记录历史评估的连续 EMA、硬件抽头窗 `[2:32]` 及通道校准。上述 `[0:30]` 窗属于受控仿真。具体字段和 NumPy 读取示例见 **[data/README.md](data/README.md)** 与 **[data/hardware/README.md](data/hardware/README.md)**。
-
-## JSF-MUSIC 怎样完成定位
-
-JSF-MUSIC 使用成熟的 MUSIC 子空间准则，将 CIR 的频率信息和通道空间信息共同用于位置估计。频率相关相位反映传播时延，通道相位差反映空间方向，收发坐标决定候选位置的预期相位模式。
-
-### 协方差与噪声子空间
-
-对 `[L,M]` 的观测矩阵，`M=F*C`，行快照实现计算：
-
-```python
-R = X.conj().T @ X / L
-```
-
-参考设置随后进行前后向协方差平均，加上 `epsilon*trace(R)*I` 对角加载，参考系数为 `epsilon=1e-5`，再作特征值分解。目标数量 `K` 已给定，按特征值升序取最小 `M-K` 个对应向量组成 `[M,M-K]` 的噪声子空间 `En`。FFT、协方差、加载及子空间分解采用标准处理步骤。
-
-### 收发几何与位置谱
-
-候选位置 `p=(x,y,0)` 对应通道 q 的时延和导向元素为：
-
-```text
-tau_q(p) = (||p-tx_q|| + ||p-rx_q||)/v + tau_sys
-a_fq(p)  = exp(-j*2*pi*f_f*tau_q(p))
-```
-
-`tx_q` 与 `rx_q` 分别是该通道的物理收发坐标，`v` 为传播速度，`tau_sys` 为配置的系统延迟。导向元素采用与 `X` 相同的频率—通道顺序展开，并使用单位有效响应的相位模型。
-
-按代码的行向量约定，MUSIC 位置谱为：
-
-```text
-P(p) = 1 / (Re{a(p) En Enᴴ a(p)ᴴ} + delta)
-```
-
-导向向量在噪声子空间上的投影越小，位置谱响应越大；分母数值下限 `delta` 为 `1e-12`。算法扫描有效坐标网格，再按照 `3×3` 局部邻域、八连通平台处理、0.30 相对谱阈值及 0.10 m 最小峰间距取峰。最多返回 `K` 个估计，未通过取峰规则时可以返回更少。
-
-### 距离、方位及评价
-
-谱峰给出 `(x,y)`，随后转换为：
-
-```text
-距离 r = sqrt(x*x+y*y)
-方位 θ = atan2(x,-y)          # 报告时转换为度
-```
-
-受控网格步长为 5 cm，范围为 `x∈[-2.2,2.2] m`、`y∈[-3.2,-0.55] m`；实测几何对应实验把 y 范围延伸至 `[-4.2,-0.55] m`。实验给定目标数，评价定位及目标恢复。
-
-算法实现见 [estimate.py](src/exec2/jsfsim/estimate.py)、[q6_methods_this_method.py](src/vendor/common/q6_methods_this_method.py)、[case_build.py](src/adapter/case_build.py) 和 [peaks.py](src/vendor/knownk_eval/peaks.py)。真值坐标单独存放，只用于评价。
-
-## 参数化仿真与实验内容
-
-受控参数化模型按收发传播时延生成频率响应，采用单位路径幅度及快照间独立均匀目标相位，在 IFFT 前施加 500 MHz 频带掩膜生成 CIR，随后进入与 FDTD 一致的窗、加噪、FFT 和定位后端。
-
-对应实验中的参数化参考采用平面波阵列相位模型、雷达参考时延和单位有效响应，直接生成频域快照；每个配置使用 20 个固定种子。它是信号生成模型对照，不是运行 Deng 定位算法。
-
-| 实验 | 研究内容 |
-|---|---|
-| 布局与信噪比 | 单目标、等距离双目标、等方位双目标、斜向双目标与三目标的误差及恢复率 |
-| 目标间距 | 横向、径向和斜向间距对准确双目标分辨的影响 |
-| 快照数量 | 同一真实序列的 10、16、32、64、128 快照前缀 |
-| 仿真—实测对应 | 15 个配置和全部 205 段的位置谱及谱峰对应 |
-| 原始硬件数据 | 本文使用的完整原始 CIR、目标真值和采集参数 |
-
-六组受控实验共保存 24,150 条正式记录。定位误差采用一对一配对，检出采用另一次 0.30 m 门限匹配；准确双目标分辨使用 `min(0.10 m,间距/3)` 的更严格门限。分组数量、记录字段、统计表与信噪比换算见 **[data/README.md](data/README.md)**。
-
-## 目录
-
-| 目录 | 用途 |
-|---|---|
-| `src/` | 远程正式仿真源码及其数值依赖 |
-| `data/cache/fdtd/` | 14 组正式 FDTD CIR，各有 128 个真实状态 |
-| `data/cache/analytic/` | 29 组解析模型 CIR |
-| `data/field_samples/` | S1、S2、S5 的空场和初始目标状态，共 6 个原始场样例 |
-| `data/results/runs/` | 六组实验的全部 24,150 条正式记录 |
-| `data/q4/` | 仿真—实测对应数据、已保存谱及参数化对照 |
-| `data/hardware/` | 完整 205 段硬件原始 CIR、段索引、真值及采集参数 |
-| `data/settings/` | 正式协议、环境及源脉冲参考 |
-| `data/tables/` | 正式统计及采用论文 SNR 标注的表格 |
-
-数组维度、单位、文件关联和读取例子见 [data/README.md](data/README.md)；硬件数据另见 [data/hardware/README.md](data/hardware/README.md)。
-
-## 使用
-
-在仓库根目录安装 `requirements.txt` 中的依赖后：
+收到新ZIP后，在全新工作目录中解压：
 
 ```bash
-python reproduce.py verify
-python reproduce.py tables --out outputs/tables
-python reproduce.py figures --out outputs/figures
-python reproduce.py replay --layout S2
-python q4_reproduce.py summarize
-python q4_reproduce.py replay --config G-420 --trial 0
+unzip -O UTF-8 platform_validation_20261019.zip
+cd platform
 ```
 
-依次完成源文件及数据核验、从保存预测重算统计、再生三幅仿真曲线、复现一条正式定位试验、重算仿真—实测对应汇总，以及复现一个固定种子的参数化样例。这些命令不启动 FDTD 求解；输出与原数据分开保存。
+若 `unzip` 不支持 `-O`，改用 `python3 -m zipfile -e platform_validation_20261019.zip .`，再进入 `platform/`。保留UTF-8文件名；旧验收中裸 `unzip` 曾导致中文文件名乱码。
 
-需要从头生成 FDTD 时，在 Linux 上按 `environment.yml` 建立 Meep 环境，再执行：
+从仓库根目录按[Linux验证指南](docs/linux_validation.md)创建并激活新环境。Conda包精确固定为服务器此前条件运行实际使用的 **`pymeep=1.30.1=nompi_py312hfc0f314_104`**，其模块自报 **`meep.__version__=1.30.0`**，两种版本号须分别记录；Python **3.12.11**、NumPy **2.3.0**保持不变。设置单线程BLAS后执行：
 
 ```bash
-python regenerate_fdtd.py --clean-id cln_de385a3b2982 --out outputs/new_fdtd_S2 --workers 1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+export MPLBACKEND=Agg PYTHONDONTWRITEBYTECODE=1
+python validation/run_validation.py --mode saved --out generated_validation/saved
+python validation/run_validation.py --mode replay --out generated_validation/replay --workers 4
+python validation/regenerate_inputs.py --out generated_validation/fields --workers 4
+python validation/run_validation.py --mode replay --out generated_validation/from_fields --workers 4 \
+  --generated-index generated_validation/fields/generated_index.json
 ```
 
-完整生成会进行实际场求解。`--max-states` 可用于缩短演示，但不能把其输出当作论文的完整 128 状态数据。
+第一步重算已有记录与图表；第二步从发布的CIR重跑全部估计器；第三步新生成5份参数化CIR和44份FDTD序列；第四步强制用新仿真输入重跑下游。四步分别报告，重画图不能算实验重跑，CIR重放不能算电磁场求解。断点恢复用 `--resume`，不得导入旧科研缓存。保留失败项、日志和环境，不能为通过验收调阈值、换参考结果或删条件。
 
-## 对照口径
+硬件预检使用 `hardware_reproduction/data/preprocessing_reference.npz` 中冻结的全部205段FFT数组。归档时已确认205个数组均与既有 `X_sha256` 逐字节一致，此步骤未执行估计器。预检逐元素比较使用 `max_abs<=1e-12`、`rtol=0`。现有raw文件、连续EMA状态及source哈希仍严格核对，原 `X_hash` 保留为诊断。该修复不改变论文指标或估计器。
 
-原始运行记录的 `snr_db` 是生成参数，论文使用的期望 CIR 信噪比为它加 `3.0102999566 dB`；实际有限样本信噪比另在每次记录中保存。保留这一换算及原实现，才能对上论文曲线和固定种子结果。
-
-定位 RMSE 对已配对误差池化计算，不用距离门限删去大误差。漏出的真值不进入 RMSE；检出率采用另一次 0.30 m 门限匹配。噪声试验共享各自的无噪序列，快照试验使用同一序列的真实前缀。
-
-本次发布按要求精选了大型中间场数据，未复制远程全部场缓存；小体积正式 CIR 和数值结果完整保留。硬件数据完整覆盖论文的205段评估集，室内103段、室外102段；`hardware_reproduction/` 提供从raw与连续EMA状态出发的六方法和20项消融执行入口、冻结结果及已核验证据。保存预测的统计复算与估计器完整重跑属于不同验证层级，命令及当前覆盖范围见硬件README。
+图4衡量最终取峰前的真值辅助双峰对应率，不是最终定位成功率；原输出与谱峰诊断分别保存。预期数值见 [expected_results.json](validation/expected_results.json)。PDF不要求跨环境字节一致，但8张图须与 `validation/reference/figures/` 核对坐标、数据、标记、图例和裁切。照片及图1为静态源文件，其余示意图有生成代码。

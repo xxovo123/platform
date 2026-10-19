@@ -2670,7 +2670,10 @@
     }
   ],
   "modified_after_copy": [
-    "README.md"
+    "README.md",
+    "docs/B1_B2_适配记录.md",
+    "reproduce_hardware.py",
+    "source_manifest.json"
   ],
   "retention_policy": "Keep all raw CIR, restored EMA state, frozen predictions, numerical outputs and per-run replay comparison; omit regenerated full replay diagnostics, smoke duplicates and caches."
 }

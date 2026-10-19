@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Comparison of adapted localization implementations on the 205-segment evaluation dataset with supplied target counts.}
+\label{tab:baseline}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrr}
+\hline
+ & \multicolumn{3}{c}{RMSE $\downarrow$} & & & & \\ Method & Position (m) & Range (m) & Azimuth ($^\circ$) & DR (\%) $\uparrow$ & FN $\downarrow$ & FP $\downarrow$ & Pairs \\
+\hline
+JSF-MUSIC & 0.1790 & \textbf{0.0687} & 6.1479 & \textbf{93.20} & \textbf{23} & 19 & 334 \\
+Deng et al.\ \cite{deng2023lowcomplexity} & \textbf{0.1678} & 0.0698 & \textbf{5.5386} & \textbf{93.20} & \textbf{23} & \textbf{17} & 332 \\
+Kakouche et al.\ \cite{kakouche2021joint} & 0.4462 & 0.2535 & 14.1358 & 78.70 & 72 & 52 & 318 \\
+JADE \cite{vanderveen1998jade} & 0.2769 & 0.1313 & 9.1854 & 90.83 & 31 & 31 & 338 \\
+Kim et al.\ \cite{kim2015joint} & 0.6316 & 0.4675 & 17.6129 & 68.34 & 107 & 64 & 295 \\
+Traditional 2D MUSIC \cite{wang2014successive} & 0.2411 & 0.0880 & 8.8606 & \textbf{93.20} & \textbf{23} & 20 & 335 \\
+\hline
+\end{tabular}
+\par\smallskip\parbox{0.98\linewidth}{\scriptsize RMSE measures position, range and azimuth errors over assigned pairs; missing outputs do not enter RMSE. Bold marks the best value in each performance column, including ties at the displayed precision. Pairs reports coverage and is not ranked. All baselines use the CIR adaptations described in the text.}
+\end{table*}

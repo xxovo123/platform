@@ -1,0 +1,47 @@
+[
+  {
+    "label": "tab:q4_comparison",
+    "file": "validation/reference/manuscript_tables/tab_q4_comparison.tex",
+    "source": "revision_correspondence.tex"
+  },
+  {
+    "label": "tab:hardware_settings",
+    "file": "validation/reference/manuscript_tables/tab_hardware_settings.tex",
+    "source": "revision_hardware.tex"
+  },
+  {
+    "label": "tab:configurations",
+    "file": "validation/reference/manuscript_tables/tab_configurations.tex",
+    "source": "revision_hardware.tex"
+  },
+  {
+    "label": "tab:sim_settings",
+    "file": "validation/reference/manuscript_tables/tab_sim_settings.tex",
+    "source": "revision_simulation.tex"
+  },
+  {
+    "label": "tab:sim_layouts",
+    "file": "validation/reference/manuscript_tables/tab_sim_layouts.tex",
+    "source": "revision_simulation.tex"
+  },
+  {
+    "label": "tab:ablation",
+    "file": "validation/reference/manuscript_tables/tab_ablation.tex",
+    "source": "ablation.tex"
+  },
+  {
+    "label": "tab:baseline",
+    "file": "validation/reference/manuscript_tables/tab_baseline.tex",
+    "source": "baseline.tex"
+  },
+  {
+    "label": "tab:groups",
+    "file": "validation/reference/manuscript_tables/tab_groups.tex",
+    "source": "groups.tex"
+  },
+  {
+    "label": "tab:stability",
+    "file": "validation/reference/manuscript_tables/tab_stability.tex",
+    "source": "stability.tex"
+  }
+]

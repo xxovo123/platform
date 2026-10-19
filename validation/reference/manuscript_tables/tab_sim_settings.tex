@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Simulation settings, unless varied in a sensitivity study.}
+\label{tab:sim_settings}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{.45\columnwidth}p{.49\columnwidth}}
+\hline
+Parameter & Value \\
+\hline
+Carrier $f_c$; bandwidth $B$ & 7.9872~GHz; 500~MHz \\
+Tap interval $T_s$; FFT size $N_{\rm FFT}$ & 1~ns; 32 \\
+Channels $C$; frequencies $F$; snapshots $L$ & 4; 17; 128 \\
+Search region $\Omega$ (m) & $[-2.2,2.2]\times[-3.2,-0.55]$ \\
+Grid step $\Delta$; loading $\epsilon$ & 0.05~m; $10^{-5}$ \\
+Peak fraction $\eta$; separation $d_{\min}$ & 0.30; 0.10~m \\
+Peak neighborhood; plateau connectivity & $3\times3$; eight-neighbor \\
+Target count $K$ & Supplied, 1--3 \\
+FDTD cylinder radius & 0.0563~m \\
+Motion bound; step standard deviation & 0.01~m; 0.002~m \\
+Spatial resolution; Courant factor & 350 cells/m; 0.5 \\
+Duration; Meep length unit & 20 time units; 1~m \\
+Absorbing-layer thickness & Two carrier wavelengths \\
+\hline
+\end{tabular}
+\end{table}

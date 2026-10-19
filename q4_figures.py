@@ -11,6 +11,8 @@ ROOT=Path(__file__).resolve().parent
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--out',type=Path,default=ROOT/'outputs/q4')
+    ap.add_argument('--spectra',type=Path,default=ROOT/'data/q4/spectra')
+    ap.add_argument('--records',type=Path,default=ROOT/'data/q4/per_window.csv')
     a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
     os.environ.setdefault('MPLCONFIGDIR',str(a.out.resolve()/'mplconfig'))
     import matplotlib
@@ -18,13 +20,13 @@ def main():
     import matplotlib.pyplot as plt
     import matplotlib.patheffects as pe
     plt.rcParams.update({'font.family':'DejaVu Serif','font.size':8,'axes.titlesize':8,'axes.labelsize':8,'legend.fontsize':7,'xtick.labelsize':7,'ytick.labelsize':7,'pdf.fonttype':42})
-    with (ROOT/'data/q4/per_window.csv').open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
+    with a.records.open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
     fig,axs=plt.subplots(3,3,figsize=(7.05,5.5),layout='constrained'); selected=[]
     for i,cfg in enumerate(['G-420','C2-1','C3-1']):
-        files=[ROOT/'data/q4/spectra'/('sim_'+cfg+'.npz')]
+        files=[a.spectra/('sim_'+cfg+'.npz')]
         for env in ['indoor','outdoor']:
             r=min([r for r in rows if r['config_id']==cfg and r['environment']==env],key=lambda r:r['window_id'])
-            files.append(ROOT/'data/q4/spectra'/('uncorrected_'+r['window_id']+'.npz'));selected.append(r)
+            files.append(a.spectra/('uncorrected_'+r['window_id']+'.npz'));selected.append(r)
         for j,p in enumerate(files):
             with np.load(p,allow_pickle=False) as d:
                 ax=axs[i,j];z=d['spectrum']/np.max(d['spectrum'])

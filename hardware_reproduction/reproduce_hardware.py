@@ -35,6 +35,7 @@ import q6_search_profiles
 from knownk_eval import load_protocol, peaks
 PROTOCOL=load_protocol(SOURCE/'大修执行_20260923/01_投稿口径/p0b/protocol/knownk_protocol.json')
 LABELS={'this_method':'JSF-MUSIC','b1_deng':'Deng','b2_kakouche':'Kakouche','c1_jade':'JADE','c3_kim':'Kim','b5_wang_full2d':'Traditional 2D MUSIC'}
+FEATURE_ATOL=1e-12
 
 def read(p):
     return json.loads(Path(p).read_text(encoding='utf-8-sig'))
@@ -200,10 +201,25 @@ def paper_checks(summaries):
             value=s[f]; checks.append({'table':'ablation','method':cid,'field':f,'paper':expected,'recomputed':value,'atol':tol,'pass':abs(value-expected)<=tol})
     return checks
 
-def saved(out):
+def saved(out,replay_input=None):
     entries=dataset(); result_map=read(DATA/'result_map.json'); all_rows=[]; summaries={}
+    fresh=None
+    if replay_input:
+        records=read(replay_input)
+        fresh={(r['method'],r['segment_id']):r for r in records}
+        assert len(fresh)==len(records)==5330
+        assert set(fresh)=={(name,e['segment_id']) for name in result_map for e in entries}
     for name in result_map:
-        rows=frozen_rows(name,entries,result_map); all_rows+=rows; summaries[name]=aggregate(rows)
+        if fresh is None:
+            rows=frozen_rows(name,entries,result_map)
+        else:
+            rows=[]
+            for e in entries:
+                with np.load(DATA/'raw'/e['file'],allow_pickle=False) as z:T=z['truth_xy_m']
+                m=metrics(T,fresh[name,e['segment_id']]['predictions_xy_m'])
+                rows.append({'method':name,'window_id':e['segment_id'],'recording_id':e['recording_id'],
+                    'environment':e['environment'],'config_id':e['config_id'],'K':e['K'],**m})
+        all_rows+=rows; summaries[name]=aggregate(rows)
     table(out/'summary.csv',[{'method':n,**s} for n,s in summaries.items()]); table(out/'per_segment.csv',all_rows)
     groups=[]
     main=[r for r in all_rows if r['method']=='this_method']
@@ -236,29 +252,48 @@ def saved(out):
     assert len(stability)==len(reference)==30 and len(selected)==120
     checks=paper_checks(summaries)
     write(out/'paper_checks.json',checks)
-    result={'scope':'saved predictions -> independent assignments, statistics and hardware plot inputs',
+    result={'scope':'new replay predictions -> statistics' if fresh is not None else 'saved predictions -> independent assignments, statistics and hardware plot inputs',
             'n_prediction_records':len(all_rows),'n_methods_and_configs':len(summaries),'n_stability_groups':30,
             'n_selected_temporal_measurements':120,'stability_max_abs_difference':max(deltas),
             'all_paper_numeric_checks_pass':all(c['pass'] for c in checks),
-            'paper_checks':len(checks),'estimator_rerun':False,'source_snapshot':'data/paper_reference'}
+            'paper_checks':len(checks),'estimator_rerun':fresh is not None,'source_snapshot':'data/paper_reference'}
     write(out/'saved_verification.json',result)
     assert max(deltas)<1e-10 and result['all_paper_numeric_checks_pass'],result
     print(json.dumps(result,ensure_ascii=False),flush=True)
 
 def verify(out):
     entries=dataset(); expected={r['segment_id']:r for r in read(DATA/'preprocessing_verification.json')['checks']}; checks=[]
-    for e in entries:
-        sid=e['segment_id']; X=features(e)
-        checks.append({'segment_id':sid,'raw_hash_pass':sha(DATA/'raw'/e['file'])==e['sha256'],
-                       'X_hash_pass':hashlib.sha256(X.tobytes()).hexdigest()==expected[sid]['X_sha256'],
-                       'state_hash_pass':sha(DATA/'ema_states'/(sid+'.npz'))==expected[sid]['state_sha256']})
+    # Keep the original platform fingerprint as a diagnostic, but compare FFT
+    # results numerically across platforms. The frozen arrays must themselves
+    # match those original fingerprints; never regenerate them during verify.
+    with np.load(DATA/'preprocessing_reference.npz',allow_pickle=False) as references:
+        assert len(references.files)==len(entries) and set(references.files)=={e['segment_id'] for e in entries}, 'FFT reference coverage'
+        assert set(expected)==set(references.files), 'FFT fingerprint coverage'
+        for e in entries:
+            sid=e['segment_id']; X=features(e); reference=references[sid]
+            reference_hash_pass=hashlib.sha256(reference.tobytes()).hexdigest()==expected[sid]['X_sha256']
+            shape_pass=X.shape==reference.shape==(128,68)
+            dtype_pass=X.dtype==reference.dtype==np.dtype('complex128')
+            finite_pass=bool(np.all(np.isfinite(X)) and np.all(np.isfinite(reference)))
+            max_abs_difference=float(np.max(np.abs(X-reference))) if shape_pass and dtype_pass and finite_pass else None
+            numeric_pass=max_abs_difference is not None and max_abs_difference<=FEATURE_ATOL
+            checks.append({'segment_id':sid,'raw_hash_pass':sha(DATA/'raw'/e['file'])==e['sha256'],
+                           'X_hash_pass':hashlib.sha256(X.tobytes()).hexdigest()==expected[sid]['X_sha256'],
+                           'X_reference_hash_pass':reference_hash_pass,'X_shape_pass':shape_pass,
+                           'X_dtype_pass':dtype_pass,'X_finite_pass':finite_pass,
+                           'X_max_abs_difference':max_abs_difference,'X_numeric_pass':numeric_pass,
+                           'state_hash_pass':sha(DATA/'ema_states'/(sid+'.npz'))==expected[sid]['state_sha256']})
     sources=read(ROOT/'source_manifest.json')
     source_checks=[{'file':s['file'],'pass':sha(ROOT/s['file'])==s['sha256']} for s in sources if 'file' in s]
     report={'n_segments':205,'n_recordings':31,'checks':checks,'source_checks':source_checks,
-            'pass':all(all(r[k] for k in ['raw_hash_pass','X_hash_pass','state_hash_pass']) for r in checks) and all(r['pass'] for r in source_checks)}
+            'X_comparison':{'reference':'data/preprocessing_reference.npz','atol':FEATURE_ATOL,'rtol':0.0,
+                            'rule':'max(abs(X - reference)) <= atol; identical shape and dtype; all values finite',
+                            'X_hash_pass_role':'same-build diagnostic only; not the cross-platform acceptance criterion',
+                            'reference_integrity':'exact original X_sha256 for every archived array'},
+            'pass':all(all(r[k] for k in ['raw_hash_pass','state_hash_pass','X_reference_hash_pass','X_numeric_pass']) for r in checks) and all(r['pass'] for r in source_checks)}
     write(out/'verify.json',report)
     assert report['pass']
-    print('Verified 205 raw segments, restored EMA/FFT features and copied source hashes.',flush=True)
+    print('Verified 205 raw segments and EMA-state/source hashes; FFT features agree within absolute tolerance 1e-12 (rtol=0).',flush=True)
 
 def estimate(out,names,limit):
     entries=dataset()
@@ -360,13 +395,14 @@ def main():
     ap.add_argument('--out',type=Path,default=ROOT/'outputs')
     ap.add_argument('--methods',default='this_method',help='comma-separated method IDs; all = 6 methods + 20 ablations')
     ap.add_argument('--limit',type=int)
+    ap.add_argument('--replay-input',type=Path,help='Recompute tables from a complete new 5330-run replay_predictions.json')
     args=ap.parse_args(); args.out=args.out.resolve()
     # This supplement only writes inside itself, protecting originals and the publishing repository.
     assert args.out.is_relative_to(ROOT), 'Output must be inside hardware_reproduction'
     if args.limit is not None and not 1<=args.limit<=205: ap.error('--limit must be 1..205')
     args.out.mkdir(parents=True,exist_ok=True)
     if args.command in ['verify','all-saved']: verify(args.out)
-    if args.command in ['tables','all-saved']: saved(args.out)
+    if args.command in ['tables','all-saved']: saved(args.out,args.replay_input)
     if args.command in ['figures','all-saved']: figures(args.out)
     if args.command=='replay':
         rm=read(DATA/'result_map.json'); names=list(rm) if args.methods=='all' else args.methods.split(',')

@@ -1,30 +1,29 @@
 # Manuscript-to-code and data map
 
-Revision: `revision-20261016`; title: *CIR-Based Joint Range–Azimuth Localization for Single-Anchor IR-UWB Radar: Implementation and Validation*.
+Approved 2026-10-18 manuscript, English 12 pages. **Run the complete workflow on Linux in a new environment from `environment.yml`.** Commands start at repository root. [Full validation guide](linux_validation.md).
 
-Commands below run from the repository root. Install `requirements.txt` for simulation processing and `hardware_reproduction/requirements.txt` for the hardware pipeline. Only field regeneration needs Linux/Meep (`environment.yml`). A complete from-scratch field solve is expensive; cached CIR replay and saved-prediction metric recomputation are separate supported levels of reproduction.
-
-| Manuscript item | Released input and code | Reproduction |
+| Item | Input / implementation | Output and comparison |
 |---|---|---|
-| Fig. 1, receiver/CIR chain; Fig. 2, processing workflow | Static explanatory diagrams and source assets under `manuscript_assets/` | See `docs/hardware_reproduction_map.md`; these are diagrams, not computed experimental observations |
-| Tables I–II, controlled settings/layouts | `src/exec2/jsfsim/protocol.py`, `data/settings/`, `data/results/runs/*/tasks.jsonl` | `python reproduce.py verify`; fixed geometry/parameter declarations, not estimated statistics |
-| Fig. 3, SNR curves | `data/results/runs/E1_*`, `data/tables/`, `reproduce.py` | `python reproduce.py tables --out outputs/tables`; `python reproduce.py figures --out outputs/figures` |
-| Fig. 4, revised directional separation | `spacing_revision/cache`, `conditions.json`, `rows`, `summaries`, `spacing_reproduce.py` | `python spacing_reproduce.py verify`; `python spacing_reproduce.py figures --out outputs/spacing`; estimator replay as in its README |
-| Fig. 5, snapshot sensitivity | `data/results/runs/E4_B*`, `data/tables/`, `reproduce.py` | Same `tables` and `figures` commands; genuine prefixes of the released 128-state sequence |
-| Fig. 6, antenna geometry; Fig. 7, environments and positions | Static geometry and anonymized photographs in `manuscript_assets/` | See `docs/hardware_reproduction_map.md`; photos are recorded source assets, not algorithm outputs |
-| Tables III–IV, hardware settings/configurations | `hardware_reproduction/data/raw/`, acquisition metadata, processing contexts and truth | Hardware README/map; 205 segments, 31 recordings, 15 configurations, supplied K |
-| Table V, grouped hardware performance | Raw segments, EMA initial states, saved predictions, hardware metric code | Hardware saved-metric verification and table regeneration; full estimator replay is separately available |
-| Table VI, repeated measurements | The defined 30 groups and 120 temporal measurements | Hardware reproduction entry points; this subset is not substituted for the full 205-segment method comparison |
-| Table VII, six-method comparison | Six implementations plus all 205 raw segments | Hardware replay and tables; comparisons concern adapted implementations |
-| Table VIII, ablations | Twenty configurations with the same reconstruction and metric definitions | Hardware replay and tables; 20 × 205 evaluations |
-| Fig. 8, nine-panel correspondence spectra | `data/q4/spectra/`, `data/q4/per_window.csv`, `q4_figures.py` | `python q4_figures.py --out outputs/q4`; deterministic first identifier per configuration/environment |
-| Table IX, correspondence statistics | All 205 saved measurement spectra, 15 simulated spectra, correspondence code | `python q4_reproduce.py verify-spectra`; `python q4_reproduce.py summarize` |
-| FDTD correspondence estimates | `data/q4/sim_cir/`, `generator_settings.json`, `src/exec2/jsfsim/q4_pipeline.py` | `python q4_reproduce.py replay-fdtd --config all` |
-| Hardware correspondence spectra | All 205 raw segments and continuous EMA states; `q4_hardware_replay.py` | `python q4_hardware_replay.py`; verifies all normalized measurement spectra against the released archive |
-| Parametric correspondence reference | `data/q4/parametric/`, fixed-seed frequency-domain model | `python q4_reproduce.py replay --config G-420 --trial 0`; 20 trials per configuration in the saved output |
-| Controlled FDTD fields | `src/fdtd/`, protocol, clean metadata and example field records | `python regenerate_fdtd.py --clean-id cln_de385a3b2982 --out outputs/new_fdtd_S2 --workers 1` |
-| Measured-geometry FDTD fields | Same solver, measured horizontal geometry and background-state protocol | `python q4_regenerate_fdtd.py --config G-420 --out outputs/new_q4_G420 --workers 1` |
+| Fig. 1, CIR chain | `manuscript_assets/figures/CIR_Time_Domain_Signal_Acquisition_Procedure.pdf` | Static vector source, exact hash; no confirmed editable source. |
+| Fig. 2, workflow | `manuscript_assets/source/` | `python manuscript_assets/regenerate.py`; `algo_flowchart_restored.pdf`; schematic spectrum. |
+| Tables I–II | `src/exec2/jsfsim/protocol.py`, tasks and clean metadata | `reproduce.py verify`; approved table text in `validation/reference/manuscript_tables/`. |
+| Fig. 3, noise localization | E1_A 9000, E1_B 2250 trials; `validation/control_replay.py` | New predictions, metrics and CSV; `reproduce.py figures --tables <new tables>`. |
+| Fig. 4, spacing sensitivity | `spacing_revision/`: 24 FDTD conditions, 2400 trial records | `spacing_reproduce.py replay-all`; `figures --results <new JSON>`; all 24 spectral rates, unchanged original outputs. |
+| Fig. 5, snapshots | E4_B 750 trials, genuine prefixes of a 128-state sequence | `validation/control_replay.py`; `reproduce.py figures`. E4_A adds 4500 checked reference trials, not plotted in Fig. 5. |
+| Fig. 6, arrays | `manuscript_assets/regenerate.py`, hardware geometry | Generated `antenna_layout.pdf`; four selected pairs and seven virtual positions. |
+| Fig. 7, scenes | Approved crops, `manuscript_assets/data/nominal_positions.json` | Generated `hardware_setup.pdf`; static photos plus reconstructed position diagram. |
+| Tables III–IV | Hardware raw index, recording metadata, contexts, EMA states | All 205 IDs, 31 recordings, 15 configurations; raw preprocessing and exact truth. |
+| Table V | Raw CIR → new JSF-MUSIC predictions → assignments | Full replay and `tables --replay-input ...`; `groups.csv`. |
+| Table VI | Fixed 30 groups × 4 temporal selections | New `stability.csv`, `selected_measurements.csv`; all 120 identities/ranks, sample SD. |
+| Table VII | Six implementations, each using all 205 segments | `replay --methods all`; new `summary.csv` and `paper_checks.json`. |
+| Table VIII | Twenty hardware configurations, including reference | Same full replay; 4100 executions and all printed values. |
+| Fig. 8 | 15 FDTD + 205 raw-derived hardware spectra | `q4_hardware_replay.py`, `validation/q4_replay_all.py`, then `q4_figures.py --spectra <new spectra> --records <new CSV>`. |
+| Table IX | All 205 spectral/identity comparisons, equal configuration weighting | New `table_IX.csv`: indoor/outdoor/combined correlation, displacement, pairs and missing. |
+| Parametric correspondence | Geometry, deterministic seeds, direct frequency model, 300 trials | `validation/q4_replay_all.py`; all 4100 comparisons and 0.474 macro correlation. Not the Deng estimator. |
+| Fresh simulation inputs | `validation/regenerate_inputs.py` | 5 analytic, 29 controlled FDTD, 15 measured-geometry FDTD; 128 retained states, Q4 also 32 startup states. |
 
-`reproduce.py figures` retains the original separation plot for archive compatibility. **Use `spacing_reproduce.py figures` for the revised manuscript's Fig. 4.** All revised fixed-grid conditions are included; none are selected according to success. The 0.025 m paired diagnostics in the original executed protocol are not the manuscript's analysis.
+Both root figure entry points produce the current FDTD-only Fig. 4. All 24 conditions remain irrespective of success. Parametric target-spacing data and dedicated execution are excluded; shared frozen numerical modules retain their original identities and support the other published parametric experiments.
 
-Frozen numerical modules retain their source fingerprints. Wrapper paths are portable, while recorded absolute paths in original provenance are historical metadata. Numeric regeneration is verified; byte-identical PDF generation across Matplotlib/font versions is not asserted. Intermediate FDTD field states are not all packaged; all required clean CIR sequences are, and solver regeneration code is supplied.
+The full driver checks saved data, runs all estimators and reconstructs figures. Fresh Meep generation and downstream replay from the new inputs are separate stages. Historical `hardware_reproduction/full_replay/` evidence is not proof that this candidate passed a new Linux environment.
+
+The [hardware map](hardware_reproduction_map.md) details interfaces and source paths. Check numerical equivalence and visual content, not cross-version PDF binary identity. Static photography cannot be reconstructed by an estimator.

@@ -1,0 +1,920 @@
+[
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "rmse_pos_m",
+    "paper": 0.179,
+    "recomputed": 0.1789976248462499,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "rmse_range_m",
+    "paper": 0.0687,
+    "recomputed": 0.06870345272668464,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "rmse_angle_deg",
+    "paper": 6.1479,
+    "recomputed": 6.14794670188026,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "dr_percent",
+    "paper": 93.2,
+    "recomputed": 93.19526627218934,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "fn",
+    "paper": 23.0,
+    "recomputed": 23,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "fp",
+    "paper": 19.0,
+    "recomputed": 19,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "this_method",
+    "field": "pairs",
+    "paper": 334.0,
+    "recomputed": 334,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "rmse_pos_m",
+    "paper": 0.1678,
+    "recomputed": 0.1678088479990618,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "rmse_range_m",
+    "paper": 0.0698,
+    "recomputed": 0.06979030127252599,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "rmse_angle_deg",
+    "paper": 5.5386,
+    "recomputed": 5.538626001807793,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "dr_percent",
+    "paper": 93.2,
+    "recomputed": 93.19526627218934,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "fn",
+    "paper": 23.0,
+    "recomputed": 23,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "fp",
+    "paper": 17.0,
+    "recomputed": 17,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b1_deng",
+    "field": "pairs",
+    "paper": 332.0,
+    "recomputed": 332,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "rmse_pos_m",
+    "paper": 0.4462,
+    "recomputed": 0.44621064100635394,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "rmse_range_m",
+    "paper": 0.2535,
+    "recomputed": 0.2535145555181143,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "rmse_angle_deg",
+    "paper": 14.1358,
+    "recomputed": 14.135849036249125,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "dr_percent",
+    "paper": 78.7,
+    "recomputed": 78.69822485207101,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "fn",
+    "paper": 72.0,
+    "recomputed": 72,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "fp",
+    "paper": 52.0,
+    "recomputed": 52,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b2_kakouche",
+    "field": "pairs",
+    "paper": 318.0,
+    "recomputed": 318,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "rmse_pos_m",
+    "paper": 0.2769,
+    "recomputed": 0.2769117250696658,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "rmse_range_m",
+    "paper": 0.1313,
+    "recomputed": 0.1312556568548381,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "rmse_angle_deg",
+    "paper": 9.1854,
+    "recomputed": 9.185369747705346,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "dr_percent",
+    "paper": 90.83,
+    "recomputed": 90.82840236686391,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "fn",
+    "paper": 31.0,
+    "recomputed": 31,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "fp",
+    "paper": 31.0,
+    "recomputed": 31,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c1_jade",
+    "field": "pairs",
+    "paper": 338.0,
+    "recomputed": 338,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "rmse_pos_m",
+    "paper": 0.6316,
+    "recomputed": 0.6315765671793613,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "rmse_range_m",
+    "paper": 0.4675,
+    "recomputed": 0.4674844585381728,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "rmse_angle_deg",
+    "paper": 17.6129,
+    "recomputed": 17.612865519164355,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "dr_percent",
+    "paper": 68.34,
+    "recomputed": 68.34319526627219,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "fn",
+    "paper": 107.0,
+    "recomputed": 107,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "fp",
+    "paper": 64.0,
+    "recomputed": 64,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "c3_kim",
+    "field": "pairs",
+    "paper": 295.0,
+    "recomputed": 295,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "rmse_pos_m",
+    "paper": 0.2411,
+    "recomputed": 0.2411268941957276,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "rmse_range_m",
+    "paper": 0.088,
+    "recomputed": 0.0880174804979401,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "rmse_angle_deg",
+    "paper": 8.8606,
+    "recomputed": 8.860629140831266,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "dr_percent",
+    "paper": 93.2,
+    "recomputed": 93.19526627218934,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "fn",
+    "paper": 23.0,
+    "recomputed": 23,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "fp",
+    "paper": 20.0,
+    "recomputed": 20,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "baseline",
+    "method": "b5_wang_full2d",
+    "field": "pairs",
+    "paper": 335.0,
+    "recomputed": 335,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "REF",
+    "field": "rmse_pos_m",
+    "paper": 0.179,
+    "recomputed": 0.1789976248462499,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "REF",
+    "field": "dr_percent",
+    "paper": 93.2,
+    "recomputed": 93.19526627218934,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "REF",
+    "field": "missing",
+    "paper": 4.0,
+    "recomputed": 4,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F09",
+    "field": "rmse_pos_m",
+    "paper": 1.5208,
+    "recomputed": 1.5208266934009762,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F09",
+    "field": "dr_percent",
+    "paper": 59.76,
+    "recomputed": 59.76331360946745,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F09",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F05",
+    "field": "rmse_pos_m",
+    "paper": 1.5836,
+    "recomputed": 1.583558716959738,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F05",
+    "field": "dr_percent",
+    "paper": 25.44,
+    "recomputed": 25.443786982248522,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "A_F05",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span250",
+    "field": "rmse_pos_m",
+    "paper": 1.4928,
+    "recomputed": 1.492782272701038,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span250",
+    "field": "dr_percent",
+    "paper": 59.76,
+    "recomputed": 59.76331360946745,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span250",
+    "field": "missing",
+    "paper": 2.0,
+    "recomputed": 2,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span125",
+    "field": "rmse_pos_m",
+    "paper": 0.1639,
+    "recomputed": 0.16392692222639607,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span125",
+    "field": "dr_percent",
+    "paper": 87.87,
+    "recomputed": 87.8698224852071,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "B_span125",
+    "field": "missing",
+    "paper": 31.0,
+    "recomputed": 31,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "S_span250_F9",
+    "field": "rmse_pos_m",
+    "paper": 0.1717,
+    "recomputed": 0.171745772668348,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "S_span250_F9",
+    "field": "dr_percent",
+    "paper": 92.31,
+    "recomputed": 92.3076923076923,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "S_span250_F9",
+    "field": "missing",
+    "paper": 12.0,
+    "recomputed": 12,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L016",
+    "field": "rmse_pos_m",
+    "paper": 0.2826,
+    "recomputed": 0.28263370999297,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L016",
+    "field": "dr_percent",
+    "paper": 86.39,
+    "recomputed": 86.3905325443787,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L016",
+    "field": "missing",
+    "paper": 10.0,
+    "recomputed": 10,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L032",
+    "field": "rmse_pos_m",
+    "paper": 0.3135,
+    "recomputed": 0.3135282360797463,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L032",
+    "field": "dr_percent",
+    "paper": 88.17,
+    "recomputed": 88.16568047337279,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L032",
+    "field": "missing",
+    "paper": 6.0,
+    "recomputed": 6,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L064",
+    "field": "rmse_pos_m",
+    "paper": 0.2854,
+    "recomputed": 0.2853521348103793,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L064",
+    "field": "dr_percent",
+    "paper": 91.12,
+    "recomputed": 91.12426035502959,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "C_L064",
+    "field": "missing",
+    "paper": 5.0,
+    "recomputed": 5,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_01",
+    "field": "rmse_pos_m",
+    "paper": 0.7712,
+    "recomputed": 0.7711832432532207,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_01",
+    "field": "dr_percent",
+    "paper": 53.25,
+    "recomputed": 53.25443786982248,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_01",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_02",
+    "field": "rmse_pos_m",
+    "paper": 0.996,
+    "recomputed": 0.9959803457460524,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_02",
+    "field": "dr_percent",
+    "paper": 56.8,
+    "recomputed": 56.80473372781065,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_02",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_03",
+    "field": "rmse_pos_m",
+    "paper": 0.9252,
+    "recomputed": 0.9252163908094609,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_03",
+    "field": "dr_percent",
+    "paper": 46.75,
+    "recomputed": 46.74556213017752,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_03",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_12",
+    "field": "rmse_pos_m",
+    "paper": 0.6541,
+    "recomputed": 0.6541496467590804,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_12",
+    "field": "dr_percent",
+    "paper": 60.65,
+    "recomputed": 60.650887573964496,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_12",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_13",
+    "field": "rmse_pos_m",
+    "paper": 0.9357,
+    "recomputed": 0.9356687242493795,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_13",
+    "field": "dr_percent",
+    "paper": 54.44,
+    "recomputed": 54.437869822485204,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_13",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_23",
+    "field": "rmse_pos_m",
+    "paper": 0.7831,
+    "recomputed": 0.7831159786996269,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_23",
+    "field": "dr_percent",
+    "paper": 54.73,
+    "recomputed": 54.73372781065089,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C2_23",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_012",
+    "field": "rmse_pos_m",
+    "paper": 0.4046,
+    "recomputed": 0.40460206294743156,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_012",
+    "field": "dr_percent",
+    "paper": 88.46,
+    "recomputed": 88.46153846153847,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_012",
+    "field": "missing",
+    "paper": 4.0,
+    "recomputed": 4,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_013",
+    "field": "rmse_pos_m",
+    "paper": 0.7166,
+    "recomputed": 0.7165740215793249,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_013",
+    "field": "dr_percent",
+    "paper": 75.44,
+    "recomputed": 75.44378698224853,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_013",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_023",
+    "field": "rmse_pos_m",
+    "paper": 0.7352,
+    "recomputed": 0.7351721108314561,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_023",
+    "field": "dr_percent",
+    "paper": 73.37,
+    "recomputed": 73.37278106508876,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_023",
+    "field": "missing",
+    "paper": 0.0,
+    "recomputed": 0,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_123",
+    "field": "rmse_pos_m",
+    "paper": 0.4486,
+    "recomputed": 0.4485957979194402,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_123",
+    "field": "dr_percent",
+    "paper": 84.02,
+    "recomputed": 84.02366863905326,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "D_C3_123",
+    "field": "missing",
+    "paper": 1.0,
+    "recomputed": 1,
+    "atol": 0,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "E_FB0",
+    "field": "rmse_pos_m",
+    "paper": 0.2429,
+    "recomputed": 0.24291900253180027,
+    "atol": 5.0001e-05,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "E_FB0",
+    "field": "dr_percent",
+    "paper": 92.9,
+    "recomputed": 92.89940828402366,
+    "atol": 0.005000001,
+    "pass": true
+  },
+  {
+    "table": "ablation",
+    "method": "E_FB0",
+    "field": "missing",
+    "paper": 3.0,
+    "recomputed": 3,
+    "atol": 0,
+    "pass": true
+  }
+]

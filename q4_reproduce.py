@@ -35,7 +35,7 @@ def summarize():
         raise RuntimeError('Published correspondence summary mismatch')
     print(json.dumps(result,indent=2))
 
-def replay(config,trial):
+def replay(config,trial,return_result=False):
     import numpy as np
     from jsfsim import estimate,paths
     paths.ensure_paths();CB=paths.adapter('case_build')
@@ -68,6 +68,9 @@ def replay(config,trial):
             pred=np.array([[p['x'],p['y']] for p in result['predictions']]).reshape(-1,2)
             comparison=pred.shape==z['predictions'].shape and np.allclose(pred,z['predictions'],atol=1e-12,rtol=0)
     ok=input_hash==expected['X_sha256'] and result['status']=='ok' and comparison is not False
+    if return_result:
+        assert result['status']=='ok' and comparison is not False
+        return result,{'config_id':config,'trial':trial,'seed':seed,'input_hash_matches':input_hash==expected['X_sha256']}
     print(json.dumps({'pass':bool(ok),'config_id':config,'trial':trial,'seed':seed,
               'input_hash_matches':input_hash==expected['X_sha256'],'saved_predictions_match':comparison,
               'predictions':result['predictions'],'new_fdtd_solves':0,'estimator_runs':1},indent=2))

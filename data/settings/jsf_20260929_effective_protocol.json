@@ -207,8 +207,6 @@
     "trials": {
       "E1_A": 200,
       "E1_B": 50,
-      "E2_A": 100,
-      "E2_B": 50,
       "E4_A": 100,
       "E4_B": 50
     },
@@ -588,26 +586,6 @@
       "analytic": "带限修复 + 无平移站位 -> 旧 analytic clean 签名失配，必须重新生成",
       "fdtd": "clean key 含精确真值/运动源/带宽版本/时间原点/背景/网格/时长/代码指纹；参数不同不得冒用旧结果",
       "noise_clean_separate": true
-    },
-    "budget_upper_bound": {
-      "by_task": {
-        "E1_A": 9000,
-        "E1_B": 2250,
-        "E2_A": 7200,
-        "E2_B": 450,
-        "E4_A": 4500,
-        "E4_B": 750
-      },
-      "total": 24150,
-      "spec_table_total": 21900,
-      "e4_a_definition_conflict": {
-        "spec_table_value": 2250,
-        "spec_total_table_value": 21900,
-        "derived_from_section5": 4500,
-        "derived_total": 23400,
-        "resolution": "按 §5 显式定义（9 档 SNR）实现；差异上报，未擅自改条件。若主代理裁定应取 §10 表的 2250，需先修改 §5 的 SNR 列表并重生成协议。"
-      },
-      "note": "去重前、仅本文方法的算法评估次数上界；E4_A 按 §5 显式 9 档 SNR。"
     },
     "failure_policy": {
       "keep_all_trials": true,

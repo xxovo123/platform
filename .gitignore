@@ -18,3 +18,4 @@ manuscript_assets/generated/
 **/mplconfig/
 .pytest_cache/
 *.tmp
+generated_validation/

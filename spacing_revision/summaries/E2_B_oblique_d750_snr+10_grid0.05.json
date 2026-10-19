@@ -1,0 +1,56 @@
+{
+  "condition": {
+    "task_id": "E2_B_oblique_d750_snr+10",
+    "clean_id": "cln_9a17db16e744",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.6887425064515009,
+        -1.9649053194514854
+      ],
+      [
+        0.05973958049243283,
+        -1.5564260431902153
+      ]
+    ],
+    "targets_polar": [
+      [
+        2.0821189098132313,
+        19.31668539971837
+      ],
+      [
+        1.5575720995826041,
+        2.1980783948804348
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.75,
+    "tags": [
+      "direction=oblique",
+      "d_nominal_m=0.750",
+      "d_actual_m=0.750000"
+    ],
+    "clean_seed": 3028540857423291128,
+    "direction": "oblique",
+    "d_nominal_m": 0.75,
+    "d_actual_m": 0.75
+  },
+  "grid_m": 0.05,
+  "n": 100,
+  "successful": 99,
+  "rate": 0.99,
+  "wilson95": [
+    0.9455138038212946,
+    0.9982325679358593
+  ],
+  "method_failed": 0,
+  "tp": 199,
+  "dr": 0.995
+}

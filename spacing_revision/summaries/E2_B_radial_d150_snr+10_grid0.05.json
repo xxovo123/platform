@@ -1,0 +1,56 @@
+{
+  "condition": {
+    "task_id": "E2_B_radial_d150_snr+10",
+    "clean_id": "cln_abaa39a5b405",
+    "family": "E2_B",
+    "layer": "B",
+    "source": "fdtd",
+    "scene": "E2",
+    "k": 2,
+    "targets_xy": [
+      [
+        0.3586476666606349,
+        -1.687304611265815
+      ],
+      [
+        0.3898344202832988,
+        -1.8340267513758857
+      ]
+    ],
+    "targets_polar": [
+      [
+        1.725,
+        12.0
+      ],
+      [
+        1.875,
+        12.0
+      ]
+    ],
+    "snr_db": 10.0,
+    "trials": 100,
+    "L": 128,
+    "L_clean": 128,
+    "resolution_distance_m": 0.14999999999999983,
+    "tags": [
+      "direction=radial",
+      "d_nominal_m=0.150",
+      "d_actual_m=0.150000"
+    ],
+    "clean_seed": 8097516439168618874,
+    "direction": "radial",
+    "d_nominal_m": 0.15,
+    "d_actual_m": 0.14999999999999983
+  },
+  "grid_m": 0.05,
+  "n": 100,
+  "successful": 0,
+  "rate": 0.0,
+  "wilson95": [
+    3.469446951953614e-18,
+    0.03699349820698568
+  ],
+  "method_failed": 0,
+  "tp": 100,
+  "dr": 0.5
+}
